@@ -4,17 +4,17 @@ import * as _m0 from "protobufjs/minimal";
 
 export const protobufPackage = "";
 
-export interface DealerFirstTurn {
+export interface DealerFirstTurnEventMsg {
   playerId: number;
 }
 
-function createBaseDealerFirstTurn(): DealerFirstTurn {
+function createBaseDealerFirstTurnEventMsg(): DealerFirstTurnEventMsg {
   return { playerId: 0 };
 }
 
-export const DealerFirstTurn = {
+export const DealerFirstTurnEventMsg = {
   encode(
-    message: DealerFirstTurn,
+    message: DealerFirstTurnEventMsg,
     writer: _m0.Writer = _m0.Writer.create()
   ): _m0.Writer {
     if (message.playerId !== 0) {
@@ -23,10 +23,13 @@ export const DealerFirstTurn = {
     return writer;
   },
 
-  decode(input: _m0.Reader | Uint8Array, length?: number): DealerFirstTurn {
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): DealerFirstTurnEventMsg {
     const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
     let end = length === undefined ? reader.len : reader.pos + length;
-    const message = createBaseDealerFirstTurn();
+    const message = createBaseDealerFirstTurnEventMsg();
     while (reader.pos < end) {
       const tag = reader.uint32();
       switch (tag >>> 3) {
@@ -41,23 +44,23 @@ export const DealerFirstTurn = {
     return message;
   },
 
-  fromJSON(object: any): DealerFirstTurn {
+  fromJSON(object: any): DealerFirstTurnEventMsg {
     return {
       playerId: isSet(object.playerId) ? Number(object.playerId) : 0,
     };
   },
 
-  toJSON(message: DealerFirstTurn): unknown {
+  toJSON(message: DealerFirstTurnEventMsg): unknown {
     const obj: any = {};
     message.playerId !== undefined &&
       (obj.playerId = Math.round(message.playerId));
     return obj;
   },
 
-  fromPartial<I extends Exact<DeepPartial<DealerFirstTurn>, I>>(
+  fromPartial<I extends Exact<DeepPartial<DealerFirstTurnEventMsg>, I>>(
     object: I
-  ): DealerFirstTurn {
-    const message = createBaseDealerFirstTurn();
+  ): DealerFirstTurnEventMsg {
+    const message = createBaseDealerFirstTurnEventMsg();
     message.playerId = object.playerId ?? 0;
     return message;
   },

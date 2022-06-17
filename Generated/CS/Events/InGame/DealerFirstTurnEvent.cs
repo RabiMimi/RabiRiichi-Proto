@@ -24,29 +24,29 @@ namespace RabiRiichi.Generated.Events.InGame {
     static DealerFirstTurnEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CihFdmVudHMvSW5HYW1lL0RlYWxlckZpcnN0VHVybkV2ZW50LnByb3RvIiMK",
-            "D0RlYWxlckZpcnN0VHVybhIQCghwbGF5ZXJJZBgBIAEoBUIlqgIiUmFiaVJp",
-            "aWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
+            "CihFdmVudHMvSW5HYW1lL0RlYWxlckZpcnN0VHVybkV2ZW50LnByb3RvIisK",
+            "F0RlYWxlckZpcnN0VHVybkV2ZW50TXNnEhAKCHBsYXllcklkGAEgASgFQiWq",
+            "AiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.DealerFirstTurn), global::RabiRiichi.Generated.Events.InGame.DealerFirstTurn.Parser, new[]{ "PlayerId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.DealerFirstTurnEventMsg), global::RabiRiichi.Generated.Events.InGame.DealerFirstTurnEventMsg.Parser, new[]{ "PlayerId" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class DealerFirstTurn : pb::IMessage<DealerFirstTurn>
+  public sealed partial class DealerFirstTurnEventMsg : pb::IMessage<DealerFirstTurnEventMsg>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<DealerFirstTurn> _parser = new pb::MessageParser<DealerFirstTurn>(() => new DealerFirstTurn());
+    private static readonly pb::MessageParser<DealerFirstTurnEventMsg> _parser = new pb::MessageParser<DealerFirstTurnEventMsg>(() => new DealerFirstTurnEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<DealerFirstTurn> Parser { get { return _parser; } }
+    public static pb::MessageParser<DealerFirstTurnEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -62,7 +62,7 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DealerFirstTurn() {
+    public DealerFirstTurnEventMsg() {
       OnConstruction();
     }
 
@@ -70,15 +70,15 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DealerFirstTurn(DealerFirstTurn other) : this() {
+    public DealerFirstTurnEventMsg(DealerFirstTurnEventMsg other) : this() {
       playerId_ = other.playerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DealerFirstTurn Clone() {
-      return new DealerFirstTurn(this);
+    public DealerFirstTurnEventMsg Clone() {
+      return new DealerFirstTurnEventMsg(this);
     }
 
     /// <summary>Field number for the "playerId" field.</summary>
@@ -96,12 +96,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as DealerFirstTurn);
+      return Equals(other as DealerFirstTurnEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(DealerFirstTurn other) {
+    public bool Equals(DealerFirstTurnEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -174,7 +174,7 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(DealerFirstTurn other) {
+    public void MergeFrom(DealerFirstTurnEventMsg other) {
       if (other == null) {
         return;
       }
