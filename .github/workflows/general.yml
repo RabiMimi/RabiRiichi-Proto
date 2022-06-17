@@ -1,0 +1,56 @@
+name: Generate Code From Protobuf
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      
+      - name: Restore cache
+        uses: actions/cache@v2
+        with:
+          path: /node_modules
+          key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      
+      - name: Install protoc
+        uses: arduino/setup-protoc@v1
+
+      - name: NPM install
+        run: npm install
+
+      - name: Generate C# Code
+        run: |
+          protoc --proto_path=./Protos/ --csharp_out=./Generated/CS/ --csharp_opt=base_namespace=RabiRiichi.Generated $(find ./Protos/ -iname "*.proto")
+          
+      - name: Generate TypeScript Code
+        run: |
+          protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --proto_path=./Protos/ --ts_proto_out=./Generated/TS/ $(find ./Protos/ -iname "*.proto")
+
+      - name: Commit files
+        run: |
+          git config --local user.email "411937015@qq.com"
+          git config --local user.name "GitHub Action"
+          git config --local core.autocrlf input
+          git add --all
+          git commit -m "Automated ProtoBuf Code Generation" -a --allow-empty
+          
+      - name: Push changes to github
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref || github.ref }}
