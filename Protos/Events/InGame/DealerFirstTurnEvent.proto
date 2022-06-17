@@ -2,6 +2,6 @@ syntax = "proto3";
 
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
-message DealerFirstTurn {
+message DealerFirstTurnEventMsg {
   int32 playerId = 1;
 }
