@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Core";
+
+message MenLikeMsg {
+  repeated GameTile tiles = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
+
+message PlayerHandStateMsg {
+  repeated MenLike called = 1;
+  repeated GameTile discarded = 2;
+  int32 jun = 3;
+  int32 riichiStick = 4;
+  GameTile agariTile = 5;
+  bool riichi = 6;
+}

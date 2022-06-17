@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Core";
+
+enum DiscardReason {
+  None = 1;
+  Draw = 2;
+  DrawRinshan = 3;
+  Chii = 4;
+  Pon = 5;
+  ChanKan = 6;
+  Pretend = 7;
+}
+
+enum TileSource {
+  None = 1;
+  Wanpai = 2;
+  Wall = 3;
+  Hand = 4;
+  Discard = 5;
+  Chii = 6;
+  Pon = 7;
+  KaKan = 8;
+  AnKan = 9;
+  DaiMinKan = 10;
+}
+
+message DiscardInfoMsg {
+  int32 from = 1;
+  DiscardReason reason = 2;
+}
+
+message GameTileMsg {
+  string tile = 1;
+  int32 playerId = 2;
+  DiscardInfoMsg discardInfo = 3;
+  TileSource source = 4;
+}
