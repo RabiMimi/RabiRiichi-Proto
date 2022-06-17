@@ -4,9 +4,13 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - 'Protos/**'
   push:
     branches:
       - main
+    paths:
+      - 'Protos/**'
   workflow_dispatch:
 
 jobs:
