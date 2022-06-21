@@ -479,3 +479,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+protoc-21.1-win64/readme.txt
+protoc-21.1-win64/include/google/protobuf/any.proto
+protoc-21.1-win64/include/google/protobuf/api.proto
+protoc-21.1-win64/include/google/protobuf/descriptor.proto
+protoc-21.1-win64/include/google/protobuf/duration.proto
+protoc-21.1-win64/include/google/protobuf/empty.proto
+protoc-21.1-win64/include/google/protobuf/field_mask.proto
+protoc-21.1-win64/include/google/protobuf/source_context.proto
+protoc-21.1-win64/include/google/protobuf/struct.proto
+protoc-21.1-win64/include/google/protobuf/timestamp.proto
+protoc-21.1-win64/include/google/protobuf/type.proto
+protoc-21.1-win64/include/google/protobuf/wrappers.proto
+protoc-21.1-win64/include/google/protobuf/compiler/plugin.proto
