@@ -31,7 +31,7 @@ message DiscardInfoMsg {
 }
 
 message GameTileMsg {
-  string tile = 1;
+  int32 tile = 1;
   int32 playerId = 2;
   DiscardInfoMsg discardInfo = 3;
   TileSource source = 4;
