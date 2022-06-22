@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/RabiMimi/RabiRiichi-Proto#readme",
   "dependencies": {
-    "ts-proto": "^1.115.4"
+    "@protobuf-ts/plugin": "^2.7.0"
   }
 }

@@ -46,7 +46,7 @@ jobs:
           
       - name: Generate TypeScript Code
         run: |
-          protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --proto_path=./Protos/ --ts_proto_out=./Generated/TS/ $(find ./Protos/ -iname "*.proto")
+          protoc --plugin=./node_modules/.bin/protoc-gen-ts --proto_path=./Protos/ --ts_out=./Generated/TS/ $(find ./Protos/ -iname "*.proto")
 
       - name: Commit files
         run: |

@@ -3,26 +3,26 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Core";
 
 enum DiscardReason {
-  DiscardReason_None = 0;
-  DiscardReason_Draw = 1;
-  DiscardReason_DrawRinshan = 2;
-  DiscardReason_Chii = 3;
-  DiscardReason_Pon = 4;
-  DiscardReason_ChanKan = 5;
-  DiscardReason_Pretend = 6;
+  DISCARD_REASON_NONE = 0;
+  DISCARD_REASON_DRAW = 1;
+  DISCARD_REASON_DRAWRINSHAN = 2;
+  DISCARD_REASON_CHII = 3;
+  DISCARD_REASON_PON = 4;
+  DISCARD_REASON_CHANKAN = 5;
+  DISCARD_REASON_PRETEND = 6;
 }
 
 enum TileSource {
-  TileSource_None = 0;
-  TileSource_Wanpai = 1;
-  TileSource_Wall = 2;
-  TileSource_Hand = 3;
-  TileSource_Discard = 4;
-  TileSource_Chii = 5;
-  TileSource_Pon = 6;
-  TileSource_KaKan = 7;
-  TileSource_AnKan = 8;
-  TileSource_DaiMinKan = 9;
+  TILE_SOURCE_NONE = 0;
+  TILE_SOURCE_WANPAI = 1;
+  TILE_SOURCE_WALL = 2;
+  TILE_SOURCE_HAND = 3;
+  TILE_SOURCE_DISCARD = 4;
+  TILE_SOURCE_CHII = 5;
+  TILE_SOURCE_PON = 6;
+  TILE_SOURCE_KAKAN = 7;
+  TILE_SOURCE_ANKAN = 8;
+  TILE_SOURCE_DAIMINKAN = 9;
 }
 
 message DiscardInfoMsg {
