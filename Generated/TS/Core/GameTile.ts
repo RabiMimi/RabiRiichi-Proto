@@ -29,9 +29,9 @@ export interface DiscardInfoMsg {
  */
 export interface GameTileMsg {
     /**
-     * @generated from protobuf field: string tile = 1;
+     * @generated from protobuf field: int32 tile = 1;
      */
-    tile: string;
+    tile: number;
     /**
      * @generated from protobuf field: int32 playerId = 2;
      */
@@ -181,14 +181,14 @@ export const DiscardInfoMsg = new DiscardInfoMsg$Type();
 class GameTileMsg$Type extends MessageType<GameTileMsg> {
     constructor() {
         super("GameTileMsg", [
-            { no: 1, name: "tile", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 1, name: "tile", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 3, name: "discardInfo", kind: "message", T: () => DiscardInfoMsg },
             { no: 4, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
         ]);
     }
     create(value?: PartialMessage<GameTileMsg>): GameTileMsg {
-        const message = { tile: "", playerId: 0, source: 0 };
+        const message = { tile: 0, playerId: 0, source: 0 };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<GameTileMsg>(this, message, value);
@@ -199,8 +199,8 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* string tile */ 1:
-                    message.tile = reader.string();
+                case /* int32 tile */ 1:
+                    message.tile = reader.int32();
                     break;
                 case /* int32 playerId */ 2:
                     message.playerId = reader.int32();
@@ -223,9 +223,9 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
         return message;
     }
     internalBinaryWrite(message: GameTileMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* string tile = 1; */
-        if (message.tile !== "")
-            writer.tag(1, WireType.LengthDelimited).string(message.tile);
+        /* int32 tile = 1; */
+        if (message.tile !== 0)
+            writer.tag(1, WireType.Varint).int32(message.tile);
         /* int32 playerId = 2; */
         if (message.playerId !== 0)
             writer.tag(2, WireType.Varint).int32(message.playerId);

@@ -26,7 +26,7 @@ namespace RabiRiichi.Generated.Core {
           string.Concat(
             "ChNDb3JlL0dhbWVUaWxlLnByb3RvIj4KDkRpc2NhcmRJbmZvTXNnEgwKBGZy",
             "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbiJwCgtH",
-            "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgJEhAKCHBsYXllcklkGAIgASgFEiQK",
+            "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhAKCHBsYXllcklkGAIgASgFEiQK",
             "C2Rpc2NhcmRJbmZvGAMgASgLMg8uRGlzY2FyZEluZm9Nc2cSGwoGc291cmNl",
             "GAQgASgOMgsuVGlsZVNvdXJjZSrKAQoNRGlzY2FyZFJlYXNvbhIXChNESVND",
             "QVJEX1JFQVNPTl9OT05FEAASFwoTRElTQ0FSRF9SRUFTT05fRFJBVxABEh4K",
@@ -352,13 +352,13 @@ namespace RabiRiichi.Generated.Core {
 
     /// <summary>Field number for the "tile" field.</summary>
     public const int TileFieldNumber = 1;
-    private string tile_ = "";
+    private int tile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Tile {
+    public int Tile {
       get { return tile_; }
       set {
-        tile_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        tile_ = value;
       }
     }
 
@@ -424,7 +424,7 @@ namespace RabiRiichi.Generated.Core {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Tile.Length != 0) hash ^= Tile.GetHashCode();
+      if (Tile != 0) hash ^= Tile.GetHashCode();
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (discardInfo_ != null) hash ^= DiscardInfo.GetHashCode();
       if (Source != global::RabiRiichi.Generated.Core.TileSource.None) hash ^= Source.GetHashCode();
@@ -446,9 +446,9 @@ namespace RabiRiichi.Generated.Core {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Tile.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Tile);
+      if (Tile != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Tile);
       }
       if (PlayerId != 0) {
         output.WriteRawTag(16);
@@ -472,9 +472,9 @@ namespace RabiRiichi.Generated.Core {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Tile.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Tile);
+      if (Tile != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Tile);
       }
       if (PlayerId != 0) {
         output.WriteRawTag(16);
@@ -498,8 +498,8 @@ namespace RabiRiichi.Generated.Core {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Tile.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Tile);
+      if (Tile != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tile);
       }
       if (PlayerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
@@ -522,7 +522,7 @@ namespace RabiRiichi.Generated.Core {
       if (other == null) {
         return;
       }
-      if (other.Tile.Length != 0) {
+      if (other.Tile != 0) {
         Tile = other.Tile;
       }
       if (other.PlayerId != 0) {
@@ -552,8 +552,8 @@ namespace RabiRiichi.Generated.Core {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            Tile = input.ReadString();
+          case 8: {
+            Tile = input.ReadInt32();
             break;
           }
           case 16: {
@@ -586,8 +586,8 @@ namespace RabiRiichi.Generated.Core {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            Tile = input.ReadString();
+          case 8: {
+            Tile = input.ReadInt32();
             break;
           }
           case 16: {
