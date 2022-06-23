@@ -11,6 +11,9 @@ import type { PartialMessage } from "@protobuf-ts/runtime";
 import { reflectionMergePartial } from "@protobuf-ts/runtime";
 import { MESSAGE_TYPE } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
+import { GameInfoMsg } from "../../Core/GameInfo";
+import { GameConfigMsg } from "../../Core/Config/GameConfig";
+import { Wind } from "../../Core/Player";
 import { GameTileMsg } from "../../Core/GameTile";
 import { MenLikeMsg } from "../../Core/MenLike";
 /**
@@ -41,6 +44,65 @@ export interface PlayerHandStateMsg {
      * @generated from protobuf field: bool riichi = 6;
      */
     riichi: boolean;
+}
+/**
+ * @generated from protobuf message WallStateMsg
+ */
+export interface WallStateMsg {
+    /**
+     * @generated from protobuf field: repeated GameTileMsg doras = 1;
+     */
+    doras: GameTileMsg[];
+    /**
+     * @generated from protobuf field: int32 remaining = 2;
+     */
+    remaining: number;
+    /**
+     * @generated from protobuf field: int32 rinshanRemaining = 3;
+     */
+    rinshanRemaining: number;
+}
+/**
+ * @generated from protobuf message PlayerStateMsg
+ */
+export interface PlayerStateMsg {
+    /**
+     * @generated from protobuf field: int32 id = 1;
+     */
+    id: number;
+    /**
+     * @generated from protobuf field: Wind wind = 2;
+     */
+    wind: Wind;
+    /**
+     * @generated from protobuf field: int64 points = 3;
+     */
+    points: bigint;
+    /**
+     * @generated from protobuf field: PlayerHandStateMsg hand = 4;
+     */
+    hand?: PlayerHandStateMsg;
+}
+/**
+ * @generated from protobuf message GameStateMsg
+ */
+export interface GameStateMsg {
+    /**
+     * @generated from protobuf field: GameConfigMsg config = 1;
+     */
+    config?: GameConfigMsg;
+    /**
+     * @generated from protobuf field: GameInfoMsg info = 2;
+     */
+    info?: GameInfoMsg;
+    /**
+     * @generated from protobuf field: WallStateMsg wall = 3;
+     */
+    wall?: WallStateMsg;
+    /**
+     * @generated from protobuf field: repeated PlayerStateMsg players = 4;
+     */
+    players: PlayerStateMsg[];
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
@@ -124,3 +186,200 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
  * @generated MessageType for protobuf message PlayerHandStateMsg
  */
 export const PlayerHandStateMsg = new PlayerHandStateMsg$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class WallStateMsg$Type extends MessageType<WallStateMsg> {
+    constructor() {
+        super("WallStateMsg", [
+            { no: 1, name: "doras", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
+            { no: 2, name: "remaining", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "rinshanRemaining", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+        ]);
+    }
+    create(value?: PartialMessage<WallStateMsg>): WallStateMsg {
+        const message = { doras: [], remaining: 0, rinshanRemaining: 0 };
+        globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
+        if (value !== undefined)
+            reflectionMergePartial<WallStateMsg>(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: WallStateMsg): WallStateMsg {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* repeated GameTileMsg doras */ 1:
+                    message.doras.push(GameTileMsg.internalBinaryRead(reader, reader.uint32(), options));
+                    break;
+                case /* int32 remaining */ 2:
+                    message.remaining = reader.int32();
+                    break;
+                case /* int32 rinshanRemaining */ 3:
+                    message.rinshanRemaining = reader.int32();
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message: WallStateMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+        /* repeated GameTileMsg doras = 1; */
+        for (let i = 0; i < message.doras.length; i++)
+            GameTileMsg.internalBinaryWrite(message.doras[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        /* int32 remaining = 2; */
+        if (message.remaining !== 0)
+            writer.tag(2, WireType.Varint).int32(message.remaining);
+        /* int32 rinshanRemaining = 3; */
+        if (message.rinshanRemaining !== 0)
+            writer.tag(3, WireType.Varint).int32(message.rinshanRemaining);
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message WallStateMsg
+ */
+export const WallStateMsg = new WallStateMsg$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayerStateMsg$Type extends MessageType<PlayerStateMsg> {
+    constructor() {
+        super("PlayerStateMsg", [
+            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "wind", kind: "enum", T: () => ["Wind", Wind] },
+            { no: 3, name: "points", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 4, name: "hand", kind: "message", T: () => PlayerHandStateMsg }
+        ]);
+    }
+    create(value?: PartialMessage<PlayerStateMsg>): PlayerStateMsg {
+        const message = { id: 0, wind: 0, points: 0n };
+        globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
+        if (value !== undefined)
+            reflectionMergePartial<PlayerStateMsg>(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: PlayerStateMsg): PlayerStateMsg {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* int32 id */ 1:
+                    message.id = reader.int32();
+                    break;
+                case /* Wind wind */ 2:
+                    message.wind = reader.int32();
+                    break;
+                case /* int64 points */ 3:
+                    message.points = reader.int64().toBigInt();
+                    break;
+                case /* PlayerHandStateMsg hand */ 4:
+                    message.hand = PlayerHandStateMsg.internalBinaryRead(reader, reader.uint32(), options, message.hand);
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message: PlayerStateMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+        /* int32 id = 1; */
+        if (message.id !== 0)
+            writer.tag(1, WireType.Varint).int32(message.id);
+        /* Wind wind = 2; */
+        if (message.wind !== 0)
+            writer.tag(2, WireType.Varint).int32(message.wind);
+        /* int64 points = 3; */
+        if (message.points !== 0n)
+            writer.tag(3, WireType.Varint).int64(message.points);
+        /* PlayerHandStateMsg hand = 4; */
+        if (message.hand)
+            PlayerHandStateMsg.internalBinaryWrite(message.hand, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message PlayerStateMsg
+ */
+export const PlayerStateMsg = new PlayerStateMsg$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class GameStateMsg$Type extends MessageType<GameStateMsg> {
+    constructor() {
+        super("GameStateMsg", [
+            { no: 1, name: "config", kind: "message", T: () => GameConfigMsg },
+            { no: 2, name: "info", kind: "message", T: () => GameInfoMsg },
+            { no: 3, name: "wall", kind: "message", T: () => WallStateMsg },
+            { no: 4, name: "players", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => PlayerStateMsg }
+        ]);
+    }
+    create(value?: PartialMessage<GameStateMsg>): GameStateMsg {
+        const message = { players: [] };
+        globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
+        if (value !== undefined)
+            reflectionMergePartial<GameStateMsg>(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: GameStateMsg): GameStateMsg {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* GameConfigMsg config */ 1:
+                    message.config = GameConfigMsg.internalBinaryRead(reader, reader.uint32(), options, message.config);
+                    break;
+                case /* GameInfoMsg info */ 2:
+                    message.info = GameInfoMsg.internalBinaryRead(reader, reader.uint32(), options, message.info);
+                    break;
+                case /* WallStateMsg wall */ 3:
+                    message.wall = WallStateMsg.internalBinaryRead(reader, reader.uint32(), options, message.wall);
+                    break;
+                case /* repeated PlayerStateMsg players */ 4:
+                    message.players.push(PlayerStateMsg.internalBinaryRead(reader, reader.uint32(), options));
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message: GameStateMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+        /* GameConfigMsg config = 1; */
+        if (message.config)
+            GameConfigMsg.internalBinaryWrite(message.config, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        /* GameInfoMsg info = 2; */
+        if (message.info)
+            GameInfoMsg.internalBinaryWrite(message.info, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* WallStateMsg wall = 3; */
+        if (message.wall)
+            WallStateMsg.internalBinaryWrite(message.wall, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        /* repeated PlayerStateMsg players = 4; */
+        for (let i = 0; i < message.players.length; i++)
+            PlayerStateMsg.internalBinaryWrite(message.players[i], writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message GameStateMsg
+ */
+export const GameStateMsg = new GameStateMsg$Type();
