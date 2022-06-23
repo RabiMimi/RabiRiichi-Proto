@@ -33,21 +33,21 @@ export interface ScoringMsg {
  */
 export enum ScoringType {
     /**
-     * @generated from protobuf enum value: Han = 0;
+     * @generated from protobuf enum value: HAN = 0;
      */
-    Han = 0,
+    HAN = 0,
     /**
-     * @generated from protobuf enum value: BonusHan = 1;
+     * @generated from protobuf enum value: BONUS_HAN = 1;
      */
-    BonusHan = 1,
+    BONUS_HAN = 1,
     /**
-     * @generated from protobuf enum value: Fu = 2;
+     * @generated from protobuf enum value: FU = 2;
      */
-    Fu = 2,
+    FU = 2,
     /**
-     * @generated from protobuf enum value: Yakuman = 3;
+     * @generated from protobuf enum value: YAKUMAN = 3;
      */
-    Yakuman = 3
+    YAKUMAN = 3
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class ScoringMsg$Type extends MessageType<ScoringMsg> {

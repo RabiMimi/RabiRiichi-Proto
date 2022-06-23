@@ -26,9 +26,9 @@ namespace RabiRiichi.Generated.Patterns {
           string.Concat(
             "ChlQYXR0ZXJucy9TdGRQYXR0ZXJuLnByb3RvIkIKClNjb3JpbmdNc2cSGgoE",
             "VHlwZRgBIAEoDjIMLlNjb3JpbmdUeXBlEgsKA1ZhbBgCIAEoBRILCgNTcmMY",
-            "AyABKAkqOQoLU2NvcmluZ1R5cGUSBwoDSGFuEAASDAoIQm9udXNIYW4QARIG",
-            "CgJGdRACEgsKB1lha3VtYW4QA0IgqgIdUmFiaVJpaWNoaS5HZW5lcmF0ZWQu",
-            "UGF0dGVybnNiBnByb3RvMw=="));
+            "AyABKAkqOgoLU2NvcmluZ1R5cGUSBwoDSEFOEAASDQoJQk9OVVNfSEFOEAES",
+            "BgoCRlUQAhILCgdZQUtVTUFOEANCIKoCHVJhYmlSaWljaGkuR2VuZXJhdGVk",
+            "LlBhdHRlcm5zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Patterns.ScoringType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -40,10 +40,10 @@ namespace RabiRiichi.Generated.Patterns {
   }
   #region Enums
   public enum ScoringType {
-    [pbr::OriginalName("Han")] Han = 0,
-    [pbr::OriginalName("BonusHan")] BonusHan = 1,
-    [pbr::OriginalName("Fu")] Fu = 2,
-    [pbr::OriginalName("Yakuman")] Yakuman = 3,
+    [pbr::OriginalName("HAN")] Han = 0,
+    [pbr::OriginalName("BONUS_HAN")] BonusHan = 1,
+    [pbr::OriginalName("FU")] Fu = 2,
+    [pbr::OriginalName("YAKUMAN")] Yakuman = 3,
   }
 
   #endregion

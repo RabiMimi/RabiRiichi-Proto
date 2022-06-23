@@ -6,282 +6,282 @@
  */
 export enum KuikaePolicy {
     /**
-     * @generated from protobuf enum value: KUIKAE_POLICY_None = 0;
+     * @generated from protobuf enum value: KUIKAE_POLICY_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: KUIKAE_POLICY_Genbutsu = 1;
+     * @generated from protobuf enum value: KUIKAE_POLICY_GENBUTSU = 1;
      */
-    Genbutsu = 1,
+    GENBUTSU = 1,
     /**
-     * @generated from protobuf enum value: KUIKAE_POLICY_Suji = 2;
+     * @generated from protobuf enum value: KUIKAE_POLICY_SUJI = 2;
      */
-    Suji = 2,
+    SUJI = 2,
     /**
-     * @generated from protobuf enum value: KUIKAE_POLICY_All = 3;
+     * @generated from protobuf enum value: KUIKAE_POLICY_ALL = 3;
      */
-    All = 3,
+    ALL = 3,
     /**
-     * @generated from protobuf enum value: KUIKAE_POLICY_All = 3;
+     * @generated from protobuf enum value: KUIKAE_POLICY_ALL = 3;
      */
-    Default = 3
+    DEFAULT = 3
 }
 /**
  * @generated from protobuf enum RiichiPolicy
  */
 export enum RiichiPolicy {
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_None = 0;
+     * @generated from protobuf enum value: RIICHI_POLICY_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_SufficientPoints = 1;
+     * @generated from protobuf enum value: RIICHI_POLICY_SUFFICIENT_POINTS = 1;
      */
-    SufficientPoints = 1,
+    SUFFICIENT_POINTS = 1,
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_ValidPoints = 2;
+     * @generated from protobuf enum value: RIICHI_POLICY_VALID_POINTS = 2;
      */
-    ValidPoints = 2,
+    VALID_POINTS = 2,
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_SufficientTiles = 4;
+     * @generated from protobuf enum value: RIICHI_POLICY_SUFFICIENT_TILES = 4;
      */
-    SufficientTiles = 4,
+    SUFFICIENT_TILES = 4,
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_All = 7;
+     * @generated from protobuf enum value: RIICHI_POLICY_ALL = 7;
      */
-    All = 7,
+    ALL = 7,
     /**
-     * @generated from protobuf enum value: RIICHI_POLICY_Default = 5;
+     * @generated from protobuf enum value: RIICHI_POLICY_DEFAULT = 5;
      */
-    Default = 5
+    DEFAULT = 5
 }
 /**
  * @generated from protobuf enum RyuukyokuTrigger
  */
 export enum RyuukyokuTrigger {
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_None = 0;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SuufonRenda = 1;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SUUFON_RENDA = 1;
      */
-    SuufonRenda = 1,
+    SUUFON_RENDA = 1,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_KyuushuKyuuhai = 2;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_KYUUSHU_KYUUHAI = 2;
      */
-    KyuushuKyuuhai = 2,
+    KYUUSHU_KYUUHAI = 2,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SuuchaRiichi = 4;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SUUCHA_RIICHI = 4;
      */
-    SuuchaRiichi = 4,
+    SUUCHA_RIICHI = 4,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_Sanchahou = 8;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SANCHAHOU = 8;
      */
-    Sanchahou = 8,
+    SANCHAHOU = 8,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SuukanSanra = 16;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_SUUKAN_SANRA = 16;
      */
-    SuukanSanra = 16,
+    SUUKAN_SANRA = 16,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_All = 31;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_ALL = 31;
      */
-    All = 31,
+    ALL = 31,
     /**
-     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_All = 31;
+     * @generated from protobuf enum value: RYUUKYOKU_TRIGGER_ALL = 31;
      */
-    Default = 31
+    DEFAULT = 31
 }
 /**
  * @generated from protobuf enum RenchanPolicy
  */
 export enum RenchanPolicy {
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_None = 0;
+     * @generated from protobuf enum value: RENCHAN_POLICY_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_DealerWin = 1;
+     * @generated from protobuf enum value: RENCHAN_POLICY_DEALER_WIN = 1;
      */
-    DealerWin = 1,
+    DEALER_WIN = 1,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_DealerTenpai = 2;
+     * @generated from protobuf enum value: RENCHAN_POLICY_DEALER_TENPAI = 2;
      */
-    DealerTenpai = 2,
+    DEALER_TENPAI = 2,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_EndGameRyuukyoku = 4;
+     * @generated from protobuf enum value: RENCHAN_POLICY_END_GAME_RYUUKYOKU = 4;
      */
-    EndGameRyuukyoku = 4,
+    END_GAME_RYUUKYOKU = 4,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_MidGameRyuukyoku = 8;
+     * @generated from protobuf enum value: RENCHAN_POLICY_MID_GAME_RYUUKYOKU = 8;
      */
-    MidGameRyuukyoku = 8,
+    MID_GAME_RYUUKYOKU = 8,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_All = 15;
+     * @generated from protobuf enum value: RENCHAN_POLICY_ALL = 15;
      */
-    All = 15,
+    ALL = 15,
     /**
-     * @generated from protobuf enum value: RENCHAN_POLICY_Default = 11;
+     * @generated from protobuf enum value: RENCHAN_POLICY_DEFAULT = 11;
      */
-    Default = 11
+    DEFAULT = 11
 }
 /**
  * @generated from protobuf enum EndGamePolicy
  */
 export enum EndGamePolicy {
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_None = 0;
+     * @generated from protobuf enum value: END_GAME_POLICY_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_PointsOutOfRange = 1;
+     * @generated from protobuf enum value: END_GAME_POLICY_POINTS_OUT_OF_RANGE = 1;
      */
-    PointsOutOfRange = 1,
+    POINTS_OUT_OF_RANGE = 1,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_InstantPointsOutOfRange = 2;
+     * @generated from protobuf enum value: END_GAME_POLICY_INSTANT_POINTS_OUT_OF_RANGE = 2;
      */
-    InstantPointsOutOfRange = 2,
+    INSTANT_POINTS_OUT_OF_RANGE = 2,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_DealerTenpai = 4;
+     * @generated from protobuf enum value: END_GAME_POLICY_DEALER_TENPAI = 4;
      */
-    DealerTenpai = 4,
+    DEALER_TENPAI = 4,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_DealerAgari = 8;
+     * @generated from protobuf enum value: END_GAME_POLICY_DEALER_AGARI = 8;
      */
-    DealerAgari = 8,
+    DEALER_AGARI = 8,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_ExtendedRound = 16;
+     * @generated from protobuf enum value: END_GAME_POLICY_EXTENDED_ROUND = 16;
      */
-    ExtendedRound = 16,
+    EXTENDED_ROUND = 16,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_All = 31;
+     * @generated from protobuf enum value: END_GAME_POLICY_ALL = 31;
      */
-    All = 31,
+    ALL = 31,
     /**
-     * @generated from protobuf enum value: END_GAME_POLICY_Default = 29;
+     * @generated from protobuf enum value: END_GAME_POLICY_DEFAULT = 29;
      */
-    Default = 29
+    DEFAULT = 29
 }
 /**
  * @generated from protobuf enum DoraOption
  */
 export enum DoraOption {
     /**
-     * @generated from protobuf enum value: DORA_OPTION_None = 0;
+     * @generated from protobuf enum value: DORA_OPTION_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_InitialDora = 1;
+     * @generated from protobuf enum value: DORA_OPTION_INITIAL_DORA = 1;
      */
-    InitialDora = 1,
+    INITIAL_DORA = 1,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_InitialUradora = 2;
+     * @generated from protobuf enum value: DORA_OPTION_INITIAL_URADORA = 2;
      */
-    InitialUradora = 2,
+    INITIAL_URADORA = 2,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_KanDora = 4;
+     * @generated from protobuf enum value: DORA_OPTION_KAN_DORA = 4;
      */
-    KanDora = 4,
+    KAN_DORA = 4,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_KanUradora = 8;
+     * @generated from protobuf enum value: DORA_OPTION_KAN_URADORA = 8;
      */
-    KanUradora = 8,
+    KAN_URADORA = 8,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_Uradora = 10;
+     * @generated from protobuf enum value: DORA_OPTION_URADORA = 10;
      */
-    Uradora = 10,
+    URADORA = 10,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_Dora = 5;
+     * @generated from protobuf enum value: DORA_OPTION_DORA = 5;
      */
-    Dora = 5,
+    DORA = 5,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_InstantRevealAfterDaiMinKan = 16;
+     * @generated from protobuf enum value: DORA_OPTION_INSTANT_REVEAL_AFTER_DAI_MIN_KAN = 16;
      */
-    InstantRevealAfterDaiMinKan = 16,
+    INSTANT_REVEAL_AFTER_DAI_MIN_KAN = 16,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_InstantRevealAfterKaKan = 32;
+     * @generated from protobuf enum value: DORA_OPTION_INSTANT_REVEAL_AFTER_KA_KAN = 32;
      */
-    InstantRevealAfterKaKan = 32,
+    INSTANT_REVEAL_AFTER_KA_KAN = 32,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_InstantRevealAfterAnKan = 64;
+     * @generated from protobuf enum value: DORA_OPTION_INSTANT_REVEAL_AFTER_AN_KAN = 64;
      */
-    InstantRevealAfterAnKan = 64,
+    INSTANT_REVEAL_AFTER_AN_KAN = 64,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_All = 127;
+     * @generated from protobuf enum value: DORA_OPTION_ALL = 127;
      */
-    All = 127,
+    ALL = 127,
     /**
-     * @generated from protobuf enum value: DORA_OPTION_Default = 79;
+     * @generated from protobuf enum value: DORA_OPTION_DEFAULT = 79;
      */
-    Default = 79
+    DEFAULT = 79
 }
 /**
  * @generated from protobuf enum AgariOption
  */
 export enum AgariOption {
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_None = 0;
+     * @generated from protobuf enum value: AGARI_OPTION_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_Kuitan = 1;
+     * @generated from protobuf enum value: AGARI_OPTION_KUITAN = 1;
      */
-    Kuitan = 1,
+    KUITAN = 1,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_Pao = 2;
+     * @generated from protobuf enum value: AGARI_OPTION_PAO = 2;
      */
-    Pao = 2,
+    PAO = 2,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_NagashiMangan = 4;
+     * @generated from protobuf enum value: AGARI_OPTION_NAGASHI_MANGAN = 4;
      */
-    NagashiMangan = 4,
+    NAGASHI_MANGAN = 4,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_FirstWinner = 8;
+     * @generated from protobuf enum value: AGARI_OPTION_FIRST_WINNER = 8;
      */
-    FirstWinner = 8,
+    FIRST_WINNER = 8,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_All = 15;
+     * @generated from protobuf enum value: AGARI_OPTION_ALL = 15;
      */
-    All = 15,
+    ALL = 15,
     /**
-     * @generated from protobuf enum value: AGARI_OPTION_Default = 7;
+     * @generated from protobuf enum value: AGARI_OPTION_DEFAULT = 7;
      */
-    Default = 7
+    DEFAULT = 7
 }
 /**
  * @generated from protobuf enum ScoringOption
  */
 export enum ScoringOption {
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_None = 0;
+     * @generated from protobuf enum value: SCORING_OPTION_NONE = 0;
      */
-    None = 0,
+    NONE = 0,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_KiriageMangan = 1;
+     * @generated from protobuf enum value: SCORING_OPTION_KIRIAGE_MANGAN = 1;
      */
-    KiriageMangan = 1,
+    KIRIAGE_MANGAN = 1,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_Yakuman = 2;
+     * @generated from protobuf enum value: SCORING_OPTION_YAKUMAN = 2;
      */
-    Yakuman = 2,
+    YAKUMAN = 2,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_MultipleYakuman = 4;
+     * @generated from protobuf enum value: SCORING_OPTION_MULTIPLE_YAKUMAN = 4;
      */
-    MultipleYakuman = 4,
+    MULTIPLE_YAKUMAN = 4,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_KazoeYakuman = 8;
+     * @generated from protobuf enum value: SCORING_OPTION_KAZOE_YAKUMAN = 8;
      */
-    KazoeYakuman = 8,
+    KAZOE_YAKUMAN = 8,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_None = 0;
+     * @generated from protobuf enum value: SCORING_OPTION_NONE = 0;
      */
-    Aotenjou = 0,
+    AOTENJOU = 0,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_All = 15;
+     * @generated from protobuf enum value: SCORING_OPTION_ALL = 15;
      */
-    All = 15,
+    ALL = 15,
     /**
-     * @generated from protobuf enum value: SCORING_OPTION_Default = 14;
+     * @generated from protobuf enum value: SCORING_OPTION_DEFAULT = 14;
      */
-    Default = 14
+    DEFAULT = 14
 }
