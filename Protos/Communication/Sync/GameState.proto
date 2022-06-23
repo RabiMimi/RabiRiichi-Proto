@@ -2,6 +2,9 @@ syntax = "proto3";
 
 import "Core/GameTile.proto";
 import "Core/MenLike.proto";
+import "Core/Player.proto";
+import "Core/GameInfo.proto";
+import "Core/Config/GameConfig.proto";
 option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
 
 message PlayerHandStateMsg {
@@ -11,4 +14,24 @@ message PlayerHandStateMsg {
   int32 riichiStick = 4;
   GameTileMsg agariTile = 5;
   bool riichi = 6;
+}
+
+message WallStateMsg{
+  repeated GameTileMsg doras = 1;
+  int32 remaining = 2;
+  int32 rinshanRemaining = 3;
+}
+
+message PlayerStateMsg{
+  int32 id = 1;
+  Wind wind=2;
+  int64 points = 3;
+  PlayerHandStateMsg hand = 4;
+}
+
+message GameStateMsg{
+  GameConfigMsg config = 1;
+  GameInfoMsg info = 2;
+  WallStateMsg wall = 3;
+  repeated PlayerStateMsg players = 4;
 }

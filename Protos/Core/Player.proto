@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Core";
+
+enum Wind {
+  WIND_E = 0;
+  WIND_S = 1;
+  WIND_W = 2;
+  WIND_N = 3;
+}

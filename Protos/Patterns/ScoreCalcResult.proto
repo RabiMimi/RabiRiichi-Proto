@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Patterns";
+
+message ScoreCalcResultMsg {
+  int32 han = 1;
+  int32 yaku = 2;
+  int32 fu = 3;
+  int32 yakuman = 4;
+  int32 KazoeYakuman = 5;
+  int32 FinalYakuman = 6;
+}

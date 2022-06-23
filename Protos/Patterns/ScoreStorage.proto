@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Patterns/StdPattern.proto";
+import "Patterns/ScoreCalcResult.proto";
+option csharp_namespace = "RabiRiichi.Generated.Patterns";
+
+message ScoreStorageMsg {
+  repeated ScoringMsg items = 1;
+  ScoreCalcResultMsg result = 2;
+}
