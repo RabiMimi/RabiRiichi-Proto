@@ -3,10 +3,10 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Patterns";
 
 enum ScoringType {
-  Han = 0;
-  BonusHan = 1;
-  Fu = 2;
-  Yakuman = 3;
+  HAN = 0;
+  BONUS_HAN = 1;
+  FU = 2;
+  YAKUMAN = 3;
 }
 
 message ScoringMsg {
