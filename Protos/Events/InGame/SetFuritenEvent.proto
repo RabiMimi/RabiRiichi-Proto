@@ -10,6 +10,6 @@ enum FuritenType {
 
 message SetFuritenEventMsg {
   int32 playerId = 1;
-  bool isFuriten = 2;
+  bool furiten = 2;
   FuritenType furitenType = 3;
 }
