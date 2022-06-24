@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-import "Core/GameTile.proto";
 import "Events/InGame/CalcScoreEvent.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 

@@ -5,5 +5,5 @@ option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message RevealDoraEventMsg {
   int32 playerId = 1;
-  GameTile dora = 2;
+  GameTileMsg dora = 2;
 }
