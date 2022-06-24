@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Communication/Sync/GameState.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message SyncGameStateEventMsg {
+  int32 playerId = 1;
+  GameStateMsg gameState = 2;
+  map<string, string> extra = 3;
+}
