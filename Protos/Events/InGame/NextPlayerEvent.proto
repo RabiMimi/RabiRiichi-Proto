@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message NextPlayerEventMsg {
+  int32 playerId = 1;
+  int32 nextPlayerId = 2;
+}
