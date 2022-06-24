@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message SetMenzenEventMsg {
+  int32 playerId = 1;
+  bool menzen = 2;
+}
