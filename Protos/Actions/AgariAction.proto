@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Actions";
+
+enum AgariType {
+  AGARI_TYPE_RON = 0;
+  AGARI_TYPE_TSUMO = 1;
+}
+
+message AgariActionMsg {
+  AgariType type = 1;
+}
