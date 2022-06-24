@@ -27,19 +27,19 @@ namespace RabiRiichi.Generated.Communication.Sync {
             "CiJDb21tdW5pY2F0aW9uL1N5bmMvR2FtZVN0YXRlLnByb3RvGhNDb3JlL0dh",
             "bWVUaWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8aEUNvcmUvUGxheWVy",
             "LnByb3RvGhNDb3JlL0dhbWVJbmZvLnByb3RvGhxDb3JlL0NvbmZpZy9HYW1l",
-            "Q29uZmlnLnByb3RvIqUBChJQbGF5ZXJIYW5kU3RhdGVNc2cSGwoGY2FsbGVk",
+            "Q29uZmlnLnByb3RvIqcBChJQbGF5ZXJIYW5kU3RhdGVNc2cSGwoGY2FsbGVk",
             "GAEgAygLMgsuTWVuTGlrZU1zZxIfCglkaXNjYXJkZWQYAiADKAsyDC5HYW1l",
-            "VGlsZU1zZxILCgNqdW4YAyABKAUSEwoLcmlpY2hpU3RpY2sYBCABKAUSHwoJ",
-            "YWdhcmlUaWxlGAUgASgLMgwuR2FtZVRpbGVNc2cSDgoGcmlpY2hpGAYgASgI",
-            "IlgKDFdhbGxTdGF0ZU1zZxIbCgVkb3JhcxgBIAMoCzIMLkdhbWVUaWxlTXNn",
-            "EhEKCXJlbWFpbmluZxgCIAEoBRIYChByaW5zaGFuUmVtYWluaW5nGAMgASgF",
-            "ImQKDlBsYXllclN0YXRlTXNnEgoKAmlkGAEgASgFEhMKBHdpbmQYAiABKA4y",
-            "BS5XaW5kEg4KBnBvaW50cxgDIAEoAxIhCgRoYW5kGAQgASgLMhMuUGxheWVy",
-            "SGFuZFN0YXRlTXNnIokBCgxHYW1lU3RhdGVNc2cSHgoGY29uZmlnGAEgASgL",
-            "Mg4uR2FtZUNvbmZpZ01zZxIaCgRpbmZvGAIgASgLMgwuR2FtZUluZm9Nc2cS",
-            "GwoEd2FsbBgDIAEoCzINLldhbGxTdGF0ZU1zZxIgCgdwbGF5ZXJzGAQgAygL",
-            "Mg8uUGxheWVyU3RhdGVNc2dCKqoCJ1JhYmlSaWljaGkuR2VuZXJhdGVkLkNv",
-            "bW11bmljYXRpb24uU3luY2IGcHJvdG8z"));
+            "VGlsZU1zZxILCgNqdW4YAyABKAUSFAoMcmlpY2hpX3N0aWNrGAQgASgFEiAK",
+            "CmFnYXJpX3RpbGUYBSABKAsyDC5HYW1lVGlsZU1zZxIOCgZyaWljaGkYBiAB",
+            "KAgiWQoMV2FsbFN0YXRlTXNnEhsKBWRvcmFzGAEgAygLMgwuR2FtZVRpbGVN",
+            "c2cSEQoJcmVtYWluaW5nGAIgASgFEhkKEXJpbnNoYW5fcmVtYWluaW5nGAMg",
+            "ASgFImQKDlBsYXllclN0YXRlTXNnEgoKAmlkGAEgASgFEhMKBHdpbmQYAiAB",
+            "KA4yBS5XaW5kEg4KBnBvaW50cxgDIAEoAxIhCgRoYW5kGAQgASgLMhMuUGxh",
+            "eWVySGFuZFN0YXRlTXNnIokBCgxHYW1lU3RhdGVNc2cSHgoGY29uZmlnGAEg",
+            "ASgLMg4uR2FtZUNvbmZpZ01zZxIaCgRpbmZvGAIgASgLMgwuR2FtZUluZm9N",
+            "c2cSGwoEd2FsbBgDIAEoCzINLldhbGxTdGF0ZU1zZxIgCgdwbGF5ZXJzGAQg",
+            "AygLMg8uUGxheWVyU3RhdGVNc2dCKqoCJ1JhYmlSaWljaGkuR2VuZXJhdGVk",
+            "LkNvbW11bmljYXRpb24uU3luY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, global::RabiRiichi.Generated.Core.PlayerReflection.Descriptor, global::RabiRiichi.Generated.Core.GameInfoReflection.Descriptor, global::RabiRiichi.Generated.Core.Config.GameConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -136,7 +136,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
     }
 
-    /// <summary>Field number for the "riichiStick" field.</summary>
+    /// <summary>Field number for the "riichi_stick" field.</summary>
     public const int RiichiStickFieldNumber = 4;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,7 +148,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
     }
 
-    /// <summary>Field number for the "agariTile" field.</summary>
+    /// <summary>Field number for the "agari_tile" field.</summary>
     public const int AgariTileFieldNumber = 5;
     private global::RabiRiichi.Generated.Core.GameTileMsg agariTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -483,7 +483,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
     }
 
-    /// <summary>Field number for the "rinshanRemaining" field.</summary>
+    /// <summary>Field number for the "rinshan_remaining" field.</summary>
     public const int RinshanRemainingFieldNumber = 3;
     private int rinshanRemaining_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

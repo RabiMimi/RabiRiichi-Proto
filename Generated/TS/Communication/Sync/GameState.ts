@@ -33,11 +33,11 @@ export interface PlayerHandStateMsg {
      */
     jun: number;
     /**
-     * @generated from protobuf field: int32 riichiStick = 4;
+     * @generated from protobuf field: int32 riichi_stick = 4;
      */
     riichiStick: number;
     /**
-     * @generated from protobuf field: GameTileMsg agariTile = 5;
+     * @generated from protobuf field: GameTileMsg agari_tile = 5;
      */
     agariTile?: GameTileMsg;
     /**
@@ -58,7 +58,7 @@ export interface WallStateMsg {
      */
     remaining: number;
     /**
-     * @generated from protobuf field: int32 rinshanRemaining = 3;
+     * @generated from protobuf field: int32 rinshan_remaining = 3;
      */
     rinshanRemaining: number;
 }
@@ -111,8 +111,8 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
             { no: 1, name: "called", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => MenLikeMsg },
             { no: 2, name: "discarded", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
             { no: 3, name: "jun", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "riichiStick", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "agariTile", kind: "message", T: () => GameTileMsg },
+            { no: 4, name: "riichi_stick", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 5, name: "agari_tile", kind: "message", T: () => GameTileMsg },
             { no: 6, name: "riichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
@@ -137,10 +137,10 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
                 case /* int32 jun */ 3:
                     message.jun = reader.int32();
                     break;
-                case /* int32 riichiStick */ 4:
+                case /* int32 riichi_stick */ 4:
                     message.riichiStick = reader.int32();
                     break;
-                case /* GameTileMsg agariTile */ 5:
+                case /* GameTileMsg agari_tile */ 5:
                     message.agariTile = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariTile);
                     break;
                 case /* bool riichi */ 6:
@@ -167,10 +167,10 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
         /* int32 jun = 3; */
         if (message.jun !== 0)
             writer.tag(3, WireType.Varint).int32(message.jun);
-        /* int32 riichiStick = 4; */
+        /* int32 riichi_stick = 4; */
         if (message.riichiStick !== 0)
             writer.tag(4, WireType.Varint).int32(message.riichiStick);
-        /* GameTileMsg agariTile = 5; */
+        /* GameTileMsg agari_tile = 5; */
         if (message.agariTile)
             GameTileMsg.internalBinaryWrite(message.agariTile, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
         /* bool riichi = 6; */
@@ -192,7 +192,7 @@ class WallStateMsg$Type extends MessageType<WallStateMsg> {
         super("WallStateMsg", [
             { no: 1, name: "doras", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
             { no: 2, name: "remaining", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "rinshanRemaining", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 3, name: "rinshan_remaining", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<WallStateMsg>): WallStateMsg {
@@ -213,7 +213,7 @@ class WallStateMsg$Type extends MessageType<WallStateMsg> {
                 case /* int32 remaining */ 2:
                     message.remaining = reader.int32();
                     break;
-                case /* int32 rinshanRemaining */ 3:
+                case /* int32 rinshan_remaining */ 3:
                     message.rinshanRemaining = reader.int32();
                     break;
                 default:
@@ -234,7 +234,7 @@ class WallStateMsg$Type extends MessageType<WallStateMsg> {
         /* int32 remaining = 2; */
         if (message.remaining !== 0)
             writer.tag(2, WireType.Varint).int32(message.remaining);
-        /* int32 rinshanRemaining = 3; */
+        /* int32 rinshan_remaining = 3; */
         if (message.rinshanRemaining !== 0)
             writer.tag(3, WireType.Varint).int32(message.rinshanRemaining);
         let u = options.writeUnknownFields;

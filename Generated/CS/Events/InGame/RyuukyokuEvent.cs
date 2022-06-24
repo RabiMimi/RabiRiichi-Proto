@@ -25,16 +25,16 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJFdmVudHMvSW5HYW1lL1J5dXVreW9rdUV2ZW50LnByb3RvGiJFdmVudHMv",
-            "SW5HYW1lL0NhbGNTY29yZUV2ZW50LnByb3RvImkKGEVuZEdhbWVSeXV1a3lv",
-            "a3VFdmVudE1zZxIYChByZW1haW5pbmdQbGF5ZXJzGAEgAygFEhwKFG5hZ2Fz",
-            "aGlNYW5nYW5QbGF5ZXJzGAIgAygFEhUKDXRlbnBhaVBsYXllcnMYAyADKAUi",
-            "KAoYTWlkR2FtZVJ5dXVreW9rdUV2ZW50TXNnEgwKBG5hbWUYASABKAkiuwEK",
-            "EVJ5dXVreW9rdUV2ZW50TXNnEiYKC3Njb3JlQ2hhbmdlGAEgAygLMhEuU2Nv",
-            "cmVUcmFuc2Zlck1zZxI1ChBlbmRHYW1lUnl1dWt5b2t1GAIgASgLMhkuRW5k",
-            "R2FtZVJ5dXVreW9rdUV2ZW50TXNnSAASNQoQbWlkR2FtZVJ5dXVreW9rdRgD",
-            "IAEoCzIZLk1pZEdhbWVSeXV1a3lva3VFdmVudE1zZ0gAQhAKDnJ5dXVreW9r",
-            "dUV2ZW50QiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1l",
-            "YgZwcm90bzM="));
+            "SW5HYW1lL0NhbGNTY29yZUV2ZW50LnByb3RvIm0KGEVuZEdhbWVSeXV1a3lv",
+            "a3VFdmVudE1zZxIZChFyZW1haW5pbmdfcGxheWVycxgBIAMoBRIeChZuYWdh",
+            "c2hpX21hbmdhbl9wbGF5ZXJzGAIgAygFEhYKDnRlbnBhaV9wbGF5ZXJzGAMg",
+            "AygFIigKGE1pZEdhbWVSeXV1a3lva3VFdmVudE1zZxIMCgRuYW1lGAEgASgJ",
+            "IsABChFSeXV1a3lva3VFdmVudE1zZxInCgxzY29yZV9jaGFuZ2UYASADKAsy",
+            "ES5TY29yZVRyYW5zZmVyTXNnEjcKEmVuZF9nYW1lX3J5dXVreW9rdRgCIAEo",
+            "CzIZLkVuZEdhbWVSeXV1a3lva3VFdmVudE1zZ0gAEjcKEm1pZF9nYW1lX3J5",
+            "dXVreW9rdRgDIAEoCzIZLk1pZEdhbWVSeXV1a3lva3VFdmVudE1zZ0gAQhAK",
+            "DnJ5dXVreW9rdUV2ZW50QiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVu",
+            "dHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.CalcScoreEventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -93,7 +93,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new EndGameRyuukyokuEventMsg(this);
     }
 
-    /// <summary>Field number for the "remainingPlayers" field.</summary>
+    /// <summary>Field number for the "remaining_players" field.</summary>
     public const int RemainingPlayersFieldNumber = 1;
     private static readonly pb::FieldCodec<int> _repeated_remainingPlayers_codec
         = pb::FieldCodec.ForInt32(10);
@@ -104,7 +104,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       get { return remainingPlayers_; }
     }
 
-    /// <summary>Field number for the "nagashiManganPlayers" field.</summary>
+    /// <summary>Field number for the "nagashi_mangan_players" field.</summary>
     public const int NagashiManganPlayersFieldNumber = 2;
     private static readonly pb::FieldCodec<int> _repeated_nagashiManganPlayers_codec
         = pb::FieldCodec.ForInt32(18);
@@ -115,7 +115,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       get { return nagashiManganPlayers_; }
     }
 
-    /// <summary>Field number for the "tenpaiPlayers" field.</summary>
+    /// <summary>Field number for the "tenpai_players" field.</summary>
     public const int TenpaiPlayersFieldNumber = 3;
     private static readonly pb::FieldCodec<int> _repeated_tenpaiPlayers_codec
         = pb::FieldCodec.ForInt32(26);
@@ -525,7 +525,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new RyuukyokuEventMsg(this);
     }
 
-    /// <summary>Field number for the "scoreChange" field.</summary>
+    /// <summary>Field number for the "score_change" field.</summary>
     public const int ScoreChangeFieldNumber = 1;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> _repeated_scoreChange_codec
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);
@@ -536,7 +536,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       get { return scoreChange_; }
     }
 
-    /// <summary>Field number for the "endGameRyuukyoku" field.</summary>
+    /// <summary>Field number for the "end_game_ryuukyoku" field.</summary>
     public const int EndGameRyuukyokuFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -548,7 +548,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "midGameRyuukyoku" field.</summary>
+    /// <summary>Field number for the "mid_game_ryuukyoku" field.</summary>
     public const int MidGameRyuukyokuFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

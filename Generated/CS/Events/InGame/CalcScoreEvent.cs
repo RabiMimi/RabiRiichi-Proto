@@ -27,16 +27,16 @@ namespace RabiRiichi.Generated.Events.InGame {
             "CiJFdmVudHMvSW5HYW1lL0NhbGNTY29yZUV2ZW50LnByb3RvGh5FdmVudHMv",
             "SW5HYW1lL0FnYXJpRXZlbnQucHJvdG8iYgoQU2NvcmVUcmFuc2Zlck1zZxIM",
             "CgRmcm9tGAEgASgFEgoKAnRvGAIgASgFEg4KBnBvaW50cxgDIAEoAxIkCgZy",
-            "ZWFzb24YBCABKA4yFC5TY29yZVRyYW5zZmVyUmVhc29uImIKEUNhbGNTY29y",
-            "ZUV2ZW50TXNnEiUKCmFnYXJpSW5mb3MYASABKAsyES5BZ2FyaUluZm9MaXN0",
-            "TXNnEiYKC3Njb3JlQ2hhbmdlGAIgAygLMhEuU2NvcmVUcmFuc2Zlck1zZyqG",
-            "AgoTU2NvcmVUcmFuc2ZlclJlYXNvbhIdChlTQ09SRV9UUkFOU0ZFUl9SRUFT",
-            "T05fUk9OEAASHwobU0NPUkVfVFJBTlNGRVJfUkVBU09OX1RTVU1PEAESIwof",
-            "U0NPUkVfVFJBTlNGRVJfUkVBU09OX1JZVVVLWU9LVRACEigKJFNDT1JFX1RS",
-            "QU5TRkVSX1JFQVNPTl9OQUdBU0hJX01BTkdBThADEiAKHFNDT1JFX1RSQU5T",
-            "RkVSX1JFQVNPTl9SSUlDSEkQBBIfChtTQ09SRV9UUkFOU0ZFUl9SRUFTT05f",
-            "SE9OQkEQBRIdChlTQ09SRV9UUkFOU0ZFUl9SRUFTT05fUEFPEAZCJaoCIlJh",
-            "YmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
+            "ZWFzb24YBCABKA4yFC5TY29yZVRyYW5zZmVyUmVhc29uImQKEUNhbGNTY29y",
+            "ZUV2ZW50TXNnEiYKC2FnYXJpX2luZm9zGAEgASgLMhEuQWdhcmlJbmZvTGlz",
+            "dE1zZxInCgxzY29yZV9jaGFuZ2UYAiADKAsyES5TY29yZVRyYW5zZmVyTXNn",
+            "KoYCChNTY29yZVRyYW5zZmVyUmVhc29uEh0KGVNDT1JFX1RSQU5TRkVSX1JF",
+            "QVNPTl9ST04QABIfChtTQ09SRV9UUkFOU0ZFUl9SRUFTT05fVFNVTU8QARIj",
+            "Ch9TQ09SRV9UUkFOU0ZFUl9SRUFTT05fUllVVUtZT0tVEAISKAokU0NPUkVf",
+            "VFJBTlNGRVJfUkVBU09OX05BR0FTSElfTUFOR0FOEAMSIAocU0NPUkVfVFJB",
+            "TlNGRVJfUkVBU09OX1JJSUNISRAEEh8KG1NDT1JFX1RSQU5TRkVSX1JFQVNP",
+            "Tl9IT05CQRAFEh0KGVNDT1JFX1RSQU5TRkVSX1JFQVNPTl9QQU8QBkIlqgIi",
+            "UmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -406,7 +406,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new CalcScoreEventMsg(this);
     }
 
-    /// <summary>Field number for the "agariInfos" field.</summary>
+    /// <summary>Field number for the "agari_infos" field.</summary>
     public const int AgariInfosFieldNumber = 1;
     private global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg agariInfos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -418,7 +418,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "scoreChange" field.</summary>
+    /// <summary>Field number for the "score_change" field.</summary>
     public const int ScoreChangeFieldNumber = 2;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> _repeated_scoreChange_codec
         = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);

@@ -17,7 +17,7 @@ import { ScoreTransferMsg } from "./CalcScoreEvent";
  */
 export interface ApplyScoreEventMsg {
     /**
-     * @generated from protobuf field: repeated ScoreTransferMsg scoreChange = 1;
+     * @generated from protobuf field: repeated ScoreTransferMsg score_change = 1;
      */
     scoreChange: ScoreTransferMsg[];
 }
@@ -25,7 +25,7 @@ export interface ApplyScoreEventMsg {
 class ApplyScoreEventMsg$Type extends MessageType<ApplyScoreEventMsg> {
     constructor() {
         super("ApplyScoreEventMsg", [
-            { no: 1, name: "scoreChange", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
+            { no: 1, name: "score_change", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
         ]);
     }
     create(value?: PartialMessage<ApplyScoreEventMsg>): ApplyScoreEventMsg {
@@ -40,7 +40,7 @@ class ApplyScoreEventMsg$Type extends MessageType<ApplyScoreEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated ScoreTransferMsg scoreChange */ 1:
+                case /* repeated ScoreTransferMsg score_change */ 1:
                     message.scoreChange.push(ScoreTransferMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
@@ -55,7 +55,7 @@ class ApplyScoreEventMsg$Type extends MessageType<ApplyScoreEventMsg> {
         return message;
     }
     internalBinaryWrite(message: ApplyScoreEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated ScoreTransferMsg scoreChange = 1; */
+        /* repeated ScoreTransferMsg score_change = 1; */
         for (let i = 0; i < message.scoreChange.length; i++)
             ScoreTransferMsg.internalBinaryWrite(message.scoreChange[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;

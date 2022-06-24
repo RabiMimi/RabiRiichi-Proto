@@ -16,7 +16,7 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface StopGameEventMsg {
     /**
-     * @generated from protobuf field: repeated int64 endGamePoints = 1;
+     * @generated from protobuf field: repeated int64 end_game_points = 1;
      */
     endGamePoints: bigint[];
 }
@@ -24,7 +24,7 @@ export interface StopGameEventMsg {
 class StopGameEventMsg$Type extends MessageType<StopGameEventMsg> {
     constructor() {
         super("StopGameEventMsg", [
-            { no: 1, name: "endGamePoints", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ }
+            { no: 1, name: "end_game_points", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ }
         ]);
     }
     create(value?: PartialMessage<StopGameEventMsg>): StopGameEventMsg {
@@ -39,7 +39,7 @@ class StopGameEventMsg$Type extends MessageType<StopGameEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated int64 endGamePoints */ 1:
+                case /* repeated int64 end_game_points */ 1:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.endGamePoints.push(reader.int64().toBigInt());
@@ -58,7 +58,7 @@ class StopGameEventMsg$Type extends MessageType<StopGameEventMsg> {
         return message;
     }
     internalBinaryWrite(message: StopGameEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated int64 endGamePoints = 1; */
+        /* repeated int64 end_game_points = 1; */
         if (message.endGamePoints.length) {
             writer.tag(1, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.endGamePoints.length; i++)

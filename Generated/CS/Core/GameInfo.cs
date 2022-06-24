@@ -24,11 +24,11 @@ namespace RabiRiichi.Generated.Core {
     static GameInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNDb3JlL0dhbWVJbmZvLnByb3RvGhFDb3JlL1BsYXllci5wcm90byJ8CgtH",
+            "ChNDb3JlL0dhbWVJbmZvLnByb3RvGhFDb3JlL1BsYXllci5wcm90byJ+CgtH",
             "YW1lSW5mb01zZxINCgVyb3VuZBgBIAEoBRITCgR3aW5kGAIgASgOMgUuV2lu",
-            "ZBIOCgZkZWFsZXIYAyABKAUSDQoFaG9uYmEYBCABKAUSFQoNY3VycmVudFBs",
-            "YXllchgFIAEoBRITCgtyaWljaGlTdGljaxgGIAEoBUIcqgIZUmFiaVJpaWNo",
-            "aS5HZW5lcmF0ZWQuQ29yZWIGcHJvdG8z"));
+            "ZBIOCgZkZWFsZXIYAyABKAUSDQoFaG9uYmEYBCABKAUSFgoOY3VycmVudF9w",
+            "bGF5ZXIYBSABKAUSFAoMcmlpY2hpX3N0aWNrGAYgASgFQhyqAhlSYWJpUmlp",
+            "Y2hpLkdlbmVyYXRlZC5Db3JlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.PlayerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -136,7 +136,7 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
-    /// <summary>Field number for the "currentPlayer" field.</summary>
+    /// <summary>Field number for the "current_player" field.</summary>
     public const int CurrentPlayerFieldNumber = 5;
     private int currentPlayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,7 +148,7 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
-    /// <summary>Field number for the "riichiStick" field.</summary>
+    /// <summary>Field number for the "riichi_stick" field.</summary>
     public const int RiichiStickFieldNumber = 6;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

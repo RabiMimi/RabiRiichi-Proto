@@ -16,11 +16,11 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface NextPlayerEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
-     * @generated from protobuf field: int32 nextPlayerId = 2;
+     * @generated from protobuf field: int32 next_player_id = 2;
      */
     nextPlayerId: number;
 }
@@ -28,8 +28,8 @@ export interface NextPlayerEventMsg {
 class NextPlayerEventMsg$Type extends MessageType<NextPlayerEventMsg> {
     constructor() {
         super("NextPlayerEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "nextPlayerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "next_player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<NextPlayerEventMsg>): NextPlayerEventMsg {
@@ -44,10 +44,10 @@ class NextPlayerEventMsg$Type extends MessageType<NextPlayerEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
-                case /* int32 nextPlayerId */ 2:
+                case /* int32 next_player_id */ 2:
                     message.nextPlayerId = reader.int32();
                     break;
                 default:
@@ -62,10 +62,10 @@ class NextPlayerEventMsg$Type extends MessageType<NextPlayerEventMsg> {
         return message;
     }
     internalBinaryWrite(message: NextPlayerEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
-        /* int32 nextPlayerId = 2; */
+        /* int32 next_player_id = 2; */
         if (message.nextPlayerId !== 0)
             writer.tag(2, WireType.Varint).int32(message.nextPlayerId);
         let u = options.writeUnknownFields;

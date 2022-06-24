@@ -24,10 +24,10 @@ namespace RabiRiichi.Generated.Events.InGame {
     static SetIppatsuEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNFdmVudHMvSW5HYW1lL1NldElwcGF0c3VFdmVudC5wcm90byI3ChJTZXRJ",
-            "cHBhdHN1RXZlbnRNc2cSEAoIcGxheWVySWQYASABKAUSDwoHaXBwYXRzdRgC",
-            "IAEoCEIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIG",
-            "cHJvdG8z"));
+            "CiNFdmVudHMvSW5HYW1lL1NldElwcGF0c3VFdmVudC5wcm90byI4ChJTZXRJ",
+            "cHBhdHN1RXZlbnRNc2cSEQoJcGxheWVyX2lkGAEgASgFEg8KB2lwcGF0c3UY",
+            "AiABKAhCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWVi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +83,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new SetIppatsuEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

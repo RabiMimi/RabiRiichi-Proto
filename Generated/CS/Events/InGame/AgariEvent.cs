@@ -25,14 +25,14 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5FdmVudHMvSW5HYW1lL0FnYXJpRXZlbnQucHJvdG8aE0NvcmUvR2FtZVRp",
-            "bGUucHJvdG8aG1BhdHRlcm5zL1Njb3JlU3RvcmFnZS5wcm90byJCCgxBZ2Fy",
-            "aUluZm9Nc2cSEAoIcGxheWVySWQYASABKAUSIAoGc2NvcmVzGAIgASgLMhAu",
-            "U2NvcmVTdG9yYWdlTXNnImkKEEFnYXJpSW5mb0xpc3RNc2cSIQoKYWdhcmlJ",
-            "bmZvcxgBIAMoCzINLkFnYXJpSW5mb01zZxISCgpmcm9tUGxheWVyGAIgASgF",
-            "Eh4KCGluY29taW5nGAMgASgLMgwuR2FtZVRpbGVNc2ciRgoNQWdhcmlFdmVu",
-            "dE1zZxIOCgZpc1R1bW8YASABKAgSJQoKYWdhcmlJbmZvcxgCIAEoCzIRLkFn",
-            "YXJpSW5mb0xpc3RNc2dCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50",
-            "cy5JbkdhbWViBnByb3RvMw=="));
+            "bGUucHJvdG8aG1BhdHRlcm5zL1Njb3JlU3RvcmFnZS5wcm90byJDCgxBZ2Fy",
+            "aUluZm9Nc2cSEQoJcGxheWVyX2lkGAEgASgFEiAKBnNjb3JlcxgCIAEoCzIQ",
+            "LlNjb3JlU3RvcmFnZU1zZyJrChBBZ2FyaUluZm9MaXN0TXNnEiIKC2FnYXJp",
+            "X2luZm9zGAEgAygLMg0uQWdhcmlJbmZvTXNnEhMKC2Zyb21fcGxheWVyGAIg",
+            "ASgFEh4KCGluY29taW5nGAMgASgLMgwuR2FtZVRpbGVNc2ciSAoNQWdhcmlF",
+            "dmVudE1zZxIPCgdpc190dW1vGAEgASgIEiYKC2FnYXJpX2luZm9zGAIgASgL",
+            "MhEuQWdhcmlJbmZvTGlzdE1zZ0IlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQu",
+            "RXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Patterns.ScoreStorageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,7 +90,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new AgariInfoMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -326,7 +326,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new AgariInfoListMsg(this);
     }
 
-    /// <summary>Field number for the "agariInfos" field.</summary>
+    /// <summary>Field number for the "agari_infos" field.</summary>
     public const int AgariInfosFieldNumber = 1;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg> _repeated_agariInfos_codec
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg.Parser);
@@ -337,7 +337,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       get { return agariInfos_; }
     }
 
-    /// <summary>Field number for the "fromPlayer" field.</summary>
+    /// <summary>Field number for the "from_player" field.</summary>
     public const int FromPlayerFieldNumber = 2;
     private int fromPlayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -586,7 +586,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new AgariEventMsg(this);
     }
 
-    /// <summary>Field number for the "isTumo" field.</summary>
+    /// <summary>Field number for the "is_tumo" field.</summary>
     public const int IsTumoFieldNumber = 1;
     private bool isTumo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -598,7 +598,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "agariInfos" field.</summary>
+    /// <summary>Field number for the "agari_infos" field.</summary>
     public const int AgariInfosFieldNumber = 2;
     private global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg agariInfos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -25,10 +25,10 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZFdmVudHMvSW5HYW1lL0xhdGVDbGFpbVRpbGVFdmVudC5wcm90bxoTQ29y",
-            "ZS9HYW1lVGlsZS5wcm90byJJChVMYXRlQ2xhaW1UaWxlRXZlbnRNc2cSEAoI",
-            "cGxheWVySWQYASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNv",
-            "bkIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJv",
-            "dG8z"));
+            "ZS9HYW1lVGlsZS5wcm90byJKChVMYXRlQ2xhaW1UaWxlRXZlbnRNc2cSEQoJ",
+            "cGxheWVyX2lkGAEgASgFEh4KBnJlYXNvbhgCIAEoDjIOLkRpc2NhcmRSZWFz",
+            "b25CJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,7 +84,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new LateClaimTileEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

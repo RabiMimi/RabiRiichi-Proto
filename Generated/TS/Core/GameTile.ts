@@ -33,11 +33,11 @@ export interface GameTileMsg {
      */
     tile: number;
     /**
-     * @generated from protobuf field: int32 playerId = 2;
+     * @generated from protobuf field: int32 player_id = 2;
      */
     playerId: number;
     /**
-     * @generated from protobuf field: DiscardInfoMsg discardInfo = 3;
+     * @generated from protobuf field: DiscardInfoMsg discard_info = 3;
      */
     discardInfo?: DiscardInfoMsg;
     /**
@@ -182,8 +182,8 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
     constructor() {
         super("GameTileMsg", [
             { no: 1, name: "tile", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "discardInfo", kind: "message", T: () => DiscardInfoMsg },
+            { no: 2, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "discard_info", kind: "message", T: () => DiscardInfoMsg },
             { no: 4, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
         ]);
     }
@@ -202,10 +202,10 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
                 case /* int32 tile */ 1:
                     message.tile = reader.int32();
                     break;
-                case /* int32 playerId */ 2:
+                case /* int32 player_id */ 2:
                     message.playerId = reader.int32();
                     break;
-                case /* DiscardInfoMsg discardInfo */ 3:
+                case /* DiscardInfoMsg discard_info */ 3:
                     message.discardInfo = DiscardInfoMsg.internalBinaryRead(reader, reader.uint32(), options, message.discardInfo);
                     break;
                 case /* TileSource source */ 4:
@@ -226,10 +226,10 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
         /* int32 tile = 1; */
         if (message.tile !== 0)
             writer.tag(1, WireType.Varint).int32(message.tile);
-        /* int32 playerId = 2; */
+        /* int32 player_id = 2; */
         if (message.playerId !== 0)
             writer.tag(2, WireType.Varint).int32(message.playerId);
-        /* DiscardInfoMsg discardInfo = 3; */
+        /* DiscardInfoMsg discard_info = 3; */
         if (message.discardInfo)
             DiscardInfoMsg.internalBinaryWrite(message.discardInfo, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
         /* TileSource source = 4; */

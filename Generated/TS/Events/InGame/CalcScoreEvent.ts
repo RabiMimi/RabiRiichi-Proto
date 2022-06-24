@@ -38,11 +38,11 @@ export interface ScoreTransferMsg {
  */
 export interface CalcScoreEventMsg {
     /**
-     * @generated from protobuf field: AgariInfoListMsg agariInfos = 1;
+     * @generated from protobuf field: AgariInfoListMsg agari_infos = 1;
      */
     agariInfos?: AgariInfoListMsg;
     /**
-     * @generated from protobuf field: repeated ScoreTransferMsg scoreChange = 2;
+     * @generated from protobuf field: repeated ScoreTransferMsg score_change = 2;
      */
     scoreChange: ScoreTransferMsg[];
 }
@@ -151,8 +151,8 @@ export const ScoreTransferMsg = new ScoreTransferMsg$Type();
 class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
     constructor() {
         super("CalcScoreEventMsg", [
-            { no: 1, name: "agariInfos", kind: "message", T: () => AgariInfoListMsg },
-            { no: 2, name: "scoreChange", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
+            { no: 1, name: "agari_infos", kind: "message", T: () => AgariInfoListMsg },
+            { no: 2, name: "score_change", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
         ]);
     }
     create(value?: PartialMessage<CalcScoreEventMsg>): CalcScoreEventMsg {
@@ -167,10 +167,10 @@ class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* AgariInfoListMsg agariInfos */ 1:
+                case /* AgariInfoListMsg agari_infos */ 1:
                     message.agariInfos = AgariInfoListMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariInfos);
                     break;
-                case /* repeated ScoreTransferMsg scoreChange */ 2:
+                case /* repeated ScoreTransferMsg score_change */ 2:
                     message.scoreChange.push(ScoreTransferMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
@@ -185,10 +185,10 @@ class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
         return message;
     }
     internalBinaryWrite(message: CalcScoreEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* AgariInfoListMsg agariInfos = 1; */
+        /* AgariInfoListMsg agari_infos = 1; */
         if (message.agariInfos)
             AgariInfoListMsg.internalBinaryWrite(message.agariInfos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* repeated ScoreTransferMsg scoreChange = 2; */
+        /* repeated ScoreTransferMsg score_change = 2; */
         for (let i = 0; i < message.scoreChange.length; i++)
             ScoreTransferMsg.internalBinaryWrite(message.scoreChange[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;

@@ -16,27 +16,27 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface PointThresholdMsg {
     /**
-     * @generated from protobuf field: int64 initialPoints = 1;
+     * @generated from protobuf field: int64 initial_points = 1;
      */
     initialPoints: bigint;
     /**
-     * @generated from protobuf field: int64 riichiPoints = 2;
+     * @generated from protobuf field: int64 riichi_points = 2;
      */
     riichiPoints: bigint;
     /**
-     * @generated from protobuf field: int64 honbaPoints = 3;
+     * @generated from protobuf field: int64 honba_points = 3;
      */
     honbaPoints: bigint;
     /**
-     * @generated from protobuf field: int64 finishPoints = 4;
+     * @generated from protobuf field: int64 finish_points = 4;
      */
     finishPoints: bigint;
     /**
-     * @generated from protobuf field: repeated int64 ryuukyokuPoints = 5;
+     * @generated from protobuf field: repeated int64 ryuukyoku_points = 5;
      */
     ryuukyokuPoints: bigint[];
     /**
-     * @generated from protobuf field: repeated int64 validPointsRange = 6;
+     * @generated from protobuf field: repeated int64 valid_points_range = 6;
      */
     validPointsRange: bigint[];
 }
@@ -44,12 +44,12 @@ export interface PointThresholdMsg {
 class PointThresholdMsg$Type extends MessageType<PointThresholdMsg> {
     constructor() {
         super("PointThresholdMsg", [
-            { no: 1, name: "initialPoints", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
-            { no: 2, name: "riichiPoints", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
-            { no: 3, name: "honbaPoints", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
-            { no: 4, name: "finishPoints", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
-            { no: 5, name: "ryuukyokuPoints", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
-            { no: 6, name: "validPointsRange", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ }
+            { no: 1, name: "initial_points", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 2, name: "riichi_points", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 3, name: "honba_points", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 4, name: "finish_points", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 5, name: "ryuukyoku_points", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ },
+            { no: 6, name: "valid_points_range", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/, L: 0 /*LongType.BIGINT*/ }
         ]);
     }
     create(value?: PartialMessage<PointThresholdMsg>): PointThresholdMsg {
@@ -64,26 +64,26 @@ class PointThresholdMsg$Type extends MessageType<PointThresholdMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 initialPoints */ 1:
+                case /* int64 initial_points */ 1:
                     message.initialPoints = reader.int64().toBigInt();
                     break;
-                case /* int64 riichiPoints */ 2:
+                case /* int64 riichi_points */ 2:
                     message.riichiPoints = reader.int64().toBigInt();
                     break;
-                case /* int64 honbaPoints */ 3:
+                case /* int64 honba_points */ 3:
                     message.honbaPoints = reader.int64().toBigInt();
                     break;
-                case /* int64 finishPoints */ 4:
+                case /* int64 finish_points */ 4:
                     message.finishPoints = reader.int64().toBigInt();
                     break;
-                case /* repeated int64 ryuukyokuPoints */ 5:
+                case /* repeated int64 ryuukyoku_points */ 5:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.ryuukyokuPoints.push(reader.int64().toBigInt());
                     else
                         message.ryuukyokuPoints.push(reader.int64().toBigInt());
                     break;
-                case /* repeated int64 validPointsRange */ 6:
+                case /* repeated int64 valid_points_range */ 6:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.validPointsRange.push(reader.int64().toBigInt());
@@ -102,26 +102,26 @@ class PointThresholdMsg$Type extends MessageType<PointThresholdMsg> {
         return message;
     }
     internalBinaryWrite(message: PointThresholdMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int64 initialPoints = 1; */
+        /* int64 initial_points = 1; */
         if (message.initialPoints !== 0n)
             writer.tag(1, WireType.Varint).int64(message.initialPoints);
-        /* int64 riichiPoints = 2; */
+        /* int64 riichi_points = 2; */
         if (message.riichiPoints !== 0n)
             writer.tag(2, WireType.Varint).int64(message.riichiPoints);
-        /* int64 honbaPoints = 3; */
+        /* int64 honba_points = 3; */
         if (message.honbaPoints !== 0n)
             writer.tag(3, WireType.Varint).int64(message.honbaPoints);
-        /* int64 finishPoints = 4; */
+        /* int64 finish_points = 4; */
         if (message.finishPoints !== 0n)
             writer.tag(4, WireType.Varint).int64(message.finishPoints);
-        /* repeated int64 ryuukyokuPoints = 5; */
+        /* repeated int64 ryuukyoku_points = 5; */
         if (message.ryuukyokuPoints.length) {
             writer.tag(5, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.ryuukyokuPoints.length; i++)
                 writer.int64(message.ryuukyokuPoints[i]);
             writer.join();
         }
-        /* repeated int64 validPointsRange = 6; */
+        /* repeated int64 valid_points_range = 6; */
         if (message.validPointsRange.length) {
             writer.tag(6, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.validPointsRange.length; i++)

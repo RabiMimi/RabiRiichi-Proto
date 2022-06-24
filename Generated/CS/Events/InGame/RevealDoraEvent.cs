@@ -25,9 +25,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNFdmVudHMvSW5HYW1lL1JldmVhbERvcmFFdmVudC5wcm90bxoTQ29yZS9H",
-            "YW1lVGlsZS5wcm90byJCChJSZXZlYWxEb3JhRXZlbnRNc2cSEAoIcGxheWVy",
-            "SWQYASABKAUSGgoEZG9yYRgCIAEoCzIMLkdhbWVUaWxlTXNnQiWqAiJSYWJp",
-            "UmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
+            "YW1lVGlsZS5wcm90byJDChJSZXZlYWxEb3JhRXZlbnRNc2cSEQoJcGxheWVy",
+            "X2lkGAEgASgFEhoKBGRvcmEYAiABKAsyDC5HYW1lVGlsZU1zZ0IlqgIiUmFi",
+            "aVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +83,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new RevealDoraEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

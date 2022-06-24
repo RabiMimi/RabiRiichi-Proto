@@ -25,10 +25,10 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CihFdmVudHMvSW5HYW1lL0RlYWxlckZpcnN0VHVybkV2ZW50LnByb3RvGhND",
-            "b3JlL0dhbWVUaWxlLnByb3RvIksKF0RlYWxlckZpcnN0VHVybkV2ZW50TXNn",
-            "EhAKCHBsYXllcklkGAEgASgFEh4KCGluY29taW5nGAIgASgLMgwuR2FtZVRp",
-            "bGVNc2dCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWVi",
-            "BnByb3RvMw=="));
+            "b3JlL0dhbWVUaWxlLnByb3RvIkwKF0RlYWxlckZpcnN0VHVybkV2ZW50TXNn",
+            "EhEKCXBsYXllcl9pZBgBIAEoBRIeCghpbmNvbWluZxgCIAEoCzIMLkdhbWVU",
+            "aWxlTXNnQiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1l",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,7 +84,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new DealerFirstTurnEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

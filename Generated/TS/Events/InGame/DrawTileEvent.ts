@@ -18,7 +18,7 @@ import { TileSource } from "../../Core/GameTile";
  */
 export interface DrawTileEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -34,7 +34,7 @@ export interface DrawTileEventMsg {
 class DrawTileEventMsg$Type extends MessageType<DrawTileEventMsg> {
     constructor() {
         super("DrawTileEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] },
             { no: 3, name: "tile", kind: "message", T: () => GameTileMsg }
         ]);
@@ -51,7 +51,7 @@ class DrawTileEventMsg$Type extends MessageType<DrawTileEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* TileSource source */ 2:
@@ -72,7 +72,7 @@ class DrawTileEventMsg$Type extends MessageType<DrawTileEventMsg> {
         return message;
     }
     internalBinaryWrite(message: DrawTileEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* TileSource source = 2; */

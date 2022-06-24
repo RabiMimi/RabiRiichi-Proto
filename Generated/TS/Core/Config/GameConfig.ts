@@ -25,51 +25,51 @@ import { PointThresholdMsg } from "./PointThreshold";
  */
 export interface GameConfigMsg {
     /**
-     * @generated from protobuf field: int32 playerCount = 1;
+     * @generated from protobuf field: int32 player_count = 1;
      */
     playerCount: number;
     /**
-     * @generated from protobuf field: int32 totalRound = 2;
+     * @generated from protobuf field: int32 total_round = 2;
      */
     totalRound: number;
     /**
-     * @generated from protobuf field: int32 minHan = 3;
+     * @generated from protobuf field: int32 min_han = 3;
      */
     minHan: number;
     /**
-     * @generated from protobuf field: PointThresholdMsg pointThreshold = 4;
+     * @generated from protobuf field: PointThresholdMsg point_threshold = 4;
      */
     pointThreshold?: PointThresholdMsg;
     /**
-     * @generated from protobuf field: RenchanPolicy renchanPolicy = 5;
+     * @generated from protobuf field: RenchanPolicy renchan_policy = 5;
      */
     renchanPolicy: RenchanPolicy;
     /**
-     * @generated from protobuf field: EndGamePolicy endGamePolicy = 6;
+     * @generated from protobuf field: EndGamePolicy end_game_policy = 6;
      */
     endGamePolicy: EndGamePolicy;
     /**
-     * @generated from protobuf field: KuikaePolicy kuikaePolicy = 7;
+     * @generated from protobuf field: KuikaePolicy kuikae_policy = 7;
      */
     kuikaePolicy: KuikaePolicy;
     /**
-     * @generated from protobuf field: RiichiPolicy riichiPolicy = 8;
+     * @generated from protobuf field: RiichiPolicy riichi_policy = 8;
      */
     riichiPolicy: RiichiPolicy;
     /**
-     * @generated from protobuf field: DoraOption doraOption = 9;
+     * @generated from protobuf field: DoraOption dora_option = 9;
      */
     doraOption: DoraOption;
     /**
-     * @generated from protobuf field: AgariOption agariOption = 10;
+     * @generated from protobuf field: AgariOption agari_option = 10;
      */
     agariOption: AgariOption;
     /**
-     * @generated from protobuf field: ScoringOption scoringOption = 11;
+     * @generated from protobuf field: ScoringOption scoring_option = 11;
      */
     scoringOption: ScoringOption;
     /**
-     * @generated from protobuf field: RyuukyokuTrigger ryuukyokuTrigger = 12;
+     * @generated from protobuf field: RyuukyokuTrigger ryuukyoku_trigger = 12;
      */
     ryuukyokuTrigger: RyuukyokuTrigger;
 }
@@ -77,18 +77,18 @@ export interface GameConfigMsg {
 class GameConfigMsg$Type extends MessageType<GameConfigMsg> {
     constructor() {
         super("GameConfigMsg", [
-            { no: 1, name: "playerCount", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "totalRound", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "minHan", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "pointThreshold", kind: "message", T: () => PointThresholdMsg },
-            { no: 5, name: "renchanPolicy", kind: "enum", T: () => ["RenchanPolicy", RenchanPolicy, "RENCHAN_POLICY_"] },
-            { no: 6, name: "endGamePolicy", kind: "enum", T: () => ["EndGamePolicy", EndGamePolicy, "END_GAME_POLICY_"] },
-            { no: 7, name: "kuikaePolicy", kind: "enum", T: () => ["KuikaePolicy", KuikaePolicy, "KUIKAE_POLICY_"] },
-            { no: 8, name: "riichiPolicy", kind: "enum", T: () => ["RiichiPolicy", RiichiPolicy, "RIICHI_POLICY_"] },
-            { no: 9, name: "doraOption", kind: "enum", T: () => ["DoraOption", DoraOption, "DORA_OPTION_"] },
-            { no: 10, name: "agariOption", kind: "enum", T: () => ["AgariOption", AgariOption, "AGARI_OPTION_"] },
-            { no: 11, name: "scoringOption", kind: "enum", T: () => ["ScoringOption", ScoringOption, "SCORING_OPTION_"] },
-            { no: 12, name: "ryuukyokuTrigger", kind: "enum", T: () => ["RyuukyokuTrigger", RyuukyokuTrigger, "RYUUKYOKU_TRIGGER_"] }
+            { no: 1, name: "player_count", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "total_round", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "min_han", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "point_threshold", kind: "message", T: () => PointThresholdMsg },
+            { no: 5, name: "renchan_policy", kind: "enum", T: () => ["RenchanPolicy", RenchanPolicy, "RENCHAN_POLICY_"] },
+            { no: 6, name: "end_game_policy", kind: "enum", T: () => ["EndGamePolicy", EndGamePolicy, "END_GAME_POLICY_"] },
+            { no: 7, name: "kuikae_policy", kind: "enum", T: () => ["KuikaePolicy", KuikaePolicy, "KUIKAE_POLICY_"] },
+            { no: 8, name: "riichi_policy", kind: "enum", T: () => ["RiichiPolicy", RiichiPolicy, "RIICHI_POLICY_"] },
+            { no: 9, name: "dora_option", kind: "enum", T: () => ["DoraOption", DoraOption, "DORA_OPTION_"] },
+            { no: 10, name: "agari_option", kind: "enum", T: () => ["AgariOption", AgariOption, "AGARI_OPTION_"] },
+            { no: 11, name: "scoring_option", kind: "enum", T: () => ["ScoringOption", ScoringOption, "SCORING_OPTION_"] },
+            { no: 12, name: "ryuukyoku_trigger", kind: "enum", T: () => ["RyuukyokuTrigger", RyuukyokuTrigger, "RYUUKYOKU_TRIGGER_"] }
         ]);
     }
     create(value?: PartialMessage<GameConfigMsg>): GameConfigMsg {
@@ -103,40 +103,40 @@ class GameConfigMsg$Type extends MessageType<GameConfigMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerCount */ 1:
+                case /* int32 player_count */ 1:
                     message.playerCount = reader.int32();
                     break;
-                case /* int32 totalRound */ 2:
+                case /* int32 total_round */ 2:
                     message.totalRound = reader.int32();
                     break;
-                case /* int32 minHan */ 3:
+                case /* int32 min_han */ 3:
                     message.minHan = reader.int32();
                     break;
-                case /* PointThresholdMsg pointThreshold */ 4:
+                case /* PointThresholdMsg point_threshold */ 4:
                     message.pointThreshold = PointThresholdMsg.internalBinaryRead(reader, reader.uint32(), options, message.pointThreshold);
                     break;
-                case /* RenchanPolicy renchanPolicy */ 5:
+                case /* RenchanPolicy renchan_policy */ 5:
                     message.renchanPolicy = reader.int32();
                     break;
-                case /* EndGamePolicy endGamePolicy */ 6:
+                case /* EndGamePolicy end_game_policy */ 6:
                     message.endGamePolicy = reader.int32();
                     break;
-                case /* KuikaePolicy kuikaePolicy */ 7:
+                case /* KuikaePolicy kuikae_policy */ 7:
                     message.kuikaePolicy = reader.int32();
                     break;
-                case /* RiichiPolicy riichiPolicy */ 8:
+                case /* RiichiPolicy riichi_policy */ 8:
                     message.riichiPolicy = reader.int32();
                     break;
-                case /* DoraOption doraOption */ 9:
+                case /* DoraOption dora_option */ 9:
                     message.doraOption = reader.int32();
                     break;
-                case /* AgariOption agariOption */ 10:
+                case /* AgariOption agari_option */ 10:
                     message.agariOption = reader.int32();
                     break;
-                case /* ScoringOption scoringOption */ 11:
+                case /* ScoringOption scoring_option */ 11:
                     message.scoringOption = reader.int32();
                     break;
-                case /* RyuukyokuTrigger ryuukyokuTrigger */ 12:
+                case /* RyuukyokuTrigger ryuukyoku_trigger */ 12:
                     message.ryuukyokuTrigger = reader.int32();
                     break;
                 default:
@@ -151,40 +151,40 @@ class GameConfigMsg$Type extends MessageType<GameConfigMsg> {
         return message;
     }
     internalBinaryWrite(message: GameConfigMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerCount = 1; */
+        /* int32 player_count = 1; */
         if (message.playerCount !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerCount);
-        /* int32 totalRound = 2; */
+        /* int32 total_round = 2; */
         if (message.totalRound !== 0)
             writer.tag(2, WireType.Varint).int32(message.totalRound);
-        /* int32 minHan = 3; */
+        /* int32 min_han = 3; */
         if (message.minHan !== 0)
             writer.tag(3, WireType.Varint).int32(message.minHan);
-        /* PointThresholdMsg pointThreshold = 4; */
+        /* PointThresholdMsg point_threshold = 4; */
         if (message.pointThreshold)
             PointThresholdMsg.internalBinaryWrite(message.pointThreshold, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-        /* RenchanPolicy renchanPolicy = 5; */
+        /* RenchanPolicy renchan_policy = 5; */
         if (message.renchanPolicy !== 0)
             writer.tag(5, WireType.Varint).int32(message.renchanPolicy);
-        /* EndGamePolicy endGamePolicy = 6; */
+        /* EndGamePolicy end_game_policy = 6; */
         if (message.endGamePolicy !== 0)
             writer.tag(6, WireType.Varint).int32(message.endGamePolicy);
-        /* KuikaePolicy kuikaePolicy = 7; */
+        /* KuikaePolicy kuikae_policy = 7; */
         if (message.kuikaePolicy !== 0)
             writer.tag(7, WireType.Varint).int32(message.kuikaePolicy);
-        /* RiichiPolicy riichiPolicy = 8; */
+        /* RiichiPolicy riichi_policy = 8; */
         if (message.riichiPolicy !== 0)
             writer.tag(8, WireType.Varint).int32(message.riichiPolicy);
-        /* DoraOption doraOption = 9; */
+        /* DoraOption dora_option = 9; */
         if (message.doraOption !== 0)
             writer.tag(9, WireType.Varint).int32(message.doraOption);
-        /* AgariOption agariOption = 10; */
+        /* AgariOption agari_option = 10; */
         if (message.agariOption !== 0)
             writer.tag(10, WireType.Varint).int32(message.agariOption);
-        /* ScoringOption scoringOption = 11; */
+        /* ScoringOption scoring_option = 11; */
         if (message.scoringOption !== 0)
             writer.tag(11, WireType.Varint).int32(message.scoringOption);
-        /* RyuukyokuTrigger ryuukyokuTrigger = 12; */
+        /* RyuukyokuTrigger ryuukyoku_trigger = 12; */
         if (message.ryuukyokuTrigger !== 0)
             writer.tag(12, WireType.Varint).int32(message.ryuukyokuTrigger);
         let u = options.writeUnknownFields;

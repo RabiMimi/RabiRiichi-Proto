@@ -24,11 +24,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     static NextGameEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFFdmVudHMvSW5HYW1lL05leHRHYW1lRXZlbnQucHJvdG8iYQoQTmV4dEdh",
-            "bWVFdmVudE1zZxIRCgluZXh0Um91bmQYASABKAUSEgoKbmV4dERlYWxlchgC",
-            "IAEoBRIRCgluZXh0SG9uYmEYAyABKAUSEwoLcmlpY2hpU3RpY2sYBCABKAVC",
-            "JaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3Rv",
-            "Mw=="));
+            "CiFFdmVudHMvSW5HYW1lL05leHRHYW1lRXZlbnQucHJvdG8iZQoQTmV4dEdh",
+            "bWVFdmVudE1zZxISCgpuZXh0X3JvdW5kGAEgASgFEhMKC25leHRfZGVhbGVy",
+            "GAIgASgFEhIKCm5leHRfaG9uYmEYAyABKAUSFAoMcmlpY2hpX3N0aWNrGAQg",
+            "ASgFQiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1lYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -86,7 +86,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new NextGameEventMsg(this);
     }
 
-    /// <summary>Field number for the "nextRound" field.</summary>
+    /// <summary>Field number for the "next_round" field.</summary>
     public const int NextRoundFieldNumber = 1;
     private int nextRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -98,7 +98,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "nextDealer" field.</summary>
+    /// <summary>Field number for the "next_dealer" field.</summary>
     public const int NextDealerFieldNumber = 2;
     private int nextDealer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -110,7 +110,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "nextHonba" field.</summary>
+    /// <summary>Field number for the "next_honba" field.</summary>
     public const int NextHonbaFieldNumber = 3;
     private int nextHonba_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -122,7 +122,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "riichiStick" field.</summary>
+    /// <summary>Field number for the "riichi_stick" field.</summary>
     public const int RiichiStickFieldNumber = 4;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

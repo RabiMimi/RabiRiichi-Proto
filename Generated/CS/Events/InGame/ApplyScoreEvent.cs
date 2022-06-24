@@ -25,10 +25,10 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNFdmVudHMvSW5HYW1lL0FwcGx5U2NvcmVFdmVudC5wcm90bxoiRXZlbnRz",
-            "L0luR2FtZS9DYWxjU2NvcmVFdmVudC5wcm90byI8ChJBcHBseVNjb3JlRXZl",
-            "bnRNc2cSJgoLc2NvcmVDaGFuZ2UYASADKAsyES5TY29yZVRyYW5zZmVyTXNn",
-            "QiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90",
-            "bzM="));
+            "L0luR2FtZS9DYWxjU2NvcmVFdmVudC5wcm90byI9ChJBcHBseVNjb3JlRXZl",
+            "bnRNc2cSJwoMc2NvcmVfY2hhbmdlGAEgAygLMhEuU2NvcmVUcmFuc2Zlck1z",
+            "Z0IlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.CalcScoreEventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +83,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new ApplyScoreEventMsg(this);
     }
 
-    /// <summary>Field number for the "scoreChange" field.</summary>
+    /// <summary>Field number for the "score_change" field.</summary>
     public const int ScoreChangeFieldNumber = 1;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> _repeated_scoreChange_codec
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);

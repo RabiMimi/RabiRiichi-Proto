@@ -33,11 +33,11 @@ export interface GameInfoMsg {
      */
     honba: number;
     /**
-     * @generated from protobuf field: int32 currentPlayer = 5;
+     * @generated from protobuf field: int32 current_player = 5;
      */
     currentPlayer: number;
     /**
-     * @generated from protobuf field: int32 riichiStick = 6;
+     * @generated from protobuf field: int32 riichi_stick = 6;
      */
     riichiStick: number;
 }
@@ -49,8 +49,8 @@ class GameInfoMsg$Type extends MessageType<GameInfoMsg> {
             { no: 2, name: "wind", kind: "enum", T: () => ["Wind", Wind] },
             { no: 3, name: "dealer", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 4, name: "honba", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "currentPlayer", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 6, name: "riichiStick", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 5, name: "current_player", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 6, name: "riichi_stick", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<GameInfoMsg>): GameInfoMsg {
@@ -77,10 +77,10 @@ class GameInfoMsg$Type extends MessageType<GameInfoMsg> {
                 case /* int32 honba */ 4:
                     message.honba = reader.int32();
                     break;
-                case /* int32 currentPlayer */ 5:
+                case /* int32 current_player */ 5:
                     message.currentPlayer = reader.int32();
                     break;
-                case /* int32 riichiStick */ 6:
+                case /* int32 riichi_stick */ 6:
                     message.riichiStick = reader.int32();
                     break;
                 default:
@@ -107,10 +107,10 @@ class GameInfoMsg$Type extends MessageType<GameInfoMsg> {
         /* int32 honba = 4; */
         if (message.honba !== 0)
             writer.tag(4, WireType.Varint).int32(message.honba);
-        /* int32 currentPlayer = 5; */
+        /* int32 current_player = 5; */
         if (message.currentPlayer !== 0)
             writer.tag(5, WireType.Varint).int32(message.currentPlayer);
-        /* int32 riichiStick = 6; */
+        /* int32 riichi_stick = 6; */
         if (message.riichiStick !== 0)
             writer.tag(6, WireType.Varint).int32(message.riichiStick);
         let u = options.writeUnknownFields;

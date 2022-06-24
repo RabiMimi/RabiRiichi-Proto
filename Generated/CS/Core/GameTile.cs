@@ -25,21 +25,21 @@ namespace RabiRiichi.Generated.Core {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChNDb3JlL0dhbWVUaWxlLnByb3RvIj4KDkRpc2NhcmRJbmZvTXNnEgwKBGZy",
-            "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbiJwCgtH",
-            "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhAKCHBsYXllcklkGAIgASgFEiQK",
-            "C2Rpc2NhcmRJbmZvGAMgASgLMg8uRGlzY2FyZEluZm9Nc2cSGwoGc291cmNl",
-            "GAQgASgOMgsuVGlsZVNvdXJjZSrKAQoNRGlzY2FyZFJlYXNvbhIXChNESVND",
-            "QVJEX1JFQVNPTl9OT05FEAASFwoTRElTQ0FSRF9SRUFTT05fRFJBVxABEh4K",
-            "GkRJU0NBUkRfUkVBU09OX0RSQVdSSU5TSEFOEAISFwoTRElTQ0FSRF9SRUFT",
-            "T05fQ0hJSRADEhYKEkRJU0NBUkRfUkVBU09OX1BPThAEEhoKFkRJU0NBUkRf",
-            "UkVBU09OX0NIQU5LQU4QBRIaChZESVNDQVJEX1JFQVNPTl9QUkVURU5EEAYq",
-            "8wEKClRpbGVTb3VyY2USFAoQVElMRV9TT1VSQ0VfTk9ORRAAEhYKElRJTEVf",
-            "U09VUkNFX1dBTlBBSRABEhQKEFRJTEVfU09VUkNFX1dBTEwQAhIUChBUSUxF",
-            "X1NPVVJDRV9IQU5EEAMSFwoTVElMRV9TT1VSQ0VfRElTQ0FSRBAEEhQKEFRJ",
-            "TEVfU09VUkNFX0NISUkQBRITCg9USUxFX1NPVVJDRV9QT04QBhIVChFUSUxF",
-            "X1NPVVJDRV9LQUtBThAHEhUKEVRJTEVfU09VUkNFX0FOS0FOEAgSGQoVVElM",
-            "RV9TT1VSQ0VfREFJTUlOS0FOEAlCHKoCGVJhYmlSaWljaGkuR2VuZXJhdGVk",
-            "LkNvcmViBnByb3RvMw=="));
+            "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbiJyCgtH",
+            "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhEKCXBsYXllcl9pZBgCIAEoBRIl",
+            "CgxkaXNjYXJkX2luZm8YAyABKAsyDy5EaXNjYXJkSW5mb01zZxIbCgZzb3Vy",
+            "Y2UYBCABKA4yCy5UaWxlU291cmNlKsoBCg1EaXNjYXJkUmVhc29uEhcKE0RJ",
+            "U0NBUkRfUkVBU09OX05PTkUQABIXChNESVNDQVJEX1JFQVNPTl9EUkFXEAES",
+            "HgoaRElTQ0FSRF9SRUFTT05fRFJBV1JJTlNIQU4QAhIXChNESVNDQVJEX1JF",
+            "QVNPTl9DSElJEAMSFgoSRElTQ0FSRF9SRUFTT05fUE9OEAQSGgoWRElTQ0FS",
+            "RF9SRUFTT05fQ0hBTktBThAFEhoKFkRJU0NBUkRfUkVBU09OX1BSRVRFTkQQ",
+            "BirzAQoKVGlsZVNvdXJjZRIUChBUSUxFX1NPVVJDRV9OT05FEAASFgoSVElM",
+            "RV9TT1VSQ0VfV0FOUEFJEAESFAoQVElMRV9TT1VSQ0VfV0FMTBACEhQKEFRJ",
+            "TEVfU09VUkNFX0hBTkQQAxIXChNUSUxFX1NPVVJDRV9ESVNDQVJEEAQSFAoQ",
+            "VElMRV9TT1VSQ0VfQ0hJSRAFEhMKD1RJTEVfU09VUkNFX1BPThAGEhUKEVRJ",
+            "TEVfU09VUkNFX0tBS0FOEAcSFQoRVElMRV9TT1VSQ0VfQU5LQU4QCBIZChVU",
+            "SUxFX1NPVVJDRV9EQUlNSU5LQU4QCUIcqgIZUmFiaVJpaWNoaS5HZW5lcmF0",
+            "ZWQuQ29yZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.DiscardReason), typeof(global::RabiRiichi.Generated.Core.TileSource), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -362,7 +362,7 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 2;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -374,7 +374,7 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
-    /// <summary>Field number for the "discardInfo" field.</summary>
+    /// <summary>Field number for the "discard_info" field.</summary>
     public const int DiscardInfoFieldNumber = 3;
     private global::RabiRiichi.Generated.Core.DiscardInfoMsg discardInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

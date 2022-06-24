@@ -25,11 +25,11 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9FdmVudHMvSW5HYW1lL0FkZEthbkV2ZW50LnByb3RvGhNDb3JlL0dhbWVU",
-            "aWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8ifAoOQWRkS2FuRXZlbnRN",
-            "c2cSEAoIcGxheWVySWQYASABKAUSGAoDa2FuGAIgASgLMgsuTWVuTGlrZU1z",
-            "ZxIeCghpbmNvbWluZxgDIAEoCzIMLkdhbWVUaWxlTXNnEh4KCWthblNvdXJj",
-            "ZRgEIAEoDjILLlRpbGVTb3VyY2VCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVk",
-            "LkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
+            "aWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8ifgoOQWRkS2FuRXZlbnRN",
+            "c2cSEQoJcGxheWVyX2lkGAEgASgFEhgKA2thbhgCIAEoCzILLk1lbkxpa2VN",
+            "c2cSHgoIaW5jb21pbmcYAyABKAsyDC5HYW1lVGlsZU1zZxIfCgprYW5fc291",
+            "cmNlGAQgASgOMgsuVGlsZVNvdXJjZUIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0",
+            "ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -87,7 +87,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new AddKanEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +123,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "kanSource" field.</summary>
+    /// <summary>Field number for the "kan_source" field.</summary>
     public const int KanSourceFieldNumber = 4;
     private global::RabiRiichi.Generated.Core.TileSource kanSource_ = global::RabiRiichi.Generated.Core.TileSource.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

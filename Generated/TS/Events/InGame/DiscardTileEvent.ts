@@ -19,7 +19,7 @@ import { GameTileMsg } from "../../Core/GameTile";
  */
 export interface DiscardTileEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -39,7 +39,7 @@ export interface DiscardTileEventMsg {
      */
     origin: TileSource;
     /**
-     * @generated from protobuf field: bool isRiichi = 6;
+     * @generated from protobuf field: bool is_riichi = 6;
      */
     isRiichi: boolean;
 }
@@ -47,12 +47,12 @@ export interface DiscardTileEventMsg {
 class DiscardTileEventMsg$Type extends MessageType<DiscardTileEventMsg> {
     constructor() {
         super("DiscardTileEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "incoming", kind: "message", T: () => GameTileMsg },
             { no: 3, name: "discarded", kind: "message", T: () => GameTileMsg },
             { no: 4, name: "reason", kind: "enum", T: () => ["DiscardReason", DiscardReason, "DISCARD_REASON_"] },
             { no: 5, name: "origin", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] },
-            { no: 6, name: "isRiichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+            { no: 6, name: "is_riichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
     create(value?: PartialMessage<DiscardTileEventMsg>): DiscardTileEventMsg {
@@ -67,7 +67,7 @@ class DiscardTileEventMsg$Type extends MessageType<DiscardTileEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* GameTileMsg incoming */ 2:
@@ -82,7 +82,7 @@ class DiscardTileEventMsg$Type extends MessageType<DiscardTileEventMsg> {
                 case /* TileSource origin */ 5:
                     message.origin = reader.int32();
                     break;
-                case /* bool isRiichi */ 6:
+                case /* bool is_riichi */ 6:
                     message.isRiichi = reader.bool();
                     break;
                 default:
@@ -97,7 +97,7 @@ class DiscardTileEventMsg$Type extends MessageType<DiscardTileEventMsg> {
         return message;
     }
     internalBinaryWrite(message: DiscardTileEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* GameTileMsg incoming = 2; */
@@ -112,7 +112,7 @@ class DiscardTileEventMsg$Type extends MessageType<DiscardTileEventMsg> {
         /* TileSource origin = 5; */
         if (message.origin !== 0)
             writer.tag(5, WireType.Varint).int32(message.origin);
-        /* bool isRiichi = 6; */
+        /* bool is_riichi = 6; */
         if (message.isRiichi !== false)
             writer.tag(6, WireType.Varint).bool(message.isRiichi);
         let u = options.writeUnknownFields;

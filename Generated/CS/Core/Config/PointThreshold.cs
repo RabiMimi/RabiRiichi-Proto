@@ -24,12 +24,12 @@ namespace RabiRiichi.Generated.Core.Config {
     static PointThresholdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBDb3JlL0NvbmZpZy9Qb2ludFRocmVzaG9sZC5wcm90byKeAQoRUG9pbnRU",
-            "aHJlc2hvbGRNc2cSFQoNaW5pdGlhbFBvaW50cxgBIAEoAxIUCgxyaWljaGlQ",
-            "b2ludHMYAiABKAMSEwoLaG9uYmFQb2ludHMYAyABKAMSFAoMZmluaXNoUG9p",
-            "bnRzGAQgASgDEhcKD3J5dXVreW9rdVBvaW50cxgFIAMoAxIYChB2YWxpZFBv",
-            "aW50c1JhbmdlGAYgAygDQiOqAiBSYWJpUmlpY2hpLkdlbmVyYXRlZC5Db3Jl",
-            "LkNvbmZpZ2IGcHJvdG8z"));
+            "CiBDb3JlL0NvbmZpZy9Qb2ludFRocmVzaG9sZC5wcm90byKlAQoRUG9pbnRU",
+            "aHJlc2hvbGRNc2cSFgoOaW5pdGlhbF9wb2ludHMYASABKAMSFQoNcmlpY2hp",
+            "X3BvaW50cxgCIAEoAxIUCgxob25iYV9wb2ludHMYAyABKAMSFQoNZmluaXNo",
+            "X3BvaW50cxgEIAEoAxIYChByeXV1a3lva3VfcG9pbnRzGAUgAygDEhoKEnZh",
+            "bGlkX3BvaW50c19yYW5nZRgGIAMoA0IjqgIgUmFiaVJpaWNoaS5HZW5lcmF0",
+            "ZWQuQ29yZS5Db25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -89,7 +89,7 @@ namespace RabiRiichi.Generated.Core.Config {
       return new PointThresholdMsg(this);
     }
 
-    /// <summary>Field number for the "initialPoints" field.</summary>
+    /// <summary>Field number for the "initial_points" field.</summary>
     public const int InitialPointsFieldNumber = 1;
     private long initialPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -101,7 +101,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "riichiPoints" field.</summary>
+    /// <summary>Field number for the "riichi_points" field.</summary>
     public const int RiichiPointsFieldNumber = 2;
     private long riichiPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -113,7 +113,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "honbaPoints" field.</summary>
+    /// <summary>Field number for the "honba_points" field.</summary>
     public const int HonbaPointsFieldNumber = 3;
     private long honbaPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -125,7 +125,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "finishPoints" field.</summary>
+    /// <summary>Field number for the "finish_points" field.</summary>
     public const int FinishPointsFieldNumber = 4;
     private long finishPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -137,7 +137,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "ryuukyokuPoints" field.</summary>
+    /// <summary>Field number for the "ryuukyoku_points" field.</summary>
     public const int RyuukyokuPointsFieldNumber = 5;
     private static readonly pb::FieldCodec<long> _repeated_ryuukyokuPoints_codec
         = pb::FieldCodec.ForInt64(42);
@@ -148,7 +148,7 @@ namespace RabiRiichi.Generated.Core.Config {
       get { return ryuukyokuPoints_; }
     }
 
-    /// <summary>Field number for the "validPointsRange" field.</summary>
+    /// <summary>Field number for the "valid_points_range" field.</summary>
     public const int ValidPointsRangeFieldNumber = 6;
     private static readonly pb::FieldCodec<long> _repeated_validPointsRange_codec
         = pb::FieldCodec.ForInt64(50);

@@ -25,12 +25,12 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZFdmVudHMvSW5HYW1lL1N5bmNHYW1lU3RhdGVFdmVudC5wcm90bxoiQ29t",
-            "bXVuaWNhdGlvbi9TeW5jL0dhbWVTdGF0ZS5wcm90byKrAQoVU3luY0dhbWVT",
-            "dGF0ZUV2ZW50TXNnEhAKCHBsYXllcklkGAEgASgFEiAKCWdhbWVTdGF0ZRgC",
-            "IAEoCzINLkdhbWVTdGF0ZU1zZxIwCgVleHRyYRgDIAMoCzIhLlN5bmNHYW1l",
-            "U3RhdGVFdmVudE1zZy5FeHRyYUVudHJ5GiwKCkV4dHJhRW50cnkSCwoDa2V5",
-            "GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIlqgIiUmFiaVJpaWNoaS5HZW5l",
-            "cmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
+            "bXVuaWNhdGlvbi9TeW5jL0dhbWVTdGF0ZS5wcm90byKtAQoVU3luY0dhbWVT",
+            "dGF0ZUV2ZW50TXNnEhEKCXBsYXllcl9pZBgBIAEoBRIhCgpnYW1lX3N0YXRl",
+            "GAIgASgLMg0uR2FtZVN0YXRlTXNnEjAKBWV4dHJhGAMgAygLMiEuU3luY0dh",
+            "bWVTdGF0ZUV2ZW50TXNnLkV4dHJhRW50cnkaLAoKRXh0cmFFbnRyeRILCgNr",
+            "ZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBQiWqAiJSYWJpUmlpY2hpLkdl",
+            "bmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -87,7 +87,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new SyncGameStateEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -99,7 +99,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "gameState" field.</summary>
+    /// <summary>Field number for the "game_state" field.</summary>
     public const int GameStateFieldNumber = 2;
     private global::RabiRiichi.Generated.Communication.Sync.GameStateMsg gameState_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

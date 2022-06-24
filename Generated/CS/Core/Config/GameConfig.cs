@@ -26,17 +26,17 @@ namespace RabiRiichi.Generated.Core.Config {
           string.Concat(
             "ChxDb3JlL0NvbmZpZy9HYW1lQ29uZmlnLnByb3RvGhdDb3JlL0NvbmZpZy9F",
             "bnVtcy5wcm90bxogQ29yZS9Db25maWcvUG9pbnRUaHJlc2hvbGQucHJvdG8i",
-            "pAMKDUdhbWVDb25maWdNc2cSEwoLcGxheWVyQ291bnQYASABKAUSEgoKdG90",
-            "YWxSb3VuZBgCIAEoBRIOCgZtaW5IYW4YAyABKAUSKgoOcG9pbnRUaHJlc2hv",
-            "bGQYBCABKAsyEi5Qb2ludFRocmVzaG9sZE1zZxIlCg1yZW5jaGFuUG9saWN5",
-            "GAUgASgOMg4uUmVuY2hhblBvbGljeRIlCg1lbmRHYW1lUG9saWN5GAYgASgO",
-            "Mg4uRW5kR2FtZVBvbGljeRIjCgxrdWlrYWVQb2xpY3kYByABKA4yDS5LdWlr",
-            "YWVQb2xpY3kSIwoMcmlpY2hpUG9saWN5GAggASgOMg0uUmlpY2hpUG9saWN5",
-            "Eh8KCmRvcmFPcHRpb24YCSABKA4yCy5Eb3JhT3B0aW9uEiEKC2FnYXJpT3B0",
-            "aW9uGAogASgOMgwuQWdhcmlPcHRpb24SJQoNc2NvcmluZ09wdGlvbhgLIAEo",
-            "DjIOLlNjb3JpbmdPcHRpb24SKwoQcnl1dWt5b2t1VHJpZ2dlchgMIAEoDjIR",
-            "LlJ5dXVreW9rdVRyaWdnZXJCI6oCIFJhYmlSaWljaGkuR2VuZXJhdGVkLkNv",
-            "cmUuQ29uZmlnYgZwcm90bzM="));
+            "sQMKDUdhbWVDb25maWdNc2cSFAoMcGxheWVyX2NvdW50GAEgASgFEhMKC3Rv",
+            "dGFsX3JvdW5kGAIgASgFEg8KB21pbl9oYW4YAyABKAUSKwoPcG9pbnRfdGhy",
+            "ZXNob2xkGAQgASgLMhIuUG9pbnRUaHJlc2hvbGRNc2cSJgoOcmVuY2hhbl9w",
+            "b2xpY3kYBSABKA4yDi5SZW5jaGFuUG9saWN5EicKD2VuZF9nYW1lX3BvbGlj",
+            "eRgGIAEoDjIOLkVuZEdhbWVQb2xpY3kSJAoNa3Vpa2FlX3BvbGljeRgHIAEo",
+            "DjINLkt1aWthZVBvbGljeRIkCg1yaWljaGlfcG9saWN5GAggASgOMg0uUmlp",
+            "Y2hpUG9saWN5EiAKC2RvcmFfb3B0aW9uGAkgASgOMgsuRG9yYU9wdGlvbhIi",
+            "CgxhZ2FyaV9vcHRpb24YCiABKA4yDC5BZ2FyaU9wdGlvbhImCg5zY29yaW5n",
+            "X29wdGlvbhgLIAEoDjIOLlNjb3JpbmdPcHRpb24SLAoRcnl1dWt5b2t1X3Ry",
+            "aWdnZXIYDCABKA4yES5SeXV1a3lva3VUcmlnZ2VyQiOqAiBSYWJpUmlpY2hp",
+            "LkdlbmVyYXRlZC5Db3JlLkNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.Config.EnumsReflection.Descriptor, global::RabiRiichi.Generated.Core.Config.PointThresholdReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -102,7 +102,7 @@ namespace RabiRiichi.Generated.Core.Config {
       return new GameConfigMsg(this);
     }
 
-    /// <summary>Field number for the "playerCount" field.</summary>
+    /// <summary>Field number for the "player_count" field.</summary>
     public const int PlayerCountFieldNumber = 1;
     private int playerCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -114,7 +114,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "totalRound" field.</summary>
+    /// <summary>Field number for the "total_round" field.</summary>
     public const int TotalRoundFieldNumber = 2;
     private int totalRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -126,7 +126,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "minHan" field.</summary>
+    /// <summary>Field number for the "min_han" field.</summary>
     public const int MinHanFieldNumber = 3;
     private int minHan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -138,7 +138,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "pointThreshold" field.</summary>
+    /// <summary>Field number for the "point_threshold" field.</summary>
     public const int PointThresholdFieldNumber = 4;
     private global::RabiRiichi.Generated.Core.Config.PointThresholdMsg pointThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -150,7 +150,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "renchanPolicy" field.</summary>
+    /// <summary>Field number for the "renchan_policy" field.</summary>
     public const int RenchanPolicyFieldNumber = 5;
     private global::RabiRiichi.Generated.Core.Config.RenchanPolicy renchanPolicy_ = global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -162,7 +162,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "endGamePolicy" field.</summary>
+    /// <summary>Field number for the "end_game_policy" field.</summary>
     public const int EndGamePolicyFieldNumber = 6;
     private global::RabiRiichi.Generated.Core.Config.EndGamePolicy endGamePolicy_ = global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -174,7 +174,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "kuikaePolicy" field.</summary>
+    /// <summary>Field number for the "kuikae_policy" field.</summary>
     public const int KuikaePolicyFieldNumber = 7;
     private global::RabiRiichi.Generated.Core.Config.KuikaePolicy kuikaePolicy_ = global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -186,7 +186,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "riichiPolicy" field.</summary>
+    /// <summary>Field number for the "riichi_policy" field.</summary>
     public const int RiichiPolicyFieldNumber = 8;
     private global::RabiRiichi.Generated.Core.Config.RiichiPolicy riichiPolicy_ = global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -198,7 +198,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "doraOption" field.</summary>
+    /// <summary>Field number for the "dora_option" field.</summary>
     public const int DoraOptionFieldNumber = 9;
     private global::RabiRiichi.Generated.Core.Config.DoraOption doraOption_ = global::RabiRiichi.Generated.Core.Config.DoraOption.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -210,7 +210,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "agariOption" field.</summary>
+    /// <summary>Field number for the "agari_option" field.</summary>
     public const int AgariOptionFieldNumber = 10;
     private global::RabiRiichi.Generated.Core.Config.AgariOption agariOption_ = global::RabiRiichi.Generated.Core.Config.AgariOption.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -222,7 +222,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "scoringOption" field.</summary>
+    /// <summary>Field number for the "scoring_option" field.</summary>
     public const int ScoringOptionFieldNumber = 11;
     private global::RabiRiichi.Generated.Core.Config.ScoringOption scoringOption_ = global::RabiRiichi.Generated.Core.Config.ScoringOption.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -234,7 +234,7 @@ namespace RabiRiichi.Generated.Core.Config {
       }
     }
 
-    /// <summary>Field number for the "ryuukyokuTrigger" field.</summary>
+    /// <summary>Field number for the "ryuukyoku_trigger" field.</summary>
     public const int RyuukyokuTriggerFieldNumber = 12;
     private global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger ryuukyokuTrigger_ = global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

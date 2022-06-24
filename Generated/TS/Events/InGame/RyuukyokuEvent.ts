@@ -17,15 +17,15 @@ import { ScoreTransferMsg } from "./CalcScoreEvent";
  */
 export interface EndGameRyuukyokuEventMsg {
     /**
-     * @generated from protobuf field: repeated int32 remainingPlayers = 1;
+     * @generated from protobuf field: repeated int32 remaining_players = 1;
      */
     remainingPlayers: number[];
     /**
-     * @generated from protobuf field: repeated int32 nagashiManganPlayers = 2;
+     * @generated from protobuf field: repeated int32 nagashi_mangan_players = 2;
      */
     nagashiManganPlayers: number[];
     /**
-     * @generated from protobuf field: repeated int32 tenpaiPlayers = 3;
+     * @generated from protobuf field: repeated int32 tenpai_players = 3;
      */
     tenpaiPlayers: number[];
 }
@@ -43,7 +43,7 @@ export interface MidGameRyuukyokuEventMsg {
  */
 export interface RyuukyokuEventMsg {
     /**
-     * @generated from protobuf field: repeated ScoreTransferMsg scoreChange = 1;
+     * @generated from protobuf field: repeated ScoreTransferMsg score_change = 1;
      */
     scoreChange: ScoreTransferMsg[];
     /**
@@ -52,13 +52,13 @@ export interface RyuukyokuEventMsg {
     ryuukyokuEvent: {
         oneofKind: "endGameRyuukyoku";
         /**
-         * @generated from protobuf field: EndGameRyuukyokuEventMsg endGameRyuukyoku = 2;
+         * @generated from protobuf field: EndGameRyuukyokuEventMsg end_game_ryuukyoku = 2;
          */
         endGameRyuukyoku: EndGameRyuukyokuEventMsg;
     } | {
         oneofKind: "midGameRyuukyoku";
         /**
-         * @generated from protobuf field: MidGameRyuukyokuEventMsg midGameRyuukyoku = 3;
+         * @generated from protobuf field: MidGameRyuukyokuEventMsg mid_game_ryuukyoku = 3;
          */
         midGameRyuukyoku: MidGameRyuukyokuEventMsg;
     } | {
@@ -69,9 +69,9 @@ export interface RyuukyokuEventMsg {
 class EndGameRyuukyokuEventMsg$Type extends MessageType<EndGameRyuukyokuEventMsg> {
     constructor() {
         super("EndGameRyuukyokuEventMsg", [
-            { no: 1, name: "remainingPlayers", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "nagashiManganPlayers", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "tenpaiPlayers", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "remaining_players", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "nagashi_mangan_players", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "tenpai_players", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<EndGameRyuukyokuEventMsg>): EndGameRyuukyokuEventMsg {
@@ -86,21 +86,21 @@ class EndGameRyuukyokuEventMsg$Type extends MessageType<EndGameRyuukyokuEventMsg
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated int32 remainingPlayers */ 1:
+                case /* repeated int32 remaining_players */ 1:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.remainingPlayers.push(reader.int32());
                     else
                         message.remainingPlayers.push(reader.int32());
                     break;
-                case /* repeated int32 nagashiManganPlayers */ 2:
+                case /* repeated int32 nagashi_mangan_players */ 2:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.nagashiManganPlayers.push(reader.int32());
                     else
                         message.nagashiManganPlayers.push(reader.int32());
                     break;
-                case /* repeated int32 tenpaiPlayers */ 3:
+                case /* repeated int32 tenpai_players */ 3:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.tenpaiPlayers.push(reader.int32());
@@ -119,21 +119,21 @@ class EndGameRyuukyokuEventMsg$Type extends MessageType<EndGameRyuukyokuEventMsg
         return message;
     }
     internalBinaryWrite(message: EndGameRyuukyokuEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated int32 remainingPlayers = 1; */
+        /* repeated int32 remaining_players = 1; */
         if (message.remainingPlayers.length) {
             writer.tag(1, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.remainingPlayers.length; i++)
                 writer.int32(message.remainingPlayers[i]);
             writer.join();
         }
-        /* repeated int32 nagashiManganPlayers = 2; */
+        /* repeated int32 nagashi_mangan_players = 2; */
         if (message.nagashiManganPlayers.length) {
             writer.tag(2, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.nagashiManganPlayers.length; i++)
                 writer.int32(message.nagashiManganPlayers[i]);
             writer.join();
         }
-        /* repeated int32 tenpaiPlayers = 3; */
+        /* repeated int32 tenpai_players = 3; */
         if (message.tenpaiPlayers.length) {
             writer.tag(3, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.tenpaiPlayers.length; i++)
@@ -201,9 +201,9 @@ export const MidGameRyuukyokuEventMsg = new MidGameRyuukyokuEventMsg$Type();
 class RyuukyokuEventMsg$Type extends MessageType<RyuukyokuEventMsg> {
     constructor() {
         super("RyuukyokuEventMsg", [
-            { no: 1, name: "scoreChange", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg },
-            { no: 2, name: "endGameRyuukyoku", kind: "message", oneof: "ryuukyokuEvent", T: () => EndGameRyuukyokuEventMsg },
-            { no: 3, name: "midGameRyuukyoku", kind: "message", oneof: "ryuukyokuEvent", T: () => MidGameRyuukyokuEventMsg }
+            { no: 1, name: "score_change", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg },
+            { no: 2, name: "end_game_ryuukyoku", kind: "message", oneof: "ryuukyokuEvent", T: () => EndGameRyuukyokuEventMsg },
+            { no: 3, name: "mid_game_ryuukyoku", kind: "message", oneof: "ryuukyokuEvent", T: () => MidGameRyuukyokuEventMsg }
         ]);
     }
     create(value?: PartialMessage<RyuukyokuEventMsg>): RyuukyokuEventMsg {
@@ -218,16 +218,16 @@ class RyuukyokuEventMsg$Type extends MessageType<RyuukyokuEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated ScoreTransferMsg scoreChange */ 1:
+                case /* repeated ScoreTransferMsg score_change */ 1:
                     message.scoreChange.push(ScoreTransferMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
-                case /* EndGameRyuukyokuEventMsg endGameRyuukyoku */ 2:
+                case /* EndGameRyuukyokuEventMsg end_game_ryuukyoku */ 2:
                     message.ryuukyokuEvent = {
                         oneofKind: "endGameRyuukyoku",
                         endGameRyuukyoku: EndGameRyuukyokuEventMsg.internalBinaryRead(reader, reader.uint32(), options, (message.ryuukyokuEvent as any).endGameRyuukyoku)
                     };
                     break;
-                case /* MidGameRyuukyokuEventMsg midGameRyuukyoku */ 3:
+                case /* MidGameRyuukyokuEventMsg mid_game_ryuukyoku */ 3:
                     message.ryuukyokuEvent = {
                         oneofKind: "midGameRyuukyoku",
                         midGameRyuukyoku: MidGameRyuukyokuEventMsg.internalBinaryRead(reader, reader.uint32(), options, (message.ryuukyokuEvent as any).midGameRyuukyoku)
@@ -245,13 +245,13 @@ class RyuukyokuEventMsg$Type extends MessageType<RyuukyokuEventMsg> {
         return message;
     }
     internalBinaryWrite(message: RyuukyokuEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated ScoreTransferMsg scoreChange = 1; */
+        /* repeated ScoreTransferMsg score_change = 1; */
         for (let i = 0; i < message.scoreChange.length; i++)
             ScoreTransferMsg.internalBinaryWrite(message.scoreChange[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* EndGameRyuukyokuEventMsg endGameRyuukyoku = 2; */
+        /* EndGameRyuukyokuEventMsg end_game_ryuukyoku = 2; */
         if (message.ryuukyokuEvent.oneofKind === "endGameRyuukyoku")
             EndGameRyuukyokuEventMsg.internalBinaryWrite(message.ryuukyokuEvent.endGameRyuukyoku, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* MidGameRyuukyokuEventMsg midGameRyuukyoku = 3; */
+        /* MidGameRyuukyokuEventMsg mid_game_ryuukyoku = 3; */
         if (message.ryuukyokuEvent.oneofKind === "midGameRyuukyoku")
             MidGameRyuukyokuEventMsg.internalBinaryWrite(message.ryuukyokuEvent.midGameRyuukyoku, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;

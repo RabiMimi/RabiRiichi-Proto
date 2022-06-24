@@ -16,19 +16,19 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface NextGameEventMsg {
     /**
-     * @generated from protobuf field: int32 nextRound = 1;
+     * @generated from protobuf field: int32 next_round = 1;
      */
     nextRound: number;
     /**
-     * @generated from protobuf field: int32 nextDealer = 2;
+     * @generated from protobuf field: int32 next_dealer = 2;
      */
     nextDealer: number;
     /**
-     * @generated from protobuf field: int32 nextHonba = 3;
+     * @generated from protobuf field: int32 next_honba = 3;
      */
     nextHonba: number;
     /**
-     * @generated from protobuf field: int32 riichiStick = 4;
+     * @generated from protobuf field: int32 riichi_stick = 4;
      */
     riichiStick: number;
 }
@@ -36,10 +36,10 @@ export interface NextGameEventMsg {
 class NextGameEventMsg$Type extends MessageType<NextGameEventMsg> {
     constructor() {
         super("NextGameEventMsg", [
-            { no: 1, name: "nextRound", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "nextDealer", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "nextHonba", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "riichiStick", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "next_round", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "next_dealer", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "next_honba", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "riichi_stick", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<NextGameEventMsg>): NextGameEventMsg {
@@ -54,16 +54,16 @@ class NextGameEventMsg$Type extends MessageType<NextGameEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 nextRound */ 1:
+                case /* int32 next_round */ 1:
                     message.nextRound = reader.int32();
                     break;
-                case /* int32 nextDealer */ 2:
+                case /* int32 next_dealer */ 2:
                     message.nextDealer = reader.int32();
                     break;
-                case /* int32 nextHonba */ 3:
+                case /* int32 next_honba */ 3:
                     message.nextHonba = reader.int32();
                     break;
-                case /* int32 riichiStick */ 4:
+                case /* int32 riichi_stick */ 4:
                     message.riichiStick = reader.int32();
                     break;
                 default:
@@ -78,16 +78,16 @@ class NextGameEventMsg$Type extends MessageType<NextGameEventMsg> {
         return message;
     }
     internalBinaryWrite(message: NextGameEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 nextRound = 1; */
+        /* int32 next_round = 1; */
         if (message.nextRound !== 0)
             writer.tag(1, WireType.Varint).int32(message.nextRound);
-        /* int32 nextDealer = 2; */
+        /* int32 next_dealer = 2; */
         if (message.nextDealer !== 0)
             writer.tag(2, WireType.Varint).int32(message.nextDealer);
-        /* int32 nextHonba = 3; */
+        /* int32 next_honba = 3; */
         if (message.nextHonba !== 0)
             writer.tag(3, WireType.Varint).int32(message.nextHonba);
-        /* int32 riichiStick = 4; */
+        /* int32 riichi_stick = 4; */
         if (message.riichiStick !== 0)
             writer.tag(4, WireType.Varint).int32(message.riichiStick);
         let u = options.writeUnknownFields;

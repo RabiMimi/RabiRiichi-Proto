@@ -16,7 +16,7 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface SetFuritenEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -24,7 +24,7 @@ export interface SetFuritenEventMsg {
      */
     furiten: boolean;
     /**
-     * @generated from protobuf field: FuritenType furitenType = 3;
+     * @generated from protobuf field: FuritenType furiten_type = 3;
      */
     furitenType: FuritenType;
 }
@@ -49,9 +49,9 @@ export enum FuritenType {
 class SetFuritenEventMsg$Type extends MessageType<SetFuritenEventMsg> {
     constructor() {
         super("SetFuritenEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "furiten", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 3, name: "furitenType", kind: "enum", T: () => ["FuritenType", FuritenType] }
+            { no: 3, name: "furiten_type", kind: "enum", T: () => ["FuritenType", FuritenType] }
         ]);
     }
     create(value?: PartialMessage<SetFuritenEventMsg>): SetFuritenEventMsg {
@@ -66,13 +66,13 @@ class SetFuritenEventMsg$Type extends MessageType<SetFuritenEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* bool furiten */ 2:
                     message.furiten = reader.bool();
                     break;
-                case /* FuritenType furitenType */ 3:
+                case /* FuritenType furiten_type */ 3:
                     message.furitenType = reader.int32();
                     break;
                 default:
@@ -87,13 +87,13 @@ class SetFuritenEventMsg$Type extends MessageType<SetFuritenEventMsg> {
         return message;
     }
     internalBinaryWrite(message: SetFuritenEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* bool furiten = 2; */
         if (message.furiten !== false)
             writer.tag(2, WireType.Varint).bool(message.furiten);
-        /* FuritenType furitenType = 3; */
+        /* FuritenType furiten_type = 3; */
         if (message.furitenType !== 0)
             writer.tag(3, WireType.Varint).int32(message.furitenType);
         let u = options.writeUnknownFields;

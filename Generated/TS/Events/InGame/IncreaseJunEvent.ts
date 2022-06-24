@@ -16,11 +16,11 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface IncreaseJunEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
-     * @generated from protobuf field: int32 increasedJun = 2;
+     * @generated from protobuf field: int32 increased_jun = 2;
      */
     increasedJun: number;
 }
@@ -28,8 +28,8 @@ export interface IncreaseJunEventMsg {
 class IncreaseJunEventMsg$Type extends MessageType<IncreaseJunEventMsg> {
     constructor() {
         super("IncreaseJunEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "increasedJun", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "increased_jun", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<IncreaseJunEventMsg>): IncreaseJunEventMsg {
@@ -44,10 +44,10 @@ class IncreaseJunEventMsg$Type extends MessageType<IncreaseJunEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
-                case /* int32 increasedJun */ 2:
+                case /* int32 increased_jun */ 2:
                     message.increasedJun = reader.int32();
                     break;
                 default:
@@ -62,10 +62,10 @@ class IncreaseJunEventMsg$Type extends MessageType<IncreaseJunEventMsg> {
         return message;
     }
     internalBinaryWrite(message: IncreaseJunEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
-        /* int32 increasedJun = 2; */
+        /* int32 increased_jun = 2; */
         if (message.increasedJun !== 0)
             writer.tag(2, WireType.Varint).int32(message.increasedJun);
         let u = options.writeUnknownFields;

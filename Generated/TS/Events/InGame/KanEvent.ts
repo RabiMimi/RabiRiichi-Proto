@@ -18,7 +18,7 @@ import { MenLikeMsg } from "../../Core/MenLike";
  */
 export interface KanEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -26,7 +26,7 @@ export interface KanEventMsg {
      */
     kan?: MenLikeMsg;
     /**
-     * @generated from protobuf field: TileSource kanSource = 3;
+     * @generated from protobuf field: TileSource kan_source = 3;
      */
     kanSource: TileSource;
 }
@@ -34,9 +34,9 @@ export interface KanEventMsg {
 class KanEventMsg$Type extends MessageType<KanEventMsg> {
     constructor() {
         super("KanEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "kan", kind: "message", T: () => MenLikeMsg },
-            { no: 3, name: "kanSource", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
+            { no: 3, name: "kan_source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
         ]);
     }
     create(value?: PartialMessage<KanEventMsg>): KanEventMsg {
@@ -51,13 +51,13 @@ class KanEventMsg$Type extends MessageType<KanEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* MenLikeMsg kan */ 2:
                     message.kan = MenLikeMsg.internalBinaryRead(reader, reader.uint32(), options, message.kan);
                     break;
-                case /* TileSource kanSource */ 3:
+                case /* TileSource kan_source */ 3:
                     message.kanSource = reader.int32();
                     break;
                 default:
@@ -72,13 +72,13 @@ class KanEventMsg$Type extends MessageType<KanEventMsg> {
         return message;
     }
     internalBinaryWrite(message: KanEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* MenLikeMsg kan = 2; */
         if (message.kan)
             MenLikeMsg.internalBinaryWrite(message.kan, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* TileSource kanSource = 3; */
+        /* TileSource kan_source = 3; */
         if (message.kanSource !== 0)
             writer.tag(3, WireType.Varint).int32(message.kanSource);
         let u = options.writeUnknownFields;

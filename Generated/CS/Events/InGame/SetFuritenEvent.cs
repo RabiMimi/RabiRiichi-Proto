@@ -24,12 +24,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     static SetFuritenEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNFdmVudHMvSW5HYW1lL1NldEZ1cml0ZW5FdmVudC5wcm90byJaChJTZXRG",
-            "dXJpdGVuRXZlbnRNc2cSEAoIcGxheWVySWQYASABKAUSDwoHZnVyaXRlbhgC",
-            "IAEoCBIhCgtmdXJpdGVuVHlwZRgDIAEoDjIMLkZ1cml0ZW5UeXBlKjAKC0Z1",
-            "cml0ZW5UeXBlEggKBFRFTVAQABIKCgZSSUlDSEkQARILCgdESVNDQVJEEAJC",
-            "JaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3Rv",
-            "Mw=="));
+            "CiNFdmVudHMvSW5HYW1lL1NldEZ1cml0ZW5FdmVudC5wcm90byJcChJTZXRG",
+            "dXJpdGVuRXZlbnRNc2cSEQoJcGxheWVyX2lkGAEgASgFEg8KB2Z1cml0ZW4Y",
+            "AiABKAgSIgoMZnVyaXRlbl90eXBlGAMgASgOMgwuRnVyaXRlblR5cGUqMAoL",
+            "RnVyaXRlblR5cGUSCAoEVEVNUBAAEgoKBlJJSUNISRABEgsKB0RJU0NBUkQQ",
+            "AkIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Events.InGame.FuritenType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -95,7 +95,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new SetFuritenEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -119,7 +119,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "furitenType" field.</summary>
+    /// <summary>Field number for the "furiten_type" field.</summary>
     public const int FuritenTypeFieldNumber = 3;
     private global::RabiRiichi.Generated.Events.InGame.FuritenType furitenType_ = global::RabiRiichi.Generated.Events.InGame.FuritenType.Temp;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -25,12 +25,12 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiRFdmVudHMvSW5HYW1lL0Rpc2NhcmRUaWxlRXZlbnQucHJvdG8aE0NvcmUv",
-            "R2FtZVRpbGUucHJvdG8itwEKE0Rpc2NhcmRUaWxlRXZlbnRNc2cSEAoIcGxh",
-            "eWVySWQYASABKAUSHgoIaW5jb21pbmcYAiABKAsyDC5HYW1lVGlsZU1zZxIf",
-            "CglkaXNjYXJkZWQYAyABKAsyDC5HYW1lVGlsZU1zZxIeCgZyZWFzb24YBCAB",
-            "KA4yDi5EaXNjYXJkUmVhc29uEhsKBm9yaWdpbhgFIAEoDjILLlRpbGVTb3Vy",
-            "Y2USEAoIaXNSaWljaGkYBiABKAhCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVk",
-            "LkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
+            "R2FtZVRpbGUucHJvdG8iuQEKE0Rpc2NhcmRUaWxlRXZlbnRNc2cSEQoJcGxh",
+            "eWVyX2lkGAEgASgFEh4KCGluY29taW5nGAIgASgLMgwuR2FtZVRpbGVNc2cS",
+            "HwoJZGlzY2FyZGVkGAMgASgLMgwuR2FtZVRpbGVNc2cSHgoGcmVhc29uGAQg",
+            "ASgOMg4uRGlzY2FyZFJlYXNvbhIbCgZvcmlnaW4YBSABKA4yCy5UaWxlU291",
+            "cmNlEhEKCWlzX3JpaWNoaRgGIAEoCEIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0",
+            "ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,7 +90,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new DiscardTileEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -150,7 +150,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "isRiichi" field.</summary>
+    /// <summary>Field number for the "is_riichi" field.</summary>
     public const int IsRiichiFieldNumber = 6;
     private bool isRiichi_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

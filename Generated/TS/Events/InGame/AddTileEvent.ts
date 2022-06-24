@@ -17,7 +17,7 @@ import { GameTileMsg } from "../../Core/GameTile";
  */
 export interface AddTileEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -29,7 +29,7 @@ export interface AddTileEventMsg {
 class AddTileEventMsg$Type extends MessageType<AddTileEventMsg> {
     constructor() {
         super("AddTileEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "incoming", kind: "message", T: () => GameTileMsg }
         ]);
     }
@@ -45,7 +45,7 @@ class AddTileEventMsg$Type extends MessageType<AddTileEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* GameTileMsg incoming */ 2:
@@ -63,7 +63,7 @@ class AddTileEventMsg$Type extends MessageType<AddTileEventMsg> {
         return message;
     }
     internalBinaryWrite(message: AddTileEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* GameTileMsg incoming = 2; */

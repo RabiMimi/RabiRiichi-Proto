@@ -24,10 +24,10 @@ namespace RabiRiichi.Generated.Events.InGame {
     static IncreaseJunEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRFdmVudHMvSW5HYW1lL0luY3JlYXNlSnVuRXZlbnQucHJvdG8iPQoTSW5j",
-            "cmVhc2VKdW5FdmVudE1zZxIQCghwbGF5ZXJJZBgBIAEoBRIUCgxpbmNyZWFz",
-            "ZWRKdW4YAiABKAVCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5J",
-            "bkdhbWViBnByb3RvMw=="));
+            "CiRFdmVudHMvSW5HYW1lL0luY3JlYXNlSnVuRXZlbnQucHJvdG8iPwoTSW5j",
+            "cmVhc2VKdW5FdmVudE1zZxIRCglwbGF5ZXJfaWQYASABKAUSFQoNaW5jcmVh",
+            "c2VkX2p1bhgCIAEoBUIlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRz",
+            "LkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +83,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new IncreaseJunEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -95,7 +95,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "increasedJun" field.</summary>
+    /// <summary>Field number for the "increased_jun" field.</summary>
     public const int IncreasedJunFieldNumber = 2;
     private int increasedJun_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

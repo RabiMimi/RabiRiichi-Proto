@@ -24,9 +24,9 @@ namespace RabiRiichi.Generated.Events.InGame {
     static StopGameEventReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFFdmVudHMvSW5HYW1lL1N0b3BHYW1lRXZlbnQucHJvdG8iKQoQU3RvcEdh",
-            "bWVFdmVudE1zZxIVCg1lbmRHYW1lUG9pbnRzGAEgAygDQiWqAiJSYWJpUmlp",
-            "Y2hpLkdlbmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
+            "CiFFdmVudHMvSW5HYW1lL1N0b3BHYW1lRXZlbnQucHJvdG8iKwoQU3RvcEdh",
+            "bWVFdmVudE1zZxIXCg9lbmRfZ2FtZV9wb2ludHMYASADKANCJaoCIlJhYmlS",
+            "aWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,7 +81,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new StopGameEventMsg(this);
     }
 
-    /// <summary>Field number for the "endGamePoints" field.</summary>
+    /// <summary>Field number for the "end_game_points" field.</summary>
     public const int EndGamePointsFieldNumber = 1;
     private static readonly pb::FieldCodec<long> _repeated_endGamePoints_codec
         = pb::FieldCodec.ForInt64(10);

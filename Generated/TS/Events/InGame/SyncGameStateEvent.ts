@@ -17,11 +17,11 @@ import { GameStateMsg } from "../../Communication/Sync/GameState";
  */
 export interface SyncGameStateEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
-     * @generated from protobuf field: GameStateMsg gameState = 2;
+     * @generated from protobuf field: GameStateMsg game_state = 2;
      */
     gameState?: GameStateMsg;
     /**
@@ -35,8 +35,8 @@ export interface SyncGameStateEventMsg {
 class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
     constructor() {
         super("SyncGameStateEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "gameState", kind: "message", T: () => GameStateMsg },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "game_state", kind: "message", T: () => GameStateMsg },
             { no: 3, name: "extra", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
         ]);
     }
@@ -52,10 +52,10 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
-                case /* GameStateMsg gameState */ 2:
+                case /* GameStateMsg game_state */ 2:
                     message.gameState = GameStateMsg.internalBinaryRead(reader, reader.uint32(), options, message.gameState);
                     break;
                 case /* map<string, string> extra */ 3:
@@ -89,10 +89,10 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
         map[key ?? ""] = val ?? "";
     }
     internalBinaryWrite(message: SyncGameStateEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
-        /* GameStateMsg gameState = 2; */
+        /* GameStateMsg game_state = 2; */
         if (message.gameState)
             GameStateMsg.internalBinaryWrite(message.gameState, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
         /* map<string, string> extra = 3; */

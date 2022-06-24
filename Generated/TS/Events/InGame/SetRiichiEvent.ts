@@ -17,15 +17,15 @@ import { GameTileMsg } from "../../Core/GameTile";
  */
 export interface SetRiichiEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
-     * @generated from protobuf field: GameTileMsg riichiTile = 2;
+     * @generated from protobuf field: GameTileMsg riichi_tile = 2;
      */
     riichiTile?: GameTileMsg;
     /**
-     * @generated from protobuf field: bool wRiichi = 3;
+     * @generated from protobuf field: bool w_riichi = 3;
      */
     wRiichi: boolean;
 }
@@ -33,9 +33,9 @@ export interface SetRiichiEventMsg {
 class SetRiichiEventMsg$Type extends MessageType<SetRiichiEventMsg> {
     constructor() {
         super("SetRiichiEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "riichiTile", kind: "message", T: () => GameTileMsg },
-            { no: 3, name: "wRiichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "riichi_tile", kind: "message", T: () => GameTileMsg },
+            { no: 3, name: "w_riichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
     create(value?: PartialMessage<SetRiichiEventMsg>): SetRiichiEventMsg {
@@ -50,13 +50,13 @@ class SetRiichiEventMsg$Type extends MessageType<SetRiichiEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
-                case /* GameTileMsg riichiTile */ 2:
+                case /* GameTileMsg riichi_tile */ 2:
                     message.riichiTile = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.riichiTile);
                     break;
-                case /* bool wRiichi */ 3:
+                case /* bool w_riichi */ 3:
                     message.wRiichi = reader.bool();
                     break;
                 default:
@@ -71,13 +71,13 @@ class SetRiichiEventMsg$Type extends MessageType<SetRiichiEventMsg> {
         return message;
     }
     internalBinaryWrite(message: SetRiichiEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
-        /* GameTileMsg riichiTile = 2; */
+        /* GameTileMsg riichi_tile = 2; */
         if (message.riichiTile)
             GameTileMsg.internalBinaryWrite(message.riichiTile, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* bool wRiichi = 3; */
+        /* bool w_riichi = 3; */
         if (message.wRiichi !== false)
             writer.tag(3, WireType.Varint).bool(message.wRiichi);
         let u = options.writeUnknownFields;

@@ -25,10 +25,10 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJFdmVudHMvSW5HYW1lL1NldFJpaWNoaUV2ZW50LnByb3RvGhNDb3JlL0dh",
-            "bWVUaWxlLnByb3RvIlgKEVNldFJpaWNoaUV2ZW50TXNnEhAKCHBsYXllcklk",
-            "GAEgASgFEiAKCnJpaWNoaVRpbGUYAiABKAsyDC5HYW1lVGlsZU1zZxIPCgd3",
-            "UmlpY2hpGAMgASgIQiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVudHMu",
-            "SW5HYW1lYgZwcm90bzM="));
+            "bWVUaWxlLnByb3RvIlsKEVNldFJpaWNoaUV2ZW50TXNnEhEKCXBsYXllcl9p",
+            "ZBgBIAEoBRIhCgtyaWljaGlfdGlsZRgCIAEoCzIMLkdhbWVUaWxlTXNnEhAK",
+            "CHdfcmlpY2hpGAMgASgIQiWqAiJSYWJpUmlpY2hpLkdlbmVyYXRlZC5FdmVu",
+            "dHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -85,7 +85,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new SetRiichiEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -97,7 +97,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "riichiTile" field.</summary>
+    /// <summary>Field number for the "riichi_tile" field.</summary>
     public const int RiichiTileFieldNumber = 2;
     private global::RabiRiichi.Generated.Core.GameTileMsg riichiTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -109,7 +109,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "wRiichi" field.</summary>
+    /// <summary>Field number for the "w_riichi" field.</summary>
     public const int WRiichiFieldNumber = 3;
     private bool wRiichi_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

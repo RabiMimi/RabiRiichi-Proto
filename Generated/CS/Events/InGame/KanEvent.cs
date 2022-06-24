@@ -25,10 +25,10 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxFdmVudHMvSW5HYW1lL0thbkV2ZW50LnByb3RvGhNDb3JlL0dhbWVUaWxl",
-            "LnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8iWQoLS2FuRXZlbnRNc2cSEAoI",
-            "cGxheWVySWQYASABKAUSGAoDa2FuGAIgASgLMgsuTWVuTGlrZU1zZxIeCglr",
-            "YW5Tb3VyY2UYAyABKA4yCy5UaWxlU291cmNlQiWqAiJSYWJpUmlpY2hpLkdl",
-            "bmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
+            "LnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8iWwoLS2FuRXZlbnRNc2cSEQoJ",
+            "cGxheWVyX2lkGAEgASgFEhgKA2thbhgCIAEoCzILLk1lbkxpa2VNc2cSHwoK",
+            "a2FuX3NvdXJjZRgDIAEoDjILLlRpbGVTb3VyY2VCJaoCIlJhYmlSaWljaGku",
+            "R2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -85,7 +85,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new KanEventMsg(this);
     }
 
-    /// <summary>Field number for the "playerId" field.</summary>
+    /// <summary>Field number for the "player_id" field.</summary>
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -109,7 +109,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "kanSource" field.</summary>
+    /// <summary>Field number for the "kan_source" field.</summary>
     public const int KanSourceFieldNumber = 3;
     private global::RabiRiichi.Generated.Core.TileSource kanSource_ = global::RabiRiichi.Generated.Core.TileSource.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

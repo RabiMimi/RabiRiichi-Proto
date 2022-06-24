@@ -18,7 +18,7 @@ import { ScoreStorageMsg } from "../../Patterns/ScoreStorage";
  */
 export interface AgariInfoMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -31,11 +31,11 @@ export interface AgariInfoMsg {
  */
 export interface AgariInfoListMsg {
     /**
-     * @generated from protobuf field: repeated AgariInfoMsg agariInfos = 1;
+     * @generated from protobuf field: repeated AgariInfoMsg agari_infos = 1;
      */
     agariInfos: AgariInfoMsg[];
     /**
-     * @generated from protobuf field: int32 fromPlayer = 2;
+     * @generated from protobuf field: int32 from_player = 2;
      */
     fromPlayer: number;
     /**
@@ -48,11 +48,11 @@ export interface AgariInfoListMsg {
  */
 export interface AgariEventMsg {
     /**
-     * @generated from protobuf field: bool isTumo = 1;
+     * @generated from protobuf field: bool is_tumo = 1;
      */
     isTumo: boolean;
     /**
-     * @generated from protobuf field: AgariInfoListMsg agariInfos = 2;
+     * @generated from protobuf field: AgariInfoListMsg agari_infos = 2;
      */
     agariInfos?: AgariInfoListMsg;
 }
@@ -60,7 +60,7 @@ export interface AgariEventMsg {
 class AgariInfoMsg$Type extends MessageType<AgariInfoMsg> {
     constructor() {
         super("AgariInfoMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "scores", kind: "message", T: () => ScoreStorageMsg }
         ]);
     }
@@ -76,7 +76,7 @@ class AgariInfoMsg$Type extends MessageType<AgariInfoMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* ScoreStorageMsg scores */ 2:
@@ -94,7 +94,7 @@ class AgariInfoMsg$Type extends MessageType<AgariInfoMsg> {
         return message;
     }
     internalBinaryWrite(message: AgariInfoMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* ScoreStorageMsg scores = 2; */
@@ -114,8 +114,8 @@ export const AgariInfoMsg = new AgariInfoMsg$Type();
 class AgariInfoListMsg$Type extends MessageType<AgariInfoListMsg> {
     constructor() {
         super("AgariInfoListMsg", [
-            { no: 1, name: "agariInfos", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => AgariInfoMsg },
-            { no: 2, name: "fromPlayer", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "agari_infos", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => AgariInfoMsg },
+            { no: 2, name: "from_player", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 3, name: "incoming", kind: "message", T: () => GameTileMsg }
         ]);
     }
@@ -131,10 +131,10 @@ class AgariInfoListMsg$Type extends MessageType<AgariInfoListMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated AgariInfoMsg agariInfos */ 1:
+                case /* repeated AgariInfoMsg agari_infos */ 1:
                     message.agariInfos.push(AgariInfoMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
-                case /* int32 fromPlayer */ 2:
+                case /* int32 from_player */ 2:
                     message.fromPlayer = reader.int32();
                     break;
                 case /* GameTileMsg incoming */ 3:
@@ -152,10 +152,10 @@ class AgariInfoListMsg$Type extends MessageType<AgariInfoListMsg> {
         return message;
     }
     internalBinaryWrite(message: AgariInfoListMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated AgariInfoMsg agariInfos = 1; */
+        /* repeated AgariInfoMsg agari_infos = 1; */
         for (let i = 0; i < message.agariInfos.length; i++)
             AgariInfoMsg.internalBinaryWrite(message.agariInfos[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* int32 fromPlayer = 2; */
+        /* int32 from_player = 2; */
         if (message.fromPlayer !== 0)
             writer.tag(2, WireType.Varint).int32(message.fromPlayer);
         /* GameTileMsg incoming = 3; */
@@ -175,8 +175,8 @@ export const AgariInfoListMsg = new AgariInfoListMsg$Type();
 class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
     constructor() {
         super("AgariEventMsg", [
-            { no: 1, name: "isTumo", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 2, name: "agariInfos", kind: "message", T: () => AgariInfoListMsg }
+            { no: 1, name: "is_tumo", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 2, name: "agari_infos", kind: "message", T: () => AgariInfoListMsg }
         ]);
     }
     create(value?: PartialMessage<AgariEventMsg>): AgariEventMsg {
@@ -191,10 +191,10 @@ class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* bool isTumo */ 1:
+                case /* bool is_tumo */ 1:
                     message.isTumo = reader.bool();
                     break;
-                case /* AgariInfoListMsg agariInfos */ 2:
+                case /* AgariInfoListMsg agari_infos */ 2:
                     message.agariInfos = AgariInfoListMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariInfos);
                     break;
                 default:
@@ -209,10 +209,10 @@ class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
         return message;
     }
     internalBinaryWrite(message: AgariEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* bool isTumo = 1; */
+        /* bool is_tumo = 1; */
         if (message.isTumo !== false)
             writer.tag(1, WireType.Varint).bool(message.isTumo);
-        /* AgariInfoListMsg agariInfos = 2; */
+        /* AgariInfoListMsg agari_infos = 2; */
         if (message.agariInfos)
             AgariInfoListMsg.internalBinaryWrite(message.agariInfos, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;

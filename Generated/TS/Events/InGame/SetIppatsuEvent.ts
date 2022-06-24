@@ -16,7 +16,7 @@ import { MessageType } from "@protobuf-ts/runtime";
  */
 export interface SetIppatsuEventMsg {
     /**
-     * @generated from protobuf field: int32 playerId = 1;
+     * @generated from protobuf field: int32 player_id = 1;
      */
     playerId: number;
     /**
@@ -28,7 +28,7 @@ export interface SetIppatsuEventMsg {
 class SetIppatsuEventMsg$Type extends MessageType<SetIppatsuEventMsg> {
     constructor() {
         super("SetIppatsuEventMsg", [
-            { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "ippatsu", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
@@ -44,7 +44,7 @@ class SetIppatsuEventMsg$Type extends MessageType<SetIppatsuEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 playerId */ 1:
+                case /* int32 player_id */ 1:
                     message.playerId = reader.int32();
                     break;
                 case /* bool ippatsu */ 2:
@@ -62,7 +62,7 @@ class SetIppatsuEventMsg$Type extends MessageType<SetIppatsuEventMsg> {
         return message;
     }
     internalBinaryWrite(message: SetIppatsuEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 playerId = 1; */
+        /* int32 player_id = 1; */
         if (message.playerId !== 0)
             writer.tag(1, WireType.Varint).int32(message.playerId);
         /* bool ippatsu = 2; */
