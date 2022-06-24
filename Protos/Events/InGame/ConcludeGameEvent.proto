@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message ConcludeGameEventMsg {
+  string doras = 1;
+  string uradoras = 2;
+}
