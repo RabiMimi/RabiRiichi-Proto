@@ -3,6 +3,6 @@ syntax = "proto3";
 import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
-message ChiiActionMsg {
+message PonActionMsg {
   repeated GameTilesMsg tileGroups = 2;
 }
