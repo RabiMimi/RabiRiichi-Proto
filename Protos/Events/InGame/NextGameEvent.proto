@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message NextGameEventMsg {
+  int32 nextRound = 1;
+  int32 nextDealer = 2;
+  int32 nextHonba = 3;
+  int32 riichiStick = 4;
+}
