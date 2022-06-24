@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Actions";
+
+message ChiiActionMsg {
+  AgariType type = 1;
+  repeated GameTilesMsg tiles = 2;
+}

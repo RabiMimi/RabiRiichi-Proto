@@ -36,3 +36,7 @@ message GameTileMsg {
   DiscardInfoMsg discard_info = 3;
   TileSource source = 4;
 }
+
+message GameTilesMsg {
+  repeated GameTileMsg tiles = 1;
+}
