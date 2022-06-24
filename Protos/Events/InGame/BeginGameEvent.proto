@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message BeginGameEventMsg {
+  int32 round = 1;
+  int32 dealer = 2;
+  int32 honba = 3;
+}
