@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message DiscardTileEventMsg {
+  int32 playerId = 1;
+  GameTileMsg incoming = 2;
+  GameTileMsg discarded = 3;
+  DiscardReason reason = 4;
+  TileSource origin = 5;
+  bool isRiichi = 6;
+}

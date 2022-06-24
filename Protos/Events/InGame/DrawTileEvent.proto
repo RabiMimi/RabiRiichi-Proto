@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message DrawTileEventMsg {
+  TileSource source = 1;
+  DiscardReason reason = 2;
+  GameTileMsg tile = 3;
+}
