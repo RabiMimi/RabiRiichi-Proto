@@ -4,6 +4,6 @@ import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message LateClaimTileEventMsg {
-  int32 playerId = 1;
+  int32 player_id = 1;
   DiscardReason reason = 2;
 }

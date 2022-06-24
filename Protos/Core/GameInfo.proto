@@ -8,6 +8,6 @@ message GameInfoMsg {
   Wind wind = 2;
   int32 dealer = 3;
   int32 honba = 4;
-  int32 currentPlayer = 5;
-  int32 riichiStick = 6;
+  int32 current_player = 5;
+  int32 riichi_stick = 6;
 }

@@ -32,7 +32,7 @@ message DiscardInfoMsg {
 
 message GameTileMsg {
   int32 tile = 1;
-  int32 playerId = 2;
-  DiscardInfoMsg discardInfo = 3;
+  int32 player_id = 2;
+  DiscardInfoMsg discard_info = 3;
   TileSource source = 4;
 }

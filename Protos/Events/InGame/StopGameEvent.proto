@@ -3,5 +3,5 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message StopGameEventMsg {
-  repeated int64 endGamePoints = 1;
+  repeated int64 end_game_points = 1;
 }

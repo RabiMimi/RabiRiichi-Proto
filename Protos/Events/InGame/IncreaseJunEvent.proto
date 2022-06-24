@@ -3,6 +3,6 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message IncreaseJunEventMsg {
-  int32 playerId = 1;
-  int32 increasedJun = 2;
+  int32 player_id = 1;
+  int32 increased_jun = 2;
 }

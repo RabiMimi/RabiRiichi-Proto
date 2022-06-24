@@ -3,10 +3,10 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Core.Config";
 
 message PointThresholdMsg {
-  int64 initialPoints = 1;
-  int64 riichiPoints = 2;
-  int64 honbaPoints = 3;
-  int64 finishPoints = 4;
-  repeated int64 ryuukyokuPoints = 5;
-  repeated int64 validPointsRange = 6;
+  int64 initial_points = 1;
+  int64 riichi_points = 2;
+  int64 honba_points = 3;
+  int64 finish_points = 4;
+  repeated int64 ryuukyoku_points = 5;
+  repeated int64 valid_points_range = 6;
 }

@@ -5,16 +5,16 @@ import "Core/Config/PointThreshold.proto";
 option csharp_namespace = "RabiRiichi.Generated.Core.Config";
 
 message GameConfigMsg {
-  int32 playerCount = 1;
-  int32 totalRound = 2;
-  int32 minHan = 3;
-  PointThresholdMsg pointThreshold = 4;
-  RenchanPolicy renchanPolicy = 5;
-  EndGamePolicy endGamePolicy = 6;
-  KuikaePolicy kuikaePolicy = 7;
-  RiichiPolicy riichiPolicy = 8;
-  DoraOption doraOption = 9;
-  AgariOption agariOption = 10;
-  ScoringOption scoringOption = 11;
-  RyuukyokuTrigger ryuukyokuTrigger = 12;
+  int32 player_count = 1;
+  int32 total_round = 2;
+  int32 min_han = 3;
+  PointThresholdMsg point_threshold = 4;
+  RenchanPolicy renchan_policy = 5;
+  EndGamePolicy end_game_policy = 6;
+  KuikaePolicy kuikae_policy = 7;
+  RiichiPolicy riichi_policy = 8;
+  DoraOption dora_option = 9;
+  AgariOption agari_option = 10;
+  ScoringOption scoring_option = 11;
+  RyuukyokuTrigger ryuukyoku_trigger = 12;
 }

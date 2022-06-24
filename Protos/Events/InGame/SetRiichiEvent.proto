@@ -4,7 +4,7 @@ import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message SetRiichiEventMsg {
-  int32 playerId = 1;
-  GameTileMsg riichiTile = 2;
-  bool wRiichi = 3;
+  int32 player_id = 1;
+  GameTileMsg riichi_tile = 2;
+  bool w_riichi = 3;
 }

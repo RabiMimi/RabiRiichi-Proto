@@ -11,15 +11,15 @@ message PlayerHandStateMsg {
   repeated MenLikeMsg called = 1;
   repeated GameTileMsg discarded = 2;
   int32 jun = 3;
-  int32 riichiStick = 4;
-  GameTileMsg agariTile = 5;
+  int32 riichi_stick = 4;
+  GameTileMsg agari_tile = 5;
   bool riichi = 6;
 }
 
 message WallStateMsg{
   repeated GameTileMsg doras = 1;
   int32 remaining = 2;
-  int32 rinshanRemaining = 3;
+  int32 rinshan_remaining = 3;
 }
 
 message PlayerStateMsg{

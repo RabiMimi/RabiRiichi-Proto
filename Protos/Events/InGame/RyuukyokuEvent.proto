@@ -4,9 +4,9 @@ import "Events/InGame/CalcScoreEvent.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message EndGameRyuukyokuEventMsg {
-  repeated int32 remainingPlayers = 1;
-  repeated int32 nagashiManganPlayers = 2;
-  repeated int32 tenpaiPlayers = 3;
+  repeated int32 remaining_players = 1;
+  repeated int32 nagashi_mangan_players = 2;
+  repeated int32 tenpai_players = 3;
 }
 
 message MidGameRyuukyokuEventMsg {
@@ -14,9 +14,9 @@ message MidGameRyuukyokuEventMsg {
 }
 
 message RyuukyokuEventMsg {
-  repeated ScoreTransferMsg scoreChange = 1;
+  repeated ScoreTransferMsg score_change = 1;
   oneof ryuukyokuEvent {
-    EndGameRyuukyokuEventMsg endGameRyuukyoku = 2;
-    MidGameRyuukyokuEventMsg midGameRyuukyoku = 3;
+    EndGameRyuukyokuEventMsg end_game_ryuukyoku = 2;
+    MidGameRyuukyokuEventMsg mid_game_ryuukyoku = 3;
   }
 }

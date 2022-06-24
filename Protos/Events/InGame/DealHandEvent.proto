@@ -4,6 +4,6 @@ import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message DealHandEventMsg {
-  int32 playerId = 1;
+  int32 player_id = 1;
   repeated GameTileMsg tiles = 2;
 }

@@ -9,7 +9,7 @@ enum FuritenType {
 }
 
 message SetFuritenEventMsg {
-  int32 playerId = 1;
+  int32 player_id = 1;
   bool furiten = 2;
-  FuritenType furitenType = 3;
+  FuritenType furiten_type = 3;
 }

@@ -4,7 +4,7 @@ import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message DrawTileEventMsg {
-  int32 playerId = 1;
+  int32 player_id = 1;
   TileSource source = 2;
   GameTileMsg tile = 3;
 }

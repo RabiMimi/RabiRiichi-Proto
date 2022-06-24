@@ -5,17 +5,17 @@ import "Patterns/ScoreStorage.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message AgariInfoMsg {
-  int32 playerId = 1;
+  int32 player_id = 1;
   ScoreStorageMsg scores = 2;
 }
 
 message AgariInfoListMsg {
-  repeated AgariInfoMsg agariInfos = 1;
-  int32 fromPlayer = 2;
+  repeated AgariInfoMsg agari_infos = 1;
+  int32 from_player = 2;
   GameTileMsg incoming = 3;
 }
 
 message AgariEventMsg {
-  bool isTumo = 1;
-  AgariInfoListMsg agariInfos = 2;
+  bool is_tumo = 1;
+  AgariInfoListMsg agari_infos = 2;
 }

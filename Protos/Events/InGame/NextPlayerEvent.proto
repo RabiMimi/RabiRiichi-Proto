@@ -3,6 +3,6 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message NextPlayerEventMsg {
-  int32 playerId = 1;
-  int32 nextPlayerId = 2;
+  int32 player_id = 1;
+  int32 next_player_id = 2;
 }

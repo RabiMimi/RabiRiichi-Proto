@@ -4,5 +4,5 @@ import "Events/InGame/CalcScoreEvent.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message ApplyScoreEventMsg {
-  repeated ScoreTransferMsg scoreChange = 1;
+  repeated ScoreTransferMsg score_change = 1;
 }
