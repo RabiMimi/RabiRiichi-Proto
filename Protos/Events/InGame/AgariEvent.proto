@@ -16,6 +16,6 @@ message AgariInfoListMsg {
 }
 
 message AgariEventMsg {
-  bool is_tumo = 1;
+  bool is_tsumo = 1;
   AgariInfoListMsg agari_infos = 2;
 }
