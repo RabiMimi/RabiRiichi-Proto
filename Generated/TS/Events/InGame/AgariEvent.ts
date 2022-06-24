@@ -48,9 +48,9 @@ export interface AgariInfoListMsg {
  */
 export interface AgariEventMsg {
     /**
-     * @generated from protobuf field: bool is_tumo = 1;
+     * @generated from protobuf field: bool is_tsumo = 1;
      */
-    isTumo: boolean;
+    isTsumo: boolean;
     /**
      * @generated from protobuf field: AgariInfoListMsg agari_infos = 2;
      */
@@ -175,12 +175,12 @@ export const AgariInfoListMsg = new AgariInfoListMsg$Type();
 class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
     constructor() {
         super("AgariEventMsg", [
-            { no: 1, name: "is_tumo", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 1, name: "is_tsumo", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
             { no: 2, name: "agari_infos", kind: "message", T: () => AgariInfoListMsg }
         ]);
     }
     create(value?: PartialMessage<AgariEventMsg>): AgariEventMsg {
-        const message = { isTumo: false };
+        const message = { isTsumo: false };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<AgariEventMsg>(this, message, value);
@@ -191,8 +191,8 @@ class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* bool is_tumo */ 1:
-                    message.isTumo = reader.bool();
+                case /* bool is_tsumo */ 1:
+                    message.isTsumo = reader.bool();
                     break;
                 case /* AgariInfoListMsg agari_infos */ 2:
                     message.agariInfos = AgariInfoListMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariInfos);
@@ -209,9 +209,9 @@ class AgariEventMsg$Type extends MessageType<AgariEventMsg> {
         return message;
     }
     internalBinaryWrite(message: AgariEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* bool is_tumo = 1; */
-        if (message.isTumo !== false)
-            writer.tag(1, WireType.Varint).bool(message.isTumo);
+        /* bool is_tsumo = 1; */
+        if (message.isTsumo !== false)
+            writer.tag(1, WireType.Varint).bool(message.isTsumo);
         /* AgariInfoListMsg agari_infos = 2; */
         if (message.agariInfos)
             AgariInfoListMsg.internalBinaryWrite(message.agariInfos, writer.tag(2, WireType.LengthDelimited).fork(), options).join();

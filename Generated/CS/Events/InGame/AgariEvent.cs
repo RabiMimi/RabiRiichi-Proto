@@ -29,16 +29,16 @@ namespace RabiRiichi.Generated.Events.InGame {
             "aUluZm9Nc2cSEQoJcGxheWVyX2lkGAEgASgFEiAKBnNjb3JlcxgCIAEoCzIQ",
             "LlNjb3JlU3RvcmFnZU1zZyJrChBBZ2FyaUluZm9MaXN0TXNnEiIKC2FnYXJp",
             "X2luZm9zGAEgAygLMg0uQWdhcmlJbmZvTXNnEhMKC2Zyb21fcGxheWVyGAIg",
-            "ASgFEh4KCGluY29taW5nGAMgASgLMgwuR2FtZVRpbGVNc2ciSAoNQWdhcmlF",
-            "dmVudE1zZxIPCgdpc190dW1vGAEgASgIEiYKC2FnYXJpX2luZm9zGAIgASgL",
-            "MhEuQWdhcmlJbmZvTGlzdE1zZ0IlqgIiUmFiaVJpaWNoaS5HZW5lcmF0ZWQu",
-            "RXZlbnRzLkluR2FtZWIGcHJvdG8z"));
+            "ASgFEh4KCGluY29taW5nGAMgASgLMgwuR2FtZVRpbGVNc2ciSQoNQWdhcmlF",
+            "dmVudE1zZxIQCghpc190c3VtbxgBIAEoCBImCgthZ2FyaV9pbmZvcxgCIAEo",
+            "CzIRLkFnYXJpSW5mb0xpc3RNc2dCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVk",
+            "LkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Patterns.ScoreStorageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg.Parser, new[]{ "PlayerId", "Scores" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg.Parser, new[]{ "AgariInfos", "FromPlayer", "Incoming" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariEventMsg), global::RabiRiichi.Generated.Events.InGame.AgariEventMsg.Parser, new[]{ "IsTumo", "AgariInfos" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariEventMsg), global::RabiRiichi.Generated.Events.InGame.AgariEventMsg.Parser, new[]{ "IsTsumo", "AgariInfos" }, null, null, null, null)
           }));
     }
     #endregion
@@ -575,7 +575,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariEventMsg(AgariEventMsg other) : this() {
-      isTumo_ = other.isTumo_;
+      isTsumo_ = other.isTsumo_;
       agariInfos_ = other.agariInfos_ != null ? other.agariInfos_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -586,15 +586,15 @@ namespace RabiRiichi.Generated.Events.InGame {
       return new AgariEventMsg(this);
     }
 
-    /// <summary>Field number for the "is_tumo" field.</summary>
-    public const int IsTumoFieldNumber = 1;
-    private bool isTumo_;
+    /// <summary>Field number for the "is_tsumo" field.</summary>
+    public const int IsTsumoFieldNumber = 1;
+    private bool isTsumo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsTumo {
-      get { return isTumo_; }
+    public bool IsTsumo {
+      get { return isTsumo_; }
       set {
-        isTumo_ = value;
+        isTsumo_ = value;
       }
     }
 
@@ -625,7 +625,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IsTumo != other.IsTumo) return false;
+      if (IsTsumo != other.IsTsumo) return false;
       if (!object.Equals(AgariInfos, other.AgariInfos)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -634,7 +634,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (IsTumo != false) hash ^= IsTumo.GetHashCode();
+      if (IsTsumo != false) hash ^= IsTsumo.GetHashCode();
       if (agariInfos_ != null) hash ^= AgariInfos.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -654,9 +654,9 @@ namespace RabiRiichi.Generated.Events.InGame {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (IsTumo != false) {
+      if (IsTsumo != false) {
         output.WriteRawTag(8);
-        output.WriteBool(IsTumo);
+        output.WriteBool(IsTsumo);
       }
       if (agariInfos_ != null) {
         output.WriteRawTag(18);
@@ -672,9 +672,9 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IsTumo != false) {
+      if (IsTsumo != false) {
         output.WriteRawTag(8);
-        output.WriteBool(IsTumo);
+        output.WriteBool(IsTsumo);
       }
       if (agariInfos_ != null) {
         output.WriteRawTag(18);
@@ -690,7 +690,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (IsTumo != false) {
+      if (IsTsumo != false) {
         size += 1 + 1;
       }
       if (agariInfos_ != null) {
@@ -708,8 +708,8 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (other == null) {
         return;
       }
-      if (other.IsTumo != false) {
-        IsTumo = other.IsTumo;
+      if (other.IsTsumo != false) {
+        IsTsumo = other.IsTsumo;
       }
       if (other.agariInfos_ != null) {
         if (agariInfos_ == null) {
@@ -733,7 +733,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            IsTumo = input.ReadBool();
+            IsTsumo = input.ReadBool();
             break;
           }
           case 18: {
@@ -759,7 +759,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            IsTumo = input.ReadBool();
+            IsTsumo = input.ReadBool();
             break;
           }
           case 18: {
