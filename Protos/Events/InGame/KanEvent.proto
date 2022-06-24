@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+import "Core/MenLike.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message KanEventMsg {
+  int32 playerId = 1;
+  MenLikeMsg kan = 2;
+  TileSource kanSource = 3;
+}
