@@ -3,20 +3,20 @@ syntax = "proto3";
 import "Events/InGame/CalcScoreEvent.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
-message EndGameRyuukyokuEvent {
+message EndGameRyuukyokuEventMsg {
   repeated int32 remainingPlayers = 1;
   repeated int32 nagashiManganPlayers = 2;
   repeated int32 tenpaiPlayers = 3;
 }
 
-message MidGameRyuukyokuEvent {
+message MidGameRyuukyokuEventMsg {
   string name = 1;
 }
 
 message RyuukyokuEventMsg {
   repeated ScoreTransferMsg scoreChange = 1;
   oneof ryuukyokuEvent {
-    EndGameRyuukyokuEvent endGameRyuukyoku = 2;
-    MidGameRyuukyokuEvent midGameRyuukyoku = 3;
+    EndGameRyuukyokuEventMsg endGameRyuukyoku = 2;
+    MidGameRyuukyokuEventMsg midGameRyuukyoku = 3;
   }
 }
