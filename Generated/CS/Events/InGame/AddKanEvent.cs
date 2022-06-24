@@ -25,15 +25,15 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9FdmVudHMvSW5HYW1lL0FkZEthbkV2ZW50LnByb3RvGhNDb3JlL0dhbWVU",
-            "aWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8ieQoOQWRkS2FuRXZlbnRN",
+            "aWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8ifAoOQWRkS2FuRXZlbnRN",
             "c2cSEAoIcGxheWVySWQYASABKAUSGAoDa2FuGAIgASgLMgsuTWVuTGlrZU1z",
-            "ZxIeCghpbmNvbWluZxgDIAEoCzIMLkdhbWVUaWxlTXNnEhsKBnNvdXJjZRgE",
-            "IAEoDjILLlRpbGVTb3VyY2VCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2",
-            "ZW50cy5JbkdhbWViBnByb3RvMw=="));
+            "ZxIeCghpbmNvbWluZxgDIAEoCzIMLkdhbWVUaWxlTXNnEh4KCWthblNvdXJj",
+            "ZRgEIAEoDjILLlRpbGVTb3VyY2VCJaoCIlJhYmlSaWljaGkuR2VuZXJhdGVk",
+            "LkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg), global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg.Parser, new[]{ "PlayerId", "Kan", "Incoming", "Source" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg), global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg.Parser, new[]{ "PlayerId", "Kan", "Incoming", "KanSource" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       playerId_ = other.playerId_;
       kan_ = other.kan_ != null ? other.kan_.Clone() : null;
       incoming_ = other.incoming_ != null ? other.incoming_.Clone() : null;
-      source_ = other.source_;
+      kanSource_ = other.kanSource_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -123,15 +123,15 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "source" field.</summary>
-    public const int SourceFieldNumber = 4;
-    private global::RabiRiichi.Generated.Core.TileSource source_ = global::RabiRiichi.Generated.Core.TileSource.None;
+    /// <summary>Field number for the "kanSource" field.</summary>
+    public const int KanSourceFieldNumber = 4;
+    private global::RabiRiichi.Generated.Core.TileSource kanSource_ = global::RabiRiichi.Generated.Core.TileSource.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::RabiRiichi.Generated.Core.TileSource Source {
-      get { return source_; }
+    public global::RabiRiichi.Generated.Core.TileSource KanSource {
+      get { return kanSource_; }
       set {
-        source_ = value;
+        kanSource_ = value;
       }
     }
 
@@ -153,7 +153,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (PlayerId != other.PlayerId) return false;
       if (!object.Equals(Kan, other.Kan)) return false;
       if (!object.Equals(Incoming, other.Incoming)) return false;
-      if (Source != other.Source) return false;
+      if (KanSource != other.KanSource) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -164,7 +164,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (kan_ != null) hash ^= Kan.GetHashCode();
       if (incoming_ != null) hash ^= Incoming.GetHashCode();
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) hash ^= Source.GetHashCode();
+      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) hash ^= KanSource.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -195,9 +195,9 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(26);
         output.WriteMessage(Incoming);
       }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
         output.WriteRawTag(32);
-        output.WriteEnum((int) Source);
+        output.WriteEnum((int) KanSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -221,9 +221,9 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(26);
         output.WriteMessage(Incoming);
       }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
         output.WriteRawTag(32);
-        output.WriteEnum((int) Source);
+        output.WriteEnum((int) KanSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -244,8 +244,8 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (incoming_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Incoming);
       }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Source);
+      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KanSource);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -274,8 +274,8 @@ namespace RabiRiichi.Generated.Events.InGame {
         }
         Incoming.MergeFrom(other.Incoming);
       }
-      if (other.Source != global::RabiRiichi.Generated.Core.TileSource.None) {
-        Source = other.Source;
+      if (other.KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
+        KanSource = other.KanSource;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -311,7 +311,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           }
           case 32: {
-            Source = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
+            KanSource = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
             break;
           }
         }
@@ -348,7 +348,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           }
           case 32: {
-            Source = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
+            KanSource = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
             break;
           }
         }

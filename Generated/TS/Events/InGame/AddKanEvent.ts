@@ -31,9 +31,9 @@ export interface AddKanEventMsg {
      */
     incoming?: GameTileMsg;
     /**
-     * @generated from protobuf field: TileSource source = 4;
+     * @generated from protobuf field: TileSource kanSource = 4;
      */
-    source: TileSource;
+    kanSource: TileSource;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class AddKanEventMsg$Type extends MessageType<AddKanEventMsg> {
@@ -42,11 +42,11 @@ class AddKanEventMsg$Type extends MessageType<AddKanEventMsg> {
             { no: 1, name: "playerId", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "kan", kind: "message", T: () => MenLikeMsg },
             { no: 3, name: "incoming", kind: "message", T: () => GameTileMsg },
-            { no: 4, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
+            { no: 4, name: "kanSource", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
         ]);
     }
     create(value?: PartialMessage<AddKanEventMsg>): AddKanEventMsg {
-        const message = { playerId: 0, source: 0 };
+        const message = { playerId: 0, kanSource: 0 };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<AddKanEventMsg>(this, message, value);
@@ -66,8 +66,8 @@ class AddKanEventMsg$Type extends MessageType<AddKanEventMsg> {
                 case /* GameTileMsg incoming */ 3:
                     message.incoming = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.incoming);
                     break;
-                case /* TileSource source */ 4:
-                    message.source = reader.int32();
+                case /* TileSource kanSource */ 4:
+                    message.kanSource = reader.int32();
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -90,9 +90,9 @@ class AddKanEventMsg$Type extends MessageType<AddKanEventMsg> {
         /* GameTileMsg incoming = 3; */
         if (message.incoming)
             GameTileMsg.internalBinaryWrite(message.incoming, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-        /* TileSource source = 4; */
-        if (message.source !== 0)
-            writer.tag(4, WireType.Varint).int32(message.source);
+        /* TileSource kanSource = 4; */
+        if (message.kanSource !== 0)
+            writer.tag(4, WireType.Varint).int32(message.kanSource);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);

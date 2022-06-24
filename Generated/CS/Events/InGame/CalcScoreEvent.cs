@@ -27,22 +27,21 @@ namespace RabiRiichi.Generated.Events.InGame {
             "CiJFdmVudHMvSW5HYW1lL0NhbGNTY29yZUV2ZW50LnByb3RvGh5FdmVudHMv",
             "SW5HYW1lL0FnYXJpRXZlbnQucHJvdG8iYgoQU2NvcmVUcmFuc2Zlck1zZxIM",
             "CgRmcm9tGAEgASgFEgoKAnRvGAIgASgFEg4KBnBvaW50cxgDIAEoAxIkCgZy",
-            "ZWFzb24YBCABKA4yFC5TY29yZVRyYW5zZmVyUmVhc29uImgKEUNhbGNTY29y",
+            "ZWFzb24YBCABKA4yFC5TY29yZVRyYW5zZmVyUmVhc29uImIKEUNhbGNTY29y",
             "ZUV2ZW50TXNnEiUKCmFnYXJpSW5mb3MYASABKAsyES5BZ2FyaUluZm9MaXN0",
-            "TXNnEiwKEXNjb3JlVHJhbnNmZXJMaXN0GAIgAygLMhEuU2NvcmVUcmFuc2Zl",
-            "ck1zZyqGAgoTU2NvcmVUcmFuc2ZlclJlYXNvbhIdChlTQ09SRV9UUkFOU0ZF",
-            "Ul9SRUFTT05fUk9OEAASHwobU0NPUkVfVFJBTlNGRVJfUkVBU09OX1RTVU1P",
-            "EAESIwofU0NPUkVfVFJBTlNGRVJfUkVBU09OX1JZVVVLWU9LVRACEigKJFND",
-            "T1JFX1RSQU5TRkVSX1JFQVNPTl9OQUdBU0hJX01BTkdBThADEiAKHFNDT1JF",
-            "X1RSQU5TRkVSX1JFQVNPTl9SSUlDSEkQBBIfChtTQ09SRV9UUkFOU0ZFUl9S",
-            "RUFTT05fSE9OQkEQBRIdChlTQ09SRV9UUkFOU0ZFUl9SRUFTT05fUEFPEAZC",
-            "JaoCIlJhYmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3Rv",
-            "Mw=="));
+            "TXNnEiYKC3Njb3JlQ2hhbmdlGAIgAygLMhEuU2NvcmVUcmFuc2Zlck1zZyqG",
+            "AgoTU2NvcmVUcmFuc2ZlclJlYXNvbhIdChlTQ09SRV9UUkFOU0ZFUl9SRUFT",
+            "T05fUk9OEAASHwobU0NPUkVfVFJBTlNGRVJfUkVBU09OX1RTVU1PEAESIwof",
+            "U0NPUkVfVFJBTlNGRVJfUkVBU09OX1JZVVVLWU9LVRACEigKJFNDT1JFX1RS",
+            "QU5TRkVSX1JFQVNPTl9OQUdBU0hJX01BTkdBThADEiAKHFNDT1JFX1RSQU5T",
+            "RkVSX1JFQVNPTl9SSUlDSEkQBBIfChtTQ09SRV9UUkFOU0ZFUl9SRUFTT05f",
+            "SE9OQkEQBRIdChlTQ09SRV9UUkFOU0ZFUl9SRUFTT05fUEFPEAZCJaoCIlJh",
+            "YmlSaWljaGkuR2VuZXJhdGVkLkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg), global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser, new[]{ "From", "To", "Points", "Reason" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg), global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg.Parser, new[]{ "AgariInfos", "ScoreTransferList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg), global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg.Parser, new[]{ "AgariInfos", "ScoreChange" }, null, null, null, null)
           }));
     }
     #endregion
@@ -397,7 +396,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CalcScoreEventMsg(CalcScoreEventMsg other) : this() {
       agariInfos_ = other.agariInfos_ != null ? other.agariInfos_.Clone() : null;
-      scoreTransferList_ = other.scoreTransferList_.Clone();
+      scoreChange_ = other.scoreChange_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -419,15 +418,15 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
     }
 
-    /// <summary>Field number for the "scoreTransferList" field.</summary>
-    public const int ScoreTransferListFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> _repeated_scoreTransferList_codec
+    /// <summary>Field number for the "scoreChange" field.</summary>
+    public const int ScoreChangeFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> _repeated_scoreChange_codec
         = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);
-    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> scoreTransferList_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg>();
+    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> scoreChange_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> ScoreTransferList {
-      get { return scoreTransferList_; }
+    public pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> ScoreChange {
+      get { return scoreChange_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -446,7 +445,7 @@ namespace RabiRiichi.Generated.Events.InGame {
         return true;
       }
       if (!object.Equals(AgariInfos, other.AgariInfos)) return false;
-      if(!scoreTransferList_.Equals(other.scoreTransferList_)) return false;
+      if(!scoreChange_.Equals(other.scoreChange_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -455,7 +454,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     public override int GetHashCode() {
       int hash = 1;
       if (agariInfos_ != null) hash ^= AgariInfos.GetHashCode();
-      hash ^= scoreTransferList_.GetHashCode();
+      hash ^= scoreChange_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -478,7 +477,7 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(10);
         output.WriteMessage(AgariInfos);
       }
-      scoreTransferList_.WriteTo(output, _repeated_scoreTransferList_codec);
+      scoreChange_.WriteTo(output, _repeated_scoreChange_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -493,7 +492,7 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(10);
         output.WriteMessage(AgariInfos);
       }
-      scoreTransferList_.WriteTo(ref output, _repeated_scoreTransferList_codec);
+      scoreChange_.WriteTo(ref output, _repeated_scoreChange_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -507,7 +506,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (agariInfos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AgariInfos);
       }
-      size += scoreTransferList_.CalculateSize(_repeated_scoreTransferList_codec);
+      size += scoreChange_.CalculateSize(_repeated_scoreChange_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -526,7 +525,7 @@ namespace RabiRiichi.Generated.Events.InGame {
         }
         AgariInfos.MergeFrom(other.AgariInfos);
       }
-      scoreTransferList_.Add(other.scoreTransferList_);
+      scoreChange_.Add(other.scoreChange_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -550,7 +549,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           }
           case 18: {
-            scoreTransferList_.AddEntriesFrom(input, _repeated_scoreTransferList_codec);
+            scoreChange_.AddEntriesFrom(input, _repeated_scoreChange_codec);
             break;
           }
         }
@@ -576,7 +575,7 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           }
           case 18: {
-            scoreTransferList_.AddEntriesFrom(ref input, _repeated_scoreTransferList_codec);
+            scoreChange_.AddEntriesFrom(ref input, _repeated_scoreChange_codec);
             break;
           }
         }

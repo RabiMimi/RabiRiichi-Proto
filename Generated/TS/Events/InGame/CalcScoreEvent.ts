@@ -42,9 +42,9 @@ export interface CalcScoreEventMsg {
      */
     agariInfos?: AgariInfoListMsg;
     /**
-     * @generated from protobuf field: repeated ScoreTransferMsg scoreTransferList = 2;
+     * @generated from protobuf field: repeated ScoreTransferMsg scoreChange = 2;
      */
-    scoreTransferList: ScoreTransferMsg[];
+    scoreChange: ScoreTransferMsg[];
 }
 /**
  * @generated from protobuf enum ScoreTransferReason
@@ -152,11 +152,11 @@ class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
     constructor() {
         super("CalcScoreEventMsg", [
             { no: 1, name: "agariInfos", kind: "message", T: () => AgariInfoListMsg },
-            { no: 2, name: "scoreTransferList", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
+            { no: 2, name: "scoreChange", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ScoreTransferMsg }
         ]);
     }
     create(value?: PartialMessage<CalcScoreEventMsg>): CalcScoreEventMsg {
-        const message = { scoreTransferList: [] };
+        const message = { scoreChange: [] };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<CalcScoreEventMsg>(this, message, value);
@@ -170,8 +170,8 @@ class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
                 case /* AgariInfoListMsg agariInfos */ 1:
                     message.agariInfos = AgariInfoListMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariInfos);
                     break;
-                case /* repeated ScoreTransferMsg scoreTransferList */ 2:
-                    message.scoreTransferList.push(ScoreTransferMsg.internalBinaryRead(reader, reader.uint32(), options));
+                case /* repeated ScoreTransferMsg scoreChange */ 2:
+                    message.scoreChange.push(ScoreTransferMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -188,9 +188,9 @@ class CalcScoreEventMsg$Type extends MessageType<CalcScoreEventMsg> {
         /* AgariInfoListMsg agariInfos = 1; */
         if (message.agariInfos)
             AgariInfoListMsg.internalBinaryWrite(message.agariInfos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* repeated ScoreTransferMsg scoreTransferList = 2; */
-        for (let i = 0; i < message.scoreTransferList.length; i++)
-            ScoreTransferMsg.internalBinaryWrite(message.scoreTransferList[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* repeated ScoreTransferMsg scoreChange = 2; */
+        for (let i = 0; i < message.scoreChange.length; i++)
+            ScoreTransferMsg.internalBinaryWrite(message.scoreChange[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
