@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+import "Patterns/ScoreStorage.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message AgariInfoMsg {
+  int32 playerId = 1;
+  ScoreStorageMsg scores = 2;
+}
+
+message AgariInfoListMsg {
+  repeated AgariInfoMsg agariInfos = 1;
+  int32 fromPlayer = 2;
+  GameTileMsg incoming = 3;
+}
+
+message AgariEventMsg {
+  bool isTumo = 1;
+  AgariInfoListMsg agariInfos = 2;
+}

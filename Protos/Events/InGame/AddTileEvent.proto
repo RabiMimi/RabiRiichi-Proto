@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 import "Core/GameTile.proto";
-import "Core/MenLike.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message AddTileEventMsg {
