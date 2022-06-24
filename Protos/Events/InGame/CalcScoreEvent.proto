@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "Events/InGame/AgariEvent.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+enum ScoreTransferReason {
+  SCORE_TRANSFER_REASON_RON = 0;
+  SCORE_TRANSFER_REASON_TSUMO = 1;
+  SCORE_TRANSFER_REASON_RYUUKYOKU = 2;
+  SCORE_TRANSFER_REASON_NAGASHI_MANGAN = 3;
+  SCORE_TRANSFER_REASON_RIICHI = 4;
+  SCORE_TRANSFER_REASON_HONBA = 5;
+  SCORE_TRANSFER_REASON_PAO = 6;
+}
+
+message ScoreTransferMsg {
+  int32 from = 1;
+  int32 to = 2;
+  int64 points = 3;
+  ScoreTransferReason reason = 4;
+}
+
+message CalcScoreEventMsg {
+  AgariInfoListMsg agariInfos = 1;
+  repeated ScoreTransferMsg scoreTransferList = 2;
+}
