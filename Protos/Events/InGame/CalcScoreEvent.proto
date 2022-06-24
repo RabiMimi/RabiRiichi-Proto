@@ -22,5 +22,5 @@ message ScoreTransferMsg {
 
 message CalcScoreEventMsg {
   AgariInfoListMsg agariInfos = 1;
-  repeated ScoreTransferMsg scoreTransferList = 2;
+  repeated ScoreTransferMsg scoreChange = 2;
 }

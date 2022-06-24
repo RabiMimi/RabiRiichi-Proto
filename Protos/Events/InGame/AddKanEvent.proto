@@ -8,5 +8,5 @@ message AddKanEventMsg {
   int32 playerId = 1;
   MenLikeMsg kan = 2;
   GameTileMsg incoming = 3;
-  TileSource source = 4;
+  TileSource kanSource = 4;
 }
