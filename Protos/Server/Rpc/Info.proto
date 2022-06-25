@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
+
+message GetInfoResponse {
+  string game = 1;
+  string game_version = 2;
+  string server = 3;
+  string server_version = 4;
+  string min_client_version = 5;
+}
+
+service InfoService {
+  rpc GetInfo(google.protobuf.Empty) returns (GetInfoResponse) {}
+}
