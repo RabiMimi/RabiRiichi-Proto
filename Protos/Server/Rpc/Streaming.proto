@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "RabiRiichi.Server/Messages/Message.proto";
+import "Server/Messages/Message.proto";
 import "Actions/SinglePlayerInquiry.proto";
 import "Events/Event.proto";
 import "google/protobuf/empty.proto";

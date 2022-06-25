@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "RabiRiichi.Server/Messages/Room.proto";
+import "Server/Messages/Room.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
