@@ -4,5 +4,5 @@ import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 message ChiiActionMsg {
-  repeated GameTilesMsg tileGroups = 2;
+  repeated GameTilesMsg tileGroups = 1;
 }

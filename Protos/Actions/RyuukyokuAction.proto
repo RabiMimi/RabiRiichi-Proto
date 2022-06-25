@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Actions";
+
+message RyuukyokuActionMsg {
+  string reason = 1;
+}
