@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+import "Events/InGame/AddKanEvent.proto";
+import "Events/InGame/AddTileEvent.proto";
+import "Events/InGame/AgariEvent.proto";
+import "Events/InGame/ApplyScoreEvent.proto";
+import "Events/InGame/BeginGameEvent.proto";
+import "Events/InGame/CalcScoreEvent.proto";
+import "Events/InGame/ClaimTileEvent.proto";
+import "Events/InGame/ConcludeGameEvent.proto";
+import "Events/InGame/DealerFirstTurnEvent.proto";
+import "Events/InGame/DealHandEvent.proto";
+import "Events/InGame/DiscardTileEvent.proto";
+import "Events/InGame/DrawTileEvent.proto";
+import "Events/InGame/IncreaseJunEvent.proto";
+import "Events/InGame/KanEvent.proto";
+import "Events/InGame/LateClaimTileEvent.proto";
+import "Events/InGame/NextGameEvent.proto";
+import "Events/InGame/NextPlayerEvent.proto";
+import "Events/InGame/RevealDoraEvent.proto";
+import "Events/InGame/RyuukyokuEvent.proto";
+import "Events/InGame/SetFuritenEvent.proto";
+import "Events/InGame/SetIppatsuEvent.proto";
+import "Events/InGame/SetMenzenEvent.proto";
+import "Events/InGame/SetRiichiEvent.proto";
+import "Events/InGame/StopGameEvent.proto";
+import "Events/InGame/SyncGameStateEvent.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events";
+
+message EventMsg {
+  oneof event {
+    AddKanEventMsg add_kan_event = 1;
+    AddTileEventMsg add_tile_event = 2;
+    AgariEventMsg agari_event = 3;
+    ApplyScoreEventMsg apply_score_event = 4;
+    BeginGameEventMsg begin_game_event = 5;
+    CalcScoreEventMsg calc_score_event = 6;
+    ClaimTileEventMsg claim_tile_event = 7;
+    ConcludeGameEventMsg conclude_game_event = 8;
+    DealerFirstTurnEventMsg dealer_first_turn_event = 9;
+    DealHandEventMsg deal_hand_event = 10;
+    DiscardTileEventMsg discard_tile_event = 11;
+    DrawTileEventMsg draw_tile_event = 12;
+    IncreaseJunEventMsg increase_jun_event = 13;
+    KanEventMsg kan_event = 14;
+    LateClaimTileEventMsg late_claim_tile_event = 15;
+    NextGameEventMsg next_game_event = 16;
+    NextPlayerEventMsg next_player_event = 17;
+    RevealDoraEventMsg reveal_dora_event = 18;
+    RyuukyokuEventMsg ryuukyoku_event = 19;
+    SetFuritenEventMsg set_furiten_event = 20;
+    SetIppatsuEventMsg set_ippatsu_event = 21;
+    SetMenzenEventMsg set_menzen_event = 22;
+    SetRiichiEventMsg set_riichi_event = 23;
+    StopGameEventMsg stop_game_event = 24;
+    SyncGameStateEventMsg sync_game_state_event = 25;
+  }
+}
