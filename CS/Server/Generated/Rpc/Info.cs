@@ -33,39 +33,31 @@ namespace RabiRiichi.Server.Generated.Rpc {
             "bmVyYXRlZC5ScGNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Rpc.GetInfoResponse), global::RabiRiichi.Server.Generated.Rpc.GetInfoResponse.Parser, new[]{ "Game", "GameVersion", "Server", "ServerVersion", "MinClientVersion" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Rpc.GetInfoResponse), global::RabiRiichi.Server.Generated.Rpc.GetInfoResponse.Parser, new[]{ "Game", "GameVersion", "Server", "ServerVersion", "MinClientVersion" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class GetInfoResponse : pb::IMessage<GetInfoResponse>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class GetInfoResponse : pb::IMessage<GetInfoResponse> {
     private static readonly pb::MessageParser<GetInfoResponse> _parser = new pb::MessageParser<GetInfoResponse>(() => new GetInfoResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetInfoResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Rpc.InfoReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetInfoResponse() {
       OnConstruction();
     }
@@ -73,7 +65,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetInfoResponse(GetInfoResponse other) : this() {
       game_ = other.game_;
       gameVersion_ = other.gameVersion_;
@@ -84,7 +75,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetInfoResponse Clone() {
       return new GetInfoResponse(this);
     }
@@ -93,7 +83,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     public const int GameFieldNumber = 1;
     private string game_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Game {
       get { return game_; }
       set {
@@ -105,7 +94,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     public const int GameVersionFieldNumber = 2;
     private string gameVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GameVersion {
       get { return gameVersion_; }
       set {
@@ -117,7 +105,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     public const int ServerFieldNumber = 3;
     private string server_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Server {
       get { return server_; }
       set {
@@ -129,7 +116,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     public const int ServerVersionFieldNumber = 4;
     private string serverVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ServerVersion {
       get { return serverVersion_; }
       set {
@@ -141,7 +127,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     public const int MinClientVersionFieldNumber = 5;
     private string minClientVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MinClientVersion {
       get { return minClientVersion_; }
       set {
@@ -150,13 +135,11 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetInfoResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetInfoResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -173,7 +156,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Game.Length != 0) hash ^= Game.GetHashCode();
@@ -188,17 +170,12 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Game.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Game);
@@ -222,41 +199,9 @@ namespace RabiRiichi.Server.Generated.Rpc {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Game.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Game);
-      }
-      if (GameVersion.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(GameVersion);
-      }
-      if (Server.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Server);
-      }
-      if (ServerVersion.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(ServerVersion);
-      }
-      if (MinClientVersion.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(MinClientVersion);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Game.Length != 0) {
@@ -281,7 +226,6 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetInfoResponse other) {
       if (other == null) {
         return;
@@ -305,11 +249,7 @@ namespace RabiRiichi.Server.Generated.Rpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -338,43 +278,7 @@ namespace RabiRiichi.Server.Generated.Rpc {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Game = input.ReadString();
-            break;
-          }
-          case 18: {
-            GameVersion = input.ReadString();
-            break;
-          }
-          case 26: {
-            Server = input.ReadString();
-            break;
-          }
-          case 34: {
-            ServerVersion = input.ReadString();
-            break;
-          }
-          case 42: {
-            MinClientVersion = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

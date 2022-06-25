@@ -35,41 +35,33 @@ namespace RabiRiichi.Generated.Events.InGame {
             "LkV2ZW50cy5JbkdhbWViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Patterns.ScoreStorageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg.Parser, new[]{ "PlayerId", "Scores" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg.Parser, new[]{ "AgariInfos", "FromPlayer", "Incoming" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariEventMsg), global::RabiRiichi.Generated.Events.InGame.AgariEventMsg.Parser, new[]{ "IsTsumo", "AgariInfos" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg.Parser, new[]{ "PlayerId", "Scores" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg), global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg.Parser, new[]{ "AgariInfos", "FromPlayer", "Incoming" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AgariEventMsg), global::RabiRiichi.Generated.Events.InGame.AgariEventMsg.Parser, new[]{ "IsTsumo", "AgariInfos" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class AgariInfoMsg : pb::IMessage<AgariInfoMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class AgariInfoMsg : pb::IMessage<AgariInfoMsg> {
     private static readonly pb::MessageParser<AgariInfoMsg> _parser = new pb::MessageParser<AgariInfoMsg>(() => new AgariInfoMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AgariInfoMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoMsg() {
       OnConstruction();
     }
@@ -77,7 +69,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoMsg(AgariInfoMsg other) : this() {
       playerId_ = other.playerId_;
       scores_ = other.scores_ != null ? other.scores_.Clone() : null;
@@ -85,7 +76,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoMsg Clone() {
       return new AgariInfoMsg(this);
     }
@@ -94,7 +84,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PlayerId {
       get { return playerId_; }
       set {
@@ -106,7 +95,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int ScoresFieldNumber = 2;
     private global::RabiRiichi.Generated.Patterns.ScoreStorageMsg scores_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Patterns.ScoreStorageMsg Scores {
       get { return scores_; }
       set {
@@ -115,13 +103,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AgariInfoMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AgariInfoMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -135,7 +121,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
@@ -147,17 +132,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PlayerId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PlayerId);
@@ -169,29 +149,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerId);
-      }
-      if (scores_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Scores);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PlayerId != 0) {
@@ -207,7 +167,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AgariInfoMsg other) {
       if (other == null) {
         return;
@@ -217,7 +176,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
       if (other.scores_ != null) {
         if (scores_ == null) {
-          Scores = new global::RabiRiichi.Generated.Patterns.ScoreStorageMsg();
+          scores_ = new global::RabiRiichi.Generated.Patterns.ScoreStorageMsg();
         }
         Scores.MergeFrom(other.Scores);
       }
@@ -225,11 +184,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -242,69 +197,34 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
           case 18: {
             if (scores_ == null) {
-              Scores = new global::RabiRiichi.Generated.Patterns.ScoreStorageMsg();
+              scores_ = new global::RabiRiichi.Generated.Patterns.ScoreStorageMsg();
             }
-            input.ReadMessage(Scores);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PlayerId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (scores_ == null) {
-              Scores = new global::RabiRiichi.Generated.Patterns.ScoreStorageMsg();
-            }
-            input.ReadMessage(Scores);
+            input.ReadMessage(scores_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class AgariInfoListMsg : pb::IMessage<AgariInfoListMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class AgariInfoListMsg : pb::IMessage<AgariInfoListMsg> {
     private static readonly pb::MessageParser<AgariInfoListMsg> _parser = new pb::MessageParser<AgariInfoListMsg>(() => new AgariInfoListMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AgariInfoListMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoListMsg() {
       OnConstruction();
     }
@@ -312,7 +232,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoListMsg(AgariInfoListMsg other) : this() {
       agariInfos_ = other.agariInfos_.Clone();
       fromPlayer_ = other.fromPlayer_;
@@ -321,7 +240,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariInfoListMsg Clone() {
       return new AgariInfoListMsg(this);
     }
@@ -332,7 +250,6 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg> agariInfos_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.AgariInfoMsg> AgariInfos {
       get { return agariInfos_; }
     }
@@ -341,7 +258,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int FromPlayerFieldNumber = 2;
     private int fromPlayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int FromPlayer {
       get { return fromPlayer_; }
       set {
@@ -353,7 +269,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int IncomingFieldNumber = 3;
     private global::RabiRiichi.Generated.Core.GameTileMsg incoming_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameTileMsg Incoming {
       get { return incoming_; }
       set {
@@ -362,13 +277,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AgariInfoListMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AgariInfoListMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -383,7 +296,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= agariInfos_.GetHashCode();
@@ -396,17 +308,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       agariInfos_.WriteTo(output, _repeated_agariInfos_codec);
       if (FromPlayer != 0) {
         output.WriteRawTag(16);
@@ -419,30 +326,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      agariInfos_.WriteTo(ref output, _repeated_agariInfos_codec);
-      if (FromPlayer != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(FromPlayer);
-      }
-      if (incoming_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Incoming);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += agariInfos_.CalculateSize(_repeated_agariInfos_codec);
@@ -459,7 +345,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AgariInfoListMsg other) {
       if (other == null) {
         return;
@@ -470,7 +355,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
       if (other.incoming_ != null) {
         if (incoming_ == null) {
-          Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
+          incoming_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
         }
         Incoming.MergeFrom(other.Incoming);
       }
@@ -478,11 +363,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -499,73 +380,34 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
           case 26: {
             if (incoming_ == null) {
-              Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
+              incoming_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
-            input.ReadMessage(Incoming);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            agariInfos_.AddEntriesFrom(ref input, _repeated_agariInfos_codec);
-            break;
-          }
-          case 16: {
-            FromPlayer = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            if (incoming_ == null) {
-              Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
-            }
-            input.ReadMessage(Incoming);
+            input.ReadMessage(incoming_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class AgariEventMsg : pb::IMessage<AgariEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class AgariEventMsg : pb::IMessage<AgariEventMsg> {
     private static readonly pb::MessageParser<AgariEventMsg> _parser = new pb::MessageParser<AgariEventMsg>(() => new AgariEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AgariEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariEventMsg() {
       OnConstruction();
     }
@@ -573,7 +415,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariEventMsg(AgariEventMsg other) : this() {
       isTsumo_ = other.isTsumo_;
       agariInfos_ = other.agariInfos_ != null ? other.agariInfos_.Clone() : null;
@@ -581,7 +422,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AgariEventMsg Clone() {
       return new AgariEventMsg(this);
     }
@@ -590,7 +430,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int IsTsumoFieldNumber = 1;
     private bool isTsumo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsTsumo {
       get { return isTsumo_; }
       set {
@@ -602,7 +441,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int AgariInfosFieldNumber = 2;
     private global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg agariInfos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg AgariInfos {
       get { return agariInfos_; }
       set {
@@ -611,13 +449,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AgariEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AgariEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -631,7 +467,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (IsTsumo != false) hash ^= IsTsumo.GetHashCode();
@@ -643,17 +478,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (IsTsumo != false) {
         output.WriteRawTag(8);
         output.WriteBool(IsTsumo);
@@ -665,29 +495,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IsTsumo != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(IsTsumo);
-      }
-      if (agariInfos_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(AgariInfos);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (IsTsumo != false) {
@@ -703,7 +513,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AgariEventMsg other) {
       if (other == null) {
         return;
@@ -713,7 +522,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
       if (other.agariInfos_ != null) {
         if (agariInfos_ == null) {
-          AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
+          agariInfos_ = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
         }
         AgariInfos.MergeFrom(other.AgariInfos);
       }
@@ -721,11 +530,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -738,41 +543,14 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
           case 18: {
             if (agariInfos_ == null) {
-              AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
+              agariInfos_ = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
             }
-            input.ReadMessage(AgariInfos);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            IsTsumo = input.ReadBool();
-            break;
-          }
-          case 18: {
-            if (agariInfos_ == null) {
-              AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
-            }
-            input.ReadMessage(AgariInfos);
+            input.ReadMessage(agariInfos_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 

@@ -31,39 +31,31 @@ namespace RabiRiichi.Generated.Events.InGame {
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.NextGameEventMsg), global::RabiRiichi.Generated.Events.InGame.NextGameEventMsg.Parser, new[]{ "NextRound", "NextDealer", "NextHonba", "RiichiStick" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.NextGameEventMsg), global::RabiRiichi.Generated.Events.InGame.NextGameEventMsg.Parser, new[]{ "NextRound", "NextDealer", "NextHonba", "RiichiStick" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class NextGameEventMsg : pb::IMessage<NextGameEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class NextGameEventMsg : pb::IMessage<NextGameEventMsg> {
     private static readonly pb::MessageParser<NextGameEventMsg> _parser = new pb::MessageParser<NextGameEventMsg>(() => new NextGameEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<NextGameEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.NextGameEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NextGameEventMsg() {
       OnConstruction();
     }
@@ -71,7 +63,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NextGameEventMsg(NextGameEventMsg other) : this() {
       nextRound_ = other.nextRound_;
       nextDealer_ = other.nextDealer_;
@@ -81,7 +72,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NextGameEventMsg Clone() {
       return new NextGameEventMsg(this);
     }
@@ -90,7 +80,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int NextRoundFieldNumber = 1;
     private int nextRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int NextRound {
       get { return nextRound_; }
       set {
@@ -102,7 +91,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int NextDealerFieldNumber = 2;
     private int nextDealer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int NextDealer {
       get { return nextDealer_; }
       set {
@@ -114,7 +102,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int NextHonbaFieldNumber = 3;
     private int nextHonba_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int NextHonba {
       get { return nextHonba_; }
       set {
@@ -126,7 +113,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int RiichiStickFieldNumber = 4;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RiichiStick {
       get { return riichiStick_; }
       set {
@@ -135,13 +121,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as NextGameEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(NextGameEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -157,7 +141,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (NextRound != 0) hash ^= NextRound.GetHashCode();
@@ -171,17 +154,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (NextRound != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(NextRound);
@@ -201,37 +179,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NextRound != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(NextRound);
-      }
-      if (NextDealer != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(NextDealer);
-      }
-      if (NextHonba != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(NextHonba);
-      }
-      if (RiichiStick != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(RiichiStick);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (NextRound != 0) {
@@ -253,7 +203,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(NextGameEventMsg other) {
       if (other == null) {
         return;
@@ -274,11 +223,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -303,39 +248,7 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            NextRound = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            NextDealer = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            NextHonba = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            RiichiStick = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

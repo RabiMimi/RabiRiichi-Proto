@@ -42,40 +42,32 @@ namespace RabiRiichi.Generated.Actions {
             "QWN0aW9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Actions.AgariActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.ChiiActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.KanActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.PlayTileActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.PonActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.RyuukyokuActionReflection.Descriptor, global::RabiRiichi.Generated.Actions.SkipActionReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Actions.PlayerActionMsg), global::RabiRiichi.Generated.Actions.PlayerActionMsg.Parser, new[]{ "AgariAction", "ChiiAction", "KanAction", "PlayTileAction", "RiichiAction", "PonAction", "RyuukyokuAction", "SkipAction" }, new[]{ "Action" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg), global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg.Parser, new[]{ "Actions" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Actions.PlayerActionMsg), global::RabiRiichi.Generated.Actions.PlayerActionMsg.Parser, new[]{ "AgariAction", "ChiiAction", "KanAction", "PlayTileAction", "RiichiAction", "PonAction", "RyuukyokuAction", "SkipAction" }, new[]{ "Action" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg), global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg.Parser, new[]{ "Actions" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class PlayerActionMsg : pb::IMessage<PlayerActionMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class PlayerActionMsg : pb::IMessage<PlayerActionMsg> {
     private static readonly pb::MessageParser<PlayerActionMsg> _parser = new pb::MessageParser<PlayerActionMsg>(() => new PlayerActionMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PlayerActionMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Actions.SinglePlayerInquiryReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerActionMsg() {
       OnConstruction();
     }
@@ -83,7 +75,6 @@ namespace RabiRiichi.Generated.Actions {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerActionMsg(PlayerActionMsg other) : this() {
       switch (other.ActionCase) {
         case ActionOneofCase.AgariAction:
@@ -116,7 +107,6 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerActionMsg Clone() {
       return new PlayerActionMsg(this);
     }
@@ -124,7 +114,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "agari_action" field.</summary>
     public const int AgariActionFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.AgariActionMsg AgariAction {
       get { return actionCase_ == ActionOneofCase.AgariAction ? (global::RabiRiichi.Generated.Actions.AgariActionMsg) action_ : null; }
       set {
@@ -136,7 +125,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "chii_action" field.</summary>
     public const int ChiiActionFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.ChiiActionMsg ChiiAction {
       get { return actionCase_ == ActionOneofCase.ChiiAction ? (global::RabiRiichi.Generated.Actions.ChiiActionMsg) action_ : null; }
       set {
@@ -148,7 +136,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "kan_action" field.</summary>
     public const int KanActionFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.KanActionMsg KanAction {
       get { return actionCase_ == ActionOneofCase.KanAction ? (global::RabiRiichi.Generated.Actions.KanActionMsg) action_ : null; }
       set {
@@ -160,7 +147,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "play_tile_action" field.</summary>
     public const int PlayTileActionFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.PlayTileActionMsg PlayTileAction {
       get { return actionCase_ == ActionOneofCase.PlayTileAction ? (global::RabiRiichi.Generated.Actions.PlayTileActionMsg) action_ : null; }
       set {
@@ -172,7 +158,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "riichi_action" field.</summary>
     public const int RiichiActionFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.RiichiActionMsg RiichiAction {
       get { return actionCase_ == ActionOneofCase.RiichiAction ? (global::RabiRiichi.Generated.Actions.RiichiActionMsg) action_ : null; }
       set {
@@ -184,7 +169,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "pon_action" field.</summary>
     public const int PonActionFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.PonActionMsg PonAction {
       get { return actionCase_ == ActionOneofCase.PonAction ? (global::RabiRiichi.Generated.Actions.PonActionMsg) action_ : null; }
       set {
@@ -196,7 +180,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "ryuukyoku_action" field.</summary>
     public const int RyuukyokuActionFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.RyuukyokuActionMsg RyuukyokuAction {
       get { return actionCase_ == ActionOneofCase.RyuukyokuAction ? (global::RabiRiichi.Generated.Actions.RyuukyokuActionMsg) action_ : null; }
       set {
@@ -208,7 +191,6 @@ namespace RabiRiichi.Generated.Actions {
     /// <summary>Field number for the "skip_action" field.</summary>
     public const int SkipActionFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.SkipActionMsg SkipAction {
       get { return actionCase_ == ActionOneofCase.SkipAction ? (global::RabiRiichi.Generated.Actions.SkipActionMsg) action_ : null; }
       set {
@@ -232,26 +214,22 @@ namespace RabiRiichi.Generated.Actions {
     }
     private ActionOneofCase actionCase_ = ActionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ActionOneofCase ActionCase {
       get { return actionCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAction() {
       actionCase_ = ActionOneofCase.None;
       action_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PlayerActionMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PlayerActionMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -272,7 +250,6 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (actionCase_ == ActionOneofCase.AgariAction) hash ^= AgariAction.GetHashCode();
@@ -291,17 +268,12 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (actionCase_ == ActionOneofCase.AgariAction) {
         output.WriteRawTag(10);
         output.WriteMessage(AgariAction);
@@ -337,53 +309,9 @@ namespace RabiRiichi.Generated.Actions {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (actionCase_ == ActionOneofCase.AgariAction) {
-        output.WriteRawTag(10);
-        output.WriteMessage(AgariAction);
-      }
-      if (actionCase_ == ActionOneofCase.ChiiAction) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ChiiAction);
-      }
-      if (actionCase_ == ActionOneofCase.KanAction) {
-        output.WriteRawTag(26);
-        output.WriteMessage(KanAction);
-      }
-      if (actionCase_ == ActionOneofCase.PlayTileAction) {
-        output.WriteRawTag(34);
-        output.WriteMessage(PlayTileAction);
-      }
-      if (actionCase_ == ActionOneofCase.RiichiAction) {
-        output.WriteRawTag(42);
-        output.WriteMessage(RiichiAction);
-      }
-      if (actionCase_ == ActionOneofCase.PonAction) {
-        output.WriteRawTag(50);
-        output.WriteMessage(PonAction);
-      }
-      if (actionCase_ == ActionOneofCase.RyuukyokuAction) {
-        output.WriteRawTag(58);
-        output.WriteMessage(RyuukyokuAction);
-      }
-      if (actionCase_ == ActionOneofCase.SkipAction) {
-        output.WriteRawTag(66);
-        output.WriteMessage(SkipAction);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (actionCase_ == ActionOneofCase.AgariAction) {
@@ -417,7 +345,6 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PlayerActionMsg other) {
       if (other == null) {
         return;
@@ -477,11 +404,7 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -562,123 +485,27 @@ namespace RabiRiichi.Generated.Actions {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            global::RabiRiichi.Generated.Actions.AgariActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.AgariActionMsg();
-            if (actionCase_ == ActionOneofCase.AgariAction) {
-              subBuilder.MergeFrom(AgariAction);
-            }
-            input.ReadMessage(subBuilder);
-            AgariAction = subBuilder;
-            break;
-          }
-          case 18: {
-            global::RabiRiichi.Generated.Actions.ChiiActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.ChiiActionMsg();
-            if (actionCase_ == ActionOneofCase.ChiiAction) {
-              subBuilder.MergeFrom(ChiiAction);
-            }
-            input.ReadMessage(subBuilder);
-            ChiiAction = subBuilder;
-            break;
-          }
-          case 26: {
-            global::RabiRiichi.Generated.Actions.KanActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.KanActionMsg();
-            if (actionCase_ == ActionOneofCase.KanAction) {
-              subBuilder.MergeFrom(KanAction);
-            }
-            input.ReadMessage(subBuilder);
-            KanAction = subBuilder;
-            break;
-          }
-          case 34: {
-            global::RabiRiichi.Generated.Actions.PlayTileActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.PlayTileActionMsg();
-            if (actionCase_ == ActionOneofCase.PlayTileAction) {
-              subBuilder.MergeFrom(PlayTileAction);
-            }
-            input.ReadMessage(subBuilder);
-            PlayTileAction = subBuilder;
-            break;
-          }
-          case 42: {
-            global::RabiRiichi.Generated.Actions.RiichiActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.RiichiActionMsg();
-            if (actionCase_ == ActionOneofCase.RiichiAction) {
-              subBuilder.MergeFrom(RiichiAction);
-            }
-            input.ReadMessage(subBuilder);
-            RiichiAction = subBuilder;
-            break;
-          }
-          case 50: {
-            global::RabiRiichi.Generated.Actions.PonActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.PonActionMsg();
-            if (actionCase_ == ActionOneofCase.PonAction) {
-              subBuilder.MergeFrom(PonAction);
-            }
-            input.ReadMessage(subBuilder);
-            PonAction = subBuilder;
-            break;
-          }
-          case 58: {
-            global::RabiRiichi.Generated.Actions.RyuukyokuActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.RyuukyokuActionMsg();
-            if (actionCase_ == ActionOneofCase.RyuukyokuAction) {
-              subBuilder.MergeFrom(RyuukyokuAction);
-            }
-            input.ReadMessage(subBuilder);
-            RyuukyokuAction = subBuilder;
-            break;
-          }
-          case 66: {
-            global::RabiRiichi.Generated.Actions.SkipActionMsg subBuilder = new global::RabiRiichi.Generated.Actions.SkipActionMsg();
-            if (actionCase_ == ActionOneofCase.SkipAction) {
-              subBuilder.MergeFrom(SkipAction);
-            }
-            input.ReadMessage(subBuilder);
-            SkipAction = subBuilder;
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class SinglePlayerInquiryMsg : pb::IMessage<SinglePlayerInquiryMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class SinglePlayerInquiryMsg : pb::IMessage<SinglePlayerInquiryMsg> {
     private static readonly pb::MessageParser<SinglePlayerInquiryMsg> _parser = new pb::MessageParser<SinglePlayerInquiryMsg>(() => new SinglePlayerInquiryMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SinglePlayerInquiryMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Actions.SinglePlayerInquiryReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SinglePlayerInquiryMsg() {
       OnConstruction();
     }
@@ -686,14 +513,12 @@ namespace RabiRiichi.Generated.Actions {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SinglePlayerInquiryMsg(SinglePlayerInquiryMsg other) : this() {
       actions_ = other.actions_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SinglePlayerInquiryMsg Clone() {
       return new SinglePlayerInquiryMsg(this);
     }
@@ -704,19 +529,16 @@ namespace RabiRiichi.Generated.Actions {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Actions.PlayerActionMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Actions.PlayerActionMsg> actions_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Actions.PlayerActionMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Actions.PlayerActionMsg> Actions {
       get { return actions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SinglePlayerInquiryMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SinglePlayerInquiryMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -729,7 +551,6 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= actions_.GetHashCode();
@@ -740,37 +561,19 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       actions_.WriteTo(output, _repeated_actions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      actions_.WriteTo(ref output, _repeated_actions_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += actions_.CalculateSize(_repeated_actions_codec);
@@ -781,7 +584,6 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SinglePlayerInquiryMsg other) {
       if (other == null) {
         return;
@@ -791,11 +593,7 @@ namespace RabiRiichi.Generated.Actions {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -808,27 +606,7 @@ namespace RabiRiichi.Generated.Actions {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            actions_.AddEntriesFrom(ref input, _repeated_actions_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

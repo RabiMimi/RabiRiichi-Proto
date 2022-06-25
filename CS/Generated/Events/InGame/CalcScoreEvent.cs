@@ -39,9 +39,9 @@ namespace RabiRiichi.Generated.Events.InGame {
             "UmFiaVJpaWNoaS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.AgariEventReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg), global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser, new[]{ "From", "To", "Points", "Reason" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg), global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg.Parser, new[]{ "AgariInfos", "ScoreChange" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg), global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser, new[]{ "From", "To", "Points", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg), global::RabiRiichi.Generated.Events.InGame.CalcScoreEventMsg.Parser, new[]{ "AgariInfos", "ScoreChange" }, null, null, null)
           }));
     }
     #endregion
@@ -61,31 +61,23 @@ namespace RabiRiichi.Generated.Events.InGame {
   #endregion
 
   #region Messages
-  public sealed partial class ScoreTransferMsg : pb::IMessage<ScoreTransferMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ScoreTransferMsg : pb::IMessage<ScoreTransferMsg> {
     private static readonly pb::MessageParser<ScoreTransferMsg> _parser = new pb::MessageParser<ScoreTransferMsg>(() => new ScoreTransferMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ScoreTransferMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.CalcScoreEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreTransferMsg() {
       OnConstruction();
     }
@@ -93,7 +85,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreTransferMsg(ScoreTransferMsg other) : this() {
       from_ = other.from_;
       to_ = other.to_;
@@ -103,7 +94,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreTransferMsg Clone() {
       return new ScoreTransferMsg(this);
     }
@@ -112,7 +102,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int FromFieldNumber = 1;
     private int from_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int From {
       get { return from_; }
       set {
@@ -124,7 +113,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int ToFieldNumber = 2;
     private int to_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int To {
       get { return to_; }
       set {
@@ -136,7 +124,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int PointsFieldNumber = 3;
     private long points_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Points {
       get { return points_; }
       set {
@@ -146,9 +133,8 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     /// <summary>Field number for the "reason" field.</summary>
     public const int ReasonFieldNumber = 4;
-    private global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason reason_ = global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron;
+    private global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason reason_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason Reason {
       get { return reason_; }
       set {
@@ -157,13 +143,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ScoreTransferMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ScoreTransferMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -179,13 +163,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (From != 0) hash ^= From.GetHashCode();
       if (To != 0) hash ^= To.GetHashCode();
       if (Points != 0L) hash ^= Points.GetHashCode();
-      if (Reason != global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron) hash ^= Reason.GetHashCode();
+      if (Reason != 0) hash ^= Reason.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -193,17 +176,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (From != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(From);
@@ -216,44 +194,16 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(24);
         output.WriteInt64(Points);
       }
-      if (Reason != global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron) {
+      if (Reason != 0) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Reason);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (From != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(From);
-      }
-      if (To != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(To);
-      }
-      if (Points != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(Points);
-      }
-      if (Reason != global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Reason);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (From != 0) {
@@ -265,7 +215,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (Points != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Points);
       }
-      if (Reason != global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron) {
+      if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Reason);
       }
       if (_unknownFields != null) {
@@ -275,7 +225,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ScoreTransferMsg other) {
       if (other == null) {
         return;
@@ -289,18 +238,14 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (other.Points != 0L) {
         Points = other.Points;
       }
-      if (other.Reason != global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason.Ron) {
+      if (other.Reason != 0) {
         Reason = other.Reason;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -320,72 +265,32 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           }
           case 32: {
-            Reason = (global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            From = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            To = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Points = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Reason = (global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason) input.ReadEnum();
+            reason_ = (global::RabiRiichi.Generated.Events.InGame.ScoreTransferReason) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class CalcScoreEventMsg : pb::IMessage<CalcScoreEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class CalcScoreEventMsg : pb::IMessage<CalcScoreEventMsg> {
     private static readonly pb::MessageParser<CalcScoreEventMsg> _parser = new pb::MessageParser<CalcScoreEventMsg>(() => new CalcScoreEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CalcScoreEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.CalcScoreEventReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CalcScoreEventMsg() {
       OnConstruction();
     }
@@ -393,7 +298,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CalcScoreEventMsg(CalcScoreEventMsg other) : this() {
       agariInfos_ = other.agariInfos_ != null ? other.agariInfos_.Clone() : null;
       scoreChange_ = other.scoreChange_.Clone();
@@ -401,7 +305,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CalcScoreEventMsg Clone() {
       return new CalcScoreEventMsg(this);
     }
@@ -410,7 +313,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int AgariInfosFieldNumber = 1;
     private global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg agariInfos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg AgariInfos {
       get { return agariInfos_; }
       set {
@@ -424,19 +326,16 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> scoreChange_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> ScoreChange {
       get { return scoreChange_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CalcScoreEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CalcScoreEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -450,7 +349,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (agariInfos_ != null) hash ^= AgariInfos.GetHashCode();
@@ -462,17 +360,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (agariInfos_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AgariInfos);
@@ -481,26 +374,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (agariInfos_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(AgariInfos);
-      }
-      scoreChange_.WriteTo(ref output, _repeated_scoreChange_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (agariInfos_ != null) {
@@ -514,14 +390,13 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CalcScoreEventMsg other) {
       if (other == null) {
         return;
       }
       if (other.agariInfos_ != null) {
         if (agariInfos_ == null) {
-          AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
+          agariInfos_ = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
         }
         AgariInfos.MergeFrom(other.AgariInfos);
       }
@@ -530,11 +405,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -543,9 +414,9 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           case 10: {
             if (agariInfos_ == null) {
-              AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
+              agariInfos_ = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
             }
-            input.ReadMessage(AgariInfos);
+            input.ReadMessage(agariInfos_);
             break;
           }
           case 18: {
@@ -554,34 +425,7 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (agariInfos_ == null) {
-              AgariInfos = new global::RabiRiichi.Generated.Events.InGame.AgariInfoListMsg();
-            }
-            input.ReadMessage(AgariInfos);
-            break;
-          }
-          case 18: {
-            scoreChange_.AddEntriesFrom(ref input, _repeated_scoreChange_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

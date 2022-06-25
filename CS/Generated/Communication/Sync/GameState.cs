@@ -42,42 +42,34 @@ namespace RabiRiichi.Generated.Communication.Sync {
             "LkNvbW11bmljYXRpb24uU3luY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, global::RabiRiichi.Generated.Core.PlayerReflection.Descriptor, global::RabiRiichi.Generated.Core.GameInfoReflection.Descriptor, global::RabiRiichi.Generated.Core.Config.GameConfigReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg.Parser, new[]{ "Called", "Discarded", "Jun", "RiichiStick", "AgariTile", "Riichi" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.WallStateMsg), global::RabiRiichi.Generated.Communication.Sync.WallStateMsg.Parser, new[]{ "Doras", "Remaining", "RinshanRemaining" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg.Parser, new[]{ "Id", "Wind", "Points", "Hand" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.GameStateMsg), global::RabiRiichi.Generated.Communication.Sync.GameStateMsg.Parser, new[]{ "Config", "Info", "Wall", "Players" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg.Parser, new[]{ "Called", "Discarded", "Jun", "RiichiStick", "AgariTile", "Riichi" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.WallStateMsg), global::RabiRiichi.Generated.Communication.Sync.WallStateMsg.Parser, new[]{ "Doras", "Remaining", "RinshanRemaining" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg.Parser, new[]{ "Id", "Wind", "Points", "Hand" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.GameStateMsg), global::RabiRiichi.Generated.Communication.Sync.GameStateMsg.Parser, new[]{ "Config", "Info", "Wall", "Players" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class PlayerHandStateMsg : pb::IMessage<PlayerHandStateMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class PlayerHandStateMsg : pb::IMessage<PlayerHandStateMsg> {
     private static readonly pb::MessageParser<PlayerHandStateMsg> _parser = new pb::MessageParser<PlayerHandStateMsg>(() => new PlayerHandStateMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PlayerHandStateMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerHandStateMsg() {
       OnConstruction();
     }
@@ -85,7 +77,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerHandStateMsg(PlayerHandStateMsg other) : this() {
       called_ = other.called_.Clone();
       discarded_ = other.discarded_.Clone();
@@ -97,7 +88,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerHandStateMsg Clone() {
       return new PlayerHandStateMsg(this);
     }
@@ -108,7 +98,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.MenLikeMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> called_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> Called {
       get { return called_; }
     }
@@ -119,7 +108,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
         = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> discarded_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> Discarded {
       get { return discarded_; }
     }
@@ -128,7 +116,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int JunFieldNumber = 3;
     private int jun_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Jun {
       get { return jun_; }
       set {
@@ -140,7 +127,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int RiichiStickFieldNumber = 4;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RiichiStick {
       get { return riichiStick_; }
       set {
@@ -152,7 +138,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int AgariTileFieldNumber = 5;
     private global::RabiRiichi.Generated.Core.GameTileMsg agariTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameTileMsg AgariTile {
       get { return agariTile_; }
       set {
@@ -164,7 +149,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int RiichiFieldNumber = 6;
     private bool riichi_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Riichi {
       get { return riichi_; }
       set {
@@ -173,13 +157,11 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PlayerHandStateMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PlayerHandStateMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -197,7 +179,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= called_.GetHashCode();
@@ -213,17 +194,12 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       called_.WriteTo(output, _repeated_called_codec);
       discarded_.WriteTo(output, _repeated_discarded_codec);
       if (Jun != 0) {
@@ -245,39 +221,9 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      called_.WriteTo(ref output, _repeated_called_codec);
-      discarded_.WriteTo(ref output, _repeated_discarded_codec);
-      if (Jun != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Jun);
-      }
-      if (RiichiStick != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(RiichiStick);
-      }
-      if (agariTile_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(AgariTile);
-      }
-      if (Riichi != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(Riichi);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += called_.CalculateSize(_repeated_called_codec);
@@ -301,7 +247,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PlayerHandStateMsg other) {
       if (other == null) {
         return;
@@ -316,7 +261,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
       if (other.agariTile_ != null) {
         if (agariTile_ == null) {
-          AgariTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+          agariTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
         }
         AgariTile.MergeFrom(other.AgariTile);
       }
@@ -327,11 +272,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -356,51 +297,9 @@ namespace RabiRiichi.Generated.Communication.Sync {
           }
           case 42: {
             if (agariTile_ == null) {
-              AgariTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+              agariTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
-            input.ReadMessage(AgariTile);
-            break;
-          }
-          case 48: {
-            Riichi = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            called_.AddEntriesFrom(ref input, _repeated_called_codec);
-            break;
-          }
-          case 18: {
-            discarded_.AddEntriesFrom(ref input, _repeated_discarded_codec);
-            break;
-          }
-          case 24: {
-            Jun = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            RiichiStick = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            if (agariTile_ == null) {
-              AgariTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
-            }
-            input.ReadMessage(AgariTile);
+            input.ReadMessage(agariTile_);
             break;
           }
           case 48: {
@@ -410,35 +309,26 @@ namespace RabiRiichi.Generated.Communication.Sync {
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class WallStateMsg : pb::IMessage<WallStateMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class WallStateMsg : pb::IMessage<WallStateMsg> {
     private static readonly pb::MessageParser<WallStateMsg> _parser = new pb::MessageParser<WallStateMsg>(() => new WallStateMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<WallStateMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WallStateMsg() {
       OnConstruction();
     }
@@ -446,7 +336,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WallStateMsg(WallStateMsg other) : this() {
       doras_ = other.doras_.Clone();
       remaining_ = other.remaining_;
@@ -455,7 +344,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WallStateMsg Clone() {
       return new WallStateMsg(this);
     }
@@ -466,7 +354,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> doras_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> Doras {
       get { return doras_; }
     }
@@ -475,7 +362,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int RemainingFieldNumber = 2;
     private int remaining_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Remaining {
       get { return remaining_; }
       set {
@@ -487,7 +373,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int RinshanRemainingFieldNumber = 3;
     private int rinshanRemaining_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RinshanRemaining {
       get { return rinshanRemaining_; }
       set {
@@ -496,13 +381,11 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as WallStateMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(WallStateMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -517,7 +400,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= doras_.GetHashCode();
@@ -530,17 +412,12 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       doras_.WriteTo(output, _repeated_doras_codec);
       if (Remaining != 0) {
         output.WriteRawTag(16);
@@ -553,30 +430,9 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      doras_.WriteTo(ref output, _repeated_doras_codec);
-      if (Remaining != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Remaining);
-      }
-      if (RinshanRemaining != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(RinshanRemaining);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += doras_.CalculateSize(_repeated_doras_codec);
@@ -593,7 +449,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(WallStateMsg other) {
       if (other == null) {
         return;
@@ -609,11 +464,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -634,63 +485,27 @@ namespace RabiRiichi.Generated.Communication.Sync {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            doras_.AddEntriesFrom(ref input, _repeated_doras_codec);
-            break;
-          }
-          case 16: {
-            Remaining = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            RinshanRemaining = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class PlayerStateMsg : pb::IMessage<PlayerStateMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class PlayerStateMsg : pb::IMessage<PlayerStateMsg> {
     private static readonly pb::MessageParser<PlayerStateMsg> _parser = new pb::MessageParser<PlayerStateMsg>(() => new PlayerStateMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PlayerStateMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerStateMsg() {
       OnConstruction();
     }
@@ -698,7 +513,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerStateMsg(PlayerStateMsg other) : this() {
       id_ = other.id_;
       wind_ = other.wind_;
@@ -708,7 +522,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerStateMsg Clone() {
       return new PlayerStateMsg(this);
     }
@@ -717,7 +530,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int IdFieldNumber = 1;
     private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Id {
       get { return id_; }
       set {
@@ -727,9 +539,8 @@ namespace RabiRiichi.Generated.Communication.Sync {
 
     /// <summary>Field number for the "wind" field.</summary>
     public const int WindFieldNumber = 2;
-    private global::RabiRiichi.Generated.Core.Wind wind_ = global::RabiRiichi.Generated.Core.Wind.E;
+    private global::RabiRiichi.Generated.Core.Wind wind_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Wind Wind {
       get { return wind_; }
       set {
@@ -741,7 +552,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int PointsFieldNumber = 3;
     private long points_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Points {
       get { return points_; }
       set {
@@ -753,7 +563,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int HandFieldNumber = 4;
     private global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg hand_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg Hand {
       get { return hand_; }
       set {
@@ -762,13 +571,11 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PlayerStateMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PlayerStateMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -784,11 +591,10 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
-      if (Wind != global::RabiRiichi.Generated.Core.Wind.E) hash ^= Wind.GetHashCode();
+      if (Wind != 0) hash ^= Wind.GetHashCode();
       if (Points != 0L) hash ^= Points.GetHashCode();
       if (hand_ != null) hash ^= Hand.GetHashCode();
       if (_unknownFields != null) {
@@ -798,22 +604,17 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (Wind != global::RabiRiichi.Generated.Core.Wind.E) {
+      if (Wind != 0) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Wind);
       }
@@ -828,43 +629,15 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Wind != global::RabiRiichi.Generated.Core.Wind.E) {
-        output.WriteRawTag(16);
-        output.WriteEnum((int) Wind);
-      }
-      if (Points != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(Points);
-      }
-      if (hand_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Hand);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
-      if (Wind != global::RabiRiichi.Generated.Core.Wind.E) {
+      if (Wind != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Wind);
       }
       if (Points != 0L) {
@@ -880,7 +653,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PlayerStateMsg other) {
       if (other == null) {
         return;
@@ -888,7 +660,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (other.Id != 0) {
         Id = other.Id;
       }
-      if (other.Wind != global::RabiRiichi.Generated.Core.Wind.E) {
+      if (other.Wind != 0) {
         Wind = other.Wind;
       }
       if (other.Points != 0L) {
@@ -896,7 +668,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
       if (other.hand_ != null) {
         if (hand_ == null) {
-          Hand = new global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg();
+          hand_ = new global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg();
         }
         Hand.MergeFrom(other.Hand);
       }
@@ -904,11 +676,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -920,7 +688,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
             break;
           }
           case 16: {
-            Wind = (global::RabiRiichi.Generated.Core.Wind) input.ReadEnum();
+            wind_ = (global::RabiRiichi.Generated.Core.Wind) input.ReadEnum();
             break;
           }
           case 24: {
@@ -929,77 +697,34 @@ namespace RabiRiichi.Generated.Communication.Sync {
           }
           case 34: {
             if (hand_ == null) {
-              Hand = new global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg();
+              hand_ = new global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg();
             }
-            input.ReadMessage(Hand);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Wind = (global::RabiRiichi.Generated.Core.Wind) input.ReadEnum();
-            break;
-          }
-          case 24: {
-            Points = input.ReadInt64();
-            break;
-          }
-          case 34: {
-            if (hand_ == null) {
-              Hand = new global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg();
-            }
-            input.ReadMessage(Hand);
+            input.ReadMessage(hand_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class GameStateMsg : pb::IMessage<GameStateMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class GameStateMsg : pb::IMessage<GameStateMsg> {
     private static readonly pb::MessageParser<GameStateMsg> _parser = new pb::MessageParser<GameStateMsg>(() => new GameStateMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GameStateMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameStateMsg() {
       OnConstruction();
     }
@@ -1007,7 +732,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameStateMsg(GameStateMsg other) : this() {
       config_ = other.config_ != null ? other.config_.Clone() : null;
       info_ = other.info_ != null ? other.info_.Clone() : null;
@@ -1017,7 +741,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameStateMsg Clone() {
       return new GameStateMsg(this);
     }
@@ -1026,7 +749,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int ConfigFieldNumber = 1;
     private global::RabiRiichi.Generated.Core.Config.GameConfigMsg config_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.GameConfigMsg Config {
       get { return config_; }
       set {
@@ -1038,7 +760,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int InfoFieldNumber = 2;
     private global::RabiRiichi.Generated.Core.GameInfoMsg info_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameInfoMsg Info {
       get { return info_; }
       set {
@@ -1050,7 +771,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     public const int WallFieldNumber = 3;
     private global::RabiRiichi.Generated.Communication.Sync.WallStateMsg wall_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Communication.Sync.WallStateMsg Wall {
       get { return wall_; }
       set {
@@ -1064,19 +784,16 @@ namespace RabiRiichi.Generated.Communication.Sync {
         = pb::FieldCodec.ForMessage(34, global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg> players_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg> Players {
       get { return players_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GameStateMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GameStateMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1092,7 +809,6 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (config_ != null) hash ^= Config.GetHashCode();
@@ -1106,17 +822,12 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (config_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Config);
@@ -1133,34 +844,9 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (config_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Config);
-      }
-      if (info_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Info);
-      }
-      if (wall_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Wall);
-      }
-      players_.WriteTo(ref output, _repeated_players_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (config_ != null) {
@@ -1180,26 +866,25 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GameStateMsg other) {
       if (other == null) {
         return;
       }
       if (other.config_ != null) {
         if (config_ == null) {
-          Config = new global::RabiRiichi.Generated.Core.Config.GameConfigMsg();
+          config_ = new global::RabiRiichi.Generated.Core.Config.GameConfigMsg();
         }
         Config.MergeFrom(other.Config);
       }
       if (other.info_ != null) {
         if (info_ == null) {
-          Info = new global::RabiRiichi.Generated.Core.GameInfoMsg();
+          info_ = new global::RabiRiichi.Generated.Core.GameInfoMsg();
         }
         Info.MergeFrom(other.Info);
       }
       if (other.wall_ != null) {
         if (wall_ == null) {
-          Wall = new global::RabiRiichi.Generated.Communication.Sync.WallStateMsg();
+          wall_ = new global::RabiRiichi.Generated.Communication.Sync.WallStateMsg();
         }
         Wall.MergeFrom(other.Wall);
       }
@@ -1208,11 +893,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1221,23 +902,23 @@ namespace RabiRiichi.Generated.Communication.Sync {
             break;
           case 10: {
             if (config_ == null) {
-              Config = new global::RabiRiichi.Generated.Core.Config.GameConfigMsg();
+              config_ = new global::RabiRiichi.Generated.Core.Config.GameConfigMsg();
             }
-            input.ReadMessage(Config);
+            input.ReadMessage(config_);
             break;
           }
           case 18: {
             if (info_ == null) {
-              Info = new global::RabiRiichi.Generated.Core.GameInfoMsg();
+              info_ = new global::RabiRiichi.Generated.Core.GameInfoMsg();
             }
-            input.ReadMessage(Info);
+            input.ReadMessage(info_);
             break;
           }
           case 26: {
             if (wall_ == null) {
-              Wall = new global::RabiRiichi.Generated.Communication.Sync.WallStateMsg();
+              wall_ = new global::RabiRiichi.Generated.Communication.Sync.WallStateMsg();
             }
-            input.ReadMessage(Wall);
+            input.ReadMessage(wall_);
             break;
           }
           case 34: {
@@ -1246,48 +927,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (config_ == null) {
-              Config = new global::RabiRiichi.Generated.Core.Config.GameConfigMsg();
-            }
-            input.ReadMessage(Config);
-            break;
-          }
-          case 18: {
-            if (info_ == null) {
-              Info = new global::RabiRiichi.Generated.Core.GameInfoMsg();
-            }
-            input.ReadMessage(Info);
-            break;
-          }
-          case 26: {
-            if (wall_ == null) {
-              Wall = new global::RabiRiichi.Generated.Communication.Sync.WallStateMsg();
-            }
-            input.ReadMessage(Wall);
-            break;
-          }
-          case 34: {
-            players_.AddEntriesFrom(ref input, _repeated_players_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

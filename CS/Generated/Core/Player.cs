@@ -29,7 +29,7 @@ namespace RabiRiichi.Generated.Core {
             "LkdlbmVyYXRlZC5Db3JlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.Wind), }, null, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.Wind), }, null));
     }
     #endregion
 

@@ -30,39 +30,31 @@ namespace RabiRiichi.Server.Generated.Messages {
             "YXRlZC5NZXNzYWdlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.TwoWayHeartBeatMsg), global::RabiRiichi.Server.Generated.Messages.TwoWayHeartBeatMsg.Parser, new[]{ "Id", "MaxId", "RequestingIds" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.TwoWayHeartBeatMsg), global::RabiRiichi.Server.Generated.Messages.TwoWayHeartBeatMsg.Parser, new[]{ "Id", "MaxId", "RequestingIds" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class TwoWayHeartBeatMsg : pb::IMessage<TwoWayHeartBeatMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class TwoWayHeartBeatMsg : pb::IMessage<TwoWayHeartBeatMsg> {
     private static readonly pb::MessageParser<TwoWayHeartBeatMsg> _parser = new pb::MessageParser<TwoWayHeartBeatMsg>(() => new TwoWayHeartBeatMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TwoWayHeartBeatMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.HeartBeatReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TwoWayHeartBeatMsg() {
       OnConstruction();
     }
@@ -70,7 +62,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TwoWayHeartBeatMsg(TwoWayHeartBeatMsg other) : this() {
       id_ = other.id_;
       maxId_ = other.maxId_;
@@ -79,7 +70,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TwoWayHeartBeatMsg Clone() {
       return new TwoWayHeartBeatMsg(this);
     }
@@ -88,7 +78,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int IdFieldNumber = 1;
     private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Id {
       get { return id_; }
       set {
@@ -100,7 +89,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int MaxIdFieldNumber = 2;
     private int maxId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int MaxId {
       get { return maxId_; }
       set {
@@ -114,19 +102,16 @@ namespace RabiRiichi.Server.Generated.Messages {
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> requestingIds_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> RequestingIds {
       get { return requestingIds_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TwoWayHeartBeatMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TwoWayHeartBeatMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -141,7 +126,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
@@ -154,17 +138,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
@@ -177,30 +156,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (MaxId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MaxId);
-      }
-      requestingIds_.WriteTo(ref output, _repeated_requestingIds_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
@@ -217,7 +175,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TwoWayHeartBeatMsg other) {
       if (other == null) {
         return;
@@ -233,11 +190,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -259,36 +212,7 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MaxId = input.ReadInt32();
-            break;
-          }
-          case 26:
-          case 24: {
-            requestingIds_.AddEntriesFrom(ref input, _repeated_requestingIds_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

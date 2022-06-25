@@ -32,39 +32,31 @@ namespace RabiRiichi.Generated.Core.Config {
             "ZWQuQ29yZS5Db25maWdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.Config.PointThresholdMsg), global::RabiRiichi.Generated.Core.Config.PointThresholdMsg.Parser, new[]{ "InitialPoints", "RiichiPoints", "HonbaPoints", "FinishPoints", "RyuukyokuPoints", "ValidPointsRange" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.Config.PointThresholdMsg), global::RabiRiichi.Generated.Core.Config.PointThresholdMsg.Parser, new[]{ "InitialPoints", "RiichiPoints", "HonbaPoints", "FinishPoints", "RyuukyokuPoints", "ValidPointsRange" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class PointThresholdMsg : pb::IMessage<PointThresholdMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class PointThresholdMsg : pb::IMessage<PointThresholdMsg> {
     private static readonly pb::MessageParser<PointThresholdMsg> _parser = new pb::MessageParser<PointThresholdMsg>(() => new PointThresholdMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PointThresholdMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Core.Config.PointThresholdReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PointThresholdMsg() {
       OnConstruction();
     }
@@ -72,7 +64,6 @@ namespace RabiRiichi.Generated.Core.Config {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PointThresholdMsg(PointThresholdMsg other) : this() {
       initialPoints_ = other.initialPoints_;
       riichiPoints_ = other.riichiPoints_;
@@ -84,7 +75,6 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PointThresholdMsg Clone() {
       return new PointThresholdMsg(this);
     }
@@ -93,7 +83,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int InitialPointsFieldNumber = 1;
     private long initialPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long InitialPoints {
       get { return initialPoints_; }
       set {
@@ -105,7 +94,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int RiichiPointsFieldNumber = 2;
     private long riichiPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RiichiPoints {
       get { return riichiPoints_; }
       set {
@@ -117,7 +105,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int HonbaPointsFieldNumber = 3;
     private long honbaPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long HonbaPoints {
       get { return honbaPoints_; }
       set {
@@ -129,7 +116,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int FinishPointsFieldNumber = 4;
     private long finishPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long FinishPoints {
       get { return finishPoints_; }
       set {
@@ -143,7 +129,6 @@ namespace RabiRiichi.Generated.Core.Config {
         = pb::FieldCodec.ForInt64(42);
     private readonly pbc::RepeatedField<long> ryuukyokuPoints_ = new pbc::RepeatedField<long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<long> RyuukyokuPoints {
       get { return ryuukyokuPoints_; }
     }
@@ -154,19 +139,16 @@ namespace RabiRiichi.Generated.Core.Config {
         = pb::FieldCodec.ForInt64(50);
     private readonly pbc::RepeatedField<long> validPointsRange_ = new pbc::RepeatedField<long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<long> ValidPointsRange {
       get { return validPointsRange_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PointThresholdMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PointThresholdMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -184,7 +166,6 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (InitialPoints != 0L) hash ^= InitialPoints.GetHashCode();
@@ -200,17 +181,12 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (InitialPoints != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(InitialPoints);
@@ -232,39 +208,9 @@ namespace RabiRiichi.Generated.Core.Config {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (InitialPoints != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(InitialPoints);
-      }
-      if (RiichiPoints != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(RiichiPoints);
-      }
-      if (HonbaPoints != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(HonbaPoints);
-      }
-      if (FinishPoints != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(FinishPoints);
-      }
-      ryuukyokuPoints_.WriteTo(ref output, _repeated_ryuukyokuPoints_codec);
-      validPointsRange_.WriteTo(ref output, _repeated_validPointsRange_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (InitialPoints != 0L) {
@@ -288,7 +234,6 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PointThresholdMsg other) {
       if (other == null) {
         return;
@@ -311,11 +256,7 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -350,49 +291,7 @@ namespace RabiRiichi.Generated.Core.Config {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            InitialPoints = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            RiichiPoints = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            HonbaPoints = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            FinishPoints = input.ReadInt64();
-            break;
-          }
-          case 42:
-          case 40: {
-            ryuukyokuPoints_.AddEntriesFrom(ref input, _repeated_ryuukyokuPoints_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            validPointsRange_.AddEntriesFrom(ref input, _repeated_validPointsRange_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

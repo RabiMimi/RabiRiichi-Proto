@@ -32,39 +32,31 @@ namespace RabiRiichi.Generated.Events.InGame {
             "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.ClaimTileEventMsg), global::RabiRiichi.Generated.Events.InGame.ClaimTileEventMsg.Parser, new[]{ "Tile", "Group", "Reason" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.ClaimTileEventMsg), global::RabiRiichi.Generated.Events.InGame.ClaimTileEventMsg.Parser, new[]{ "Tile", "Group", "Reason" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ClaimTileEventMsg : pb::IMessage<ClaimTileEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ClaimTileEventMsg : pb::IMessage<ClaimTileEventMsg> {
     private static readonly pb::MessageParser<ClaimTileEventMsg> _parser = new pb::MessageParser<ClaimTileEventMsg>(() => new ClaimTileEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClaimTileEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.ClaimTileEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClaimTileEventMsg() {
       OnConstruction();
     }
@@ -72,7 +64,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClaimTileEventMsg(ClaimTileEventMsg other) : this() {
       tile_ = other.tile_ != null ? other.tile_.Clone() : null;
       group_ = other.group_ != null ? other.group_.Clone() : null;
@@ -81,7 +72,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClaimTileEventMsg Clone() {
       return new ClaimTileEventMsg(this);
     }
@@ -90,7 +80,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int TileFieldNumber = 1;
     private global::RabiRiichi.Generated.Core.GameTileMsg tile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameTileMsg Tile {
       get { return tile_; }
       set {
@@ -102,7 +91,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int GroupFieldNumber = 2;
     private global::RabiRiichi.Generated.Core.MenLikeMsg group_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.MenLikeMsg Group {
       get { return group_; }
       set {
@@ -112,9 +100,8 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     /// <summary>Field number for the "reason" field.</summary>
     public const int ReasonFieldNumber = 3;
-    private global::RabiRiichi.Generated.Core.DiscardReason reason_ = global::RabiRiichi.Generated.Core.DiscardReason.None;
+    private global::RabiRiichi.Generated.Core.DiscardReason reason_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.DiscardReason Reason {
       get { return reason_; }
       set {
@@ -123,13 +110,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClaimTileEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClaimTileEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -144,12 +129,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (tile_ != null) hash ^= Tile.GetHashCode();
       if (group_ != null) hash ^= Group.GetHashCode();
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) hash ^= Reason.GetHashCode();
+      if (Reason != 0) hash ^= Reason.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -157,17 +141,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (tile_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Tile);
@@ -176,40 +155,16 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(18);
         output.WriteMessage(Group);
       }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (Reason != 0) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Reason);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (tile_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Tile);
-      }
-      if (group_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Group);
-      }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) Reason);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (tile_ != null) {
@@ -218,7 +173,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (group_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Group);
       }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Reason);
       }
       if (_unknownFields != null) {
@@ -228,35 +183,30 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClaimTileEventMsg other) {
       if (other == null) {
         return;
       }
       if (other.tile_ != null) {
         if (tile_ == null) {
-          Tile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+          tile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
         }
         Tile.MergeFrom(other.Tile);
       }
       if (other.group_ != null) {
         if (group_ == null) {
-          Group = new global::RabiRiichi.Generated.Core.MenLikeMsg();
+          group_ = new global::RabiRiichi.Generated.Core.MenLikeMsg();
         }
         Group.MergeFrom(other.Group);
       }
-      if (other.Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (other.Reason != 0) {
         Reason = other.Reason;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -265,59 +215,25 @@ namespace RabiRiichi.Generated.Events.InGame {
             break;
           case 10: {
             if (tile_ == null) {
-              Tile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+              tile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
-            input.ReadMessage(Tile);
+            input.ReadMessage(tile_);
             break;
           }
           case 18: {
             if (group_ == null) {
-              Group = new global::RabiRiichi.Generated.Core.MenLikeMsg();
+              group_ = new global::RabiRiichi.Generated.Core.MenLikeMsg();
             }
-            input.ReadMessage(Group);
+            input.ReadMessage(group_);
             break;
           }
           case 24: {
-            Reason = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (tile_ == null) {
-              Tile = new global::RabiRiichi.Generated.Core.GameTileMsg();
-            }
-            input.ReadMessage(Tile);
-            break;
-          }
-          case 18: {
-            if (group_ == null) {
-              Group = new global::RabiRiichi.Generated.Core.MenLikeMsg();
-            }
-            input.ReadMessage(Group);
-            break;
-          }
-          case 24: {
-            Reason = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
+            reason_ = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 

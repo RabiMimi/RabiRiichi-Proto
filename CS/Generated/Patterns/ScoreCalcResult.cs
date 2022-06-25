@@ -31,39 +31,31 @@ namespace RabiRiichi.Generated.Patterns {
             "ZC5QYXR0ZXJuc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg), global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg.Parser, new[]{ "Han", "Yaku", "Fu", "Yakuman", "KazoeYakuman", "FinalYakuman" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg), global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg.Parser, new[]{ "Han", "Yaku", "Fu", "Yakuman", "KazoeYakuman", "FinalYakuman" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ScoreCalcResultMsg : pb::IMessage<ScoreCalcResultMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ScoreCalcResultMsg : pb::IMessage<ScoreCalcResultMsg> {
     private static readonly pb::MessageParser<ScoreCalcResultMsg> _parser = new pb::MessageParser<ScoreCalcResultMsg>(() => new ScoreCalcResultMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ScoreCalcResultMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Patterns.ScoreCalcResultReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreCalcResultMsg() {
       OnConstruction();
     }
@@ -71,7 +63,6 @@ namespace RabiRiichi.Generated.Patterns {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreCalcResultMsg(ScoreCalcResultMsg other) : this() {
       han_ = other.han_;
       yaku_ = other.yaku_;
@@ -83,7 +74,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreCalcResultMsg Clone() {
       return new ScoreCalcResultMsg(this);
     }
@@ -92,7 +82,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int HanFieldNumber = 1;
     private int han_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Han {
       get { return han_; }
       set {
@@ -104,7 +93,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int YakuFieldNumber = 2;
     private int yaku_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Yaku {
       get { return yaku_; }
       set {
@@ -116,7 +104,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int FuFieldNumber = 3;
     private int fu_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Fu {
       get { return fu_; }
       set {
@@ -128,7 +115,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int YakumanFieldNumber = 4;
     private int yakuman_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Yakuman {
       get { return yakuman_; }
       set {
@@ -140,7 +126,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int KazoeYakumanFieldNumber = 5;
     private int kazoeYakuman_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int KazoeYakuman {
       get { return kazoeYakuman_; }
       set {
@@ -152,7 +137,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int FinalYakumanFieldNumber = 6;
     private int finalYakuman_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int FinalYakuman {
       get { return finalYakuman_; }
       set {
@@ -161,13 +145,11 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ScoreCalcResultMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ScoreCalcResultMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -185,7 +167,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Han != 0) hash ^= Han.GetHashCode();
@@ -201,17 +182,12 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Han != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Han);
@@ -239,45 +215,9 @@ namespace RabiRiichi.Generated.Patterns {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Han != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Han);
-      }
-      if (Yaku != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Yaku);
-      }
-      if (Fu != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Fu);
-      }
-      if (Yakuman != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Yakuman);
-      }
-      if (KazoeYakuman != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(KazoeYakuman);
-      }
-      if (FinalYakuman != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(FinalYakuman);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Han != 0) {
@@ -305,7 +245,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ScoreCalcResultMsg other) {
       if (other == null) {
         return;
@@ -332,11 +271,7 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -369,47 +304,7 @@ namespace RabiRiichi.Generated.Patterns {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Han = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Yaku = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Fu = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Yakuman = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            KazoeYakuman = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            FinalYakuman = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

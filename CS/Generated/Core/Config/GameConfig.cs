@@ -39,39 +39,31 @@ namespace RabiRiichi.Generated.Core.Config {
             "LkdlbmVyYXRlZC5Db3JlLkNvbmZpZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.Config.EnumsReflection.Descriptor, global::RabiRiichi.Generated.Core.Config.PointThresholdReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.Config.GameConfigMsg), global::RabiRiichi.Generated.Core.Config.GameConfigMsg.Parser, new[]{ "PlayerCount", "TotalRound", "MinHan", "PointThreshold", "RenchanPolicy", "EndGamePolicy", "KuikaePolicy", "RiichiPolicy", "DoraOption", "AgariOption", "ScoringOption", "RyuukyokuTrigger" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.Config.GameConfigMsg), global::RabiRiichi.Generated.Core.Config.GameConfigMsg.Parser, new[]{ "PlayerCount", "TotalRound", "MinHan", "PointThreshold", "RenchanPolicy", "EndGamePolicy", "KuikaePolicy", "RiichiPolicy", "DoraOption", "AgariOption", "ScoringOption", "RyuukyokuTrigger" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class GameConfigMsg : pb::IMessage<GameConfigMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class GameConfigMsg : pb::IMessage<GameConfigMsg> {
     private static readonly pb::MessageParser<GameConfigMsg> _parser = new pb::MessageParser<GameConfigMsg>(() => new GameConfigMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GameConfigMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Core.Config.GameConfigReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameConfigMsg() {
       OnConstruction();
     }
@@ -79,7 +71,6 @@ namespace RabiRiichi.Generated.Core.Config {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameConfigMsg(GameConfigMsg other) : this() {
       playerCount_ = other.playerCount_;
       totalRound_ = other.totalRound_;
@@ -97,7 +88,6 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameConfigMsg Clone() {
       return new GameConfigMsg(this);
     }
@@ -106,7 +96,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int PlayerCountFieldNumber = 1;
     private int playerCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PlayerCount {
       get { return playerCount_; }
       set {
@@ -118,7 +107,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int TotalRoundFieldNumber = 2;
     private int totalRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TotalRound {
       get { return totalRound_; }
       set {
@@ -130,7 +118,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int MinHanFieldNumber = 3;
     private int minHan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int MinHan {
       get { return minHan_; }
       set {
@@ -142,7 +129,6 @@ namespace RabiRiichi.Generated.Core.Config {
     public const int PointThresholdFieldNumber = 4;
     private global::RabiRiichi.Generated.Core.Config.PointThresholdMsg pointThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.PointThresholdMsg PointThreshold {
       get { return pointThreshold_; }
       set {
@@ -152,9 +138,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "renchan_policy" field.</summary>
     public const int RenchanPolicyFieldNumber = 5;
-    private global::RabiRiichi.Generated.Core.Config.RenchanPolicy renchanPolicy_ = global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None;
+    private global::RabiRiichi.Generated.Core.Config.RenchanPolicy renchanPolicy_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.RenchanPolicy RenchanPolicy {
       get { return renchanPolicy_; }
       set {
@@ -164,9 +149,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "end_game_policy" field.</summary>
     public const int EndGamePolicyFieldNumber = 6;
-    private global::RabiRiichi.Generated.Core.Config.EndGamePolicy endGamePolicy_ = global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None;
+    private global::RabiRiichi.Generated.Core.Config.EndGamePolicy endGamePolicy_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.EndGamePolicy EndGamePolicy {
       get { return endGamePolicy_; }
       set {
@@ -176,9 +160,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "kuikae_policy" field.</summary>
     public const int KuikaePolicyFieldNumber = 7;
-    private global::RabiRiichi.Generated.Core.Config.KuikaePolicy kuikaePolicy_ = global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None;
+    private global::RabiRiichi.Generated.Core.Config.KuikaePolicy kuikaePolicy_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.KuikaePolicy KuikaePolicy {
       get { return kuikaePolicy_; }
       set {
@@ -188,9 +171,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "riichi_policy" field.</summary>
     public const int RiichiPolicyFieldNumber = 8;
-    private global::RabiRiichi.Generated.Core.Config.RiichiPolicy riichiPolicy_ = global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None;
+    private global::RabiRiichi.Generated.Core.Config.RiichiPolicy riichiPolicy_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.RiichiPolicy RiichiPolicy {
       get { return riichiPolicy_; }
       set {
@@ -200,9 +182,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "dora_option" field.</summary>
     public const int DoraOptionFieldNumber = 9;
-    private global::RabiRiichi.Generated.Core.Config.DoraOption doraOption_ = global::RabiRiichi.Generated.Core.Config.DoraOption.None;
+    private global::RabiRiichi.Generated.Core.Config.DoraOption doraOption_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.DoraOption DoraOption {
       get { return doraOption_; }
       set {
@@ -212,9 +193,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "agari_option" field.</summary>
     public const int AgariOptionFieldNumber = 10;
-    private global::RabiRiichi.Generated.Core.Config.AgariOption agariOption_ = global::RabiRiichi.Generated.Core.Config.AgariOption.None;
+    private global::RabiRiichi.Generated.Core.Config.AgariOption agariOption_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.AgariOption AgariOption {
       get { return agariOption_; }
       set {
@@ -224,9 +204,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "scoring_option" field.</summary>
     public const int ScoringOptionFieldNumber = 11;
-    private global::RabiRiichi.Generated.Core.Config.ScoringOption scoringOption_ = global::RabiRiichi.Generated.Core.Config.ScoringOption.None;
+    private global::RabiRiichi.Generated.Core.Config.ScoringOption scoringOption_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.ScoringOption ScoringOption {
       get { return scoringOption_; }
       set {
@@ -236,9 +215,8 @@ namespace RabiRiichi.Generated.Core.Config {
 
     /// <summary>Field number for the "ryuukyoku_trigger" field.</summary>
     public const int RyuukyokuTriggerFieldNumber = 12;
-    private global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger ryuukyokuTrigger_ = global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None;
+    private global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger ryuukyokuTrigger_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger RyuukyokuTrigger {
       get { return ryuukyokuTrigger_; }
       set {
@@ -247,13 +225,11 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GameConfigMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GameConfigMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -277,21 +253,20 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerCount != 0) hash ^= PlayerCount.GetHashCode();
       if (TotalRound != 0) hash ^= TotalRound.GetHashCode();
       if (MinHan != 0) hash ^= MinHan.GetHashCode();
       if (pointThreshold_ != null) hash ^= PointThreshold.GetHashCode();
-      if (RenchanPolicy != global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None) hash ^= RenchanPolicy.GetHashCode();
-      if (EndGamePolicy != global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None) hash ^= EndGamePolicy.GetHashCode();
-      if (KuikaePolicy != global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None) hash ^= KuikaePolicy.GetHashCode();
-      if (RiichiPolicy != global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None) hash ^= RiichiPolicy.GetHashCode();
-      if (DoraOption != global::RabiRiichi.Generated.Core.Config.DoraOption.None) hash ^= DoraOption.GetHashCode();
-      if (AgariOption != global::RabiRiichi.Generated.Core.Config.AgariOption.None) hash ^= AgariOption.GetHashCode();
-      if (ScoringOption != global::RabiRiichi.Generated.Core.Config.ScoringOption.None) hash ^= ScoringOption.GetHashCode();
-      if (RyuukyokuTrigger != global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None) hash ^= RyuukyokuTrigger.GetHashCode();
+      if (RenchanPolicy != 0) hash ^= RenchanPolicy.GetHashCode();
+      if (EndGamePolicy != 0) hash ^= EndGamePolicy.GetHashCode();
+      if (KuikaePolicy != 0) hash ^= KuikaePolicy.GetHashCode();
+      if (RiichiPolicy != 0) hash ^= RiichiPolicy.GetHashCode();
+      if (DoraOption != 0) hash ^= DoraOption.GetHashCode();
+      if (AgariOption != 0) hash ^= AgariOption.GetHashCode();
+      if (ScoringOption != 0) hash ^= ScoringOption.GetHashCode();
+      if (RyuukyokuTrigger != 0) hash ^= RyuukyokuTrigger.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -299,17 +274,12 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PlayerCount != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PlayerCount);
@@ -326,104 +296,44 @@ namespace RabiRiichi.Generated.Core.Config {
         output.WriteRawTag(34);
         output.WriteMessage(PointThreshold);
       }
-      if (RenchanPolicy != global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None) {
+      if (RenchanPolicy != 0) {
         output.WriteRawTag(40);
         output.WriteEnum((int) RenchanPolicy);
       }
-      if (EndGamePolicy != global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None) {
+      if (EndGamePolicy != 0) {
         output.WriteRawTag(48);
         output.WriteEnum((int) EndGamePolicy);
       }
-      if (KuikaePolicy != global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None) {
+      if (KuikaePolicy != 0) {
         output.WriteRawTag(56);
         output.WriteEnum((int) KuikaePolicy);
       }
-      if (RiichiPolicy != global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None) {
+      if (RiichiPolicy != 0) {
         output.WriteRawTag(64);
         output.WriteEnum((int) RiichiPolicy);
       }
-      if (DoraOption != global::RabiRiichi.Generated.Core.Config.DoraOption.None) {
+      if (DoraOption != 0) {
         output.WriteRawTag(72);
         output.WriteEnum((int) DoraOption);
       }
-      if (AgariOption != global::RabiRiichi.Generated.Core.Config.AgariOption.None) {
+      if (AgariOption != 0) {
         output.WriteRawTag(80);
         output.WriteEnum((int) AgariOption);
       }
-      if (ScoringOption != global::RabiRiichi.Generated.Core.Config.ScoringOption.None) {
+      if (ScoringOption != 0) {
         output.WriteRawTag(88);
         output.WriteEnum((int) ScoringOption);
       }
-      if (RyuukyokuTrigger != global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None) {
+      if (RyuukyokuTrigger != 0) {
         output.WriteRawTag(96);
         output.WriteEnum((int) RyuukyokuTrigger);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerCount);
-      }
-      if (TotalRound != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(TotalRound);
-      }
-      if (MinHan != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(MinHan);
-      }
-      if (pointThreshold_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(PointThreshold);
-      }
-      if (RenchanPolicy != global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None) {
-        output.WriteRawTag(40);
-        output.WriteEnum((int) RenchanPolicy);
-      }
-      if (EndGamePolicy != global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None) {
-        output.WriteRawTag(48);
-        output.WriteEnum((int) EndGamePolicy);
-      }
-      if (KuikaePolicy != global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None) {
-        output.WriteRawTag(56);
-        output.WriteEnum((int) KuikaePolicy);
-      }
-      if (RiichiPolicy != global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None) {
-        output.WriteRawTag(64);
-        output.WriteEnum((int) RiichiPolicy);
-      }
-      if (DoraOption != global::RabiRiichi.Generated.Core.Config.DoraOption.None) {
-        output.WriteRawTag(72);
-        output.WriteEnum((int) DoraOption);
-      }
-      if (AgariOption != global::RabiRiichi.Generated.Core.Config.AgariOption.None) {
-        output.WriteRawTag(80);
-        output.WriteEnum((int) AgariOption);
-      }
-      if (ScoringOption != global::RabiRiichi.Generated.Core.Config.ScoringOption.None) {
-        output.WriteRawTag(88);
-        output.WriteEnum((int) ScoringOption);
-      }
-      if (RyuukyokuTrigger != global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None) {
-        output.WriteRawTag(96);
-        output.WriteEnum((int) RyuukyokuTrigger);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PlayerCount != 0) {
@@ -438,28 +348,28 @@ namespace RabiRiichi.Generated.Core.Config {
       if (pointThreshold_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PointThreshold);
       }
-      if (RenchanPolicy != global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None) {
+      if (RenchanPolicy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RenchanPolicy);
       }
-      if (EndGamePolicy != global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None) {
+      if (EndGamePolicy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EndGamePolicy);
       }
-      if (KuikaePolicy != global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None) {
+      if (KuikaePolicy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KuikaePolicy);
       }
-      if (RiichiPolicy != global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None) {
+      if (RiichiPolicy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RiichiPolicy);
       }
-      if (DoraOption != global::RabiRiichi.Generated.Core.Config.DoraOption.None) {
+      if (DoraOption != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DoraOption);
       }
-      if (AgariOption != global::RabiRiichi.Generated.Core.Config.AgariOption.None) {
+      if (AgariOption != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AgariOption);
       }
-      if (ScoringOption != global::RabiRiichi.Generated.Core.Config.ScoringOption.None) {
+      if (ScoringOption != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ScoringOption);
       }
-      if (RyuukyokuTrigger != global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None) {
+      if (RyuukyokuTrigger != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RyuukyokuTrigger);
       }
       if (_unknownFields != null) {
@@ -469,7 +379,6 @@ namespace RabiRiichi.Generated.Core.Config {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GameConfigMsg other) {
       if (other == null) {
         return;
@@ -485,43 +394,39 @@ namespace RabiRiichi.Generated.Core.Config {
       }
       if (other.pointThreshold_ != null) {
         if (pointThreshold_ == null) {
-          PointThreshold = new global::RabiRiichi.Generated.Core.Config.PointThresholdMsg();
+          pointThreshold_ = new global::RabiRiichi.Generated.Core.Config.PointThresholdMsg();
         }
         PointThreshold.MergeFrom(other.PointThreshold);
       }
-      if (other.RenchanPolicy != global::RabiRiichi.Generated.Core.Config.RenchanPolicy.None) {
+      if (other.RenchanPolicy != 0) {
         RenchanPolicy = other.RenchanPolicy;
       }
-      if (other.EndGamePolicy != global::RabiRiichi.Generated.Core.Config.EndGamePolicy.None) {
+      if (other.EndGamePolicy != 0) {
         EndGamePolicy = other.EndGamePolicy;
       }
-      if (other.KuikaePolicy != global::RabiRiichi.Generated.Core.Config.KuikaePolicy.None) {
+      if (other.KuikaePolicy != 0) {
         KuikaePolicy = other.KuikaePolicy;
       }
-      if (other.RiichiPolicy != global::RabiRiichi.Generated.Core.Config.RiichiPolicy.None) {
+      if (other.RiichiPolicy != 0) {
         RiichiPolicy = other.RiichiPolicy;
       }
-      if (other.DoraOption != global::RabiRiichi.Generated.Core.Config.DoraOption.None) {
+      if (other.DoraOption != 0) {
         DoraOption = other.DoraOption;
       }
-      if (other.AgariOption != global::RabiRiichi.Generated.Core.Config.AgariOption.None) {
+      if (other.AgariOption != 0) {
         AgariOption = other.AgariOption;
       }
-      if (other.ScoringOption != global::RabiRiichi.Generated.Core.Config.ScoringOption.None) {
+      if (other.ScoringOption != 0) {
         ScoringOption = other.ScoringOption;
       }
-      if (other.RyuukyokuTrigger != global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger.None) {
+      if (other.RyuukyokuTrigger != 0) {
         RyuukyokuTrigger = other.RyuukyokuTrigger;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -542,113 +447,46 @@ namespace RabiRiichi.Generated.Core.Config {
           }
           case 34: {
             if (pointThreshold_ == null) {
-              PointThreshold = new global::RabiRiichi.Generated.Core.Config.PointThresholdMsg();
+              pointThreshold_ = new global::RabiRiichi.Generated.Core.Config.PointThresholdMsg();
             }
-            input.ReadMessage(PointThreshold);
+            input.ReadMessage(pointThreshold_);
             break;
           }
           case 40: {
-            RenchanPolicy = (global::RabiRiichi.Generated.Core.Config.RenchanPolicy) input.ReadEnum();
+            renchanPolicy_ = (global::RabiRiichi.Generated.Core.Config.RenchanPolicy) input.ReadEnum();
             break;
           }
           case 48: {
-            EndGamePolicy = (global::RabiRiichi.Generated.Core.Config.EndGamePolicy) input.ReadEnum();
+            endGamePolicy_ = (global::RabiRiichi.Generated.Core.Config.EndGamePolicy) input.ReadEnum();
             break;
           }
           case 56: {
-            KuikaePolicy = (global::RabiRiichi.Generated.Core.Config.KuikaePolicy) input.ReadEnum();
+            kuikaePolicy_ = (global::RabiRiichi.Generated.Core.Config.KuikaePolicy) input.ReadEnum();
             break;
           }
           case 64: {
-            RiichiPolicy = (global::RabiRiichi.Generated.Core.Config.RiichiPolicy) input.ReadEnum();
+            riichiPolicy_ = (global::RabiRiichi.Generated.Core.Config.RiichiPolicy) input.ReadEnum();
             break;
           }
           case 72: {
-            DoraOption = (global::RabiRiichi.Generated.Core.Config.DoraOption) input.ReadEnum();
+            doraOption_ = (global::RabiRiichi.Generated.Core.Config.DoraOption) input.ReadEnum();
             break;
           }
           case 80: {
-            AgariOption = (global::RabiRiichi.Generated.Core.Config.AgariOption) input.ReadEnum();
+            agariOption_ = (global::RabiRiichi.Generated.Core.Config.AgariOption) input.ReadEnum();
             break;
           }
           case 88: {
-            ScoringOption = (global::RabiRiichi.Generated.Core.Config.ScoringOption) input.ReadEnum();
+            scoringOption_ = (global::RabiRiichi.Generated.Core.Config.ScoringOption) input.ReadEnum();
             break;
           }
           case 96: {
-            RyuukyokuTrigger = (global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PlayerCount = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            TotalRound = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            MinHan = input.ReadInt32();
-            break;
-          }
-          case 34: {
-            if (pointThreshold_ == null) {
-              PointThreshold = new global::RabiRiichi.Generated.Core.Config.PointThresholdMsg();
-            }
-            input.ReadMessage(PointThreshold);
-            break;
-          }
-          case 40: {
-            RenchanPolicy = (global::RabiRiichi.Generated.Core.Config.RenchanPolicy) input.ReadEnum();
-            break;
-          }
-          case 48: {
-            EndGamePolicy = (global::RabiRiichi.Generated.Core.Config.EndGamePolicy) input.ReadEnum();
-            break;
-          }
-          case 56: {
-            KuikaePolicy = (global::RabiRiichi.Generated.Core.Config.KuikaePolicy) input.ReadEnum();
-            break;
-          }
-          case 64: {
-            RiichiPolicy = (global::RabiRiichi.Generated.Core.Config.RiichiPolicy) input.ReadEnum();
-            break;
-          }
-          case 72: {
-            DoraOption = (global::RabiRiichi.Generated.Core.Config.DoraOption) input.ReadEnum();
-            break;
-          }
-          case 80: {
-            AgariOption = (global::RabiRiichi.Generated.Core.Config.AgariOption) input.ReadEnum();
-            break;
-          }
-          case 88: {
-            ScoringOption = (global::RabiRiichi.Generated.Core.Config.ScoringOption) input.ReadEnum();
-            break;
-          }
-          case 96: {
-            RyuukyokuTrigger = (global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger) input.ReadEnum();
+            ryuukyokuTrigger_ = (global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 

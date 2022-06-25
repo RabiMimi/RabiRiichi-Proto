@@ -31,39 +31,31 @@ namespace RabiRiichi.Generated.Events.InGame {
             "dHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.SetRiichiEventMsg), global::RabiRiichi.Generated.Events.InGame.SetRiichiEventMsg.Parser, new[]{ "PlayerId", "RiichiTile", "WRiichi" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.SetRiichiEventMsg), global::RabiRiichi.Generated.Events.InGame.SetRiichiEventMsg.Parser, new[]{ "PlayerId", "RiichiTile", "WRiichi" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class SetRiichiEventMsg : pb::IMessage<SetRiichiEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class SetRiichiEventMsg : pb::IMessage<SetRiichiEventMsg> {
     private static readonly pb::MessageParser<SetRiichiEventMsg> _parser = new pb::MessageParser<SetRiichiEventMsg>(() => new SetRiichiEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SetRiichiEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.SetRiichiEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetRiichiEventMsg() {
       OnConstruction();
     }
@@ -71,7 +63,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetRiichiEventMsg(SetRiichiEventMsg other) : this() {
       playerId_ = other.playerId_;
       riichiTile_ = other.riichiTile_ != null ? other.riichiTile_.Clone() : null;
@@ -80,7 +71,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetRiichiEventMsg Clone() {
       return new SetRiichiEventMsg(this);
     }
@@ -89,7 +79,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PlayerId {
       get { return playerId_; }
       set {
@@ -101,7 +90,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int RiichiTileFieldNumber = 2;
     private global::RabiRiichi.Generated.Core.GameTileMsg riichiTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameTileMsg RiichiTile {
       get { return riichiTile_; }
       set {
@@ -113,7 +101,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int WRiichiFieldNumber = 3;
     private bool wRiichi_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool WRiichi {
       get { return wRiichi_; }
       set {
@@ -122,13 +109,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SetRiichiEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SetRiichiEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -143,7 +128,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
@@ -156,17 +140,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PlayerId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PlayerId);
@@ -182,33 +161,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerId);
-      }
-      if (riichiTile_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(RiichiTile);
-      }
-      if (WRiichi != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(WRiichi);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PlayerId != 0) {
@@ -227,7 +182,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SetRiichiEventMsg other) {
       if (other == null) {
         return;
@@ -237,7 +191,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
       if (other.riichiTile_ != null) {
         if (riichiTile_ == null) {
-          RiichiTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+          riichiTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
         }
         RiichiTile.MergeFrom(other.RiichiTile);
       }
@@ -248,11 +202,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -265,39 +215,9 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
           case 18: {
             if (riichiTile_ == null) {
-              RiichiTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
+              riichiTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
-            input.ReadMessage(RiichiTile);
-            break;
-          }
-          case 24: {
-            WRiichi = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PlayerId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (riichiTile_ == null) {
-              RiichiTile = new global::RabiRiichi.Generated.Core.GameTileMsg();
-            }
-            input.ReadMessage(RiichiTile);
+            input.ReadMessage(riichiTile_);
             break;
           }
           case 24: {
@@ -307,7 +227,6 @@ namespace RabiRiichi.Generated.Events.InGame {
         }
       }
     }
-    #endif
 
   }
 

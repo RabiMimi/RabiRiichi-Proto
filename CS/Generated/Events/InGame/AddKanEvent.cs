@@ -32,39 +32,31 @@ namespace RabiRiichi.Generated.Events.InGame {
             "ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg), global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg.Parser, new[]{ "PlayerId", "Kan", "Incoming", "KanSource" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg), global::RabiRiichi.Generated.Events.InGame.AddKanEventMsg.Parser, new[]{ "PlayerId", "Kan", "Incoming", "KanSource" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class AddKanEventMsg : pb::IMessage<AddKanEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class AddKanEventMsg : pb::IMessage<AddKanEventMsg> {
     private static readonly pb::MessageParser<AddKanEventMsg> _parser = new pb::MessageParser<AddKanEventMsg>(() => new AddKanEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AddKanEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.AddKanEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddKanEventMsg() {
       OnConstruction();
     }
@@ -72,7 +64,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddKanEventMsg(AddKanEventMsg other) : this() {
       playerId_ = other.playerId_;
       kan_ = other.kan_ != null ? other.kan_.Clone() : null;
@@ -82,7 +73,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddKanEventMsg Clone() {
       return new AddKanEventMsg(this);
     }
@@ -91,7 +81,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int PlayerIdFieldNumber = 1;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PlayerId {
       get { return playerId_; }
       set {
@@ -103,7 +92,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int KanFieldNumber = 2;
     private global::RabiRiichi.Generated.Core.MenLikeMsg kan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.MenLikeMsg Kan {
       get { return kan_; }
       set {
@@ -115,7 +103,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int IncomingFieldNumber = 3;
     private global::RabiRiichi.Generated.Core.GameTileMsg incoming_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.GameTileMsg Incoming {
       get { return incoming_; }
       set {
@@ -125,9 +112,8 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     /// <summary>Field number for the "kan_source" field.</summary>
     public const int KanSourceFieldNumber = 4;
-    private global::RabiRiichi.Generated.Core.TileSource kanSource_ = global::RabiRiichi.Generated.Core.TileSource.None;
+    private global::RabiRiichi.Generated.Core.TileSource kanSource_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.TileSource KanSource {
       get { return kanSource_; }
       set {
@@ -136,13 +122,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AddKanEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AddKanEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -158,13 +142,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (kan_ != null) hash ^= Kan.GetHashCode();
       if (incoming_ != null) hash ^= Incoming.GetHashCode();
-      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) hash ^= KanSource.GetHashCode();
+      if (KanSource != 0) hash ^= KanSource.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -172,17 +155,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PlayerId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PlayerId);
@@ -195,44 +173,16 @@ namespace RabiRiichi.Generated.Events.InGame {
         output.WriteRawTag(26);
         output.WriteMessage(Incoming);
       }
-      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (KanSource != 0) {
         output.WriteRawTag(32);
         output.WriteEnum((int) KanSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerId);
-      }
-      if (kan_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Kan);
-      }
-      if (incoming_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Incoming);
-      }
-      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) KanSource);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PlayerId != 0) {
@@ -244,7 +194,7 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (incoming_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Incoming);
       }
-      if (KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (KanSource != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KanSource);
       }
       if (_unknownFields != null) {
@@ -254,7 +204,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AddKanEventMsg other) {
       if (other == null) {
         return;
@@ -264,28 +213,24 @@ namespace RabiRiichi.Generated.Events.InGame {
       }
       if (other.kan_ != null) {
         if (kan_ == null) {
-          Kan = new global::RabiRiichi.Generated.Core.MenLikeMsg();
+          kan_ = new global::RabiRiichi.Generated.Core.MenLikeMsg();
         }
         Kan.MergeFrom(other.Kan);
       }
       if (other.incoming_ != null) {
         if (incoming_ == null) {
-          Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
+          incoming_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
         }
         Incoming.MergeFrom(other.Incoming);
       }
-      if (other.KanSource != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (other.KanSource != 0) {
         KanSource = other.KanSource;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -298,63 +243,25 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
           case 18: {
             if (kan_ == null) {
-              Kan = new global::RabiRiichi.Generated.Core.MenLikeMsg();
+              kan_ = new global::RabiRiichi.Generated.Core.MenLikeMsg();
             }
-            input.ReadMessage(Kan);
+            input.ReadMessage(kan_);
             break;
           }
           case 26: {
             if (incoming_ == null) {
-              Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
+              incoming_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
-            input.ReadMessage(Incoming);
+            input.ReadMessage(incoming_);
             break;
           }
           case 32: {
-            KanSource = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PlayerId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (kan_ == null) {
-              Kan = new global::RabiRiichi.Generated.Core.MenLikeMsg();
-            }
-            input.ReadMessage(Kan);
-            break;
-          }
-          case 26: {
-            if (incoming_ == null) {
-              Incoming = new global::RabiRiichi.Generated.Core.GameTileMsg();
-            }
-            input.ReadMessage(Incoming);
-            break;
-          }
-          case 32: {
-            KanSource = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
+            kanSource_ = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 

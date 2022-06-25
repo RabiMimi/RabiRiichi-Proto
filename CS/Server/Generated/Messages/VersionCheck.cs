@@ -33,40 +33,32 @@ namespace RabiRiichi.Server.Generated.Messages {
             "Y2hpLlNlcnZlci5HZW5lcmF0ZWQuTWVzc2FnZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerVersionCheckMsg), global::RabiRiichi.Server.Generated.Messages.ServerVersionCheckMsg.Parser, new[]{ "Game", "GameVersion", "Server", "ServerVersion", "MinClientVersion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ClientVersionCheckMsg), global::RabiRiichi.Server.Generated.Messages.ClientVersionCheckMsg.Parser, new[]{ "Client", "ClientVersion", "MinServerVersion" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerVersionCheckMsg), global::RabiRiichi.Server.Generated.Messages.ServerVersionCheckMsg.Parser, new[]{ "Game", "GameVersion", "Server", "ServerVersion", "MinClientVersion" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ClientVersionCheckMsg), global::RabiRiichi.Server.Generated.Messages.ClientVersionCheckMsg.Parser, new[]{ "Client", "ClientVersion", "MinServerVersion" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ServerVersionCheckMsg : pb::IMessage<ServerVersionCheckMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ServerVersionCheckMsg : pb::IMessage<ServerVersionCheckMsg> {
     private static readonly pb::MessageParser<ServerVersionCheckMsg> _parser = new pb::MessageParser<ServerVersionCheckMsg>(() => new ServerVersionCheckMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ServerVersionCheckMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.VersionCheckReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerVersionCheckMsg() {
       OnConstruction();
     }
@@ -74,7 +66,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerVersionCheckMsg(ServerVersionCheckMsg other) : this() {
       game_ = other.game_;
       gameVersion_ = other.gameVersion_;
@@ -85,7 +76,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerVersionCheckMsg Clone() {
       return new ServerVersionCheckMsg(this);
     }
@@ -94,7 +84,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int GameFieldNumber = 1;
     private string game_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Game {
       get { return game_; }
       set {
@@ -106,7 +95,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int GameVersionFieldNumber = 2;
     private string gameVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GameVersion {
       get { return gameVersion_; }
       set {
@@ -118,7 +106,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int ServerFieldNumber = 3;
     private string server_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Server {
       get { return server_; }
       set {
@@ -130,7 +117,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int ServerVersionFieldNumber = 4;
     private string serverVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ServerVersion {
       get { return serverVersion_; }
       set {
@@ -142,7 +128,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int MinClientVersionFieldNumber = 5;
     private string minClientVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MinClientVersion {
       get { return minClientVersion_; }
       set {
@@ -151,13 +136,11 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ServerVersionCheckMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ServerVersionCheckMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -174,7 +157,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Game.Length != 0) hash ^= Game.GetHashCode();
@@ -189,17 +171,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Game.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Game);
@@ -223,41 +200,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Game.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Game);
-      }
-      if (GameVersion.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(GameVersion);
-      }
-      if (Server.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Server);
-      }
-      if (ServerVersion.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(ServerVersion);
-      }
-      if (MinClientVersion.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(MinClientVersion);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Game.Length != 0) {
@@ -282,7 +227,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ServerVersionCheckMsg other) {
       if (other == null) {
         return;
@@ -306,11 +250,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -339,71 +279,27 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Game = input.ReadString();
-            break;
-          }
-          case 18: {
-            GameVersion = input.ReadString();
-            break;
-          }
-          case 26: {
-            Server = input.ReadString();
-            break;
-          }
-          case 34: {
-            ServerVersion = input.ReadString();
-            break;
-          }
-          case 42: {
-            MinClientVersion = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class ClientVersionCheckMsg : pb::IMessage<ClientVersionCheckMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ClientVersionCheckMsg : pb::IMessage<ClientVersionCheckMsg> {
     private static readonly pb::MessageParser<ClientVersionCheckMsg> _parser = new pb::MessageParser<ClientVersionCheckMsg>(() => new ClientVersionCheckMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClientVersionCheckMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.VersionCheckReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientVersionCheckMsg() {
       OnConstruction();
     }
@@ -411,7 +307,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientVersionCheckMsg(ClientVersionCheckMsg other) : this() {
       client_ = other.client_;
       clientVersion_ = other.clientVersion_;
@@ -420,7 +315,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientVersionCheckMsg Clone() {
       return new ClientVersionCheckMsg(this);
     }
@@ -429,7 +323,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int ClientFieldNumber = 1;
     private string client_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Client {
       get { return client_; }
       set {
@@ -441,7 +334,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int ClientVersionFieldNumber = 2;
     private string clientVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientVersion {
       get { return clientVersion_; }
       set {
@@ -453,7 +345,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int MinServerVersionFieldNumber = 3;
     private string minServerVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MinServerVersion {
       get { return minServerVersion_; }
       set {
@@ -462,13 +353,11 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClientVersionCheckMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClientVersionCheckMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -483,7 +372,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Client.Length != 0) hash ^= Client.GetHashCode();
@@ -496,17 +384,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Client.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Client);
@@ -522,33 +405,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Client.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Client);
-      }
-      if (ClientVersion.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ClientVersion);
-      }
-      if (MinServerVersion.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(MinServerVersion);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Client.Length != 0) {
@@ -567,7 +426,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClientVersionCheckMsg other) {
       if (other == null) {
         return;
@@ -585,11 +443,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -610,35 +464,7 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Client = input.ReadString();
-            break;
-          }
-          case 18: {
-            ClientVersion = input.ReadString();
-            break;
-          }
-          case 26: {
-            MinServerVersion = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

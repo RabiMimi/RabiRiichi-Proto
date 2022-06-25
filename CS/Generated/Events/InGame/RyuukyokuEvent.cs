@@ -37,41 +37,33 @@ namespace RabiRiichi.Generated.Events.InGame {
             "dHMuSW5HYW1lYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Events.InGame.CalcScoreEventReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg.Parser, new[]{ "RemainingPlayers", "NagashiManganPlayers", "TenpaiPlayers" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventMsg.Parser, new[]{ "ScoreChange", "EndGameRyuukyoku", "MidGameRyuukyoku" }, new[]{ "RyuukyokuEvent" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg.Parser, new[]{ "RemainingPlayers", "NagashiManganPlayers", "TenpaiPlayers" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventMsg), global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventMsg.Parser, new[]{ "ScoreChange", "EndGameRyuukyoku", "MidGameRyuukyoku" }, new[]{ "RyuukyokuEvent" }, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class EndGameRyuukyokuEventMsg : pb::IMessage<EndGameRyuukyokuEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class EndGameRyuukyokuEventMsg : pb::IMessage<EndGameRyuukyokuEventMsg> {
     private static readonly pb::MessageParser<EndGameRyuukyokuEventMsg> _parser = new pb::MessageParser<EndGameRyuukyokuEventMsg>(() => new EndGameRyuukyokuEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<EndGameRyuukyokuEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EndGameRyuukyokuEventMsg() {
       OnConstruction();
     }
@@ -79,7 +71,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EndGameRyuukyokuEventMsg(EndGameRyuukyokuEventMsg other) : this() {
       remainingPlayers_ = other.remainingPlayers_.Clone();
       nagashiManganPlayers_ = other.nagashiManganPlayers_.Clone();
@@ -88,7 +79,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EndGameRyuukyokuEventMsg Clone() {
       return new EndGameRyuukyokuEventMsg(this);
     }
@@ -99,7 +89,6 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForInt32(10);
     private readonly pbc::RepeatedField<int> remainingPlayers_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> RemainingPlayers {
       get { return remainingPlayers_; }
     }
@@ -110,7 +99,6 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> nagashiManganPlayers_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> NagashiManganPlayers {
       get { return nagashiManganPlayers_; }
     }
@@ -121,19 +109,16 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> tenpaiPlayers_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> TenpaiPlayers {
       get { return tenpaiPlayers_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as EndGameRyuukyokuEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(EndGameRyuukyokuEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -148,7 +133,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= remainingPlayers_.GetHashCode();
@@ -161,41 +145,21 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       remainingPlayers_.WriteTo(output, _repeated_remainingPlayers_codec);
       nagashiManganPlayers_.WriteTo(output, _repeated_nagashiManganPlayers_codec);
       tenpaiPlayers_.WriteTo(output, _repeated_tenpaiPlayers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      remainingPlayers_.WriteTo(ref output, _repeated_remainingPlayers_codec);
-      nagashiManganPlayers_.WriteTo(ref output, _repeated_nagashiManganPlayers_codec);
-      tenpaiPlayers_.WriteTo(ref output, _repeated_tenpaiPlayers_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += remainingPlayers_.CalculateSize(_repeated_remainingPlayers_codec);
@@ -208,7 +172,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(EndGameRyuukyokuEventMsg other) {
       if (other == null) {
         return;
@@ -220,11 +183,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -248,66 +207,27 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10:
-          case 8: {
-            remainingPlayers_.AddEntriesFrom(ref input, _repeated_remainingPlayers_codec);
-            break;
-          }
-          case 18:
-          case 16: {
-            nagashiManganPlayers_.AddEntriesFrom(ref input, _repeated_nagashiManganPlayers_codec);
-            break;
-          }
-          case 26:
-          case 24: {
-            tenpaiPlayers_.AddEntriesFrom(ref input, _repeated_tenpaiPlayers_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class MidGameRyuukyokuEventMsg : pb::IMessage<MidGameRyuukyokuEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class MidGameRyuukyokuEventMsg : pb::IMessage<MidGameRyuukyokuEventMsg> {
     private static readonly pb::MessageParser<MidGameRyuukyokuEventMsg> _parser = new pb::MessageParser<MidGameRyuukyokuEventMsg>(() => new MidGameRyuukyokuEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MidGameRyuukyokuEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MidGameRyuukyokuEventMsg() {
       OnConstruction();
     }
@@ -315,14 +235,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MidGameRyuukyokuEventMsg(MidGameRyuukyokuEventMsg other) : this() {
       name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MidGameRyuukyokuEventMsg Clone() {
       return new MidGameRyuukyokuEventMsg(this);
     }
@@ -331,7 +249,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     public const int NameFieldNumber = 1;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -340,13 +257,11 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MidGameRyuukyokuEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MidGameRyuukyokuEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -359,7 +274,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
@@ -370,17 +284,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Name.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Name);
@@ -388,25 +297,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Name.Length != 0) {
@@ -419,7 +312,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MidGameRyuukyokuEventMsg other) {
       if (other == null) {
         return;
@@ -431,11 +323,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -448,55 +336,27 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class RyuukyokuEventMsg : pb::IMessage<RyuukyokuEventMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class RyuukyokuEventMsg : pb::IMessage<RyuukyokuEventMsg> {
     private static readonly pb::MessageParser<RyuukyokuEventMsg> _parser = new pb::MessageParser<RyuukyokuEventMsg>(() => new RyuukyokuEventMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RyuukyokuEventMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Events.InGame.RyuukyokuEventReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RyuukyokuEventMsg() {
       OnConstruction();
     }
@@ -504,7 +364,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RyuukyokuEventMsg(RyuukyokuEventMsg other) : this() {
       scoreChange_ = other.scoreChange_.Clone();
       switch (other.RyuukyokuEventCase) {
@@ -520,7 +379,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RyuukyokuEventMsg Clone() {
       return new RyuukyokuEventMsg(this);
     }
@@ -531,7 +389,6 @@ namespace RabiRiichi.Generated.Events.InGame {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> scoreChange_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Events.InGame.ScoreTransferMsg> ScoreChange {
       get { return scoreChange_; }
     }
@@ -539,7 +396,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     /// <summary>Field number for the "end_game_ryuukyoku" field.</summary>
     public const int EndGameRyuukyokuFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg EndGameRyuukyoku {
       get { return ryuukyokuEventCase_ == RyuukyokuEventOneofCase.EndGameRyuukyoku ? (global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg) ryuukyokuEvent_ : null; }
       set {
@@ -551,7 +407,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     /// <summary>Field number for the "mid_game_ryuukyoku" field.</summary>
     public const int MidGameRyuukyokuFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg MidGameRyuukyoku {
       get { return ryuukyokuEventCase_ == RyuukyokuEventOneofCase.MidGameRyuukyoku ? (global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg) ryuukyokuEvent_ : null; }
       set {
@@ -569,26 +424,22 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
     private RyuukyokuEventOneofCase ryuukyokuEventCase_ = RyuukyokuEventOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RyuukyokuEventOneofCase RyuukyokuEventCase {
       get { return ryuukyokuEventCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRyuukyokuEvent() {
       ryuukyokuEventCase_ = RyuukyokuEventOneofCase.None;
       ryuukyokuEvent_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RyuukyokuEventMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RyuukyokuEventMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -604,7 +455,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= scoreChange_.GetHashCode();
@@ -618,17 +468,12 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       scoreChange_.WriteTo(output, _repeated_scoreChange_codec);
       if (ryuukyokuEventCase_ == RyuukyokuEventOneofCase.EndGameRyuukyoku) {
         output.WriteRawTag(18);
@@ -641,30 +486,9 @@ namespace RabiRiichi.Generated.Events.InGame {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      scoreChange_.WriteTo(ref output, _repeated_scoreChange_codec);
-      if (ryuukyokuEventCase_ == RyuukyokuEventOneofCase.EndGameRyuukyoku) {
-        output.WriteRawTag(18);
-        output.WriteMessage(EndGameRyuukyoku);
-      }
-      if (ryuukyokuEventCase_ == RyuukyokuEventOneofCase.MidGameRyuukyoku) {
-        output.WriteRawTag(26);
-        output.WriteMessage(MidGameRyuukyoku);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += scoreChange_.CalculateSize(_repeated_scoreChange_codec);
@@ -681,7 +505,6 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RyuukyokuEventMsg other) {
       if (other == null) {
         return;
@@ -706,11 +529,7 @@ namespace RabiRiichi.Generated.Events.InGame {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -741,45 +560,7 @@ namespace RabiRiichi.Generated.Events.InGame {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            scoreChange_.AddEntriesFrom(ref input, _repeated_scoreChange_codec);
-            break;
-          }
-          case 18: {
-            global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg subBuilder = new global::RabiRiichi.Generated.Events.InGame.EndGameRyuukyokuEventMsg();
-            if (ryuukyokuEventCase_ == RyuukyokuEventOneofCase.EndGameRyuukyoku) {
-              subBuilder.MergeFrom(EndGameRyuukyoku);
-            }
-            input.ReadMessage(subBuilder);
-            EndGameRyuukyoku = subBuilder;
-            break;
-          }
-          case 26: {
-            global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg subBuilder = new global::RabiRiichi.Generated.Events.InGame.MidGameRyuukyokuEventMsg();
-            if (ryuukyokuEventCase_ == RyuukyokuEventOneofCase.MidGameRyuukyoku) {
-              subBuilder.MergeFrom(MidGameRyuukyoku);
-            }
-            input.ReadMessage(subBuilder);
-            MidGameRyuukyoku = subBuilder;
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

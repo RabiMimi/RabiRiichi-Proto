@@ -33,41 +33,33 @@ namespace RabiRiichi.Server.Generated.Messages {
             "aS5TZXJ2ZXIuR2VuZXJhdGVkLk1lc3NhZ2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Actions.SinglePlayerInquiryReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerInquiryMsg), global::RabiRiichi.Server.Generated.Messages.ServerInquiryMsg.Parser, new[]{ "Id", "Inquiry" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerInquiryEndMsg), global::RabiRiichi.Server.Generated.Messages.ServerInquiryEndMsg.Parser, new[]{ "Id", "EndId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ClientInquiryMsg), global::RabiRiichi.Server.Generated.Messages.ClientInquiryMsg.Parser, new[]{ "Id", "Index", "Response" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerInquiryMsg), global::RabiRiichi.Server.Generated.Messages.ServerInquiryMsg.Parser, new[]{ "Id", "Inquiry" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ServerInquiryEndMsg), global::RabiRiichi.Server.Generated.Messages.ServerInquiryEndMsg.Parser, new[]{ "Id", "EndId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Server.Generated.Messages.ClientInquiryMsg), global::RabiRiichi.Server.Generated.Messages.ClientInquiryMsg.Parser, new[]{ "Id", "Index", "Response" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ServerInquiryMsg : pb::IMessage<ServerInquiryMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ServerInquiryMsg : pb::IMessage<ServerInquiryMsg> {
     private static readonly pb::MessageParser<ServerInquiryMsg> _parser = new pb::MessageParser<ServerInquiryMsg>(() => new ServerInquiryMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ServerInquiryMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.InquiryReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryMsg() {
       OnConstruction();
     }
@@ -75,7 +67,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryMsg(ServerInquiryMsg other) : this() {
       id_ = other.id_;
       inquiry_ = other.inquiry_ != null ? other.inquiry_.Clone() : null;
@@ -83,7 +74,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryMsg Clone() {
       return new ServerInquiryMsg(this);
     }
@@ -92,7 +82,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int IdFieldNumber = 1;
     private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Id {
       get { return id_; }
       set {
@@ -104,7 +93,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int InquiryFieldNumber = 2;
     private global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg inquiry_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg Inquiry {
       get { return inquiry_; }
       set {
@@ -113,13 +101,11 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ServerInquiryMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ServerInquiryMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -133,7 +119,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
@@ -145,17 +130,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
@@ -167,29 +147,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (inquiry_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Inquiry);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
@@ -205,7 +165,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ServerInquiryMsg other) {
       if (other == null) {
         return;
@@ -215,7 +174,7 @@ namespace RabiRiichi.Server.Generated.Messages {
       }
       if (other.inquiry_ != null) {
         if (inquiry_ == null) {
-          Inquiry = new global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg();
+          inquiry_ = new global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg();
         }
         Inquiry.MergeFrom(other.Inquiry);
       }
@@ -223,11 +182,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -240,69 +195,34 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
           case 18: {
             if (inquiry_ == null) {
-              Inquiry = new global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg();
+              inquiry_ = new global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg();
             }
-            input.ReadMessage(Inquiry);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (inquiry_ == null) {
-              Inquiry = new global::RabiRiichi.Generated.Actions.SinglePlayerInquiryMsg();
-            }
-            input.ReadMessage(Inquiry);
+            input.ReadMessage(inquiry_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class ServerInquiryEndMsg : pb::IMessage<ServerInquiryEndMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ServerInquiryEndMsg : pb::IMessage<ServerInquiryEndMsg> {
     private static readonly pb::MessageParser<ServerInquiryEndMsg> _parser = new pb::MessageParser<ServerInquiryEndMsg>(() => new ServerInquiryEndMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ServerInquiryEndMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.InquiryReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryEndMsg() {
       OnConstruction();
     }
@@ -310,7 +230,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryEndMsg(ServerInquiryEndMsg other) : this() {
       id_ = other.id_;
       endId_ = other.endId_;
@@ -318,7 +237,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerInquiryEndMsg Clone() {
       return new ServerInquiryEndMsg(this);
     }
@@ -327,7 +245,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int IdFieldNumber = 1;
     private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Id {
       get { return id_; }
       set {
@@ -339,7 +256,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int EndIdFieldNumber = 2;
     private int endId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EndId {
       get { return endId_; }
       set {
@@ -348,13 +264,11 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ServerInquiryEndMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ServerInquiryEndMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -368,7 +282,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
@@ -380,17 +293,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
@@ -402,29 +310,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (EndId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(EndId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
@@ -440,7 +328,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ServerInquiryEndMsg other) {
       if (other == null) {
         return;
@@ -455,11 +342,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -476,59 +359,27 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            EndId = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  public sealed partial class ClientInquiryMsg : pb::IMessage<ClientInquiryMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ClientInquiryMsg : pb::IMessage<ClientInquiryMsg> {
     private static readonly pb::MessageParser<ClientInquiryMsg> _parser = new pb::MessageParser<ClientInquiryMsg>(() => new ClientInquiryMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClientInquiryMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Server.Generated.Messages.InquiryReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInquiryMsg() {
       OnConstruction();
     }
@@ -536,7 +387,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInquiryMsg(ClientInquiryMsg other) : this() {
       id_ = other.id_;
       index_ = other.index_;
@@ -545,7 +395,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientInquiryMsg Clone() {
       return new ClientInquiryMsg(this);
     }
@@ -554,7 +403,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int IdFieldNumber = 1;
     private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Id {
       get { return id_; }
       set {
@@ -566,7 +414,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int IndexFieldNumber = 2;
     private int index_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Index {
       get { return index_; }
       set {
@@ -578,7 +425,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     public const int ResponseFieldNumber = 3;
     private pb::ByteString response_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Response {
       get { return response_; }
       set {
@@ -587,13 +433,11 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClientInquiryMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClientInquiryMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -608,7 +452,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
@@ -621,17 +464,12 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Id != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
@@ -647,33 +485,9 @@ namespace RabiRiichi.Server.Generated.Messages {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Index != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Index);
-      }
-      if (Response.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteBytes(Response);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id != 0) {
@@ -692,7 +506,6 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClientInquiryMsg other) {
       if (other == null) {
         return;
@@ -710,11 +523,7 @@ namespace RabiRiichi.Server.Generated.Messages {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -735,35 +544,7 @@ namespace RabiRiichi.Server.Generated.Messages {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Index = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            Response = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

@@ -43,10 +43,10 @@ namespace RabiRiichi.Generated.Core {
             "ZWQuQ29yZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.DiscardReason), typeof(global::RabiRiichi.Generated.Core.TileSource), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.DiscardInfoMsg), global::RabiRiichi.Generated.Core.DiscardInfoMsg.Parser, new[]{ "From", "Reason" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTilesMsg), global::RabiRiichi.Generated.Core.GameTilesMsg.Parser, new[]{ "Tiles" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.DiscardReason), typeof(global::RabiRiichi.Generated.Core.TileSource), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.DiscardInfoMsg), global::RabiRiichi.Generated.Core.DiscardInfoMsg.Parser, new[]{ "From", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTilesMsg), global::RabiRiichi.Generated.Core.GameTilesMsg.Parser, new[]{ "Tiles" }, null, null, null)
           }));
     }
     #endregion
@@ -79,31 +79,23 @@ namespace RabiRiichi.Generated.Core {
   #endregion
 
   #region Messages
-  public sealed partial class DiscardInfoMsg : pb::IMessage<DiscardInfoMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class DiscardInfoMsg : pb::IMessage<DiscardInfoMsg> {
     private static readonly pb::MessageParser<DiscardInfoMsg> _parser = new pb::MessageParser<DiscardInfoMsg>(() => new DiscardInfoMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DiscardInfoMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DiscardInfoMsg() {
       OnConstruction();
     }
@@ -111,7 +103,6 @@ namespace RabiRiichi.Generated.Core {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DiscardInfoMsg(DiscardInfoMsg other) : this() {
       from_ = other.from_;
       reason_ = other.reason_;
@@ -119,7 +110,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DiscardInfoMsg Clone() {
       return new DiscardInfoMsg(this);
     }
@@ -128,7 +118,6 @@ namespace RabiRiichi.Generated.Core {
     public const int FromFieldNumber = 1;
     private int from_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int From {
       get { return from_; }
       set {
@@ -138,9 +127,8 @@ namespace RabiRiichi.Generated.Core {
 
     /// <summary>Field number for the "reason" field.</summary>
     public const int ReasonFieldNumber = 2;
-    private global::RabiRiichi.Generated.Core.DiscardReason reason_ = global::RabiRiichi.Generated.Core.DiscardReason.None;
+    private global::RabiRiichi.Generated.Core.DiscardReason reason_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.DiscardReason Reason {
       get { return reason_; }
       set {
@@ -149,13 +137,11 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DiscardInfoMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DiscardInfoMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -169,11 +155,10 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (From != 0) hash ^= From.GetHashCode();
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) hash ^= Reason.GetHashCode();
+      if (Reason != 0) hash ^= Reason.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -181,57 +166,32 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (From != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(From);
       }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (Reason != 0) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Reason);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (From != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(From);
-      }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
-        output.WriteRawTag(16);
-        output.WriteEnum((int) Reason);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (From != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(From);
       }
-      if (Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Reason);
       }
       if (_unknownFields != null) {
@@ -241,7 +201,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DiscardInfoMsg other) {
       if (other == null) {
         return;
@@ -249,18 +208,14 @@ namespace RabiRiichi.Generated.Core {
       if (other.From != 0) {
         From = other.From;
       }
-      if (other.Reason != global::RabiRiichi.Generated.Core.DiscardReason.None) {
+      if (other.Reason != 0) {
         Reason = other.Reason;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -272,64 +227,32 @@ namespace RabiRiichi.Generated.Core {
             break;
           }
           case 16: {
-            Reason = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            From = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Reason = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
+            reason_ = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class GameTileMsg : pb::IMessage<GameTileMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class GameTileMsg : pb::IMessage<GameTileMsg> {
     private static readonly pb::MessageParser<GameTileMsg> _parser = new pb::MessageParser<GameTileMsg>(() => new GameTileMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GameTileMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTileMsg() {
       OnConstruction();
     }
@@ -337,7 +260,6 @@ namespace RabiRiichi.Generated.Core {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTileMsg(GameTileMsg other) : this() {
       tile_ = other.tile_;
       playerId_ = other.playerId_;
@@ -347,7 +269,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTileMsg Clone() {
       return new GameTileMsg(this);
     }
@@ -356,7 +277,6 @@ namespace RabiRiichi.Generated.Core {
     public const int TileFieldNumber = 1;
     private int tile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Tile {
       get { return tile_; }
       set {
@@ -368,7 +288,6 @@ namespace RabiRiichi.Generated.Core {
     public const int PlayerIdFieldNumber = 2;
     private int playerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PlayerId {
       get { return playerId_; }
       set {
@@ -380,7 +299,6 @@ namespace RabiRiichi.Generated.Core {
     public const int DiscardInfoFieldNumber = 3;
     private global::RabiRiichi.Generated.Core.DiscardInfoMsg discardInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.DiscardInfoMsg DiscardInfo {
       get { return discardInfo_; }
       set {
@@ -390,9 +308,8 @@ namespace RabiRiichi.Generated.Core {
 
     /// <summary>Field number for the "source" field.</summary>
     public const int SourceFieldNumber = 4;
-    private global::RabiRiichi.Generated.Core.TileSource source_ = global::RabiRiichi.Generated.Core.TileSource.None;
+    private global::RabiRiichi.Generated.Core.TileSource source_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Core.TileSource Source {
       get { return source_; }
       set {
@@ -401,13 +318,11 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GameTileMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GameTileMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -423,13 +338,12 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Tile != 0) hash ^= Tile.GetHashCode();
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (discardInfo_ != null) hash ^= DiscardInfo.GetHashCode();
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) hash ^= Source.GetHashCode();
+      if (Source != 0) hash ^= Source.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -437,17 +351,12 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Tile != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Tile);
@@ -460,44 +369,16 @@ namespace RabiRiichi.Generated.Core {
         output.WriteRawTag(26);
         output.WriteMessage(DiscardInfo);
       }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (Source != 0) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Source);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Tile != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Tile);
-      }
-      if (PlayerId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PlayerId);
-      }
-      if (discardInfo_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(DiscardInfo);
-      }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Source);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Tile != 0) {
@@ -509,7 +390,7 @@ namespace RabiRiichi.Generated.Core {
       if (discardInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DiscardInfo);
       }
-      if (Source != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (Source != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Source);
       }
       if (_unknownFields != null) {
@@ -519,7 +400,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GameTileMsg other) {
       if (other == null) {
         return;
@@ -532,22 +412,18 @@ namespace RabiRiichi.Generated.Core {
       }
       if (other.discardInfo_ != null) {
         if (discardInfo_ == null) {
-          DiscardInfo = new global::RabiRiichi.Generated.Core.DiscardInfoMsg();
+          discardInfo_ = new global::RabiRiichi.Generated.Core.DiscardInfoMsg();
         }
         DiscardInfo.MergeFrom(other.DiscardInfo);
       }
-      if (other.Source != global::RabiRiichi.Generated.Core.TileSource.None) {
+      if (other.Source != 0) {
         Source = other.Source;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -564,81 +440,38 @@ namespace RabiRiichi.Generated.Core {
           }
           case 26: {
             if (discardInfo_ == null) {
-              DiscardInfo = new global::RabiRiichi.Generated.Core.DiscardInfoMsg();
+              discardInfo_ = new global::RabiRiichi.Generated.Core.DiscardInfoMsg();
             }
-            input.ReadMessage(DiscardInfo);
+            input.ReadMessage(discardInfo_);
             break;
           }
           case 32: {
-            Source = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Tile = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            PlayerId = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            if (discardInfo_ == null) {
-              DiscardInfo = new global::RabiRiichi.Generated.Core.DiscardInfoMsg();
-            }
-            input.ReadMessage(DiscardInfo);
-            break;
-          }
-          case 32: {
-            Source = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
+            source_ = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
             break;
           }
         }
       }
     }
-    #endif
 
   }
 
-  public sealed partial class GameTilesMsg : pb::IMessage<GameTilesMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class GameTilesMsg : pb::IMessage<GameTilesMsg> {
     private static readonly pb::MessageParser<GameTilesMsg> _parser = new pb::MessageParser<GameTilesMsg>(() => new GameTilesMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GameTilesMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTilesMsg() {
       OnConstruction();
     }
@@ -646,14 +479,12 @@ namespace RabiRiichi.Generated.Core {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTilesMsg(GameTilesMsg other) : this() {
       tiles_ = other.tiles_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameTilesMsg Clone() {
       return new GameTilesMsg(this);
     }
@@ -664,19 +495,16 @@ namespace RabiRiichi.Generated.Core {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> tiles_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> Tiles {
       get { return tiles_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GameTilesMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GameTilesMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -689,7 +517,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= tiles_.GetHashCode();
@@ -700,37 +527,19 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       tiles_.WriteTo(output, _repeated_tiles_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      tiles_.WriteTo(ref output, _repeated_tiles_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += tiles_.CalculateSize(_repeated_tiles_codec);
@@ -741,7 +550,6 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GameTilesMsg other) {
       if (other == null) {
         return;
@@ -751,11 +559,7 @@ namespace RabiRiichi.Generated.Core {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -768,27 +572,7 @@ namespace RabiRiichi.Generated.Core {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            tiles_.AddEntriesFrom(ref input, _repeated_tiles_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

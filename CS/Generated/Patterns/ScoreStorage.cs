@@ -31,39 +31,31 @@ namespace RabiRiichi.Generated.Patterns {
             "aVJpaWNoaS5HZW5lcmF0ZWQuUGF0dGVybnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Patterns.StdPatternReflection.Descriptor, global::RabiRiichi.Generated.Patterns.ScoreCalcResultReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Patterns.ScoreStorageMsg), global::RabiRiichi.Generated.Patterns.ScoreStorageMsg.Parser, new[]{ "Items", "Result" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Patterns.ScoreStorageMsg), global::RabiRiichi.Generated.Patterns.ScoreStorageMsg.Parser, new[]{ "Items", "Result" }, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ScoreStorageMsg : pb::IMessage<ScoreStorageMsg>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class ScoreStorageMsg : pb::IMessage<ScoreStorageMsg> {
     private static readonly pb::MessageParser<ScoreStorageMsg> _parser = new pb::MessageParser<ScoreStorageMsg>(() => new ScoreStorageMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ScoreStorageMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::RabiRiichi.Generated.Patterns.ScoreStorageReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreStorageMsg() {
       OnConstruction();
     }
@@ -71,7 +63,6 @@ namespace RabiRiichi.Generated.Patterns {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreStorageMsg(ScoreStorageMsg other) : this() {
       items_ = other.items_.Clone();
       result_ = other.result_ != null ? other.result_.Clone() : null;
@@ -79,7 +70,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScoreStorageMsg Clone() {
       return new ScoreStorageMsg(this);
     }
@@ -90,7 +80,6 @@ namespace RabiRiichi.Generated.Patterns {
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Patterns.ScoringMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Patterns.ScoringMsg> items_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Patterns.ScoringMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Patterns.ScoringMsg> Items {
       get { return items_; }
     }
@@ -99,7 +88,6 @@ namespace RabiRiichi.Generated.Patterns {
     public const int ResultFieldNumber = 2;
     private global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg result_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg Result {
       get { return result_; }
       set {
@@ -108,13 +96,11 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ScoreStorageMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ScoreStorageMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -128,7 +114,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= items_.GetHashCode();
@@ -140,17 +125,12 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       items_.WriteTo(output, _repeated_items_codec);
       if (result_ != null) {
         output.WriteRawTag(18);
@@ -159,26 +139,9 @@ namespace RabiRiichi.Generated.Patterns {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      items_.WriteTo(ref output, _repeated_items_codec);
-      if (result_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Result);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += items_.CalculateSize(_repeated_items_codec);
@@ -192,7 +155,6 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ScoreStorageMsg other) {
       if (other == null) {
         return;
@@ -200,7 +162,7 @@ namespace RabiRiichi.Generated.Patterns {
       items_.Add(other.items_);
       if (other.result_ != null) {
         if (result_ == null) {
-          Result = new global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg();
+          result_ = new global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg();
         }
         Result.MergeFrom(other.Result);
       }
@@ -208,11 +170,7 @@ namespace RabiRiichi.Generated.Patterns {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -225,41 +183,14 @@ namespace RabiRiichi.Generated.Patterns {
           }
           case 18: {
             if (result_ == null) {
-              Result = new global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg();
+              result_ = new global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg();
             }
-            input.ReadMessage(Result);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            items_.AddEntriesFrom(ref input, _repeated_items_codec);
-            break;
-          }
-          case 18: {
-            if (result_ == null) {
-              Result = new global::RabiRiichi.Generated.Patterns.ScoreCalcResultMsg();
-            }
-            input.ReadMessage(Result);
+            input.ReadMessage(result_);
             break;
           }
         }
       }
     }
-    #endif
 
   }
 

@@ -73,7 +73,7 @@ namespace RabiRiichi.Generated.Core.Config {
             "Q29uZmlnYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.Config.KuikaePolicy), typeof(global::RabiRiichi.Generated.Core.Config.RiichiPolicy), typeof(global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger), typeof(global::RabiRiichi.Generated.Core.Config.RenchanPolicy), typeof(global::RabiRiichi.Generated.Core.Config.EndGamePolicy), typeof(global::RabiRiichi.Generated.Core.Config.DoraOption), typeof(global::RabiRiichi.Generated.Core.Config.AgariOption), typeof(global::RabiRiichi.Generated.Core.Config.ScoringOption), }, null, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.Config.KuikaePolicy), typeof(global::RabiRiichi.Generated.Core.Config.RiichiPolicy), typeof(global::RabiRiichi.Generated.Core.Config.RyuukyokuTrigger), typeof(global::RabiRiichi.Generated.Core.Config.RenchanPolicy), typeof(global::RabiRiichi.Generated.Core.Config.EndGamePolicy), typeof(global::RabiRiichi.Generated.Core.Config.DoraOption), typeof(global::RabiRiichi.Generated.Core.Config.AgariOption), typeof(global::RabiRiichi.Generated.Core.Config.ScoringOption), }, null));
     }
     #endregion
 
