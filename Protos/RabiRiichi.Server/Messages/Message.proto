@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "Server/Messages/HeartBeat.proto";
-import "Server/Messages/Inquiry.proto";
-import "Server/Messages/Room.proto";
-import "Server/Messages/VersionCheck.proto";
+import "RabiRiichi.Server/Messages/HeartBeat.proto";
+import "RabiRiichi.Server/Messages/Inquiry.proto";
+import "RabiRiichi.Server/Messages/Room.proto";
+import "RabiRiichi.Server/Messages/VersionCheck.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
 message ServerMsg {
