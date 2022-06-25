@@ -13,5 +13,5 @@ message JoinRoomRequest {
 
 service RoomService {
   rpc CreateRoom(google.protobuf.Empty) returns (CreateRoomResponse) {}
-  rpc JoinRoom(JoinRoomResponse) returns (google.protobuf.Empty) {}
+  rpc JoinRoom(JoinRoomRequest) returns (google.protobuf.Empty) {}
 }
