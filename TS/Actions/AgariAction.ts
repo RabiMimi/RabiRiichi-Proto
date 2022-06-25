@@ -25,17 +25,23 @@ export interface AgariActionMsg {
  */
 export enum AgariType {
     /**
+     * None
+     *
+     * @generated from protobuf enum value: AGARI_TYPE_NONE = 0;
+     */
+    NONE = 0,
+    /**
      * Ron
      *
-     * @generated from protobuf enum value: AGARI_TYPE_RON = 0;
+     * @generated from protobuf enum value: AGARI_TYPE_RON = 1;
      */
-    RON = 0,
+    RON = 1,
     /**
      * Tsumo
      *
-     * @generated from protobuf enum value: AGARI_TYPE_TSUMO = 1;
+     * @generated from protobuf enum value: AGARI_TYPE_TSUMO = 2;
      */
-    TSUMO = 1
+    TSUMO = 2
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class AgariActionMsg$Type extends MessageType<AgariActionMsg> {

@@ -33,35 +33,41 @@ export interface ScoringMsg {
  */
 export enum ScoringType {
     /**
+     * 无
+     *
+     * @generated from protobuf enum value: SCORING_TYPE_NONE = 0;
+     */
+    NONE = 0,
+    /**
      * 番
      *
-     * @generated from protobuf enum value: HAN = 0;
+     * @generated from protobuf enum value: SCORING_TYPE_HAN = 1;
      */
-    HAN = 0,
+    HAN = 1,
     /**
      * 奖励番，不记役
      *
-     * @generated from protobuf enum value: BONUS_HAN = 1;
+     * @generated from protobuf enum value: SCORING_TYPE_BONUS_HAN = 2;
      */
-    BONUS_HAN = 1,
+    BONUS_HAN = 2,
     /**
      * 符
      *
-     * @generated from protobuf enum value: FU = 2;
+     * @generated from protobuf enum value: SCORING_TYPE_FU = 3;
      */
-    FU = 2,
+    FU = 3,
     /**
      * 役满
      *
-     * @generated from protobuf enum value: YAKUMAN = 3;
+     * @generated from protobuf enum value: SCORING_TYPE_YAKUMAN = 4;
      */
-    YAKUMAN = 3
+    YAKUMAN = 4
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class ScoringMsg$Type extends MessageType<ScoringMsg> {
     constructor() {
         super("ScoringMsg", [
-            { no: 1, name: "Type", kind: "enum", jsonName: "Type", T: () => ["ScoringType", ScoringType] },
+            { no: 1, name: "Type", kind: "enum", jsonName: "Type", T: () => ["ScoringType", ScoringType, "SCORING_TYPE_"] },
             { no: 2, name: "Val", kind: "scalar", jsonName: "Val", T: 5 /*ScalarType.INT32*/ },
             { no: 3, name: "Src", kind: "scalar", jsonName: "Src", T: 9 /*ScalarType.STRING*/ }
         ]);

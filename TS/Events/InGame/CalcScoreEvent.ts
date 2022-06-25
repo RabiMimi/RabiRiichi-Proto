@@ -51,47 +51,53 @@ export interface CalcScoreEventMsg {
  */
 export enum ScoreTransferReason {
     /**
+     * 无
+     *
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_NONE = 0;
+     */
+    NONE = 0,
+    /**
      * 荣和
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RON = 0;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RON = 1;
      */
-    RON = 0,
+    RON = 1,
     /**
      * 自摸
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_TSUMO = 1;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_TSUMO = 2;
      */
-    TSUMO = 1,
+    TSUMO = 2,
     /**
      * 流局
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RYUUKYOKU = 2;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RYUUKYOKU = 3;
      */
-    RYUUKYOKU = 2,
+    RYUUKYOKU = 3,
     /**
      * 流局满贯
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_NAGASHI_MANGAN = 3;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_NAGASHI_MANGAN = 4;
      */
-    NAGASHI_MANGAN = 3,
+    NAGASHI_MANGAN = 4,
     /**
      * 立直
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RIICHI = 4;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RIICHI = 5;
      */
-    RIICHI = 4,
+    RIICHI = 5,
     /**
      * 本场棒
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_HONBA = 5;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_HONBA = 6;
      */
-    HONBA = 5,
+    HONBA = 6,
     /**
      * 包牌
      *
-     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_PAO = 6;
+     * @generated from protobuf enum value: SCORE_TRANSFER_REASON_PAO = 7;
      */
-    PAO = 6
+    PAO = 7
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class ScoreTransferMsg$Type extends MessageType<ScoreTransferMsg> {

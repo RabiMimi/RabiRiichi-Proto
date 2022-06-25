@@ -33,23 +33,29 @@ export interface SetFuritenEventMsg {
  */
 export enum FuritenType {
     /**
+     * 无
+     *
+     * @generated from protobuf enum value: FURITEN_TYPE_NONE = 0;
+     */
+    NONE = 0,
+    /**
      * 同巡振听
      *
-     * @generated from protobuf enum value: TEMP = 0;
+     * @generated from protobuf enum value: FURITEN_TYPE_TEMP = 1;
      */
-    TEMP = 0,
+    TEMP = 1,
     /**
      * 立直振听
      *
-     * @generated from protobuf enum value: RIICHI = 1;
+     * @generated from protobuf enum value: FURITEN_TYPE_RIICHI = 2;
      */
-    RIICHI = 1,
+    RIICHI = 2,
     /**
      * 舍牌振听
      *
-     * @generated from protobuf enum value: DISCARD = 2;
+     * @generated from protobuf enum value: FURITEN_TYPE_DISCARD = 3;
      */
-    DISCARD = 2
+    DISCARD = 3
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class SetFuritenEventMsg$Type extends MessageType<SetFuritenEventMsg> {
@@ -57,7 +63,7 @@ class SetFuritenEventMsg$Type extends MessageType<SetFuritenEventMsg> {
         super("SetFuritenEventMsg", [
             { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "furiten", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 3, name: "furiten_type", kind: "enum", T: () => ["FuritenType", FuritenType] }
+            { no: 3, name: "furiten_type", kind: "enum", T: () => ["FuritenType", FuritenType, "FURITEN_TYPE_"] }
         ]);
     }
     create(value?: PartialMessage<SetFuritenEventMsg>): SetFuritenEventMsg {
