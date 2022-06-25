@@ -5,7 +5,8 @@ import "Core/MenLike.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message ClaimTileEventMsg {
-  GameTileMsg tile = 1;
-  MenLikeMsg group = 2;
-  DiscardReason reason = 3;
+  int32 player_id = 1;
+  GameTileMsg tile = 2;
+  MenLikeMsg group = 3;
+  DiscardReason reason = 4;
 }
