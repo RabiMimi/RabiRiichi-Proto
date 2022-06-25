@@ -25,10 +25,14 @@ export interface AgariActionMsg {
  */
 export enum AgariType {
     /**
+     * Ron
+     *
      * @generated from protobuf enum value: AGARI_TYPE_RON = 0;
      */
     RON = 0,
     /**
+     * Tsumo
+     *
      * @generated from protobuf enum value: AGARI_TYPE_TSUMO = 1;
      */
     TSUMO = 1

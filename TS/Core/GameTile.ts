@@ -58,30 +58,44 @@ export interface GameTileMsg {
  */
 export enum DiscardReason {
     /**
+     * None
+     *
      * @generated from protobuf enum value: DISCARD_REASON_NONE = 0;
      */
     NONE = 0,
     /**
+     * Discard due to drawing another tile from wall
+     *
      * @generated from protobuf enum value: DISCARD_REASON_DRAW = 1;
      */
     DRAW = 1,
     /**
+     * Discard due to drawing another tile from wanpai
+     *
      * @generated from protobuf enum value: DISCARD_REASON_DRAWRINSHAN = 2;
      */
     DRAWRINSHAN = 2,
     /**
+     * Discard due to claiming a tile by Chii
+     *
      * @generated from protobuf enum value: DISCARD_REASON_CHII = 3;
      */
     CHII = 3,
     /**
+     * Discard due to claiming a tile by Pon
+     *
      * @generated from protobuf enum value: DISCARD_REASON_PON = 4;
      */
     PON = 4,
     /**
+     * Only used for chankan calculation, not for actual discard. This tile is the tile triggering kakan or ankan
+     *
      * @generated from protobuf enum value: DISCARD_REASON_CHANKAN = 5;
      */
     CHANKAN = 5,
     /**
+     * Only for calculations, not for actual discard
+     *
      * @generated from protobuf enum value: DISCARD_REASON_PRETEND = 6;
      */
     PRETEND = 6
@@ -91,42 +105,62 @@ export enum DiscardReason {
  */
 export enum TileSource {
     /**
+     * None
+     *
      * @generated from protobuf enum value: TILE_SOURCE_NONE = 0;
      */
     NONE = 0,
     /**
+     * From wanpai
+     *
      * @generated from protobuf enum value: TILE_SOURCE_WANPAI = 1;
      */
     WANPAI = 1,
     /**
+     * From wall
+     *
      * @generated from protobuf enum value: TILE_SOURCE_WALL = 2;
      */
     WALL = 2,
     /**
+     * From hand
+     *
      * @generated from protobuf enum value: TILE_SOURCE_HAND = 3;
      */
     HAND = 3,
     /**
+     * From discard
+     *
      * @generated from protobuf enum value: TILE_SOURCE_DISCARD = 4;
      */
     DISCARD = 4,
     /**
+     * Part of Chii
+     *
      * @generated from protobuf enum value: TILE_SOURCE_CHII = 5;
      */
     CHII = 5,
     /**
+     * Part of Pon
+     *
      * @generated from protobuf enum value: TILE_SOURCE_PON = 6;
      */
     PON = 6,
     /**
+     * Part of Kakan
+     *
      * @generated from protobuf enum value: TILE_SOURCE_KAKAN = 7;
      */
     KAKAN = 7,
     /**
+     * Part of Ankan
+     *
      * @generated from protobuf enum value: TILE_SOURCE_ANKAN = 8;
      */
     ANKAN = 8,
     /**
+     * Part of Daiminkan
+     *
      * @generated from protobuf enum value: TILE_SOURCE_DAIMINKAN = 9;
      */
     DAIMINKAN = 9
