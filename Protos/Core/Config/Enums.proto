@@ -3,89 +3,109 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Core.Config";
 
 enum KuikaePolicy {
-  option allow_alias = true;
+  // 无
   KUIKAE_POLICY_NONE = 0;
+  // 禁止现物食替
   KUIKAE_POLICY_GENBUTSU = 1;
+  // 禁止筋食替
   KUIKAE_POLICY_SUJI = 2;
-  KUIKAE_POLICY_ALL = 3;
-  KUIKAE_POLICY_DEFAULT = 3;
 }
 
 enum RiichiPolicy {
+  // 立直无特殊要求 
   RIICHI_POLICY_NONE = 0;
+  // 禁止立直后被飞
   RIICHI_POLICY_SUFFICIENT_POINTS = 1;
+  // 禁止被飞状态下立直
   RIICHI_POLICY_VALID_POINTS = 2;
+  // 禁止牌山剩余牌数小于玩家数时立直
   RIICHI_POLICY_SUFFICIENT_TILES = 4;
-  RIICHI_POLICY_ALL = 7;
-  RIICHI_POLICY_DEFAULT = 5;
 }
 
 enum RyuukyokuTrigger {
-  option allow_alias = true;
+  // 无
   RYUUKYOKU_TRIGGER_NONE = 0;
+  // 四风连打
   RYUUKYOKU_TRIGGER_SUUFON_RENDA = 1;
+  // 九种九牌
   RYUUKYOKU_TRIGGER_KYUUSHU_KYUUHAI = 2;
+  // 四家立直
   RYUUKYOKU_TRIGGER_SUUCHA_RIICHI = 4;
+  // 三家荣和
   RYUUKYOKU_TRIGGER_SANCHAHOU = 8;
+  // 四杠散了
   RYUUKYOKU_TRIGGER_SUUKAN_SANRA = 16;
-  RYUUKYOKU_TRIGGER_ALL = 31;
-  RYUUKYOKU_TRIGGER_DEFAULT = 31;
 }
 
 enum RenchanPolicy {
+  // 无
   RENCHAN_POLICY_NONE = 0;
+  // 庄家和了时连庄
   RENCHAN_POLICY_DEALER_WIN = 1;
+  // 庄家流局听牌时连庄
   RENCHAN_POLICY_DEALER_TENPAI = 2;
+  // 终局流局时必定连庄
   RENCHAN_POLICY_END_GAME_RYUUKYOKU = 4;
+  // 中途流局时连庄
   RENCHAN_POLICY_MID_GAME_RYUUKYOKU = 8;
-  RENCHAN_POLICY_ALL = 15;
-  RENCHAN_POLICY_DEFAULT = 11;
 }
 
 enum EndGamePolicy {
+  // 无
   END_GAME_POLICY_NONE = 0;
+  // 和牌/流局结算时若分数超出天边，结束游戏
   END_GAME_POLICY_POINTS_OUT_OF_RANGE = 1;
+  // 分数超出天边时立即结束游戏
   END_GAME_POLICY_INSTANT_POINTS_OUT_OF_RANGE = 2;
+  // 若庄家一位听牌且分数达标，结束游戏
   END_GAME_POLICY_DEALER_TENPAI = 4;
+  // 若庄家一位和牌且分数达标，结束游戏
   END_GAME_POLICY_DEALER_AGARI = 8;
+  // 不满足终局条件时，南/西入
   END_GAME_POLICY_EXTENDED_ROUND = 16;
-  END_GAME_POLICY_ALL = 31;
-  END_GAME_POLICY_DEFAULT = 29;
 }
 
 enum DoraOption {
+  // 无
   DORA_OPTION_NONE = 0;
+  // 初始表宝牌
   DORA_OPTION_INITIAL_DORA = 1;
+  // 初始里宝牌
   DORA_OPTION_INITIAL_URADORA = 2;
+  // 杠表宝牌
   DORA_OPTION_KAN_DORA = 4;
+  // 杠里宝牌
   DORA_OPTION_KAN_URADORA = 8;
-  DORA_OPTION_URADORA = 10;
-  DORA_OPTION_DORA = 5;
+  // 大明杠宝牌即开
   DORA_OPTION_INSTANT_REVEAL_AFTER_DAI_MIN_KAN = 16;
+  // 加杠宝牌即开
   DORA_OPTION_INSTANT_REVEAL_AFTER_KA_KAN = 32;
+  // 暗杠宝牌即开
   DORA_OPTION_INSTANT_REVEAL_AFTER_AN_KAN = 64;
-  DORA_OPTION_ALL = 127;
-  DORA_OPTION_DEFAULT = 79;
 }
 
 enum AgariOption {
+  // 无
   AGARI_OPTION_NONE = 0;
+  // 允许食断
   AGARI_OPTION_KUITAN = 1;
+  // 允许包牌
   AGARI_OPTION_PAO = 2;
+  // 启用流局满贯
   AGARI_OPTION_NAGASHI_MANGAN = 4;
+  // 启用头跳
   AGARI_OPTION_FIRST_WINNER = 8;
-  AGARI_OPTION_ALL = 15;
-  AGARI_OPTION_DEFAULT = 7;
 }
 
 enum ScoringOption {
-  option allow_alias = true;
+  // 无
   SCORING_OPTION_NONE = 0;
+  // 启用切上满贯
   SCORING_OPTION_KIRIAGE_MANGAN = 1;
+  // 启用役满。若不启用役满，则以下役满相关选项全部无效，且计分时采用青天井规则
   SCORING_OPTION_YAKUMAN = 2;
+  // 启用多倍役满
   SCORING_OPTION_MULTIPLE_YAKUMAN = 4;
+  // 启用累计役满
   SCORING_OPTION_KAZOE_YAKUMAN = 8;
-  SCORING_OPTION_AOTENJOU = 0;
-  SCORING_OPTION_ALL = 15;
-  SCORING_OPTION_DEFAULT = 14;
 }

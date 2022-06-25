@@ -3,7 +3,9 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 enum AgariType {
+  // Ron
   AGARI_TYPE_RON = 0;
+  // Tsumo
   AGARI_TYPE_TSUMO = 1;
 }
 

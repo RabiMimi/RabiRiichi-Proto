@@ -3,25 +3,42 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Core";
 
 enum DiscardReason {
+  // None
   DISCARD_REASON_NONE = 0;
+  // Discard due to drawing another tile from wall
   DISCARD_REASON_DRAW = 1;
+  // Discard due to drawing another tile from wanpai
   DISCARD_REASON_DRAWRINSHAN = 2;
+  // Discard due to claiming a tile by Chii
   DISCARD_REASON_CHII = 3;
+  // Discard due to claiming a tile by Pon
   DISCARD_REASON_PON = 4;
+  // Only used for chankan calculation, not for actual discard. This tile is the tile triggering kakan or ankan
   DISCARD_REASON_CHANKAN = 5;
+  // Only for calculations, not for actual discard
   DISCARD_REASON_PRETEND = 6;
 }
 
 enum TileSource {
+  // None
   TILE_SOURCE_NONE = 0;
+  // From wanpai
   TILE_SOURCE_WANPAI = 1;
+  // From wall
   TILE_SOURCE_WALL = 2;
+  // From hand
   TILE_SOURCE_HAND = 3;
+  // From discard
   TILE_SOURCE_DISCARD = 4;
+  // Part of Chii
   TILE_SOURCE_CHII = 5;
+  // Part of Pon
   TILE_SOURCE_PON = 6;
+  // Part of Kakan
   TILE_SOURCE_KAKAN = 7;
+  // Part of Ankan
   TILE_SOURCE_ANKAN = 8;
+  // Part of Daiminkan
   TILE_SOURCE_DAIMINKAN = 9;
 }
 

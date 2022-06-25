@@ -9,12 +9,12 @@ message GameConfigMsg {
   int32 total_round = 2;
   int32 min_han = 3;
   PointThresholdMsg point_threshold = 4;
-  RenchanPolicy renchan_policy = 5;
-  EndGamePolicy end_game_policy = 6;
-  KuikaePolicy kuikae_policy = 7;
-  RiichiPolicy riichi_policy = 8;
-  DoraOption dora_option = 9;
-  AgariOption agari_option = 10;
-  ScoringOption scoring_option = 11;
-  RyuukyokuTrigger ryuukyoku_trigger = 12;
+  int32 renchan_policy = 5;
+  int32 end_game_policy = 6;
+  int32 kuikae_policy = 7;
+  int32 riichi_policy = 8;
+  int32 dora_option = 9;
+  int32 agari_option = 10;
+  int32 scoring_option = 11;
+  int32 ryuukyoku_trigger = 12;
 }
