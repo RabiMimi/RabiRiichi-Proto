@@ -14,36 +14,52 @@ import { MessageType } from "@protobuf-ts/runtime";
 import { GameInfoMsg } from "../../Core/GameInfo";
 import { GameConfigMsg } from "../../Core/Config/GameConfig";
 import { Wind } from "../../Core/Player";
-import { GameTileMsg } from "../../Core/GameTile";
 import { MenLikeMsg } from "../../Core/MenLike";
+import { GameTileMsg } from "../../Core/GameTile";
 /**
  * @generated from protobuf message PlayerHandStateMsg
  */
 export interface PlayerHandStateMsg {
     /**
-     * @generated from protobuf field: repeated MenLikeMsg called = 1;
+     * @generated from protobuf field: repeated GameTileMsg free_tiles = 1;
+     */
+    freeTiles: GameTileMsg[];
+    /**
+     * @generated from protobuf field: repeated MenLikeMsg called = 2;
      */
     called: MenLikeMsg[];
     /**
-     * @generated from protobuf field: repeated GameTileMsg discarded = 2;
+     * @generated from protobuf field: repeated GameTileMsg discarded = 3;
      */
     discarded: GameTileMsg[];
     /**
-     * @generated from protobuf field: int32 jun = 3;
+     * @generated from protobuf field: int32 jun = 4;
      */
     jun: number;
     /**
-     * @generated from protobuf field: int32 riichi_stick = 4;
+     * @generated from protobuf field: int32 riichi_stick = 5;
      */
     riichiStick: number;
     /**
-     * @generated from protobuf field: GameTileMsg agari_tile = 5;
+     * @generated from protobuf field: GameTileMsg agari_tile = 6;
      */
     agariTile?: GameTileMsg;
     /**
-     * @generated from protobuf field: bool riichi = 6;
+     * @generated from protobuf field: GameTileMsg riichi_tile = 7;
      */
-    riichi: boolean;
+    riichiTile?: GameTileMsg;
+    /**
+     * @generated from protobuf field: bool is_temp_furiten = 8;
+     */
+    isTempFuriten: boolean;
+    /**
+     * @generated from protobuf field: bool is_riichi_furiten = 9;
+     */
+    isRiichiFuriten: boolean;
+    /**
+     * @generated from protobuf field: bool is_discard_furiten = 10;
+     */
+    isDiscardFuriten: boolean;
 }
 /**
  * @generated from protobuf message WallStateMsg
@@ -108,16 +124,20 @@ export interface GameStateMsg {
 class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
     constructor() {
         super("PlayerHandStateMsg", [
-            { no: 1, name: "called", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => MenLikeMsg },
-            { no: 2, name: "discarded", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
-            { no: 3, name: "jun", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "riichi_stick", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "agari_tile", kind: "message", T: () => GameTileMsg },
-            { no: 6, name: "riichi", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+            { no: 1, name: "free_tiles", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
+            { no: 2, name: "called", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => MenLikeMsg },
+            { no: 3, name: "discarded", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTileMsg },
+            { no: 4, name: "jun", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 5, name: "riichi_stick", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 6, name: "agari_tile", kind: "message", T: () => GameTileMsg },
+            { no: 7, name: "riichi_tile", kind: "message", T: () => GameTileMsg },
+            { no: 8, name: "is_temp_furiten", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 9, name: "is_riichi_furiten", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 10, name: "is_discard_furiten", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
     create(value?: PartialMessage<PlayerHandStateMsg>): PlayerHandStateMsg {
-        const message = { called: [], discarded: [], jun: 0, riichiStick: 0, riichi: false };
+        const message = { freeTiles: [], called: [], discarded: [], jun: 0, riichiStick: 0, isTempFuriten: false, isRiichiFuriten: false, isDiscardFuriten: false };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<PlayerHandStateMsg>(this, message, value);
@@ -128,23 +148,35 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated MenLikeMsg called */ 1:
+                case /* repeated GameTileMsg free_tiles */ 1:
+                    message.freeTiles.push(GameTileMsg.internalBinaryRead(reader, reader.uint32(), options));
+                    break;
+                case /* repeated MenLikeMsg called */ 2:
                     message.called.push(MenLikeMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
-                case /* repeated GameTileMsg discarded */ 2:
+                case /* repeated GameTileMsg discarded */ 3:
                     message.discarded.push(GameTileMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
-                case /* int32 jun */ 3:
+                case /* int32 jun */ 4:
                     message.jun = reader.int32();
                     break;
-                case /* int32 riichi_stick */ 4:
+                case /* int32 riichi_stick */ 5:
                     message.riichiStick = reader.int32();
                     break;
-                case /* GameTileMsg agari_tile */ 5:
+                case /* GameTileMsg agari_tile */ 6:
                     message.agariTile = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.agariTile);
                     break;
-                case /* bool riichi */ 6:
-                    message.riichi = reader.bool();
+                case /* GameTileMsg riichi_tile */ 7:
+                    message.riichiTile = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.riichiTile);
+                    break;
+                case /* bool is_temp_furiten */ 8:
+                    message.isTempFuriten = reader.bool();
+                    break;
+                case /* bool is_riichi_furiten */ 9:
+                    message.isRiichiFuriten = reader.bool();
+                    break;
+                case /* bool is_discard_furiten */ 10:
+                    message.isDiscardFuriten = reader.bool();
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -158,24 +190,36 @@ class PlayerHandStateMsg$Type extends MessageType<PlayerHandStateMsg> {
         return message;
     }
     internalBinaryWrite(message: PlayerHandStateMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated MenLikeMsg called = 1; */
+        /* repeated GameTileMsg free_tiles = 1; */
+        for (let i = 0; i < message.freeTiles.length; i++)
+            GameTileMsg.internalBinaryWrite(message.freeTiles[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        /* repeated MenLikeMsg called = 2; */
         for (let i = 0; i < message.called.length; i++)
-            MenLikeMsg.internalBinaryWrite(message.called[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* repeated GameTileMsg discarded = 2; */
+            MenLikeMsg.internalBinaryWrite(message.called[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* repeated GameTileMsg discarded = 3; */
         for (let i = 0; i < message.discarded.length; i++)
-            GameTileMsg.internalBinaryWrite(message.discarded[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* int32 jun = 3; */
+            GameTileMsg.internalBinaryWrite(message.discarded[i], writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        /* int32 jun = 4; */
         if (message.jun !== 0)
-            writer.tag(3, WireType.Varint).int32(message.jun);
-        /* int32 riichi_stick = 4; */
+            writer.tag(4, WireType.Varint).int32(message.jun);
+        /* int32 riichi_stick = 5; */
         if (message.riichiStick !== 0)
-            writer.tag(4, WireType.Varint).int32(message.riichiStick);
-        /* GameTileMsg agari_tile = 5; */
+            writer.tag(5, WireType.Varint).int32(message.riichiStick);
+        /* GameTileMsg agari_tile = 6; */
         if (message.agariTile)
-            GameTileMsg.internalBinaryWrite(message.agariTile, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
-        /* bool riichi = 6; */
-        if (message.riichi !== false)
-            writer.tag(6, WireType.Varint).bool(message.riichi);
+            GameTileMsg.internalBinaryWrite(message.agariTile, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
+        /* GameTileMsg riichi_tile = 7; */
+        if (message.riichiTile)
+            GameTileMsg.internalBinaryWrite(message.riichiTile, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
+        /* bool is_temp_furiten = 8; */
+        if (message.isTempFuriten !== false)
+            writer.tag(8, WireType.Varint).bool(message.isTempFuriten);
+        /* bool is_riichi_furiten = 9; */
+        if (message.isRiichiFuriten !== false)
+            writer.tag(9, WireType.Varint).bool(message.isRiichiFuriten);
+        /* bool is_discard_furiten = 10; */
+        if (message.isDiscardFuriten !== false)
+            writer.tag(10, WireType.Varint).bool(message.isDiscardFuriten);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);

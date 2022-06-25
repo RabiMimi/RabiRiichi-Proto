@@ -11,21 +11,21 @@ import type { PartialMessage } from "@protobuf-ts/runtime";
 import { reflectionMergePartial } from "@protobuf-ts/runtime";
 import { MESSAGE_TYPE } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
-import { GameTilesMsg } from "../Core/GameTile";
+import { MenLikeMsg } from "../Core/MenLike";
 /**
  * @generated from protobuf message KanActionMsg
  */
 export interface KanActionMsg {
     /**
-     * @generated from protobuf field: repeated GameTilesMsg tile_groups = 1;
+     * @generated from protobuf field: repeated MenLikeMsg tile_groups = 1;
      */
-    tileGroups: GameTilesMsg[];
+    tileGroups: MenLikeMsg[];
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class KanActionMsg$Type extends MessageType<KanActionMsg> {
     constructor() {
         super("KanActionMsg", [
-            { no: 1, name: "tile_groups", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTilesMsg }
+            { no: 1, name: "tile_groups", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => MenLikeMsg }
         ]);
     }
     create(value?: PartialMessage<KanActionMsg>): KanActionMsg {
@@ -40,8 +40,8 @@ class KanActionMsg$Type extends MessageType<KanActionMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated GameTilesMsg tile_groups */ 1:
-                    message.tileGroups.push(GameTilesMsg.internalBinaryRead(reader, reader.uint32(), options));
+                case /* repeated MenLikeMsg tile_groups */ 1:
+                    message.tileGroups.push(MenLikeMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -55,9 +55,9 @@ class KanActionMsg$Type extends MessageType<KanActionMsg> {
         return message;
     }
     internalBinaryWrite(message: KanActionMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated GameTilesMsg tile_groups = 1; */
+        /* repeated MenLikeMsg tile_groups = 1; */
         for (let i = 0; i < message.tileGroups.length; i++)
-            GameTilesMsg.internalBinaryWrite(message.tileGroups[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+            MenLikeMsg.internalBinaryWrite(message.tileGroups[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);

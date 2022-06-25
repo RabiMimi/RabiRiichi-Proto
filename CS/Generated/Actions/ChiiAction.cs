@@ -24,12 +24,12 @@ namespace RabiRiichi.Generated.Actions {
     static ChiiActionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhBY3Rpb25zL0NoaWlBY3Rpb24ucHJvdG8aE0NvcmUvR2FtZVRpbGUucHJv",
-            "dG8iMwoNQ2hpaUFjdGlvbk1zZxIiCgt0aWxlX2dyb3VwcxgBIAMoCzINLkdh",
-            "bWVUaWxlc01zZ0IfqgIcUmFiaVJpaWNoaS5HZW5lcmF0ZWQuQWN0aW9uc2IG",
-            "cHJvdG8z"));
+            "ChhBY3Rpb25zL0NoaWlBY3Rpb24ucHJvdG8aEkNvcmUvTWVuTGlrZS5wcm90",
+            "byIxCg1DaGlpQWN0aW9uTXNnEiAKC3RpbGVfZ3JvdXBzGAEgAygLMgsuTWVu",
+            "TGlrZU1zZ0IfqgIcUmFiaVJpaWNoaS5HZW5lcmF0ZWQuQWN0aW9uc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Actions.ChiiActionMsg), global::RabiRiichi.Generated.Actions.ChiiActionMsg.Parser, new[]{ "TileGroups" }, null, null, null)
           }));
@@ -74,11 +74,11 @@ namespace RabiRiichi.Generated.Actions {
 
     /// <summary>Field number for the "tile_groups" field.</summary>
     public const int TileGroupsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.GameTilesMsg> _repeated_tileGroups_codec
-        = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTilesMsg.Parser);
-    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTilesMsg> tileGroups_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTilesMsg>();
+    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.MenLikeMsg> _repeated_tileGroups_codec
+        = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.MenLikeMsg.Parser);
+    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> tileGroups_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTilesMsg> TileGroups {
+    public pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> TileGroups {
       get { return tileGroups_; }
     }
 

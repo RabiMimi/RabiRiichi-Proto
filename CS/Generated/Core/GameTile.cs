@@ -28,8 +28,7 @@ namespace RabiRiichi.Generated.Core {
             "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbiJyCgtH",
             "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhEKCXBsYXllcl9pZBgCIAEoBRIl",
             "CgxkaXNjYXJkX2luZm8YAyABKAsyDy5EaXNjYXJkSW5mb01zZxIbCgZzb3Vy",
-            "Y2UYBCABKA4yCy5UaWxlU291cmNlIisKDEdhbWVUaWxlc01zZxIbCgV0aWxl",
-            "cxgBIAMoCzIMLkdhbWVUaWxlTXNnKsoBCg1EaXNjYXJkUmVhc29uEhcKE0RJ",
+            "Y2UYBCABKA4yCy5UaWxlU291cmNlKsoBCg1EaXNjYXJkUmVhc29uEhcKE0RJ",
             "U0NBUkRfUkVBU09OX05PTkUQABIXChNESVNDQVJEX1JFQVNPTl9EUkFXEAES",
             "HgoaRElTQ0FSRF9SRUFTT05fRFJBV1JJTlNIQU4QAhIXChNESVNDQVJEX1JF",
             "QVNPTl9DSElJEAMSFgoSRElTQ0FSRF9SRUFTT05fUE9OEAQSGgoWRElTQ0FS",
@@ -45,8 +44,7 @@ namespace RabiRiichi.Generated.Core {
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.DiscardReason), typeof(global::RabiRiichi.Generated.Core.TileSource), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.DiscardInfoMsg), global::RabiRiichi.Generated.Core.DiscardInfoMsg.Parser, new[]{ "From", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTilesMsg), global::RabiRiichi.Generated.Core.GameTilesMsg.Parser, new[]{ "Tiles" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source" }, null, null, null)
           }));
     }
     #endregion
@@ -447,127 +445,6 @@ namespace RabiRiichi.Generated.Core {
           }
           case 32: {
             source_ = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class GameTilesMsg : pb::IMessage<GameTilesMsg> {
-    private static readonly pb::MessageParser<GameTilesMsg> _parser = new pb::MessageParser<GameTilesMsg>(() => new GameTilesMsg());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GameTilesMsg> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GameTilesMsg() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GameTilesMsg(GameTilesMsg other) : this() {
-      tiles_ = other.tiles_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GameTilesMsg Clone() {
-      return new GameTilesMsg(this);
-    }
-
-    /// <summary>Field number for the "tiles" field.</summary>
-    public const int TilesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.GameTileMsg> _repeated_tiles_codec
-        = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
-    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> tiles_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> Tiles {
-      get { return tiles_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GameTilesMsg);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GameTilesMsg other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!tiles_.Equals(other.tiles_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= tiles_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      tiles_.WriteTo(output, _repeated_tiles_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += tiles_.CalculateSize(_repeated_tiles_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GameTilesMsg other) {
-      if (other == null) {
-        return;
-      }
-      tiles_.Add(other.tiles_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            tiles_.AddEntriesFrom(input, _repeated_tiles_codec);
             break;
           }
         }

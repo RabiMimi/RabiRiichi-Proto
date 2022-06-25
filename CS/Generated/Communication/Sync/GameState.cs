@@ -27,23 +27,26 @@ namespace RabiRiichi.Generated.Communication.Sync {
             "CiJDb21tdW5pY2F0aW9uL1N5bmMvR2FtZVN0YXRlLnByb3RvGhNDb3JlL0dh",
             "bWVUaWxlLnByb3RvGhJDb3JlL01lbkxpa2UucHJvdG8aEUNvcmUvUGxheWVy",
             "LnByb3RvGhNDb3JlL0dhbWVJbmZvLnByb3RvGhxDb3JlL0NvbmZpZy9HYW1l",
-            "Q29uZmlnLnByb3RvIqcBChJQbGF5ZXJIYW5kU3RhdGVNc2cSGwoGY2FsbGVk",
-            "GAEgAygLMgsuTWVuTGlrZU1zZxIfCglkaXNjYXJkZWQYAiADKAsyDC5HYW1l",
-            "VGlsZU1zZxILCgNqdW4YAyABKAUSFAoMcmlpY2hpX3N0aWNrGAQgASgFEiAK",
-            "CmFnYXJpX3RpbGUYBSABKAsyDC5HYW1lVGlsZU1zZxIOCgZyaWljaGkYBiAB",
-            "KAgiWQoMV2FsbFN0YXRlTXNnEhsKBWRvcmFzGAEgAygLMgwuR2FtZVRpbGVN",
-            "c2cSEQoJcmVtYWluaW5nGAIgASgFEhkKEXJpbnNoYW5fcmVtYWluaW5nGAMg",
-            "ASgFImQKDlBsYXllclN0YXRlTXNnEgoKAmlkGAEgASgFEhMKBHdpbmQYAiAB",
-            "KA4yBS5XaW5kEg4KBnBvaW50cxgDIAEoAxIhCgRoYW5kGAQgASgLMhMuUGxh",
-            "eWVySGFuZFN0YXRlTXNnIokBCgxHYW1lU3RhdGVNc2cSHgoGY29uZmlnGAEg",
-            "ASgLMg4uR2FtZUNvbmZpZ01zZxIaCgRpbmZvGAIgASgLMgwuR2FtZUluZm9N",
-            "c2cSGwoEd2FsbBgDIAEoCzINLldhbGxTdGF0ZU1zZxIgCgdwbGF5ZXJzGAQg",
-            "AygLMg8uUGxheWVyU3RhdGVNc2dCKqoCJ1JhYmlSaWljaGkuR2VuZXJhdGVk",
-            "LkNvbW11bmljYXRpb24uU3luY2IGcHJvdG8z"));
+            "Q29uZmlnLnByb3RvIqwCChJQbGF5ZXJIYW5kU3RhdGVNc2cSIAoKZnJlZV90",
+            "aWxlcxgBIAMoCzIMLkdhbWVUaWxlTXNnEhsKBmNhbGxlZBgCIAMoCzILLk1l",
+            "bkxpa2VNc2cSHwoJZGlzY2FyZGVkGAMgAygLMgwuR2FtZVRpbGVNc2cSCwoD",
+            "anVuGAQgASgFEhQKDHJpaWNoaV9zdGljaxgFIAEoBRIgCgphZ2FyaV90aWxl",
+            "GAYgASgLMgwuR2FtZVRpbGVNc2cSIQoLcmlpY2hpX3RpbGUYByABKAsyDC5H",
+            "YW1lVGlsZU1zZxIXCg9pc190ZW1wX2Z1cml0ZW4YCCABKAgSGQoRaXNfcmlp",
+            "Y2hpX2Z1cml0ZW4YCSABKAgSGgoSaXNfZGlzY2FyZF9mdXJpdGVuGAogASgI",
+            "IlkKDFdhbGxTdGF0ZU1zZxIbCgVkb3JhcxgBIAMoCzIMLkdhbWVUaWxlTXNn",
+            "EhEKCXJlbWFpbmluZxgCIAEoBRIZChFyaW5zaGFuX3JlbWFpbmluZxgDIAEo",
+            "BSJkCg5QbGF5ZXJTdGF0ZU1zZxIKCgJpZBgBIAEoBRITCgR3aW5kGAIgASgO",
+            "MgUuV2luZBIOCgZwb2ludHMYAyABKAMSIQoEaGFuZBgEIAEoCzITLlBsYXll",
+            "ckhhbmRTdGF0ZU1zZyKJAQoMR2FtZVN0YXRlTXNnEh4KBmNvbmZpZxgBIAEo",
+            "CzIOLkdhbWVDb25maWdNc2cSGgoEaW5mbxgCIAEoCzIMLkdhbWVJbmZvTXNn",
+            "EhsKBHdhbGwYAyABKAsyDS5XYWxsU3RhdGVNc2cSIAoHcGxheWVycxgEIAMo",
+            "CzIPLlBsYXllclN0YXRlTXNnQiqqAidSYWJpUmlpY2hpLkdlbmVyYXRlZC5D",
+            "b21tdW5pY2F0aW9uLlN5bmNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, global::RabiRiichi.Generated.Core.MenLikeReflection.Descriptor, global::RabiRiichi.Generated.Core.PlayerReflection.Descriptor, global::RabiRiichi.Generated.Core.GameInfoReflection.Descriptor, global::RabiRiichi.Generated.Core.Config.GameConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg.Parser, new[]{ "Called", "Discarded", "Jun", "RiichiStick", "AgariTile", "Riichi" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerHandStateMsg.Parser, new[]{ "FreeTiles", "Called", "Discarded", "Jun", "RiichiStick", "AgariTile", "RiichiTile", "IsTempFuriten", "IsRiichiFuriten", "IsDiscardFuriten" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.WallStateMsg), global::RabiRiichi.Generated.Communication.Sync.WallStateMsg.Parser, new[]{ "Doras", "Remaining", "RinshanRemaining" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg), global::RabiRiichi.Generated.Communication.Sync.PlayerStateMsg.Parser, new[]{ "Id", "Wind", "Points", "Hand" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Communication.Sync.GameStateMsg), global::RabiRiichi.Generated.Communication.Sync.GameStateMsg.Parser, new[]{ "Config", "Info", "Wall", "Players" }, null, null, null)
@@ -78,12 +81,16 @@ namespace RabiRiichi.Generated.Communication.Sync {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PlayerHandStateMsg(PlayerHandStateMsg other) : this() {
+      freeTiles_ = other.freeTiles_.Clone();
       called_ = other.called_.Clone();
       discarded_ = other.discarded_.Clone();
       jun_ = other.jun_;
       riichiStick_ = other.riichiStick_;
       agariTile_ = other.agariTile_ != null ? other.agariTile_.Clone() : null;
-      riichi_ = other.riichi_;
+      riichiTile_ = other.riichiTile_ != null ? other.riichiTile_.Clone() : null;
+      isTempFuriten_ = other.isTempFuriten_;
+      isRiichiFuriten_ = other.isRiichiFuriten_;
+      isDiscardFuriten_ = other.isDiscardFuriten_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -92,10 +99,20 @@ namespace RabiRiichi.Generated.Communication.Sync {
       return new PlayerHandStateMsg(this);
     }
 
+    /// <summary>Field number for the "free_tiles" field.</summary>
+    public const int FreeTilesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.GameTileMsg> _repeated_freeTiles_codec
+        = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
+    private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> freeTiles_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> FreeTiles {
+      get { return freeTiles_; }
+    }
+
     /// <summary>Field number for the "called" field.</summary>
-    public const int CalledFieldNumber = 1;
+    public const int CalledFieldNumber = 2;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.MenLikeMsg> _repeated_called_codec
-        = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.MenLikeMsg.Parser);
+        = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Core.MenLikeMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> called_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.MenLikeMsg> Called {
@@ -103,9 +120,9 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     /// <summary>Field number for the "discarded" field.</summary>
-    public const int DiscardedFieldNumber = 2;
+    public const int DiscardedFieldNumber = 3;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.GameTileMsg> _repeated_discarded_codec
-        = pb::FieldCodec.ForMessage(18, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
+        = pb::FieldCodec.ForMessage(26, global::RabiRiichi.Generated.Core.GameTileMsg.Parser);
     private readonly pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> discarded_ = new pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::RabiRiichi.Generated.Core.GameTileMsg> Discarded {
@@ -113,7 +130,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     /// <summary>Field number for the "jun" field.</summary>
-    public const int JunFieldNumber = 3;
+    public const int JunFieldNumber = 4;
     private int jun_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Jun {
@@ -124,7 +141,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     /// <summary>Field number for the "riichi_stick" field.</summary>
-    public const int RiichiStickFieldNumber = 4;
+    public const int RiichiStickFieldNumber = 5;
     private int riichiStick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RiichiStick {
@@ -135,7 +152,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     }
 
     /// <summary>Field number for the "agari_tile" field.</summary>
-    public const int AgariTileFieldNumber = 5;
+    public const int AgariTileFieldNumber = 6;
     private global::RabiRiichi.Generated.Core.GameTileMsg agariTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::RabiRiichi.Generated.Core.GameTileMsg AgariTile {
@@ -145,14 +162,47 @@ namespace RabiRiichi.Generated.Communication.Sync {
       }
     }
 
-    /// <summary>Field number for the "riichi" field.</summary>
-    public const int RiichiFieldNumber = 6;
-    private bool riichi_;
+    /// <summary>Field number for the "riichi_tile" field.</summary>
+    public const int RiichiTileFieldNumber = 7;
+    private global::RabiRiichi.Generated.Core.GameTileMsg riichiTile_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Riichi {
-      get { return riichi_; }
+    public global::RabiRiichi.Generated.Core.GameTileMsg RiichiTile {
+      get { return riichiTile_; }
       set {
-        riichi_ = value;
+        riichiTile_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_temp_furiten" field.</summary>
+    public const int IsTempFuritenFieldNumber = 8;
+    private bool isTempFuriten_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsTempFuriten {
+      get { return isTempFuriten_; }
+      set {
+        isTempFuriten_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_riichi_furiten" field.</summary>
+    public const int IsRiichiFuritenFieldNumber = 9;
+    private bool isRiichiFuriten_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsRiichiFuriten {
+      get { return isRiichiFuriten_; }
+      set {
+        isRiichiFuriten_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_discard_furiten" field.</summary>
+    public const int IsDiscardFuritenFieldNumber = 10;
+    private bool isDiscardFuriten_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsDiscardFuriten {
+      get { return isDiscardFuriten_; }
+      set {
+        isDiscardFuriten_ = value;
       }
     }
 
@@ -169,24 +219,32 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!freeTiles_.Equals(other.freeTiles_)) return false;
       if(!called_.Equals(other.called_)) return false;
       if(!discarded_.Equals(other.discarded_)) return false;
       if (Jun != other.Jun) return false;
       if (RiichiStick != other.RiichiStick) return false;
       if (!object.Equals(AgariTile, other.AgariTile)) return false;
-      if (Riichi != other.Riichi) return false;
+      if (!object.Equals(RiichiTile, other.RiichiTile)) return false;
+      if (IsTempFuriten != other.IsTempFuriten) return false;
+      if (IsRiichiFuriten != other.IsRiichiFuriten) return false;
+      if (IsDiscardFuriten != other.IsDiscardFuriten) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= freeTiles_.GetHashCode();
       hash ^= called_.GetHashCode();
       hash ^= discarded_.GetHashCode();
       if (Jun != 0) hash ^= Jun.GetHashCode();
       if (RiichiStick != 0) hash ^= RiichiStick.GetHashCode();
       if (agariTile_ != null) hash ^= AgariTile.GetHashCode();
-      if (Riichi != false) hash ^= Riichi.GetHashCode();
+      if (riichiTile_ != null) hash ^= RiichiTile.GetHashCode();
+      if (IsTempFuriten != false) hash ^= IsTempFuriten.GetHashCode();
+      if (IsRiichiFuriten != false) hash ^= IsRiichiFuriten.GetHashCode();
+      if (IsDiscardFuriten != false) hash ^= IsDiscardFuriten.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -200,23 +258,36 @@ namespace RabiRiichi.Generated.Communication.Sync {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      freeTiles_.WriteTo(output, _repeated_freeTiles_codec);
       called_.WriteTo(output, _repeated_called_codec);
       discarded_.WriteTo(output, _repeated_discarded_codec);
       if (Jun != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(Jun);
       }
       if (RiichiStick != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(RiichiStick);
       }
       if (agariTile_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(50);
         output.WriteMessage(AgariTile);
       }
-      if (Riichi != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(Riichi);
+      if (riichiTile_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(RiichiTile);
+      }
+      if (IsTempFuriten != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(IsTempFuriten);
+      }
+      if (IsRiichiFuriten != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(IsRiichiFuriten);
+      }
+      if (IsDiscardFuriten != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(IsDiscardFuriten);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -226,6 +297,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += freeTiles_.CalculateSize(_repeated_freeTiles_codec);
       size += called_.CalculateSize(_repeated_called_codec);
       size += discarded_.CalculateSize(_repeated_discarded_codec);
       if (Jun != 0) {
@@ -237,7 +309,16 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (agariTile_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AgariTile);
       }
-      if (Riichi != false) {
+      if (riichiTile_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RiichiTile);
+      }
+      if (IsTempFuriten != false) {
+        size += 1 + 1;
+      }
+      if (IsRiichiFuriten != false) {
+        size += 1 + 1;
+      }
+      if (IsDiscardFuriten != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -251,6 +332,7 @@ namespace RabiRiichi.Generated.Communication.Sync {
       if (other == null) {
         return;
       }
+      freeTiles_.Add(other.freeTiles_);
       called_.Add(other.called_);
       discarded_.Add(other.discarded_);
       if (other.Jun != 0) {
@@ -265,8 +347,20 @@ namespace RabiRiichi.Generated.Communication.Sync {
         }
         AgariTile.MergeFrom(other.AgariTile);
       }
-      if (other.Riichi != false) {
-        Riichi = other.Riichi;
+      if (other.riichiTile_ != null) {
+        if (riichiTile_ == null) {
+          riichiTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
+        }
+        RiichiTile.MergeFrom(other.RiichiTile);
+      }
+      if (other.IsTempFuriten != false) {
+        IsTempFuriten = other.IsTempFuriten;
+      }
+      if (other.IsRiichiFuriten != false) {
+        IsRiichiFuriten = other.IsRiichiFuriten;
+      }
+      if (other.IsDiscardFuriten != false) {
+        IsDiscardFuriten = other.IsDiscardFuriten;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -280,30 +374,49 @@ namespace RabiRiichi.Generated.Communication.Sync {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            called_.AddEntriesFrom(input, _repeated_called_codec);
+            freeTiles_.AddEntriesFrom(input, _repeated_freeTiles_codec);
             break;
           }
           case 18: {
+            called_.AddEntriesFrom(input, _repeated_called_codec);
+            break;
+          }
+          case 26: {
             discarded_.AddEntriesFrom(input, _repeated_discarded_codec);
             break;
           }
-          case 24: {
+          case 32: {
             Jun = input.ReadInt32();
             break;
           }
-          case 32: {
+          case 40: {
             RiichiStick = input.ReadInt32();
             break;
           }
-          case 42: {
+          case 50: {
             if (agariTile_ == null) {
               agariTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
             }
             input.ReadMessage(agariTile_);
             break;
           }
-          case 48: {
-            Riichi = input.ReadBool();
+          case 58: {
+            if (riichiTile_ == null) {
+              riichiTile_ = new global::RabiRiichi.Generated.Core.GameTileMsg();
+            }
+            input.ReadMessage(riichiTile_);
+            break;
+          }
+          case 64: {
+            IsTempFuriten = input.ReadBool();
+            break;
+          }
+          case 72: {
+            IsRiichiFuriten = input.ReadBool();
+            break;
+          }
+          case 80: {
+            IsDiscardFuriten = input.ReadBool();
             break;
           }
         }
