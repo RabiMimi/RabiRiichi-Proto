@@ -72,9 +72,9 @@ export enum DiscardReason {
     /**
      * Discard due to drawing another tile from wanpai
      *
-     * @generated from protobuf enum value: DISCARD_REASON_DRAWRINSHAN = 2;
+     * @generated from protobuf enum value: DISCARD_REASON_DRAW_RINSHAN = 2;
      */
-    DRAWRINSHAN = 2,
+    DRAW_RINSHAN = 2,
     /**
      * Discard due to claiming a tile by Chii
      *
