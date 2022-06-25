@@ -45,11 +45,11 @@ jobs:
 
       - name: Generate C# Code
         run: |
-          protoc --proto_path=./Protos/ --csharp_out=./CS/ --csharp-grpc_out=./CS/ --csharp_opt=base_namespace=RabiRiichi $(find ./Protos/ -iname "*.proto")
+          protoc --proto_path=./Protos/ --csharp_out=./CS/ --csharp-grpc_out=./CS/Server/Generated/Rpc/ --csharp_opt=base_namespace=RabiRiichi $(find ./Protos/ -iname "*.proto")
 
       - name: Generate TypeScript Code
         run: |
-          protoc --plugin=./node_modules/.bin/protoc-gen-ts --proto_path=./Protos/ --ts_out=./TS/ $(find ./Protos/ -iname "*.proto")
+          protoc --plugin=./node_modules/.bin/protoc-gen-ts --proto_path=./Protos/ --ts_out=./TS/ --ts_opt=client_grpc1 $(find ./Protos/ -iname "*.proto")
 
       - name: Commit files
         run: |

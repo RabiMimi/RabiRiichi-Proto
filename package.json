@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RabiMimi/RabiRiichi-Proto#readme",
   "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
     "@protobuf-ts/plugin": "^2.7.0"
   }
 }
