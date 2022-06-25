@@ -3,14 +3,16 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Patterns";
 
 enum ScoringType {
+  // 无
+  SCORING_TYPE_NONE = 0;
   // 番
-  HAN = 0;
+  SCORING_TYPE_HAN = 1;
   // 奖励番，不记役
-  BONUS_HAN = 1;
+  SCORING_TYPE_BONUS_HAN = 2;
   // 符
-  FU = 2;
+  SCORING_TYPE_FU = 3;
   // 役满
-  YAKUMAN = 3;
+  SCORING_TYPE_YAKUMAN = 4;
 }
 
 message ScoringMsg {

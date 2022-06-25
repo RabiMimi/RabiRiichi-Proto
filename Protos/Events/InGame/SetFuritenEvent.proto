@@ -3,12 +3,14 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 enum FuritenType {
+  // 无
+  FURITEN_TYPE_NONE = 0;
   // 同巡振听
-  TEMP = 0;
+  FURITEN_TYPE_TEMP = 1;
   // 立直振听
-  RIICHI = 1;
+  FURITEN_TYPE_RIICHI = 2;
   // 舍牌振听
-  DISCARD = 2;
+  FURITEN_TYPE_DISCARD = 3;
 }
 
 message SetFuritenEventMsg {
