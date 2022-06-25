@@ -4,6 +4,7 @@ import "Server/Messages/HeartBeat.proto";
 import "Server/Messages/Inquiry.proto";
 import "Server/Messages/Room.proto";
 import "Server/Messages/VersionCheck.proto";
+option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
 message ServerMsg {
   oneof msg {
