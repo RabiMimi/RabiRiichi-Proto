@@ -3,8 +3,11 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 enum FuritenType {
+  // 同巡振听
   TEMP = 0;
+  // 立直振听
   RIICHI = 1;
+  // 舍牌振听
   DISCARD = 2;
 }
 

@@ -4,9 +4,13 @@ import "Core/Config/GameConfig.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
 enum UserStatus {
+  // Not in any room
   USER_STATUS_NONE = 0;
+  // In room
   USER_STATUS_IN_ROOM = 1;
+  // In room and ready
   USER_STATUS_READY = 2;
+  // In room and playing
   USER_STATUS_PLAYING = 3;
 }
 

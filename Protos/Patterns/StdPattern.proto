@@ -3,9 +3,13 @@ syntax = "proto3";
 option csharp_namespace = "RabiRiichi.Generated.Patterns";
 
 enum ScoringType {
+  // 番
   HAN = 0;
+  // 奖励番，不记役
   BONUS_HAN = 1;
+  // 符
   FU = 2;
+  // 役满
   YAKUMAN = 3;
 }
 
