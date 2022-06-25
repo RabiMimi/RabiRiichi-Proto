@@ -7,6 +7,6 @@ message ScoreCalcResultMsg {
   int32 yaku = 2;
   int32 fu = 3;
   int32 yakuman = 4;
-  int32 KazoeYakuman = 5;
-  int32 FinalYakuman = 6;
+  int32 kazoe_yakuman = 5;
+  int32 final_yakuman = 6;
 }
