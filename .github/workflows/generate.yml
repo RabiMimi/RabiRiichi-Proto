@@ -1,4 +1,4 @@
-name: Generate Code From Protobuf
+name: Code Generation
 
 on:
   pull_request:
