@@ -19,15 +19,19 @@ import { GameTileMsg } from "../../Core/GameTile";
  */
 export interface ClaimTileEventMsg {
     /**
-     * @generated from protobuf field: GameTileMsg tile = 1;
+     * @generated from protobuf field: int32 player_id = 1;
+     */
+    playerId: number;
+    /**
+     * @generated from protobuf field: GameTileMsg tile = 2;
      */
     tile?: GameTileMsg;
     /**
-     * @generated from protobuf field: MenLikeMsg group = 2;
+     * @generated from protobuf field: MenLikeMsg group = 3;
      */
     group?: MenLikeMsg;
     /**
-     * @generated from protobuf field: DiscardReason reason = 3;
+     * @generated from protobuf field: DiscardReason reason = 4;
      */
     reason: DiscardReason;
 }
@@ -35,13 +39,14 @@ export interface ClaimTileEventMsg {
 class ClaimTileEventMsg$Type extends MessageType<ClaimTileEventMsg> {
     constructor() {
         super("ClaimTileEventMsg", [
-            { no: 1, name: "tile", kind: "message", T: () => GameTileMsg },
-            { no: 2, name: "group", kind: "message", T: () => MenLikeMsg },
-            { no: 3, name: "reason", kind: "enum", T: () => ["DiscardReason", DiscardReason, "DISCARD_REASON_"] }
+            { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "tile", kind: "message", T: () => GameTileMsg },
+            { no: 3, name: "group", kind: "message", T: () => MenLikeMsg },
+            { no: 4, name: "reason", kind: "enum", T: () => ["DiscardReason", DiscardReason, "DISCARD_REASON_"] }
         ]);
     }
     create(value?: PartialMessage<ClaimTileEventMsg>): ClaimTileEventMsg {
-        const message = { reason: 0 };
+        const message = { playerId: 0, reason: 0 };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<ClaimTileEventMsg>(this, message, value);
@@ -52,13 +57,16 @@ class ClaimTileEventMsg$Type extends MessageType<ClaimTileEventMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* GameTileMsg tile */ 1:
+                case /* int32 player_id */ 1:
+                    message.playerId = reader.int32();
+                    break;
+                case /* GameTileMsg tile */ 2:
                     message.tile = GameTileMsg.internalBinaryRead(reader, reader.uint32(), options, message.tile);
                     break;
-                case /* MenLikeMsg group */ 2:
+                case /* MenLikeMsg group */ 3:
                     message.group = MenLikeMsg.internalBinaryRead(reader, reader.uint32(), options, message.group);
                     break;
-                case /* DiscardReason reason */ 3:
+                case /* DiscardReason reason */ 4:
                     message.reason = reader.int32();
                     break;
                 default:
@@ -73,15 +81,18 @@ class ClaimTileEventMsg$Type extends MessageType<ClaimTileEventMsg> {
         return message;
     }
     internalBinaryWrite(message: ClaimTileEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* GameTileMsg tile = 1; */
+        /* int32 player_id = 1; */
+        if (message.playerId !== 0)
+            writer.tag(1, WireType.Varint).int32(message.playerId);
+        /* GameTileMsg tile = 2; */
         if (message.tile)
-            GameTileMsg.internalBinaryWrite(message.tile, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* MenLikeMsg group = 2; */
+            GameTileMsg.internalBinaryWrite(message.tile, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* MenLikeMsg group = 3; */
         if (message.group)
-            MenLikeMsg.internalBinaryWrite(message.group, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* DiscardReason reason = 3; */
+            MenLikeMsg.internalBinaryWrite(message.group, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        /* DiscardReason reason = 4; */
         if (message.reason !== 0)
-            writer.tag(3, WireType.Varint).int32(message.reason);
+            writer.tag(4, WireType.Varint).int32(message.reason);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
