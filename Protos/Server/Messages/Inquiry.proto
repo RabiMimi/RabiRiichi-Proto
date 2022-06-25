@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "Actions/SinglePlayerInquiry.proto";
+option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
+
+message ServerInquiryMsg {
+  int32 id = 1;
+  SinglePlayerInquiryMsg inquiry = 2;
+}
+
+message ServerInquiryEndMsg {
+  int32 id = 1;
+  int32 end_id = 2;
+}
+
+message ClientInquiryMsg {
+  int32 id = 1;
+  int32 index = 2;
+  bytes response = 3;
+}
