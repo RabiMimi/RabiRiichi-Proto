@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "Actions/AgariAction.proto";
+import "Actions/ChiiAction.proto";
+import "Actions/KanAction.proto";
+import "Actions/PlayTileAction.proto";
+import "Actions/PonAction.proto";
+import "Actions/RyuukyokuAction.proto";
+import "Actions/SkipAction.proto";
+option csharp_namespace = "RabiRiichi.Generated.Actions";
+
+message PlayerActionMsg {
+  oneof action {
+    AgariActionMsg agari_action = 1;
+    ChiiActionMsg chii_action = 2;
+    KanActionMsg kan_action = 3;
+    PlayTileActionMsg play_tile_action = 4;
+    RiichiActionMsg riichi_action = 5;
+    PonActionMsg pon_action = 6;
+    RyuukyokuActionMsg ryuukyoku_action = 7;
+    SkipActionMsg skip_action = 8;
+  }
+}
+
+message SinglePlayerInquiryMsg {
+  repeated PlayerActionMsg actions = 1;
+}
