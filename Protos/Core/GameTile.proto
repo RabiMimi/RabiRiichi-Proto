@@ -36,5 +36,5 @@ message GameTileMsg {
   int32 player_id = 2;
   DiscardInfoMsg discard_info = 3;
   TileSource source = 4;
-  int32 form_time;
+  int32 form_time = 5;
 }
