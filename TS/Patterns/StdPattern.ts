@@ -33,18 +33,26 @@ export interface ScoringMsg {
  */
 export enum ScoringType {
     /**
+     * 番
+     *
      * @generated from protobuf enum value: HAN = 0;
      */
     HAN = 0,
     /**
+     * 奖励番，不记役
+     *
      * @generated from protobuf enum value: BONUS_HAN = 1;
      */
     BONUS_HAN = 1,
     /**
+     * 符
+     *
      * @generated from protobuf enum value: FU = 2;
      */
     FU = 2,
     /**
+     * 役满
+     *
      * @generated from protobuf enum value: YAKUMAN = 3;
      */
     YAKUMAN = 3

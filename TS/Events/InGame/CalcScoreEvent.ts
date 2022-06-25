@@ -51,30 +51,44 @@ export interface CalcScoreEventMsg {
  */
 export enum ScoreTransferReason {
     /**
+     * 荣和
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RON = 0;
      */
     RON = 0,
     /**
+     * 自摸
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_TSUMO = 1;
      */
     TSUMO = 1,
     /**
+     * 流局
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RYUUKYOKU = 2;
      */
     RYUUKYOKU = 2,
     /**
+     * 流局满贯
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_NAGASHI_MANGAN = 3;
      */
     NAGASHI_MANGAN = 3,
     /**
+     * 立直
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_RIICHI = 4;
      */
     RIICHI = 4,
     /**
+     * 本场棒
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_HONBA = 5;
      */
     HONBA = 5,
     /**
+     * 包牌
+     *
      * @generated from protobuf enum value: SCORE_TRANSFER_REASON_PAO = 6;
      */
     PAO = 6

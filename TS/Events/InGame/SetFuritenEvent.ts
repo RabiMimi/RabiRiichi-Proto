@@ -33,14 +33,20 @@ export interface SetFuritenEventMsg {
  */
 export enum FuritenType {
     /**
+     * 同巡振听
+     *
      * @generated from protobuf enum value: TEMP = 0;
      */
     TEMP = 0,
     /**
+     * 立直振听
+     *
      * @generated from protobuf enum value: RIICHI = 1;
      */
     RIICHI = 1,
     /**
+     * 舍牌振听
+     *
      * @generated from protobuf enum value: DISCARD = 2;
      */
     DISCARD = 2

@@ -56,18 +56,26 @@ export interface ServerRoomStateMsg {
  */
 export enum UserStatus {
     /**
+     * Not in any room
+     *
      * @generated from protobuf enum value: USER_STATUS_NONE = 0;
      */
     NONE = 0,
     /**
+     * In room
+     *
      * @generated from protobuf enum value: USER_STATUS_IN_ROOM = 1;
      */
     IN_ROOM = 1,
     /**
+     * In room and ready
+     *
      * @generated from protobuf enum value: USER_STATUS_READY = 2;
      */
     READY = 2,
     /**
+     * In room and playing
+     *
      * @generated from protobuf enum value: USER_STATUS_PLAYING = 3;
      */
     PLAYING = 3
