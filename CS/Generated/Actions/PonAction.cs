@@ -25,9 +25,9 @@ namespace RabiRiichi.Generated.Actions {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChdBY3Rpb25zL1BvbkFjdGlvbi5wcm90bxoTQ29yZS9HYW1lVGlsZS5wcm90",
-            "byIxCgxQb25BY3Rpb25Nc2cSIQoKdGlsZUdyb3VwcxgBIAMoCzINLkdhbWVU",
-            "aWxlc01zZ0IfqgIcUmFiaVJpaWNoaS5HZW5lcmF0ZWQuQWN0aW9uc2IGcHJv",
-            "dG8z"));
+            "byIyCgxQb25BY3Rpb25Nc2cSIgoLdGlsZV9ncm91cHMYASADKAsyDS5HYW1l",
+            "VGlsZXNNc2dCH6oCHFJhYmlSaWljaGkuR2VuZXJhdGVkLkFjdGlvbnNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Core.GameTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -82,7 +82,7 @@ namespace RabiRiichi.Generated.Actions {
       return new PonActionMsg(this);
     }
 
-    /// <summary>Field number for the "tileGroups" field.</summary>
+    /// <summary>Field number for the "tile_groups" field.</summary>
     public const int TileGroupsFieldNumber = 1;
     private static readonly pb::FieldCodec<global::RabiRiichi.Generated.Core.GameTilesMsg> _repeated_tileGroups_codec
         = pb::FieldCodec.ForMessage(10, global::RabiRiichi.Generated.Core.GameTilesMsg.Parser);

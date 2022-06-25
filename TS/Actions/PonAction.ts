@@ -17,7 +17,7 @@ import { GameTilesMsg } from "../Core/GameTile";
  */
 export interface PonActionMsg {
     /**
-     * @generated from protobuf field: repeated GameTilesMsg tileGroups = 1;
+     * @generated from protobuf field: repeated GameTilesMsg tile_groups = 1;
      */
     tileGroups: GameTilesMsg[];
 }
@@ -25,7 +25,7 @@ export interface PonActionMsg {
 class PonActionMsg$Type extends MessageType<PonActionMsg> {
     constructor() {
         super("PonActionMsg", [
-            { no: 1, name: "tileGroups", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTilesMsg }
+            { no: 1, name: "tile_groups", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => GameTilesMsg }
         ]);
     }
     create(value?: PartialMessage<PonActionMsg>): PonActionMsg {
@@ -40,7 +40,7 @@ class PonActionMsg$Type extends MessageType<PonActionMsg> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* repeated GameTilesMsg tileGroups */ 1:
+                case /* repeated GameTilesMsg tile_groups */ 1:
                     message.tileGroups.push(GameTilesMsg.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
@@ -55,7 +55,7 @@ class PonActionMsg$Type extends MessageType<PonActionMsg> {
         return message;
     }
     internalBinaryWrite(message: PonActionMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* repeated GameTilesMsg tileGroups = 1; */
+        /* repeated GameTilesMsg tile_groups = 1; */
         for (let i = 0; i < message.tileGroups.length; i++)
             GameTilesMsg.internalBinaryWrite(message.tileGroups[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;

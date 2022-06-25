@@ -24,11 +24,11 @@ namespace RabiRiichi.Generated.Patterns {
     static ScoreCalcResultReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5QYXR0ZXJucy9TY29yZUNhbGNSZXN1bHQucHJvdG8ieAoSU2NvcmVDYWxj",
+            "Ch5QYXR0ZXJucy9TY29yZUNhbGNSZXN1bHQucHJvdG8iegoSU2NvcmVDYWxj",
             "UmVzdWx0TXNnEgsKA2hhbhgBIAEoBRIMCgR5YWt1GAIgASgFEgoKAmZ1GAMg",
-            "ASgFEg8KB3lha3VtYW4YBCABKAUSFAoMS2F6b2VZYWt1bWFuGAUgASgFEhQK",
-            "DEZpbmFsWWFrdW1hbhgGIAEoBUIgqgIdUmFiaVJpaWNoaS5HZW5lcmF0ZWQu",
-            "UGF0dGVybnNiBnByb3RvMw=="));
+            "ASgFEg8KB3lha3VtYW4YBCABKAUSFQoNa2F6b2VfeWFrdW1hbhgFIAEoBRIV",
+            "Cg1maW5hbF95YWt1bWFuGAYgASgFQiCqAh1SYWJpUmlpY2hpLkdlbmVyYXRl",
+            "ZC5QYXR0ZXJuc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -136,7 +136,7 @@ namespace RabiRiichi.Generated.Patterns {
       }
     }
 
-    /// <summary>Field number for the "KazoeYakuman" field.</summary>
+    /// <summary>Field number for the "kazoe_yakuman" field.</summary>
     public const int KazoeYakumanFieldNumber = 5;
     private int kazoeYakuman_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -148,7 +148,7 @@ namespace RabiRiichi.Generated.Patterns {
       }
     }
 
-    /// <summary>Field number for the "FinalYakuman" field.</summary>
+    /// <summary>Field number for the "final_yakuman" field.</summary>
     public const int FinalYakumanFieldNumber = 6;
     private int finalYakuman_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

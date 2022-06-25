@@ -32,11 +32,11 @@ export interface ScoreCalcResultMsg {
      */
     yakuman: number;
     /**
-     * @generated from protobuf field: int32 KazoeYakuman = 5 [json_name = "KazoeYakuman"];
+     * @generated from protobuf field: int32 kazoe_yakuman = 5;
      */
     kazoeYakuman: number;
     /**
-     * @generated from protobuf field: int32 FinalYakuman = 6 [json_name = "FinalYakuman"];
+     * @generated from protobuf field: int32 final_yakuman = 6;
      */
     finalYakuman: number;
 }
@@ -48,8 +48,8 @@ class ScoreCalcResultMsg$Type extends MessageType<ScoreCalcResultMsg> {
             { no: 2, name: "yaku", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 3, name: "fu", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 4, name: "yakuman", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "KazoeYakuman", kind: "scalar", jsonName: "KazoeYakuman", T: 5 /*ScalarType.INT32*/ },
-            { no: 6, name: "FinalYakuman", kind: "scalar", jsonName: "FinalYakuman", T: 5 /*ScalarType.INT32*/ }
+            { no: 5, name: "kazoe_yakuman", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 6, name: "final_yakuman", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<ScoreCalcResultMsg>): ScoreCalcResultMsg {
@@ -76,10 +76,10 @@ class ScoreCalcResultMsg$Type extends MessageType<ScoreCalcResultMsg> {
                 case /* int32 yakuman */ 4:
                     message.yakuman = reader.int32();
                     break;
-                case /* int32 KazoeYakuman = 5 [json_name = "KazoeYakuman"];*/ 5:
+                case /* int32 kazoe_yakuman */ 5:
                     message.kazoeYakuman = reader.int32();
                     break;
-                case /* int32 FinalYakuman = 6 [json_name = "FinalYakuman"];*/ 6:
+                case /* int32 final_yakuman */ 6:
                     message.finalYakuman = reader.int32();
                     break;
                 default:
@@ -106,10 +106,10 @@ class ScoreCalcResultMsg$Type extends MessageType<ScoreCalcResultMsg> {
         /* int32 yakuman = 4; */
         if (message.yakuman !== 0)
             writer.tag(4, WireType.Varint).int32(message.yakuman);
-        /* int32 KazoeYakuman = 5 [json_name = "KazoeYakuman"]; */
+        /* int32 kazoe_yakuman = 5; */
         if (message.kazoeYakuman !== 0)
             writer.tag(5, WireType.Varint).int32(message.kazoeYakuman);
-        /* int32 FinalYakuman = 6 [json_name = "FinalYakuman"]; */
+        /* int32 final_yakuman = 6; */
         if (message.finalYakuman !== 0)
             writer.tag(6, WireType.Varint).int32(message.finalYakuman);
         let u = options.writeUnknownFields;
