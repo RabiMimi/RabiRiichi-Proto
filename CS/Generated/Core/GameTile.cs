@@ -24,27 +24,28 @@ namespace RabiRiichi.Generated.Core {
     static GameTileReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNDb3JlL0dhbWVUaWxlLnByb3RvIj4KDkRpc2NhcmRJbmZvTXNnEgwKBGZy",
-            "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbiJyCgtH",
-            "YW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhEKCXBsYXllcl9pZBgCIAEoBRIl",
-            "CgxkaXNjYXJkX2luZm8YAyABKAsyDy5EaXNjYXJkSW5mb01zZxIbCgZzb3Vy",
-            "Y2UYBCABKA4yCy5UaWxlU291cmNlKsoBCg1EaXNjYXJkUmVhc29uEhcKE0RJ",
-            "U0NBUkRfUkVBU09OX05PTkUQABIXChNESVNDQVJEX1JFQVNPTl9EUkFXEAES",
-            "HgoaRElTQ0FSRF9SRUFTT05fRFJBV1JJTlNIQU4QAhIXChNESVNDQVJEX1JF",
-            "QVNPTl9DSElJEAMSFgoSRElTQ0FSRF9SRUFTT05fUE9OEAQSGgoWRElTQ0FS",
-            "RF9SRUFTT05fQ0hBTktBThAFEhoKFkRJU0NBUkRfUkVBU09OX1BSRVRFTkQQ",
-            "BirzAQoKVGlsZVNvdXJjZRIUChBUSUxFX1NPVVJDRV9OT05FEAASFgoSVElM",
-            "RV9TT1VSQ0VfV0FOUEFJEAESFAoQVElMRV9TT1VSQ0VfV0FMTBACEhQKEFRJ",
-            "TEVfU09VUkNFX0hBTkQQAxIXChNUSUxFX1NPVVJDRV9ESVNDQVJEEAQSFAoQ",
-            "VElMRV9TT1VSQ0VfQ0hJSRAFEhMKD1RJTEVfU09VUkNFX1BPThAGEhUKEVRJ",
-            "TEVfU09VUkNFX0tBS0FOEAcSFQoRVElMRV9TT1VSQ0VfQU5LQU4QCBIZChVU",
-            "SUxFX1NPVVJDRV9EQUlNSU5LQU4QCUIcqgIZUmFiaVJpaWNoaS5HZW5lcmF0",
-            "ZWQuQ29yZWIGcHJvdG8z"));
+            "ChNDb3JlL0dhbWVUaWxlLnByb3RvIkwKDkRpc2NhcmRJbmZvTXNnEgwKBGZy",
+            "b20YASABKAUSHgoGcmVhc29uGAIgASgOMg4uRGlzY2FyZFJlYXNvbhIMCgR0",
+            "aW1lGAMgASgFIoUBCgtHYW1lVGlsZU1zZxIMCgR0aWxlGAEgASgFEhEKCXBs",
+            "YXllcl9pZBgCIAEoBRIlCgxkaXNjYXJkX2luZm8YAyABKAsyDy5EaXNjYXJk",
+            "SW5mb01zZxIbCgZzb3VyY2UYBCABKA4yCy5UaWxlU291cmNlEhEKCWZvcm1f",
+            "dGltZRgFIAEoBSrKAQoNRGlzY2FyZFJlYXNvbhIXChNESVNDQVJEX1JFQVNP",
+            "Tl9OT05FEAASFwoTRElTQ0FSRF9SRUFTT05fRFJBVxABEh4KGkRJU0NBUkRf",
+            "UkVBU09OX0RSQVdSSU5TSEFOEAISFwoTRElTQ0FSRF9SRUFTT05fQ0hJSRAD",
+            "EhYKEkRJU0NBUkRfUkVBU09OX1BPThAEEhoKFkRJU0NBUkRfUkVBU09OX0NI",
+            "QU5LQU4QBRIaChZESVNDQVJEX1JFQVNPTl9QUkVURU5EEAYq8wEKClRpbGVT",
+            "b3VyY2USFAoQVElMRV9TT1VSQ0VfTk9ORRAAEhYKElRJTEVfU09VUkNFX1dB",
+            "TlBBSRABEhQKEFRJTEVfU09VUkNFX1dBTEwQAhIUChBUSUxFX1NPVVJDRV9I",
+            "QU5EEAMSFwoTVElMRV9TT1VSQ0VfRElTQ0FSRBAEEhQKEFRJTEVfU09VUkNF",
+            "X0NISUkQBRITCg9USUxFX1NPVVJDRV9QT04QBhIVChFUSUxFX1NPVVJDRV9L",
+            "QUtBThAHEhUKEVRJTEVfU09VUkNFX0FOS0FOEAgSGQoVVElMRV9TT1VSQ0Vf",
+            "REFJTUlOS0FOEAlCHKoCGVJhYmlSaWljaGkuR2VuZXJhdGVkLkNvcmViBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RabiRiichi.Generated.Core.DiscardReason), typeof(global::RabiRiichi.Generated.Core.TileSource), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.DiscardInfoMsg), global::RabiRiichi.Generated.Core.DiscardInfoMsg.Parser, new[]{ "From", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.DiscardInfoMsg), global::RabiRiichi.Generated.Core.DiscardInfoMsg.Parser, new[]{ "From", "Reason", "Time" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Core.GameTileMsg), global::RabiRiichi.Generated.Core.GameTileMsg.Parser, new[]{ "Tile", "PlayerId", "DiscardInfo", "Source", "FormTime" }, null, null, null)
           }));
     }
     #endregion
@@ -104,6 +105,7 @@ namespace RabiRiichi.Generated.Core {
     public DiscardInfoMsg(DiscardInfoMsg other) : this() {
       from_ = other.from_;
       reason_ = other.reason_;
+      time_ = other.time_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -134,6 +136,17 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 3;
+    private int time_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DiscardInfoMsg);
@@ -149,6 +162,7 @@ namespace RabiRiichi.Generated.Core {
       }
       if (From != other.From) return false;
       if (Reason != other.Reason) return false;
+      if (Time != other.Time) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -157,6 +171,7 @@ namespace RabiRiichi.Generated.Core {
       int hash = 1;
       if (From != 0) hash ^= From.GetHashCode();
       if (Reason != 0) hash ^= Reason.GetHashCode();
+      if (Time != 0) hash ^= Time.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -178,6 +193,10 @@ namespace RabiRiichi.Generated.Core {
         output.WriteRawTag(16);
         output.WriteEnum((int) Reason);
       }
+      if (Time != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Time);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -191,6 +210,9 @@ namespace RabiRiichi.Generated.Core {
       }
       if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Reason);
+      }
+      if (Time != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Time);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -209,6 +231,9 @@ namespace RabiRiichi.Generated.Core {
       if (other.Reason != 0) {
         Reason = other.Reason;
       }
+      if (other.Time != 0) {
+        Time = other.Time;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -226,6 +251,10 @@ namespace RabiRiichi.Generated.Core {
           }
           case 16: {
             reason_ = (global::RabiRiichi.Generated.Core.DiscardReason) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            Time = input.ReadInt32();
             break;
           }
         }
@@ -263,6 +292,7 @@ namespace RabiRiichi.Generated.Core {
       playerId_ = other.playerId_;
       discardInfo_ = other.discardInfo_ != null ? other.discardInfo_.Clone() : null;
       source_ = other.source_;
+      formTime_ = other.formTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -315,6 +345,17 @@ namespace RabiRiichi.Generated.Core {
       }
     }
 
+    /// <summary>Field number for the "form_time" field.</summary>
+    public const int FormTimeFieldNumber = 5;
+    private int formTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int FormTime {
+      get { return formTime_; }
+      set {
+        formTime_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GameTileMsg);
@@ -332,6 +373,7 @@ namespace RabiRiichi.Generated.Core {
       if (PlayerId != other.PlayerId) return false;
       if (!object.Equals(DiscardInfo, other.DiscardInfo)) return false;
       if (Source != other.Source) return false;
+      if (FormTime != other.FormTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -342,6 +384,7 @@ namespace RabiRiichi.Generated.Core {
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (discardInfo_ != null) hash ^= DiscardInfo.GetHashCode();
       if (Source != 0) hash ^= Source.GetHashCode();
+      if (FormTime != 0) hash ^= FormTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -371,6 +414,10 @@ namespace RabiRiichi.Generated.Core {
         output.WriteRawTag(32);
         output.WriteEnum((int) Source);
       }
+      if (FormTime != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(FormTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -390,6 +437,9 @@ namespace RabiRiichi.Generated.Core {
       }
       if (Source != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Source);
+      }
+      if (FormTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FormTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -416,6 +466,9 @@ namespace RabiRiichi.Generated.Core {
       }
       if (other.Source != 0) {
         Source = other.Source;
+      }
+      if (other.FormTime != 0) {
+        FormTime = other.FormTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -445,6 +498,10 @@ namespace RabiRiichi.Generated.Core {
           }
           case 32: {
             source_ = (global::RabiRiichi.Generated.Core.TileSource) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            FormTime = input.ReadInt32();
             break;
           }
         }

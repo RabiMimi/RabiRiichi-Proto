@@ -23,6 +23,10 @@ export interface DiscardInfoMsg {
      * @generated from protobuf field: DiscardReason reason = 2;
      */
     reason: DiscardReason;
+    /**
+     * @generated from protobuf field: int32 time = 3;
+     */
+    time: number;
 }
 /**
  * @generated from protobuf message GameTileMsg
@@ -44,6 +48,10 @@ export interface GameTileMsg {
      * @generated from protobuf field: TileSource source = 4;
      */
     source: TileSource;
+    /**
+     * @generated from protobuf field: int32 form_time = 5;
+     */
+    formTime: number;
 }
 /**
  * @generated from protobuf enum DiscardReason
@@ -128,11 +136,12 @@ class DiscardInfoMsg$Type extends MessageType<DiscardInfoMsg> {
     constructor() {
         super("DiscardInfoMsg", [
             { no: 1, name: "from", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "reason", kind: "enum", T: () => ["DiscardReason", DiscardReason, "DISCARD_REASON_"] }
+            { no: 2, name: "reason", kind: "enum", T: () => ["DiscardReason", DiscardReason, "DISCARD_REASON_"] },
+            { no: 3, name: "time", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<DiscardInfoMsg>): DiscardInfoMsg {
-        const message = { from: 0, reason: 0 };
+        const message = { from: 0, reason: 0, time: 0 };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<DiscardInfoMsg>(this, message, value);
@@ -148,6 +157,9 @@ class DiscardInfoMsg$Type extends MessageType<DiscardInfoMsg> {
                     break;
                 case /* DiscardReason reason */ 2:
                     message.reason = reader.int32();
+                    break;
+                case /* int32 time */ 3:
+                    message.time = reader.int32();
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -167,6 +179,9 @@ class DiscardInfoMsg$Type extends MessageType<DiscardInfoMsg> {
         /* DiscardReason reason = 2; */
         if (message.reason !== 0)
             writer.tag(2, WireType.Varint).int32(message.reason);
+        /* int32 time = 3; */
+        if (message.time !== 0)
+            writer.tag(3, WireType.Varint).int32(message.time);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
@@ -184,11 +199,12 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
             { no: 1, name: "tile", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 3, name: "discard_info", kind: "message", T: () => DiscardInfoMsg },
-            { no: 4, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] }
+            { no: 4, name: "source", kind: "enum", T: () => ["TileSource", TileSource, "TILE_SOURCE_"] },
+            { no: 5, name: "form_time", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
     create(value?: PartialMessage<GameTileMsg>): GameTileMsg {
-        const message = { tile: 0, playerId: 0, source: 0 };
+        const message = { tile: 0, playerId: 0, source: 0, formTime: 0 };
         globalThis.Object.defineProperty(message, MESSAGE_TYPE, { enumerable: false, value: this });
         if (value !== undefined)
             reflectionMergePartial<GameTileMsg>(this, message, value);
@@ -210,6 +226,9 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
                     break;
                 case /* TileSource source */ 4:
                     message.source = reader.int32();
+                    break;
+                case /* int32 form_time */ 5:
+                    message.formTime = reader.int32();
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -235,6 +254,9 @@ class GameTileMsg$Type extends MessageType<GameTileMsg> {
         /* TileSource source = 4; */
         if (message.source !== 0)
             writer.tag(4, WireType.Varint).int32(message.source);
+        /* int32 form_time = 5; */
+        if (message.formTime !== 0)
+            writer.tag(5, WireType.Varint).int32(message.formTime);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
