@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
+
+message ServerVersionCheckMsg {
+  string game = 1;
+  string game_version = 2;
+  string server = 3;
+  string server_version = 4;
+  string min_client_version = 5;
+}
+
+message ClientVersionCheckMsg {
+  string client = 1;
+  string client_version = 2;
+  string min_server_version = 3;
+}
