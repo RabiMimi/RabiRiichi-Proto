@@ -8,7 +8,7 @@ enum DiscardReason {
   // Discard due to drawing another tile from wall
   DISCARD_REASON_DRAW = 1;
   // Discard due to drawing another tile from wanpai
-  DISCARD_REASON_DRAWRINSHAN = 2;
+  DISCARD_REASON_DRAW_RINSHAN = 2;
   // Discard due to claiming a tile by Chii
   DISCARD_REASON_CHII = 3;
   // Discard due to claiming a tile by Pon
