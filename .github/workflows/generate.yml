@@ -46,7 +46,7 @@ jobs:
       - name: Generate C# Code
         run: |
           rm -rf ./CS/
-          mkdir ./CS/
+          mkdir -p ./CS/Server/Generated/Rpc/
           protoc --proto_path=./Protos/ --csharp_out=./CS/ --csharp-grpc_out=./CS/Server/Generated/Rpc/ --csharp_opt=base_namespace=RabiRiichi $(find ./Protos/ -iname "*.proto")
 
       - name: Generate TypeScript Code
