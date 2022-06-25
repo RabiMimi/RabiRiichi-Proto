@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "Core/Config/GameConfig.proto";
+option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
+
+enum UserStatus {
+  USER_STATUS_NONE = 0;
+  USER_STATUS_IN_ROOM = 1;
+  USER_STATUS_READY = 2;
+  USER_STATUS_PLAYING = 3;
+}
+
+message ClientRoomUpdateMsg {
+  UserStatus status = 1;
+}
+
+message ServerPlayerStateMsg {
+  int32 id = 1;
+  string nickname = 2;
+  UserStatus status = 3;
+}
+
+message ServerRoomStateMsg {
+  repeated ServerPlayerStateMsg players = 1;
+  GameConfigMsg config = 2;
+}
