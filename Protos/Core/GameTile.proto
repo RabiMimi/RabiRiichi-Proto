@@ -28,6 +28,7 @@ enum TileSource {
 message DiscardInfoMsg {
   int32 from = 1;
   DiscardReason reason = 2;
+  int32 time = 3;
 }
 
 message GameTileMsg {
@@ -35,4 +36,5 @@ message GameTileMsg {
   int32 player_id = 2;
   DiscardInfoMsg discard_info = 3;
   TileSource source = 4;
+  int32 form_time;
 }
