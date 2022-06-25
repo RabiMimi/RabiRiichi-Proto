@@ -25,14 +25,15 @@ namespace RabiRiichi.Generated.Events.InGame {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZFdmVudHMvSW5HYW1lL1N5bmNHYW1lU3RhdGVFdmVudC5wcm90bxoiQ29t",
-            "bXVuaWNhdGlvbi9TeW5jL0dhbWVTdGF0ZS5wcm90byKtAQoVU3luY0dhbWVT",
-            "dGF0ZUV2ZW50TXNnEhEKCXBsYXllcl9pZBgBIAEoBRIhCgpnYW1lX3N0YXRl",
-            "GAIgASgLMg0uR2FtZVN0YXRlTXNnEjAKBWV4dHJhGAMgAygLMiEuU3luY0dh",
-            "bWVTdGF0ZUV2ZW50TXNnLkV4dHJhRW50cnkaLAoKRXh0cmFFbnRyeRILCgNr",
-            "ZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBQiWqAiJSYWJpUmlpY2hpLkdl",
-            "bmVyYXRlZC5FdmVudHMuSW5HYW1lYgZwcm90bzM="));
+            "bXVuaWNhdGlvbi9TeW5jL0dhbWVTdGF0ZS5wcm90bxoZZ29vZ2xlL3Byb3Rv",
+            "YnVmL2FueS5wcm90byLDAQoVU3luY0dhbWVTdGF0ZUV2ZW50TXNnEhEKCXBs",
+            "YXllcl9pZBgBIAEoBRIhCgpnYW1lX3N0YXRlGAIgASgLMg0uR2FtZVN0YXRl",
+            "TXNnEjAKBWV4dHJhGAMgAygLMiEuU3luY0dhbWVTdGF0ZUV2ZW50TXNnLkV4",
+            "dHJhRW50cnkaQgoKRXh0cmFFbnRyeRILCgNrZXkYASABKAkSIwoFdmFsdWUY",
+            "AiABKAsyFC5nb29nbGUucHJvdG9idWYuQW55OgI4AUIlqgIiUmFiaVJpaWNo",
+            "aS5HZW5lcmF0ZWQuRXZlbnRzLkluR2FtZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::RabiRiichi.Generated.Communication.Sync.GameStateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RabiRiichi.Generated.Events.InGame.SyncGameStateEventMsg), global::RabiRiichi.Generated.Events.InGame.SyncGameStateEventMsg.Parser, new[]{ "PlayerId", "GameState", "Extra" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
@@ -113,12 +114,12 @@ namespace RabiRiichi.Generated.Events.InGame {
 
     /// <summary>Field number for the "extra" field.</summary>
     public const int ExtraFieldNumber = 3;
-    private static readonly pbc::MapField<string, string>.Codec _map_extra_codec
-        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 26);
-    private readonly pbc::MapField<string, string> extra_ = new pbc::MapField<string, string>();
+    private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_extra_codec
+        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 26);
+    private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> extra_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, string> Extra {
+    public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> Extra {
       get { return extra_; }
     }
 

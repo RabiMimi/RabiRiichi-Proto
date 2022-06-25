@@ -11,6 +11,7 @@ import type { PartialMessage } from "@protobuf-ts/runtime";
 import { reflectionMergePartial } from "@protobuf-ts/runtime";
 import { MESSAGE_TYPE } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
+import { Any } from "../../google/protobuf/any";
 import { GameStateMsg } from "../../Communication/Sync/GameState";
 /**
  * @generated from protobuf message SyncGameStateEventMsg
@@ -25,10 +26,10 @@ export interface SyncGameStateEventMsg {
      */
     gameState?: GameStateMsg;
     /**
-     * @generated from protobuf field: map<string, string> extra = 3;
+     * @generated from protobuf field: map<string, google.protobuf.Any> extra = 3;
      */
     extra: {
-        [key: string]: string;
+        [key: string]: Any;
     };
 }
 // @generated message type with reflection information, may provide speed optimized methods
@@ -37,7 +38,7 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
         super("SyncGameStateEventMsg", [
             { no: 1, name: "player_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "game_state", kind: "message", T: () => GameStateMsg },
-            { no: 3, name: "extra", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
+            { no: 3, name: "extra", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "message", T: () => Any } }
         ]);
     }
     create(value?: PartialMessage<SyncGameStateEventMsg>): SyncGameStateEventMsg {
@@ -58,7 +59,7 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
                 case /* GameStateMsg game_state */ 2:
                     message.gameState = GameStateMsg.internalBinaryRead(reader, reader.uint32(), options, message.gameState);
                     break;
-                case /* map<string, string> extra */ 3:
+                case /* map<string, google.protobuf.Any> extra */ 3:
                     this.binaryReadMap3(message.extra, reader, options);
                     break;
                 default:
@@ -81,12 +82,12 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
                     key = reader.string();
                     break;
                 case 2:
-                    val = reader.string();
+                    val = Any.internalBinaryRead(reader, reader.uint32(), options);
                     break;
                 default: throw new globalThis.Error("unknown map entry field for field SyncGameStateEventMsg.extra");
             }
         }
-        map[key ?? ""] = val ?? "";
+        map[key ?? ""] = val ?? Any.create();
     }
     internalBinaryWrite(message: SyncGameStateEventMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
         /* int32 player_id = 1; */
@@ -95,9 +96,13 @@ class SyncGameStateEventMsg$Type extends MessageType<SyncGameStateEventMsg> {
         /* GameStateMsg game_state = 2; */
         if (message.gameState)
             GameStateMsg.internalBinaryWrite(message.gameState, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* map<string, string> extra = 3; */
-        for (let k of Object.keys(message.extra))
-            writer.tag(3, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k).tag(2, WireType.LengthDelimited).string(message.extra[k]).join();
+        /* map<string, google.protobuf.Any> extra = 3; */
+        for (let k of Object.keys(message.extra)) {
+            writer.tag(3, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k);
+            writer.tag(2, WireType.LengthDelimited).fork();
+            Any.internalBinaryWrite(message.extra[k], writer, options);
+            writer.join().join();
+        }
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
