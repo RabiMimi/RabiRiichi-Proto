@@ -8,12 +8,16 @@ import "Core/Config/GameConfig.proto";
 option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
 
 message PlayerHandStateMsg {
-  repeated MenLikeMsg called = 1;
-  repeated GameTileMsg discarded = 2;
-  int32 jun = 3;
-  int32 riichi_stick = 4;
-  GameTileMsg agari_tile = 5;
-  bool riichi = 6;
+  repeated GameTileMsg free_tiles = 1;
+  repeated MenLikeMsg called = 2;
+  repeated GameTileMsg discarded = 3;
+  int32 jun = 4;
+  int32 riichi_stick = 5;
+  GameTileMsg agari_tile = 6;
+  GameTileMsg riichi_tile = 7;
+  bool is_temp_furiten = 8;
+  bool is_riichi_furiten = 9;
+  bool is_discard_furiten = 10;
 }
 
 message WallStateMsg{

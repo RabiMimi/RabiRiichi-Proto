@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "Core/GameTile.proto";
+import "Core/MenLike.proto";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 message KanActionMsg {
-  repeated GameTilesMsg tile_groups = 1;
+  repeated MenLikeMsg tile_groups = 1;
 }
