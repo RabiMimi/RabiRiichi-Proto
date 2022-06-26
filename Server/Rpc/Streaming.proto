@@ -3,7 +3,6 @@ syntax = "proto3";
 import "Server/Messages/Message.proto";
 import "Actions/SinglePlayerInquiry.proto";
 import "Events/Event.proto";
-import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
 message ClientStreamingRequest {
@@ -12,7 +11,7 @@ message ClientStreamingRequest {
   }
 }
 
-message ServerStreamingResponse {
+message ServerStreamingRequest {
   oneof msg {
     ServerMsg server = 1;
     SinglePlayerInquiryMsg inquiry = 2;
@@ -21,5 +20,5 @@ message ServerStreamingResponse {
 }
 
 service StreamingService {
-  rpc ConnectGame(stream ClientStreamingRequest) returns (stream ServerStreamingResponse) {}
+  rpc ConnectGame(stream ClientStreamingRequest) returns (stream ServerStreamingRequest) {}
 }

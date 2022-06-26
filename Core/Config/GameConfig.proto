@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-import "Core/Config/Enums.proto";
 import "Core/Config/PointThreshold.proto";
 option csharp_namespace = "RabiRiichi.Generated.Core.Config";
 
