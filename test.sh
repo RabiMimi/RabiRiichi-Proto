@@ -1,1 +1,0 @@
-npx protoc --proto_path=./Protos/ --csharp_out=./CS/ --csharp_opt=base_namespace=RabiRiichi $(find ./Protos/ -iname "*.proto")
