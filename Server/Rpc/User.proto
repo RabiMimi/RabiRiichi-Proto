@@ -4,11 +4,6 @@ import "Server/Messages/Room.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
-message CreateUserResponse {
-    int32 id = 1;
-    string access_token = 2;
-}
-
 message UserInfoResponse {
   int32 id = 1;
   int32 room = 2;
@@ -16,11 +11,6 @@ message UserInfoResponse {
   UserStatus status = 4;
 }
 
-message CreateUserRequest {
-  string nickname = 1;
-}
-
 service UserService {
-  rpc CreateUser(CreateUserRequest) returns (UserInfoResponse) {}
   rpc GetMyInfo(google.protobuf.Empty) returns (UserInfoResponse) {}
 }

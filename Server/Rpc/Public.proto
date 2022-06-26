@@ -11,6 +11,16 @@ message GetInfoResponse {
   string min_client_version = 5;
 }
 
-service InfoService {
+message CreateUserRequest {
+  string nickname = 1;
+}
+
+message CreateUserResponse {
+  int32 id = 1;
+  string access_token = 2;
+}
+
+service PublicService {
   rpc GetInfo(google.protobuf.Empty) returns (GetInfoResponse) {}
+  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {}
 }
