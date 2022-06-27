@@ -14,17 +14,21 @@ enum UserStatus {
   USER_STATUS_PLAYING = 3;
 }
 
+// Updates the status of a user.
 message ClientRoomUpdateMsg {
   UserStatus status = 1;
 }
 
+// State of a user.
 message ServerPlayerStateMsg {
   int32 id = 1;
   string nickname = 2;
   UserStatus status = 3;
 }
 
+// State of a room.
 message ServerRoomStateMsg {
-  repeated ServerPlayerStateMsg players = 1;
+  int32 id = 1;
   GameConfigMsg config = 2;
+  repeated ServerPlayerStateMsg players = 3;
 }
