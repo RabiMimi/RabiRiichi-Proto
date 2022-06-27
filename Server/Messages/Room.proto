@@ -24,6 +24,7 @@ message ServerPlayerStateMsg {
   int32 id = 1;
   string nickname = 2;
   UserStatus status = 3;
+  int32 seat = 4;
 }
 
 // State of a room.
