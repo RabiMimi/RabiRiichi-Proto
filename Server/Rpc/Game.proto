@@ -1,26 +1,32 @@
 syntax = "proto3";
 
 import "Server/Messages/Message.proto";
-import "Actions/SinglePlayerInquiry.proto";
+import "Server/Messages/Inquiry.proto";
 import "Events/Event.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
-message ClientGameDto {
+message ClientMessageDto {
+  // Message ID starting from 1.
   int32 id = 1;
+  // If not 0, this message responds to a server message with this ID.
+  int32 respond_to = 2;
   oneof msg {
-    ClientMsg client_msg = 2;
+    ClientMsg client_msg = 3;
   }
 }
 
-message ServerGameDto {
+message ServerMessageDto {
+  // Message ID starting from 1.
   int32 id = 1;
+  // If not 0, this message responds to a server message with this ID.
+  int32 respond_to = 2;
   oneof msg {
-    ServerMsg server_msg = 2;
-    SinglePlayerInquiryMsg inquiry = 3;
-    EventMsg event = 4;
+    ServerMsg server_msg = 3;
+    ServerInquiryMsg inquiry = 4;
+    EventMsg event = 5;
   }
 }
 
 service GameService {
-  rpc ConnectGame(stream ClientGameDto) returns (stream ServerGameDto) {}
+  rpc ConnectGame(stream ClientMessageDto) returns (stream ServerMessageDto) {}
 }

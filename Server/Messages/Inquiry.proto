@@ -16,5 +16,5 @@ message ServerInquiryEndMsg {
 // Client answers an inquiry.
 message ClientInquiryMsg {
   int32 index = 1;
-  bytes response = 2;
+  string response = 2;
 }

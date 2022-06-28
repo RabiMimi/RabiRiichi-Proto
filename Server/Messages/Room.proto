@@ -21,9 +21,10 @@ message ClientRoomUpdateMsg {
 
 // State of a user.
 message ServerPlayerStateMsg {
-  string nickname = 1;
-  UserStatus status = 2;
-  int32 seat = 3;
+  int32 id = 1;
+  string nickname = 2;
+  UserStatus status = 3;
+  int32 seat = 4;
 }
 
 // State of a room.
