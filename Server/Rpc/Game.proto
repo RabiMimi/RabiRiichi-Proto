@@ -5,13 +5,13 @@ import "Actions/SinglePlayerInquiry.proto";
 import "Events/Event.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
-message ClientGameRequest {
+message ClientGameDto {
   oneof msg {
     ClientMsg client = 1;
   }
 }
 
-message ServerGameRequest {
+message ServerGameDto {
   oneof msg {
     ServerMsg server = 1;
     SinglePlayerInquiryMsg inquiry = 2;
@@ -20,5 +20,5 @@ message ServerGameRequest {
 }
 
 service GameService {
-  rpc ConnectGame(stream ClientGameRequest) returns (stream ServerGameRequest) {}
+  rpc ConnectGame(stream ClientGameDto) returns (stream ServerGameDto) {}
 }
