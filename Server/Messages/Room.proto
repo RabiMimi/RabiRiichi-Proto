@@ -21,15 +21,13 @@ message ClientRoomUpdateMsg {
 
 // State of a user.
 message ServerPlayerStateMsg {
-  int32 id = 1;
-  string nickname = 2;
-  UserStatus status = 3;
-  int32 seat = 4;
+  string nickname = 1;
+  UserStatus status = 2;
+  int32 seat = 3;
 }
 
 // State of a room.
 message ServerRoomStateMsg {
-  int32 id = 1;
-  GameConfigMsg config = 2;
-  repeated ServerPlayerStateMsg players = 3;
+  GameConfigMsg config = 1;
+  repeated ServerPlayerStateMsg players = 2;
 }

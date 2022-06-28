@@ -4,7 +4,6 @@ option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
 // HeartBeat message. Should always have id = -1.
 message TwoWayHeartBeatMsg {
-  int32 id = 1;
-  int32 max_id = 2;
-  repeated int32 requesting_ids = 3;
+  int32 max_id = 1;
+  repeated int32 requesting_ids = 2;
 }

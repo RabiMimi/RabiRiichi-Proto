@@ -6,16 +6,18 @@ import "Events/Event.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
 message ClientGameDto {
+  int32 id = 1;
   oneof msg {
-    ClientMsg client = 1;
+    ClientMsg client = 2;
   }
 }
 
 message ServerGameDto {
+  int32 id = 1;
   oneof msg {
-    ServerMsg server = 1;
-    SinglePlayerInquiryMsg inquiry = 2;
-    EventMsg event = 3;
+    ServerMsg server = 2;
+    SinglePlayerInquiryMsg inquiry = 3;
+    EventMsg event = 4;
   }
 }
 
