@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "Server/Messages/Message.proto";
 import "Server/Messages/Inquiry.proto";
+import "Server/Rpc/Request.proto";
 import "Events/Event.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
@@ -12,6 +13,7 @@ message ClientMessageDto {
   int32 respond_to = 2;
   oneof msg {
     ClientMsg client_msg = 3;
+    ClientRequest client_request = 4;
   }
 }
 

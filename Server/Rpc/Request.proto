@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "Server/Rpc/Room.proto";
+import "Server/Rpc/User.proto";
+import "google/protobuf/empty.proto";
+option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
+
+// All gRPC requests.
+message ClientRequest {
+  oneof req {
+    google.protobuf.Empty get_info = 1;
+    google.protobuf.Empty create_room = 2;
+    JoinRoomRequest join_room = 3;
+    CreateUserRequest create_user = 4;
+    google.protobuf.Empty get_my_info = 5;
+  }
+}
