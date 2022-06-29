@@ -5,6 +5,10 @@ import "Server/Rpc/User.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
+message ClientSignInRequest {
+  string access_token = 1;
+}
+
 // All gRPC requests.
 message ClientRequest {
   oneof req {
@@ -13,5 +17,6 @@ message ClientRequest {
     JoinRoomRequest join_room = 3;
     CreateUserRequest create_user = 4;
     google.protobuf.Empty get_my_info = 5;
+    ClientSignInRequest sign_in = 6;
   }
 }
