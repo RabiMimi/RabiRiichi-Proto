@@ -36,6 +36,6 @@ message ServerResponse {
     CreateUserResponse create_user = 4;
     UserInfoResponse get_my_info = 5;
     google.protobuf.Empty sign_in = 6;
-    ServerErrorResponse ws_error_msg = 7;
+    ServerErrorResponse server_error = 7;
   }
 }
