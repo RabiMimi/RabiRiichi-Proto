@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+import "Server/Rpc/Info.proto";
 import "Server/Rpc/Room.proto";
 import "Server/Rpc/User.proto";
 import "google/protobuf/empty.proto";
@@ -7,6 +8,11 @@ option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
 message ClientSignInRequest {
   string access_token = 1;
+}
+
+message ServerErrorResponse {
+  string status = 1;
+  string message = 2;
 }
 
 // All gRPC requests.
@@ -18,5 +24,18 @@ message ClientRequest {
     CreateUserRequest create_user = 4;
     google.protobuf.Empty get_my_info = 5;
     ClientSignInRequest sign_in = 6;
+  }
+}
+
+// All gRPC responses.
+message ServerResponse {
+  oneof res {
+    GetInfoResponse get_info = 1;
+    CreateRoomResponse create_room = 2;
+    google.protobuf.Empty join_room = 3;
+    CreateUserResponse create_user = 4;
+    UserInfoResponse get_my_info = 5;
+    google.protobuf.Empty sign_in = 6;
+    ServerErrorResponse ws_error_msg = 7;
   }
 }

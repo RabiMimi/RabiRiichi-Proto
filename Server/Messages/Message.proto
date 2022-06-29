@@ -6,11 +6,6 @@ import "Server/Messages/Room.proto";
 import "Server/Messages/VersionCheck.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
-message ServerWSErrorMsg {
-  string status = 1;
-  string message = 2;
-}
-
 // Messages from the server to the client.
 message ServerMsg {
   oneof msg {
@@ -19,7 +14,6 @@ message ServerMsg {
     ServerPlayerStateMsg player_state_msg = 3;
     ServerRoomStateMsg room_state_msg = 4;
     ServerVersionCheckMsg version_check_msg = 5;
-    ServerWSErrorMsg ws_error_msg = 6;
   }
 }
 

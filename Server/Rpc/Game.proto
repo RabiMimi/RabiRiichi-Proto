@@ -12,8 +12,8 @@ message ClientMessageDto {
   // If not 0, this message responds to a server message with this ID.
   int32 respond_to = 2;
   oneof msg {
-    ClientMsg client_msg = 3;
-    ClientRequest client_request = 4;
+    ClientRequest client_request = 3;
+    ClientMsg client_msg = 4;
   }
 }
 
@@ -23,9 +23,10 @@ message ServerMessageDto {
   // If not 0, this message responds to a server message with this ID.
   int32 respond_to = 2;
   oneof msg {
-    ServerMsg server_msg = 3;
-    ServerInquiryMsg inquiry = 4;
-    EventMsg event = 5;
+    ServerResponse server_resp = 3;
+    ServerMsg server_msg = 4;
+    ServerInquiryMsg inquiry = 5;
+    EventMsg event = 6;
   }
 }
 
