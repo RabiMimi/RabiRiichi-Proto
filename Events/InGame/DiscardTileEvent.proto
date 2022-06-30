@@ -8,6 +8,6 @@ message DiscardTileEventMsg {
   GameTileMsg incoming = 2;
   GameTileMsg discarded = 3;
   DiscardReason reason = 4;
-  TileSource origin = 5;
+  bool from_hand = 5;
   bool is_riichi = 6;
 }
