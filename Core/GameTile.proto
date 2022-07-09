@@ -49,9 +49,10 @@ message DiscardInfoMsg {
 }
 
 message GameTileMsg {
-  int32 tile = 1;
-  int32 player_id = 2;
-  DiscardInfoMsg discard_info = 3;
-  TileSource source = 4;
-  int32 form_time = 5;
+  int32 id = 1;
+  int32 tile = 2;
+  int32 player_id = 3;
+  int32 form_time = 4;
+  TileSource source = 5;
+  DiscardInfoMsg discard_info = 6;
 }
