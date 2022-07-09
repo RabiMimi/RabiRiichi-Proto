@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 import "Server/Messages/Message.proto";
-import "Server/Messages/Inquiry.proto";
 import "Server/Rpc/Request.proto";
 import "Events/Event.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
@@ -25,7 +24,6 @@ message ServerMessageDto {
   oneof msg {
     ServerResponse server_resp = 3;
     ServerMsg server_msg = 4;
-    ServerInquiryMsg inquiry = 5;
     EventMsg event = 6;
   }
 }

@@ -31,11 +31,10 @@ message ClientRequest {
 message ServerResponse {
   oneof res {
     GetInfoResponse get_info = 1;
-    CreateRoomResponse create_room = 2;
-    google.protobuf.Empty join_room = 3;
-    CreateUserResponse create_user = 4;
-    UserInfoResponse get_my_info = 5;
-    google.protobuf.Empty sign_in = 6;
-    ServerErrorResponse server_error = 7;
+    JoinRoomResponse join_room = 2;
+    CreateUserResponse create_user = 3;
+    UserInfoResponse get_my_info = 4;
+    google.protobuf.Empty sign_in = 5;
+    ServerErrorResponse server_error = 6;
   }
 }
