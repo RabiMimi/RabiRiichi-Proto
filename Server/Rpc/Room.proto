@@ -4,16 +4,11 @@ import "Server/Messages/Room.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
-message JoinRoomResponse {
-  int32 room_id = 1;
-  ServerRoomStateMsg room_state = 2;
-}
-
 message JoinRoomRequest {
   int32 room_id = 1;
 }
 
 service RoomService {
-  rpc CreateRoom(google.protobuf.Empty) returns (JoinRoomResponse) {}
-  rpc JoinRoom(JoinRoomRequest) returns (JoinRoomResponse) {}
+  rpc CreateRoom(google.protobuf.Empty) returns (ServerRoomStateMsg) {}
+  rpc JoinRoom(JoinRoomRequest) returns (ServerRoomStateMsg) {}
 }

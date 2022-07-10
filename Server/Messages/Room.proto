@@ -29,6 +29,7 @@ message ServerPlayerStateMsg {
 
 // State of a room.
 message ServerRoomStateMsg {
-  GameConfigMsg config = 1;
-  repeated ServerPlayerStateMsg players = 2;
+  int32 id = 1;
+  GameConfigMsg config = 2;
+  repeated ServerPlayerStateMsg players = 3;
 }
