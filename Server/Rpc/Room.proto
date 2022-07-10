@@ -8,7 +8,11 @@ message JoinRoomRequest {
   int32 room_id = 1;
 }
 
+message ServerRoomStateResponse {
+  ServerRoomStateMsg state = 1;
+}
+
 service RoomService {
-  rpc CreateRoom(google.protobuf.Empty) returns (ServerRoomStateMsg) {}
-  rpc JoinRoom(JoinRoomRequest) returns (ServerRoomStateMsg) {}
+  rpc CreateRoom(google.protobuf.Empty) returns (ServerRoomStateResponse) {}
+  rpc JoinRoom(JoinRoomRequest) returns (ServerRoomStateResponse) {}
 }

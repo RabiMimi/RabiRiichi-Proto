@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-import "Server/Messages/Room.proto";
 import "Server/Rpc/Info.proto";
 import "Server/Rpc/Room.proto";
 import "Server/Rpc/User.proto";
@@ -32,7 +31,7 @@ message ClientRequest {
 message ServerResponse {
   oneof res {
     GetInfoResponse get_info = 1;
-    ServerRoomStateMsg join_room = 2;
+    ServerRoomStateResponse room_state = 2;
     CreateUserResponse create_user = 3;
     UserInfoResponse user_info = 4;
     ServerErrorResponse server_error = 5;
