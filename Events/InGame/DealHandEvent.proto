@@ -5,5 +5,6 @@ option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message DealHandEventMsg {
   int32 player_id = 1;
-  repeated GameTileMsg tiles = 2;
+  int32 count = 2;
+  repeated GameTileMsg tiles = 3;
 }
