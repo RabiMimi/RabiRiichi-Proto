@@ -49,7 +49,7 @@ message DiscardInfoMsg {
 }
 
 message GameTileMsg {
-  int32 id = 1;
+  int32 trace_id = 1;
   int32 tile = 2;
   int32 player_id = 3;
   int32 form_time = 4;
