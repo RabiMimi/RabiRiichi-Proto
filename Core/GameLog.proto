@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "Events/Event.proto";
+import "Actions/SinglePlayerInquiry.proto";
+option csharp_namespace = "RabiRiichi.Generated.Core";
+
+message SingleLogMsg {
+  oneof msg {
+    EventMsg event = 1;
+    SinglePlayerInquiryMsg inquiry = 2;
+  }
+}
+
+message PlayerLogMsg {
+  repeated SingleLogMsg logs = 1;
+}
+
+message GameLogMsg {
+  repeated PlayerLogMsg player_logs = 1;
+}
