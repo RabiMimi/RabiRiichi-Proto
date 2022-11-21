@@ -2,7 +2,6 @@ syntax = "proto3";
 
 import "Core/GameTile.proto";
 import "Core/MenLike.proto";
-import "Core/Player.proto";
 import "Core/GameInfo.proto";
 import "Core/Config/GameConfig.proto";
 option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
@@ -28,9 +27,8 @@ message WallStateMsg{
 
 message PlayerStateMsg{
   int32 id = 1;
-  Wind wind=2;
-  int64 points = 3;
-  PlayerHandStateMsg hand = 4;
+  int64 points = 2;
+  PlayerHandStateMsg hand = 3;
 }
 
 message GameStateMsg{

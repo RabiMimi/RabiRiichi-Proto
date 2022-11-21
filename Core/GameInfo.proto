@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-import "Core/Player.proto";
 option csharp_namespace = "RabiRiichi.Generated.Core";
 
 message GameInfoMsg {
