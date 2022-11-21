@@ -7,5 +7,6 @@ option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 message KanEventMsg {
   int32 player_id = 1;
   MenLikeMsg kan = 2;
-  TileSource kan_source = 3;
+  GameTileMsg incoming = 3;
+  TileSource kan_source = 4;
 }
