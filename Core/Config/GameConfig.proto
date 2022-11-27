@@ -16,4 +16,5 @@ message GameConfigMsg {
   int32 agari_option = 10;
   int32 scoring_option = 11;
   int32 ryuukyoku_trigger = 12;
+  uint64 seed = 13;
 }
