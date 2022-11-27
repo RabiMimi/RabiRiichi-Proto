@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "Core/GameTile.proto";
+
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 enum AgariType {
@@ -13,4 +15,5 @@ enum AgariType {
 
 message AgariActionMsg {
   AgariType type = 1;
+  GameTileMsg incoming = 2;
 }
