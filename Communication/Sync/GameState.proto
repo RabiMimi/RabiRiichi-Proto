@@ -37,4 +37,5 @@ message GameStateMsg{
   GameInfoMsg info = 2;
   WallStateMsg wall = 3;
   repeated PlayerStateMsg players = 4;
+  int32 current_player = 5;
 }
