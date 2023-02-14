@@ -17,6 +17,7 @@ message PlayerHandStateMsg {
   bool is_temp_furiten = 8;
   bool is_riichi_furiten = 9;
   bool is_discard_furiten = 10;
+  GameTileMsg pending_tile = 11;
 }
 
 message WallStateMsg{

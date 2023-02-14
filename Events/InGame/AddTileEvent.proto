@@ -5,5 +5,4 @@ option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message AddTileEventMsg {
   int32 player_id = 1;
-  GameTileMsg incoming = 2;
 }
