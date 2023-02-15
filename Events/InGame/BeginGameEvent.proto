@@ -6,4 +6,5 @@ message BeginGameEventMsg {
   int32 round = 1;
   int32 dealer = 2;
   int32 honba = 3;
+  int32 riichiSticks = 4;
 }
