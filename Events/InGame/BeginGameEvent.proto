@@ -7,4 +7,5 @@ message BeginGameEventMsg {
   int32 dealer = 2;
   int32 honba = 3;
   int32 riichi_stick = 4;
+  int32 remaining_tiles = 5;
 }
