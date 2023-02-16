@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+message EndInquiryEventMsg {
+  int32 player_id = 1;
+}

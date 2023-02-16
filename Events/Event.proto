@@ -25,6 +25,7 @@ import "Events/InGame/SetMenzenEvent.proto";
 import "Events/InGame/SetRiichiEvent.proto";
 import "Events/InGame/StopGameEvent.proto";
 import "Events/InGame/SyncGameStateEvent.proto";
+import "Events/InGame/EndInquiryEvent.proto";
 import "google/protobuf/any.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events";
 
@@ -55,6 +56,7 @@ message EventMsg {
     SetRiichiEventMsg set_riichi_event = 23;
     StopGameEventMsg stop_game_event = 24;
     SyncGameStateEventMsg sync_game_state_event = 25;
-    google.protobuf.Any other = 26;
+    EndInquiryEventMsg end_inquiry_event = 26;
+    google.protobuf.Any other = 27;
   }
 }

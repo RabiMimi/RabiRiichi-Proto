@@ -10,10 +10,9 @@ option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 message ServerMsg {
   oneof msg {
     TwoWayHeartBeatMsg heart_beat_msg = 1;
-    ServerInquiryEndMsg inquiry_end_msg = 2;
-    ServerRoomStateMsg room_state_msg = 3;
-    ServerVersionCheckMsg version_check_msg = 4;
-    ServerInquiryMsg inquiry = 5;
+    ServerRoomStateMsg room_state_msg = 2;
+    ServerVersionCheckMsg version_check_msg = 3;
+    ServerInquiryMsg inquiry = 4;
   }
 }
 

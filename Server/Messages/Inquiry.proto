@@ -8,11 +8,6 @@ message ServerInquiryMsg {
   SinglePlayerInquiryMsg inquiry = 1;
 }
 
-// Notifies the client that an inquiry has been answered.
-message ServerInquiryEndMsg {
-  int32 end_id = 1;
-}
-
 // Client answers an inquiry.
 message ClientInquiryMsg {
   int32 index = 1;
