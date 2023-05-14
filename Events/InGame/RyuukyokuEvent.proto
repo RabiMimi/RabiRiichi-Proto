@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "Events/InGame/CalcScoreEvent.proto";
+import "Events/InGame/ApplyScoreEvent.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message EndGameRyuukyokuEventMsg {

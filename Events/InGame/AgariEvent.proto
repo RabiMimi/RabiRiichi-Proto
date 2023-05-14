@@ -7,15 +7,10 @@ option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 message AgariInfoMsg {
   int32 player_id = 1;
   ScoreStorageMsg scores = 2;
-}
-
-message AgariInfoListMsg {
-  repeated AgariInfoMsg agari_infos = 1;
-  int32 from_player = 2;
-  GameTileMsg incoming = 3;
+  repeated GameTileMsg free_tiles = 3;
 }
 
 message AgariEventMsg {
-  bool is_tsumo = 1;
-  AgariInfoListMsg agari_infos = 2;
+  repeated AgariInfoMsg agari_infos = 1;
+  GameTileMsg incoming = 2;
 }
