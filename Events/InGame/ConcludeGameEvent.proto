@@ -1,8 +1,9 @@
 syntax = "proto3";
 
+import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
 message ConcludeGameEventMsg {
-  string doras = 1;
-  string uradoras = 2;
+  repeated GameTileMsg doras = 1;
+  repeated GameTileMsg uradoras = 2;
 }
