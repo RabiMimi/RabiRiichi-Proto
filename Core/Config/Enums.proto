@@ -109,3 +109,14 @@ enum ScoringOption {
   // 启用累计役满
   SCORING_OPTION_KAZOE_YAKUMAN = 8;
 }
+
+enum PointsDeductionPolicy {
+  // 总是允许扣减
+  POINTS_DEDUCTION_POLICY_ALWAYS_ALLOW = 0;
+  // 扣减后玩家点数不小于有效点数下限（通常是不被飞）
+  POINTS_DEDUCTION_POLICY_SUFFICIENT_POINTS = 1;
+  // 扣减前玩家点数在有效点数范围内（通常是未被飞）
+  POINTS_DEDUCTION_POLICY_VALID_POINTS = 2;
+  // 总是禁止扣减
+  POINTS_DEDUCTION_POLICY_ALWAYS_BLOCK = 3;
+}
