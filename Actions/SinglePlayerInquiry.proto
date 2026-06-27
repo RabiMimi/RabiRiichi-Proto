@@ -26,4 +26,5 @@ message PlayerActionMsg {
 
 message SinglePlayerInquiryMsg {
   repeated PlayerActionMsg actions = 1;
+  double timeout_seconds = 2;
 }

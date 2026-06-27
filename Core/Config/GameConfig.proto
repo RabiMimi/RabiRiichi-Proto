@@ -19,4 +19,5 @@ message GameConfigMsg {
   uint64 seed = 13;
   int32 points_deduction_policy = 14;
   double next_round_ack_timeout = 15;
+  double gameplay_action_timeout = 16;
 }
