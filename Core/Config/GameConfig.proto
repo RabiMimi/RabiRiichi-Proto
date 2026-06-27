@@ -18,4 +18,5 @@ message GameConfigMsg {
   int32 ryuukyoku_trigger = 12;
   uint64 seed = 13;
   int32 points_deduction_policy = 14;
+  double next_round_ack_timeout = 15;
 }

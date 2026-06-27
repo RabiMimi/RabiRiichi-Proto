@@ -7,6 +7,7 @@ import "Actions/PlayTileAction.proto";
 import "Actions/PonAction.proto";
 import "Actions/RyuukyokuAction.proto";
 import "Actions/SkipAction.proto";
+import "Actions/NextRoundAction.proto";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 message PlayerActionMsg {
@@ -19,6 +20,7 @@ message PlayerActionMsg {
     PonActionMsg pon_action = 6;
     RyuukyokuActionMsg ryuukyoku_action = 7;
     SkipActionMsg skip_action = 8;
+    NextRoundActionMsg next_round_action = 9;
   }
 }
 
