@@ -3,10 +3,26 @@ syntax = "proto3";
 import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Actions";
 
+message TenpaiInfoMsg {
+  int32 winning_tile = 1;
+  int32 remaining_count = 2;
+  int32 han = 3;
+  int32 fu = 4;
+  int32 yakuman = 5;
+  int64 points = 6;
+}
+
+message DiscardCandidateMsg {
+  GameTileMsg tile = 1;
+  repeated TenpaiInfoMsg tenpai_infos = 2;
+}
+
 message PlayTileActionMsg {
   repeated GameTileMsg tiles = 1;
+  repeated DiscardCandidateMsg candidates = 2;
 }
 
 message RiichiActionMsg {
   repeated GameTileMsg tiles = 1;
+  repeated DiscardCandidateMsg candidates = 2;
 }
