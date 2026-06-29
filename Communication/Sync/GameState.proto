@@ -4,6 +4,7 @@ import "Core/GameTile.proto";
 import "Core/MenLike.proto";
 import "Core/GameInfo.proto";
 import "Core/Config/GameConfig.proto";
+import "Patterns/ScoreStorage.proto";
 option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
 
 message PlayerHandStateMsg {
@@ -18,6 +19,9 @@ message PlayerHandStateMsg {
   bool is_riichi_furiten = 9;
   bool is_discard_furiten = 10;
   GameTileMsg pending_tile = 11;
+  // Score breakdown when this hand has won. Lets a reconnecting client rebuild
+  // the result screen. Null/absent when the hand has not won.
+  ScoreStorageMsg agari_score = 12;
 }
 
 message WallStateMsg{
