@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 import "Core/Config/PointThreshold.proto";
-import "Core/Config/Enums.proto";
 option csharp_namespace = "RabiRiichi.Generated.Core.Config";
 
 message GameConfigMsg {
@@ -22,6 +21,5 @@ message GameConfigMsg {
   double next_round_ack_timeout = 15;
   double gameplay_action_timeout = 16;
   repeated string allowed_yakus = 17;
-  TileSetPreset initial_tiles_preset = 18;
+  repeated int32 initial_tiles = 18;
 }
-
