@@ -120,3 +120,11 @@ enum PointsDeductionPolicy {
   // 总是禁止扣减
   POINTS_DEDUCTION_POLICY_ALWAYS_BLOCK = 3;
 }
+
+enum TileSetPreset {
+  TILE_SET_PRESET_REGULAR = 0;
+  TILE_SET_PRESET_SANMA = 1;
+  TILE_SET_PRESET_TWO_SETS = 2;
+  TILE_SET_PRESET_ONLY_SZ = 3;
+}
+
