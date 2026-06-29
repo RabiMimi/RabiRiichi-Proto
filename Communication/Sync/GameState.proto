@@ -22,10 +22,6 @@ message PlayerHandStateMsg {
   // Score breakdown when this hand has won. Lets a reconnecting client rebuild
   // the result screen. Null/absent when the hand has not won.
   ScoreStorageMsg agari_score = 12;
-  // Net point change from this hand's settlement (agari or ryuukyoku), signed:
-  // positive = gained, negative = lost. Lets a reconnecting client show the
-  // per-player point deltas on the result screen.
-  int64 point_delta = 13;
 }
 
 message WallStateMsg{
