@@ -17,7 +17,12 @@ message ServerRoomStateResponse {
   ServerRoomStateMsg state = 1;
 }
 
+message AddAiRequest {
+  AiType type = 1;
+}
+
 service RoomService {
   rpc CreateRoom(CreateRoomRequest) returns (ServerRoomStateResponse) {}
   rpc JoinRoom(JoinRoomRequest) returns (ServerRoomStateResponse) {}
+  rpc AddAi(AddAiRequest) returns (ServerRoomStateResponse) {}
 }

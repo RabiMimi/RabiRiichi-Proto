@@ -19,12 +19,18 @@ message ClientRoomUpdateMsg {
   UserStatus status = 1;
 }
 
+enum AiType {
+  AI_TYPE_NONE = 0;
+  AI_TYPE_DUMMY = 1;
+}
+
 // State of a user.
 message ServerPlayerStateMsg {
   int32 id = 1;
   string nickname = 2;
   UserStatus status = 3;
   int32 seat = 4;
+  AiType ai_type = 5;
 }
 
 // State of a room.
