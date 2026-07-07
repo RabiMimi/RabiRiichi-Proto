@@ -13,4 +13,5 @@ message AgariInfoMsg {
 message AgariEventMsg {
   repeated AgariInfoMsg agari_infos = 1;
   GameTileMsg incoming = 2;
+  bool is_tsumo = 3;
 }
