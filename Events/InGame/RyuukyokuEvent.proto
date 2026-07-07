@@ -4,11 +4,17 @@ import "Events/InGame/ApplyScoreEvent.proto";
 import "Core/GameTile.proto";
 option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
 
+message TenpaiPlayerMsg {
+  int32 player_id = 1;
+  repeated int32 waits = 2;
+}
+
 message EndGameRyuukyokuEventMsg {
   repeated int32 remaining_players = 1;
   repeated int32 nagashi_mangan_players = 2;
   repeated int32 tenpai_players = 3;
   repeated GameTileMsg revealed_tiles = 4;
+  repeated TenpaiPlayerMsg tenpai_players_waits = 5;
 }
 
 message MidGameRyuukyokuEventMsg {
