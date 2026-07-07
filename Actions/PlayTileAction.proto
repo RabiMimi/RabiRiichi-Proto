@@ -5,11 +5,10 @@ option csharp_namespace = "RabiRiichi.Generated.Actions";
 
 message TenpaiInfoMsg {
   int32 winning_tile = 1;
-  int32 remaining_count = 2;
-  int32 han = 3;
-  int32 fu = 4;
-  int32 yakuman = 5;
-  int64 points = 6;
+  int32 han = 2;
+  int32 fu = 3;
+  int32 yakuman = 4;
+  int64 points = 5;
 }
 
 message DiscardCandidateMsg {
