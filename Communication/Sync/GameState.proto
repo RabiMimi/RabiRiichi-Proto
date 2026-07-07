@@ -4,6 +4,7 @@ import "Core/GameTile.proto";
 import "Core/MenLike.proto";
 import "Core/GameInfo.proto";
 import "Core/Config/GameConfig.proto";
+import "Actions/PlayTileAction.proto";
 option csharp_namespace = "RabiRiichi.Generated.Communication.Sync";
 
 message PlayerHandStateMsg {
@@ -18,6 +19,7 @@ message PlayerHandStateMsg {
   bool is_riichi_furiten = 9;
   bool is_discard_furiten = 10;
   GameTileMsg pending_tile = 11;
+  repeated TenpaiInfoMsg tenpai_waits = 12;
 }
 
 message WallStateMsg{
