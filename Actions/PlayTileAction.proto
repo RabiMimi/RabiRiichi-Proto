@@ -9,6 +9,9 @@ message TenpaiInfoMsg {
   int32 fu = 3;
   int32 yakuman = 4;
   int64 points = 5;
+  // Han counting only yaku (excludes dora/akadora/uradora). Used for the
+  // minimum-han (番缚) check.
+  int32 yaku_han = 6;
 }
 
 message DiscardCandidateMsg {
