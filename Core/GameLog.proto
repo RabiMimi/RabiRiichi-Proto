@@ -19,4 +19,6 @@ message PlayerLogMsg {
 message GameLogMsg {
   repeated PlayerLogMsg player_logs = 1;
   GameConfigMsg config = 2;
+  string game_id = 3;
+  int64 created_at_unix_ms = 4;
 }

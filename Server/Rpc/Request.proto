@@ -3,6 +3,7 @@ syntax = "proto3";
 import "Server/Rpc/Info.proto";
 import "Server/Rpc/Room.proto";
 import "Server/Rpc/User.proto";
+import "Core/GameLog.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
@@ -13,6 +14,10 @@ message ClientSignInRequest {
 message ServerErrorResponse {
   string status = 1;
   string message = 2;
+}
+
+message GetReplayRequest {
+  string game_id = 1;
 }
 
 // All gRPC requests.
@@ -26,6 +31,7 @@ message ClientRequest {
     ClientSignInRequest sign_in = 6;
     AddAiRequest add_ai = 7;
     RemoveRoomPlayerRequest remove_room_player = 8;
+    GetReplayRequest get_replay = 9;
   }
 }
 
@@ -37,5 +43,6 @@ message ServerResponse {
     CreateUserResponse create_user = 3;
     UserInfoResponse user_info = 4;
     ServerErrorResponse server_error = 5;
+    GameLogMsg replay = 6;
   }
 }

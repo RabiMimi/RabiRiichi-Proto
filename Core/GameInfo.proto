@@ -4,6 +4,7 @@ option csharp_namespace = "RabiRiichi.Generated.Core";
 
 message GameInfoMsg {
   int32 round = 1;
+  string game_id = 2;
   int32 dealer = 3;
   int32 honba = 4;
   int32 current_player = 5;
