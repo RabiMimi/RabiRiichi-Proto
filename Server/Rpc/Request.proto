@@ -25,6 +25,7 @@ message ClientRequest {
     google.protobuf.Empty get_my_info = 5;
     ClientSignInRequest sign_in = 6;
     AddAiRequest add_ai = 7;
+    RemoveAiRequest remove_ai = 8;
   }
 }
 
