@@ -20,6 +20,8 @@ message PlayerHandStateMsg {
   bool is_discard_furiten = 10;
   GameTileMsg pending_tile = 11;
   repeated TenpaiInfoMsg tenpai_waits = 12;
+  // North (北) tiles pulled aside as nukidora
+  repeated GameTileMsg nuki_dora = 13;
 }
 
 message WallStateMsg{

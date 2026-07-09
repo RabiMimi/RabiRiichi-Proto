@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Actions";
+
+// Pull a North (北) tile aside as nukidora. Each entry is a North tile the
+// player may pull on their turn.
+message NukiDoraActionMsg {
+  repeated GameTileMsg tiles = 1;
+}

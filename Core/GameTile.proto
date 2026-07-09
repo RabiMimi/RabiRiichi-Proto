@@ -40,6 +40,8 @@ enum TileSource {
   TILE_SOURCE_ANKAN = 8;
   // Part of Daiminkan
   TILE_SOURCE_DAIMINKAN = 9;
+  // Pulled aside as nukidora (北)
+  TILE_SOURCE_NUKI = 10;
 }
 
 message DiscardInfoMsg {

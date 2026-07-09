@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+// A player pulls a North (北) tile aside as nukidora. Followed by an
+// AddNukiDoraEvent once the chankan (搶拔北) window closes.
+message NukiDoraEventMsg {
+  int32 player_id = 1;
+  GameTileMsg incoming = 2;
+}

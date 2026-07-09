@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "Events/InGame/AddKanEvent.proto";
+import "Events/InGame/AddNukiDoraEvent.proto";
 import "Events/InGame/AddTileEvent.proto";
 import "Events/InGame/AgariEvent.proto";
 import "Events/InGame/ApplyScoreEvent.proto";
@@ -16,6 +17,7 @@ import "Events/InGame/KanEvent.proto";
 import "Events/InGame/LateClaimTileEvent.proto";
 import "Events/InGame/NextGameEvent.proto";
 import "Events/InGame/NextPlayerEvent.proto";
+import "Events/InGame/NukiDoraEvent.proto";
 import "Events/InGame/RevealDoraEvent.proto";
 import "Events/InGame/RyuukyokuEvent.proto";
 import "Events/InGame/SetFuritenEvent.proto";
@@ -55,6 +57,8 @@ message EventMsg {
     StopGameEventMsg stop_game_event = 23;
     SyncGameStateEventMsg sync_game_state_event = 24;
     EndInquiryEventMsg end_inquiry_event = 25;
-    google.protobuf.Any other = 26;
+    NukiDoraEventMsg nuki_dora_event = 26;
+    AddNukiDoraEventMsg add_nuki_dora_event = 27;
+    google.protobuf.Any other = 28;
   }
 }

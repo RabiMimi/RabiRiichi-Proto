@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "Core/GameTile.proto";
+option csharp_namespace = "RabiRiichi.Generated.Events.InGame";
+
+// Applies a nukidora pull after the chankan (搶拔北) window closes: moves the
+// North (北) tile aside and draws a replacement from the dead wall.
+message AddNukiDoraEventMsg {
+  int32 player_id = 1;
+  GameTileMsg incoming = 2;
+}

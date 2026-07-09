@@ -82,6 +82,8 @@ enum DoraOption {
   DORA_OPTION_INSTANT_REVEAL_AFTER_KA_KAN = 32;
   // 暗杠宝牌即开
   DORA_OPTION_INSTANT_REVEAL_AFTER_AN_KAN = 64;
+  // 拔北宝牌（三麻北风处理）
+  DORA_OPTION_NUKI_DORA = 128;
 }
 
 enum AgariOption {

@@ -3,6 +3,7 @@ syntax = "proto3";
 import "Actions/AgariAction.proto";
 import "Actions/ChiiAction.proto";
 import "Actions/KanAction.proto";
+import "Actions/NukiDoraAction.proto";
 import "Actions/PlayTileAction.proto";
 import "Actions/PonAction.proto";
 import "Actions/RyuukyokuAction.proto";
@@ -21,6 +22,7 @@ message PlayerActionMsg {
     RyuukyokuActionMsg ryuukyoku_action = 7;
     SkipActionMsg skip_action = 8;
     NextRoundActionMsg next_round_action = 9;
+    NukiDoraActionMsg nuki_dora_action = 10;
   }
 }
 
