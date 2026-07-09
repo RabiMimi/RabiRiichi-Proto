@@ -21,8 +21,8 @@ message AddAiRequest {
   AiType type = 1;
 }
 
-message RemoveAiRequest {
-  // Player id of the AI to remove from the room.
+message RemoveRoomPlayerRequest {
+  // Player id to remove from the room.
   int32 id = 1;
 }
 
@@ -30,5 +30,5 @@ service RoomService {
   rpc CreateRoom(CreateRoomRequest) returns (ServerRoomStateResponse) {}
   rpc JoinRoom(JoinRoomRequest) returns (ServerRoomStateResponse) {}
   rpc AddAi(AddAiRequest) returns (ServerRoomStateResponse) {}
-  rpc RemoveAi(RemoveAiRequest) returns (ServerRoomStateResponse) {}
+  rpc RemoveRoomPlayer(RemoveRoomPlayerRequest) returns (ServerRoomStateResponse) {}
 }
