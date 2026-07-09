@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "Server/Messages/Room.proto";
 import "Core/Config/GameConfig.proto";
+import "Core/AiType.proto";
 import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 

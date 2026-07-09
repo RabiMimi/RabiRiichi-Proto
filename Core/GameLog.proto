@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "Core/Config/GameConfig.proto";
+import "Core/AiType.proto";
 import "Events/Event.proto";
 import "Actions/SinglePlayerInquiry.proto";
 option csharp_namespace = "RabiRiichi.Generated.Core";
@@ -16,9 +17,17 @@ message PlayerLogMsg {
   repeated SingleLogMsg logs = 1;
 }
 
+message GameLogPlayerMsg {
+  int32 id = 1;
+  string nickname = 2;
+  int32 seat = 3;
+  AiType ai_type = 4;
+}
+
 message GameLogMsg {
   repeated PlayerLogMsg player_logs = 1;
   GameConfigMsg config = 2;
   string game_id = 3;
   int64 created_at_unix_ms = 4;
+  repeated GameLogPlayerMsg players = 5;
 }

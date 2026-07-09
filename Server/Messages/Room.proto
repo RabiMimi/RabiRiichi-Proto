@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "Core/Config/GameConfig.proto";
+import "Core/AiType.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Messages";
 
 enum UserStatus {
@@ -17,12 +18,6 @@ enum UserStatus {
 // Updates the status of a user.
 message ClientRoomUpdateMsg {
   UserStatus status = 1;
-}
-
-enum AiType {
-  AI_TYPE_NONE = 0;
-  AI_TYPE_DUMMY = 1;
-  AI_TYPE_RULE_BASED = 2;
 }
 
 // State of a user.
