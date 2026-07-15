@@ -48,6 +48,7 @@ message DiscardInfoMsg {
   int32 from = 1;
   DiscardReason reason = 2;
   int32 time = 3;
+  int32 jun = 4;
 }
 
 message GameTileMsg {
@@ -57,4 +58,5 @@ message GameTileMsg {
   int32 form_time = 4;
   TileSource source = 5;
   DiscardInfoMsg discard_info = 6;
+  int32 drawn_jun = 7;
 }
