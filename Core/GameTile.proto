@@ -59,4 +59,5 @@ message GameTileMsg {
   TileSource source = 5;
   DiscardInfoMsg discard_info = 6;
   int32 drawn_jun = 7;
+  int32 form_jun = 8;
 }
