@@ -18,8 +18,32 @@ message ServerRoomStateResponse {
   ServerRoomStateMsg state = 1;
 }
 
+enum LlmProvider {
+  LLM_PROVIDER_UNSPECIFIED = 0;
+  // OpenAI-compatible chat completions (also self-hosted / proxy servers).
+  LLM_PROVIDER_OPENAI = 1;
+  LLM_PROVIDER_GEMINI = 2;
+}
+
+// Per-AI configuration for an LLM-backed player. The api_token lives only for
+// the room's lifetime and is never persisted server-side.
+message LlmAiConfig {
+  LlmProvider provider = 1;
+  string api_token = 2;
+  // Empty = provider default.
+  string base_url = 3;
+  // e.g. "gpt-4o-mini" or "gemini-2.0-flash".
+  string model = 4;
+  // e.g. "zhs", "en", "ja".
+  string language = 5;
+  // Empty = client localizes a default name from the provider.
+  string display_name = 6;
+}
+
 message AddAiRequest {
   AiType type = 1;
+  // Present only when type == AI_TYPE_LLM.
+  LlmAiConfig llm_config = 2;
 }
 
 message RemoveRoomPlayerRequest {

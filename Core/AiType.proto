@@ -5,4 +5,5 @@ enum AiType {
   AI_TYPE_NONE = 0;
   AI_TYPE_DUMMY = 1;
   AI_TYPE_RULE_BASED = 2;
+  AI_TYPE_LLM = 3;
 }
