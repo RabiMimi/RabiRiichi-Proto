@@ -28,6 +28,7 @@ enum LlmProvider {
 enum LlmPromptTemplate {
   LLM_PROMPT_TEMPLATE_UNSPECIFIED = 0;
   LLM_PROMPT_TEMPLATE_CUTE_JK = 1;
+  LLM_PROMPT_TEMPLATE_MESUGAKI = 2;
 }
 
 // Per-AI configuration for an LLM-backed player. The api_token lives only for
