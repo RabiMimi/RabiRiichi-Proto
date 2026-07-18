@@ -25,6 +25,11 @@ enum LlmProvider {
   LLM_PROVIDER_GEMINI = 2;
 }
 
+enum LlmPromptTemplate {
+  LLM_PROMPT_TEMPLATE_UNSPECIFIED = 0;
+  LLM_PROMPT_TEMPLATE_CUTE_JK = 1;
+}
+
 // Per-AI configuration for an LLM-backed player. The api_token lives only for
 // the room's lifetime and is never persisted server-side.
 message LlmAiConfig {
@@ -38,6 +43,8 @@ message LlmAiConfig {
   string language = 5;
   // Empty = client localizes a default name from the provider.
   string display_name = 6;
+  // Selects the server-side prompt resource. Unspecified currently uses CUTE_JK.
+  LlmPromptTemplate prompt_template = 7;
 }
 
 message AddAiRequest {
