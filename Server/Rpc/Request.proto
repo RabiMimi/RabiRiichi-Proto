@@ -32,6 +32,7 @@ message ClientRequest {
     AddAiRequest add_ai = 7;
     RemoveRoomPlayerRequest remove_room_player = 8;
     GetReplayRequest get_replay = 9;
+    LoginUserRequest login_user = 10;
   }
 }
 

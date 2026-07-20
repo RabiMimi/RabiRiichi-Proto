@@ -5,8 +5,14 @@ import "google/protobuf/empty.proto";
 option csharp_namespace = "RabiRiichi.Server.Generated.Rpc";
 
 
-message CreateUserRequest {
+message UserData {
   string nickname = 1;
+}
+
+message CreateUserRequest {
+  string username = 1;
+  UserData user_data = 2;
+  string password_hash = 3;
 }
 
 message CreateUserResponse {
@@ -14,14 +20,21 @@ message CreateUserResponse {
   string access_token = 2;
 }
 
+message LoginUserRequest {
+  string username = 1;
+  string password_hash = 2;
+}
+
 message UserInfoResponse {
   int32 id = 1;
   ServerRoomStateMsg room = 2;
-  string nickname = 3;
+  UserData user_data = 3;
   UserStatus status = 4;
+  string access_token = 5;
 }
 
 service UserService {
-  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {}
+  rpc CreateUser(CreateUserRequest) returns (UserInfoResponse) {}
   rpc GetMyInfo(google.protobuf.Empty) returns (UserInfoResponse) {}
+  rpc LoginUser(LoginUserRequest) returns (UserInfoResponse) {}
 }

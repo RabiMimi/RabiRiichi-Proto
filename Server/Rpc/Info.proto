@@ -9,6 +9,7 @@ message GetInfoResponse {
   string server = 3;
   string server_version = 4;
   string min_client_version = 5;
+  string password_salt = 6;
 }
 
 service InfoService {
