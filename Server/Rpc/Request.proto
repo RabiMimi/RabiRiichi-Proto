@@ -33,6 +33,8 @@ message ClientRequest {
     RemoveRoomPlayerRequest remove_room_player = 8;
     GetReplayRequest get_replay = 9;
     LoginUserRequest login_user = 10;
+    UpdateProfileRequest update_profile = 11;
+    ChangePasswordRequest change_password = 12;
   }
 }
 

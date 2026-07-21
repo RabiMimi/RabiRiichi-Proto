@@ -25,6 +25,19 @@ message LoginUserRequest {
   string password_hash = 2;
 }
 
+// Authenticated: updates the signed-in user's own profile.
+message UpdateProfileRequest {
+  UserData user_data = 1;
+}
+
+// Public: verifies the old password, sets the new one, and bumps the user's
+// token version so previously issued access tokens are invalidated.
+message ChangePasswordRequest {
+  string username = 1;
+  string old_password_hash = 2;
+  string new_password_hash = 3;
+}
+
 message UserInfoResponse {
   int32 id = 1;
   ServerRoomStateMsg room = 2;
@@ -37,4 +50,6 @@ service UserService {
   rpc CreateUser(CreateUserRequest) returns (UserInfoResponse) {}
   rpc GetMyInfo(google.protobuf.Empty) returns (UserInfoResponse) {}
   rpc LoginUser(LoginUserRequest) returns (UserInfoResponse) {}
+  rpc UpdateProfile(UpdateProfileRequest) returns (UserInfoResponse) {}
+  rpc ChangePassword(ChangePasswordRequest) returns (UserInfoResponse) {}
 }
